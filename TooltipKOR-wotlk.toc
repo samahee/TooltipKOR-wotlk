@@ -1,0 +1,39 @@
+## Interface: 30300
+## Title: TooltipKOR-wotlk
+## Notes: wotlk-wow 툴팁 한글 출력 (WoW 3.3.5)
+## Author: samahee
+## SavedVariables: TooltipKOR_Untranslated
+
+
+
+custom\spell_desc_custom_data.lua
+custom\spell_name_custom_data.lua
+
+
+data\spell_name_data.lua
+data\spell_desc_data.lua
+data\spell_aura_data.lua
+data\item_data.lua
+data\map_data.lua
+data\subzones_data.lua
+data\object_data.lua
+data\tooltip_translate_data.lua
+data\unit_data.lua
+data\globalstrings.lua
+
+
+
+
+spell.lua
+items.lua
+map.lua
+zone_font.lua
+objects.lua
+taxi.lua
+units.lua
+buff_dbuff.lua
+search.lua
+
+
+#tooltip_translate.lua
+#spelltooltip_desc.lua
