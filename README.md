@@ -79,7 +79,7 @@
 
 2. 먼저 번역을 원하는 대상을 파일로 남긴다.
 
-3. 그리고 구글 Gemini 3 pro(**flash보다 반드시 pro에서 진행 할 것**)에서 저장된 파일과, spell_name_data.lua 파일을 추가.
+3. 그리고 구글 Gemini 3 pro(**flash보다 반드시 pro에서 진행 할 것**)에 저장된 파일과, spell_name_data.lua 파일을 추가.
 
 4. 와우 용어로 번역해 달라고 말하면 끝. 
 
@@ -91,9 +91,9 @@
    
    - 마법 설명을 위한 옵션, 채팅창에 /sp_desc on/off 
    
-   - 오라 설명을 위한 옵션, 채팅창에 / aura_dest on/off
+   - 오라 설명을 위한 옵션, 채팅창에 / aura_desc on/off
    
-   - 아이템 효과 설명을 위한 옵션, 채팅창에 /item_dest on/off 
+   - 아이템 효과 설명을 위한 옵션, 채팅창에 /item_desc on/off 
    
    - 기본 옵션은 모두 off로 되어 있으며, 게임중에 언제라도 파일로 남길 수 있다.
 
