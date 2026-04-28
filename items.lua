@@ -1,5 +1,46 @@
 -- items.lua
 
+local tooltip_template_data = item_tooltip_data or {}
+local tooltip_template_patterns = {}
+
+local function EscapeTemplatePattern(text)
+    if not text then return "" end
+    return string.gsub(text, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
+end
+
+local function TemplateToPattern(template)
+    if tooltip_template_patterns[template] then
+        return tooltip_template_patterns[template]
+    end
+
+    local pattern = EscapeTemplatePattern(template)
+    pattern = string.gsub(pattern, "%%%$s", "([%%d%%.]+)")
+    pattern = "^" .. pattern .. "$"
+    tooltip_template_patterns[template] = pattern
+    return pattern
+end
+
+local function ApplyTemplateResult(template, captures)
+    local index = 0
+    return string.gsub(template, "%$s", function()
+        index = index + 1
+        return captures[index] or ""
+    end)
+end
+
+local function TranslateItemLine(text)
+    for _, pair in ipairs(tooltip_template_data) do
+        local from, to = pair[1], pair[2]
+        local captures = { string.match(text, TemplateToPattern(from)) }
+
+        if captures[1] then
+            return ApplyTemplateResult(to, captures)
+        end
+    end
+
+    return text
+end
+
 -- 1. 매칭을 위한 전처리 함수 (공백, 특수문자, 마침표, 대소문자 무시)
 local function Normalize(str)
     if not str then return "" end
@@ -16,6 +57,22 @@ if item_data then
         end
     end
 end
+
+-- 전문 기술 접두어 한글 매핑 테이블
+local profession_map = {
+    ["Cooking"] = "요리",
+    ["Alchemy"] = "연금술",
+    ["Enchanting"] = "마법부여",
+    ["Fishing"] = "낚시",
+    ["Mining"] = "채광",
+    ["Skinning"] = "무두질",
+    ["Tailoring"] = "재봉술",
+    ["Blacksmithing"] = "대장기술",
+    ["Leatherworking"] = "가죽세공",
+    ["Engineering"] = "기계공학",
+    ["First Aid"] = "응급치료",
+    ["Jewelcrafting"] = "보석세공",
+}
 
 -- [추가] 텍스트에서 색상 코드 제거 함수
 local function StripColors(text)
@@ -35,10 +92,26 @@ end
 local function GetCleanItemName(text)
     if not text then return "" end
     local clean = StripColors(text)
-    clean = string.gsub(clean, "|n", "") -- 줄바꿈 태그 제거
+    clean = string.gsub(clean, "|n", "")            -- 줄바꿈 태그 제거
     clean = string.gsub(clean, "%(%s*%d+%s*%)", "") -- (10) 형태의 갯수 표시 제거
-    clean = string.match(clean, "^%s*(.-)%s*$") -- 문자열 앞뒤 공백 제거
+    clean = string.match(clean, "^%s*(.-)%s*$")     -- 문자열 앞뒤 공백 제거
     return clean
+end
+
+local function TranslateKnownName(text)
+    local cleanName = GetCleanItemName(text)
+    local normName = Normalize(cleanName)
+
+    if normName ~= "" and eng_to_kor[normName] then
+        return eng_to_kor[normName], cleanName
+    end
+
+    local translatedLine = TranslateItemLine(cleanName)
+    if translatedLine ~= cleanName then
+        return translatedLine, cleanName
+    end
+
+    return nil, cleanName
 end
 
 -- 2. 메인 로직 처리 함수
@@ -50,15 +123,31 @@ local function UpdateTooltipText(tooltip)
     local tooltipItemName = left1:GetText()
     if not tooltipItemName then return end
 
-    -- 이미 한글이 포함되어 있다면 (다른 모듈에서 번역했거나 이미 한글인 경우) 중복 처리 방지
-    if string.find(tooltipItemName, "[\234-\235]") then return end
+    local titleHasKorean = string.find(tooltipItemName, "[\234-\235]") ~= nil
 
     local isUpdated = false
+
+    local titlePrefix, titleRest = string.match(StripColors(tooltipItemName), "^%s*([^:]+:%s*)(.+)$")
+    if titlePrefix and titleRest then
+        for eng, kor in pairs(profession_map) do
+            if string.find(titlePrefix, eng) or string.find(titlePrefix, kor) then
+                local translatedName = TranslateKnownName(titleRest)
+                if translatedName then
+                    local newTitle = string.gsub(titlePrefix, eng, kor) .. translatedName
+                    if left1:GetText() ~= newTitle then
+                        left1:SetText(newTitle)
+                        isUpdated = true
+                    end
+                end
+                break
+            end
+        end
+    end
 
     -- [1단계] 첫 번째 줄 (이름) 교체
     -- 아이템 ID로 직접 매칭 시도
     local _, link = tooltip:GetItem()
-    if link then
+    if not isUpdated and not titleHasKorean and link then
         local itemId = tonumber(string.match(link, "item:(%d+)"))
         if itemId and item_data and item_data[itemId] then
             local korName = item_data[itemId][2]
@@ -71,11 +160,10 @@ local function UpdateTooltipText(tooltip)
 
     -- ID 매칭 실패 시 또는 스펠/기술인 경우 역방향 매핑 테이블로 이름 교체
     -- (단, 스펠 툴팁인 경우 이름 번역은 spell.lua에서 전담하도록 제외)
-    if not isUpdated and not tooltip:GetSpell() then
-        local cleanName = GetCleanItemName(tooltipItemName)
-        local normName = Normalize(cleanName)
-        if eng_to_kor[normName] then
-            left1:SetText(eng_to_kor[normName])
+    if not isUpdated and not titleHasKorean and not tooltip:GetSpell() then
+        local translatedName = TranslateKnownName(tooltipItemName)
+        if translatedName then
+            left1:SetText(translatedName)
             isUpdated = true
         end
     end
@@ -87,22 +175,6 @@ local function UpdateTooltipText(tooltip)
         "^%s*세트 효과:",
         "^%s*발동 효과:"
     }
-    
-    -- 전문 기술 접두어 한글 매핑 테이블
-    local profession_map = {
-        ["Cooking"] = "요리",
-        ["Alchemy"] = "연금술",
-        ["Enchanting"] = "마법부여",
-        ["Fishing"] = "낚시",
-        ["Mining"] = "채광",
-        ["Skinning"] = "무두질",
-        ["Tailoring"] = "재봉술",
-        ["Blacksmithing"] = "대장기술",
-        ["Leatherworking"] = "가죽세공",
-        ["Engineering"] = "기계공학",
-        ["First Aid"] = "응급치료",
-        ["Jewelcrafting"] = "보석세공",
-    }
 
     for i = 1, tooltip:NumLines() do
         local lineObj = _G[nameString .. "TextLeft" .. i]
@@ -110,7 +182,7 @@ local function UpdateTooltipText(tooltip)
             local originalText = lineObj:GetText()
             -- 1번 라인이 이미 ID 매칭으로 업데이트 되었다면 본문 로직은 스킵
             if i == 1 and isUpdated then
-                originalText = nil 
+                originalText = nil
             end
 
             if originalText and originalText ~= "" then
@@ -126,9 +198,12 @@ local function UpdateTooltipText(tooltip)
 
                 if not skip then
                     local newText = originalText
+                    local translatedLine = TranslateItemLine(plainText)
                     local colonPos = string.find(originalText, ":")
-                    
-                    if colonPos then
+
+                    if translatedLine ~= plainText then
+                        newText = translatedLine
+                    elseif colonPos then
                         local prefix = string.sub(originalText, 1, colonPos)
                         local rest = string.sub(originalText, colonPos + 1)
                         local plainPrefix = StripColors(prefix)
@@ -136,9 +211,9 @@ local function UpdateTooltipText(tooltip)
                         -- "요구 사항", "재료", "도구" 및 전문 기술 키워드 처리
                         local keyword_patterns = {
                             "요구 사항", "재료", "도구",
-                            "^%s*Cooking:", "^%s*Alchemy:", "^%s*Enchanting:", 
-                            "^%s*Fishing:", "^%s*Mining:", "^%s*Skinning:", 
-                            "^%s*Tailoring:", "^%s*Blacksmithing:", "^%s*Leatherworking:", 
+                            "^%s*Cooking:", "^%s*Alchemy:", "^%s*Enchanting:",
+                            "^%s*Fishing:", "^%s*Mining:", "^%s*Skinning:",
+                            "^%s*Tailoring:", "^%s*Blacksmithing:", "^%s*Leatherworking:",
                             "^%s*Engineering:", "^%s*First Aid:", "^%s*Jewelcrafting:"
                         }
 
@@ -162,13 +237,12 @@ local function UpdateTooltipText(tooltip)
                             local translated_rest = ""
                             -- 쉼표(,)를 기준으로 구분된 항목 처리
                             for part in string.gmatch(rest, "[^,]+") do
-                                local cleanName = GetCleanItemName(part)
-                                local normName = Normalize(cleanName)
+                                local translatedName, cleanName = TranslateKnownName(part)
 
-                                if normName ~= "" and eng_to_kor[normName] then
+                                if translatedName then
                                     local safePattern = EscapePattern(cleanName)
                                     -- 원본의 |n 이나 색상 코드를 유지하며 이름만 교체
-                                    part = string.gsub(part, safePattern, eng_to_kor[normName])
+                                    part = string.gsub(part, safePattern, translatedName)
                                 end
 
                                 if translated_rest == "" then
@@ -181,12 +255,11 @@ local function UpdateTooltipText(tooltip)
                         end
                     else
                         -- 콜론 없는 단일 라인 (도안 결과물 등)
-                        local cleanLine = GetCleanItemName(originalText)
-                        local normLine = Normalize(cleanLine)
+                        local translatedName, cleanLine = TranslateKnownName(originalText)
 
-                        if normLine ~= "" and eng_to_kor[normLine] then
+                        if translatedName then
                             local safePattern = EscapePattern(cleanLine)
-                            newText = string.gsub(originalText, safePattern, eng_to_kor[normLine])
+                            newText = string.gsub(originalText, safePattern, translatedName)
                         end
                     end
 
@@ -200,14 +273,14 @@ local function UpdateTooltipText(tooltip)
     end
 
     if isUpdated then
-        if not InCombatLockdown() then tooltip:Show() end
+        tooltip:Show()
     end
 end
 
 -- 3. 툴팁 후크 등록
 function TKOR_ItemHook(tt)
     if not tt or tt.__TKOR_ItemHooked then return end
-    
+
     -- 아이템 정보가 설정될 때
     if tt:HasScript("OnTooltipSetItem") then
         tt:HookScript("OnTooltipSetItem", UpdateTooltipText)
@@ -218,7 +291,7 @@ function TKOR_ItemHook(tt)
     end
     -- 애드온이 직접 Text를 박는 경우를 대비해 OnShow 시점에도 체크
     tt:HookScript("OnShow", UpdateTooltipText)
-    
+
     tt.__TKOR_ItemHooked = true
 end
 
@@ -244,7 +317,7 @@ local function HookAddonTooltips()
         "QuestHelperTooltip",
         "QuestGuruTooltip",
     }
-    
+
     for _, name in ipairs(addonTooltips) do
         local tt = _G[name]
         if tt then

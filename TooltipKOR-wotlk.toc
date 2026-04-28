@@ -14,10 +14,11 @@ data\spell_name_data.lua
 data\spell_desc_data.lua
 data\spell_aura_data.lua
 data\item_data.lua
+#data\item_tooltip_data.lua
 data\map_data.lua
 data\subzones_data.lua
 data\object_data.lua
-data\tooltip_translate_data.lua
+#data\tooltip_translate_data.lua
 data\unit_data.lua
 data\globalstrings.lua
 
@@ -34,6 +35,3 @@ units.lua
 buff_dbuff.lua
 search.lua
 
-
-#tooltip_translate.lua
-#spelltooltip_desc.lua

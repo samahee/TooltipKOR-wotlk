@@ -266,6 +266,21 @@ end
 --------------------------------------------------
 -- 1 스펠 이름 처리
 --------------------------------------------------
+local profession_name_prefixes = {
+    ["Cooking"] = "요리",
+    ["Alchemy"] = "연금술",
+    ["Enchanting"] = "마법부여",
+    ["Fishing"] = "낚시",
+    ["Mining"] = "채광",
+    ["Skinning"] = "무두질",
+    ["Tailoring"] = "재봉술",
+    ["Blacksmithing"] = "대장기술",
+    ["Leatherworking"] = "가죽세공",
+    ["Engineering"] = "기계공학",
+    ["First Aid"] = "응급치료",
+    ["Jewelcrafting"] = "보석세공",
+}
+
 local function ProcessSpellName(tt, nameString)
     local titleLine = _G[nameString .. "TextLeft1"]
     if not titleLine then return false end
@@ -278,6 +293,21 @@ local function ProcessSpellName(tt, nameString)
     local krName = spell_name_dataDB[matchKey]
 
     if krName and krName ~= engName then
+        local titleText = titleLine:GetText() or ""
+        local titlePrefix = string.match(StripColorCodes(titleText), "^%s*([^:]+:%s*).+$")
+        if titlePrefix then
+            for eng, kor in pairs(profession_name_prefixes) do
+                if string.find(titlePrefix, eng) or string.find(titlePrefix, kor) then
+                    local newTitle = string.gsub(titlePrefix, eng, kor) .. krName
+                    if titleLine:GetText() ~= newTitle then
+                        titleLine:SetText(newTitle)
+                        return true
+                    end
+                    return false
+                end
+            end
+        end
+
         -- 현재 툴팁 텍스트와 우리가 가진 번역이 다를 경우에만 교체
         if titleLine:GetText() ~= krName then
             titleLine:SetText(krName)
@@ -321,7 +351,6 @@ local function ProcessSpellDesc(tt, nameString)
                 if not string.match(cleanTextLower, "^cost:") and
                     not string.match(cleanTextLower, "^level:") and
                     not isEffect then
-
                     local engDescLines = {}
                     local engDescFull = ""
 
@@ -484,16 +513,16 @@ local function ProcessAuraDesc(tt, nameString)
                     string.match(cleanText, "^%d+%s?일")
 
                 -- "every 5 seconds" 같은 마법 효과 설명이 시간 줄로 오인되는 것 방지
-                if isTimeLine and (string.find(cleanTextLower, "mana") or 
-                                  string.find(cleanTextLower, "health") or 
-                                  string.find(cleanTextLower, "damage") or
-                                  string.find(cleanTextLower, "restores") or
-                                  string.find(cleanTextLower, "heals")) then
+                if isTimeLine and (string.find(cleanTextLower, "mana") or
+                        string.find(cleanTextLower, "health") or
+                        string.find(cleanTextLower, "damage") or
+                        string.find(cleanTextLower, "restores") or
+                        string.find(cleanTextLower, "heals")) then
                     isTimeLine = false
                 end
 
                 local isAuraInfoLine = string.match(cleanTextLower, "^level:") or
-                                      string.match(cleanTextLower, "^지속시간")
+                    string.match(cleanTextLower, "^지속시간")
 
                 if not isTimeLine and not isAuraInfoLine then
                     if (r > 0.7 and g > 0.7 and b > 0.7) or (r > 0.9 and g > 0.7 and b < 0.2) then
@@ -622,7 +651,7 @@ local function HandleSpellTooltip(tt)
     if ProcessItemEffects(tt, nameString) then changed = true end
     if ProcessSpellDesc(tt, nameString) then changed = true end
     if changed and not tt.KOR_Resized then
-        if not InCombatLockdown() then tt:Show() end
+        tt:Show()
         tt.KOR_Resized = true
     end
 end
@@ -637,7 +666,7 @@ local function HandleAuraTooltip(tt)
     if ProcessAuraName(tt, nameString) then changed = true end
     if ProcessAuraDesc(tt, nameString) then changed = true end
     if changed and not tt.KOR_Resized then
-        if not InCombatLockdown() then tt:Show() end
+        tt:Show()
         tt.KOR_Resized = true
     end
 end
@@ -670,7 +699,6 @@ local function HookTooltip(tt)
     end
 
     tt:HookScript("OnUpdate", function(self)
-        if InCombatLockdown() then return end
         local title = _G[self:GetName() .. "TextLeft1"]
         if title then
             local text = title:GetText()
@@ -758,7 +786,7 @@ local function HookAddonTooltips()
         "aux_tooltip",
         "AuxTooltip",
     }
-    
+
     for _, name in ipairs(addonTooltips) do
         local tt = _G[name]
         if tt then
@@ -778,7 +806,7 @@ f:SetScript("OnEvent", function(self, event, arg1)
         if ShoppingTooltip1 then HookTooltip(ShoppingTooltip1) end
         if ShoppingTooltip2 then HookTooltip(ShoppingTooltip2) end
     end
-    
+
     -- 아틀라스루트 등 외부 애드온 툴팁 후킹 시도
     HookAddonTooltips()
 end)
