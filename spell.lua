@@ -622,7 +622,7 @@ local function HandleSpellTooltip(tt)
     if ProcessItemEffects(tt, nameString) then changed = true end
     if ProcessSpellDesc(tt, nameString) then changed = true end
     if changed and not tt.KOR_Resized then
-        tt:Show()
+        if not InCombatLockdown() then tt:Show() end
         tt.KOR_Resized = true
     end
 end
@@ -637,7 +637,7 @@ local function HandleAuraTooltip(tt)
     if ProcessAuraName(tt, nameString) then changed = true end
     if ProcessAuraDesc(tt, nameString) then changed = true end
     if changed and not tt.KOR_Resized then
-        tt:Show()
+        if not InCombatLockdown() then tt:Show() end
         tt.KOR_Resized = true
     end
 end
@@ -670,6 +670,7 @@ local function HookTooltip(tt)
     end
 
     tt:HookScript("OnUpdate", function(self)
+        if InCombatLockdown() then return end
         local title = _G[self:GetName() .. "TextLeft1"]
         if title then
             local text = title:GetText()

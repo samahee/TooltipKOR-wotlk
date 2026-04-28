@@ -79,7 +79,7 @@ local function KR_Composed(title)
 
   -- 2) 콤마 분할 후 각 파트 매핑
   local changed, parts, i = false, {}, 1
-  for seg in string.gfind(title, "([^,]+)") do
+  for seg in string.gmatch(title, "([^,]+)") do
     local p  = tkor_trim(seg)
     local kp = KR(p)
     if kp ~= p then changed = true end
@@ -106,7 +106,7 @@ local function ReplaceTaxiTooltipTitleFromTooltip()
   local ko = KR_Composed(t)
   if ko ~= t then
     L1:SetText(ko)
-    if tip.Show then tip:Show() end
+    if tip.Show and not InCombatLockdown() then tip:Show() end
   end
 end
 

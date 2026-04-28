@@ -34,7 +34,7 @@ local function UpdateUnitTooltip(tooltip)
         -- 한글 이름이 존재하고, 현재 이름과 다를 경우에만 교체
         if korName and left1:GetText() ~= korName then
             left1:SetText(korName)
-            tooltip:Show()
+            if not InCombatLockdown() then tooltip:Show() end
         end
     end
 end

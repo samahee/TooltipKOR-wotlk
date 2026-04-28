@@ -42,7 +42,7 @@ local function UpdateObjectTooltip(tooltip)
     if korName and title ~= korName then
         left1:SetText(korName)
         -- 툴팁 크기를 강제로 재계산하여 레이아웃 깨짐 방지
-        tooltip:Show()
+        if not InCombatLockdown() then tooltip:Show() end
     end
 end
 
@@ -50,7 +50,7 @@ end
 -- 툴팁 내용이 바뀔 때 발생하는 이벤트를 최대한 활용합니다.
 GameTooltip:HookScript("OnTooltipSetUnit", function(self) UpdateObjectTooltip(self) end)
 GameTooltip:HookScript("OnTooltipSetItem", function(self) UpdateObjectTooltip(self) end)
-GameTooltip:HookScript("OnUpdate", function(self) UpdateObjectTooltip(self) end) -- OnShow보다 빈도가 높고 정확함
+GameTooltip:HookScript("OnUpdate", function(self) if not InCombatLockdown() then UpdateObjectTooltip(self) end end) -- OnShow보다 빈도가 높고 정확함
 
 -- 기존 OnUpdate 프레임은 삭제하거나 아래와 같이 수정하여
 -- 툴팁 내용이 갱신될 때만 동작하게 최적화합니다.

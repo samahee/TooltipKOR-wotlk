@@ -200,7 +200,7 @@ local function UpdateTooltipText(tooltip)
     end
 
     if isUpdated then
-        tooltip:Show()
+        if not InCombatLockdown() then tooltip:Show() end
     end
 end
 
