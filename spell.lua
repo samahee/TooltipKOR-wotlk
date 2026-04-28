@@ -240,22 +240,22 @@ local function IsUnitTooltip(tt, nameString)
         local line = _G[nameString .. "TextLeft" .. i]
         if line and line:IsShown() then
             local text = string.lower(line:GetText() or "")
-            -- 유닛 툴팁 판별 패턴 (영문/한글 평판 및 특수 문구)
+            -- 유닛 툴팁 판별 패턴 (단어 경계 체크를 추가하여 설명 속의 단어와 혼동 방지)
             if string.find(text, "%(player%)") or
                 string.find(text, "%(boss%)") or
                 string.find(text, "%(elite%)") or
                 string.find(text, "%(npc%)") or
                 string.find(text, "'s p[ea]t") or
                 string.find(text, "'s minion") or
-                -- 평판 단계 (한글/영문)
-                string.find(text, "매우 적대적") or string.find(text, "hated") or
-                string.find(text, "적대적") or string.find(text, "hostile") or
-                string.find(text, "약간 적대적") or string.find(text, "unfriendly") or
-                string.find(text, "중립적") or string.find(text, "neutral") or
-                string.find(text, "약간 우호적") or string.find(text, "friendly") or
-                string.find(text, "우호적") or string.find(text, "honored") or
-                string.find(text, "매우 우호적") or string.find(text, "revered") or
-                string.find(text, "확고한 동맹") or string.find(text, "exalted") then
+                -- 평판 단계 (앞뒤가 공백이거나 줄의 시작/끝인 경우만 인정)
+                string.find(text, "^매우 적대적$") or string.find(text, "^hated$") or
+                string.find(text, "^적대적$") or string.find(text, "^hostile$") or
+                string.find(text, "^약간 적대적$") or string.find(text, "^unfriendly$") or
+                string.find(text, "^중립적$") or string.find(text, "^neutral$") or
+                string.find(text, "^약간 우호적$") or string.find(text, "^friendly$") or
+                string.find(text, "^우호적$") or string.find(text, "^honored$") or
+                string.find(text, "^매우 우호적$") or string.find(text, "^revered$") or
+                string.find(text, "^확고한 동맹$") or string.find(text, "^exalted$") then
                 return true
             end
         end
@@ -360,6 +360,37 @@ local function ProcessSpellDesc(tt, nameString)
                     if #engDescLines > 0 then
                         local match = spell_desc_dataDB[GetMatchKey(engDescFull)]
                         local useKoreanUnits = false
+
+                        -- [보정 로직] 매칭 실패 시, 문장 앞부분에 이름이나 Rank가 붙어 있는지 확인하여 제거 후 재시도
+                        if not match then
+                            local cleanFullLower = string.lower(engDescFull)
+                            local strippedFull = engDescFull
+                            local foundHeader = false
+
+                            -- 1. "Rank X" 혹은 "레벨 X" 제거 시도
+                            local s, e = string.find(cleanFullLower, "^rank %d+%s*")
+                            if not s then s, e = string.find(cleanFullLower, "^레벨 %d+%s*") end
+                            if s then
+                                strippedFull = string.sub(strippedFull, e + 1)
+                                foundHeader = true
+                            end
+
+                            -- 2. 마법 이름이 앞에 붙어 있는지 확인 (GetSpell() 활용)
+                            local spellName = tt:GetSpell()
+                            if spellName then
+                                local snLower = string.lower(spellName)
+                                local cfLower = string.lower(strippedFull)
+                                local ss, ee = string.find(cfLower, "^" .. snLower .. "%s*")
+                                if ss then
+                                    strippedFull = string.sub(strippedFull, ee + 1)
+                                    foundHeader = true
+                                end
+                            end
+
+                            if foundHeader then
+                                match = spell_desc_dataDB[GetMatchKey(strippedFull)]
+                            end
+                        end
 
                         if not match then
                             local fallbackText = StripTimeUnits(engDescFull)
