@@ -20,11 +20,8 @@ spell_desc_custom_data = {
 	"빌드의 현재 능력과 특성을 확인하거나 새로운 주문을 검색하십시오.",
 	["Click to copy a link to your current build. This is a link to the Ascension.gg Web Builder, which can then also be imported into the Hero Architect!"] =
 	"클릭하여 현재 빌드의 링크를 복사합니다. 이 링크는 Ascension.gg 웹 빌더로 연결되며, Hero Architect로 불러올 수도 있습니다!",
-	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Stamina and Spirit for $s5 min."] =
-	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 먹으면 포만감을 느끼게 되고 $s5분 동안 체력과 정신력이 $s4만큼 증가합니다.",
 	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Strength. Lasts for $s5 hour."] =
 	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 먹는 동안에는 앉아 있어야 합니다. 음식을 $s3초 이상 먹으면 포만감을 느끼게 되고 $s5시간 동안 힘이 $s4만큼 증가합니다.",
-	["Restores $s1 to $s2 health."] = "$s1에서 $s2의 생명력을 회복합니다.",
 
 
 	-- 아이템 효과 설명
@@ -36,7 +33,6 @@ spell_desc_custom_data = {
 	"|TInterface\\Common\\ui-tooltipdivider:$s1:$s2:$s3:$s4|t |TInterface\\Icons\\Ability_BackStab:$s5:$s6:$s7:$s8|t 기습의 문양 기습 공격 시 대상에게 걸려 있는 파열 효과의 지속시간이 $s9초만큼 증가합니다. 이 효과로 최대 $s10초까지 증가합니다.",
 	["\"The dynamite for Non-Engineers that rarely* blows up in your hand with over twice the blasting power of standard EZ-Thro.\""] =
 	"\"기계공학을 익히지 않은 초보자용 다이너마이트로, 일반 초보자용 다이너마이트 폭발력의 두 배가 넘으며 손에서 폭발하는 일이 거의* 없습니다.\"",
-	["Restores $s1 to $s2 health and $s3 to $s4 mana."] = "$s1~$s2의 생명력과 $s3~$s4의 마나를 회복시킵니다.",
 	["Permanently adds $s1 critical strike \nrating to a relic slot item. This benefit is only active between level $s2 and $s3"] =
 	"성물 아이템에 영구적으로 $s1의 치명타 적중도를 추가합니다. 이 효과는 $s2에서 $s3 레벨 사이에만 적용됩니다.",
 	["Heal yourself for $s1 to $s2"] = "자신의 생명력을 $s1에서 $s2만큼 회복시킵니다.",
@@ -84,7 +80,6 @@ spell_desc_custom_data = {
 	["Permanently adds $s1 spell power to a relic slot item.\nThis benefit is only active between level $s2 and $s3"] =
 	"성물 아이템에 영구적으로 주문력을 $s1만큼 추가합니다. 이 효과는 $s2에서 $s3 레벨 사이에만 적용됩니다.",
 	["Black Dragon Mail ($s1/$s2)"] = "검은용 사슬 갑옷 ($s1/$s2)",
-	["Absorbs $s1 to $s2 Nature damage.\nLasts $s3 min."] = "$s1에서 $s2의 자연 피해를 흡수합니다. $s3분 동안 지속됩니다.",
 	["Increases critical strike rating by $s1 and spell power by $s2 for $s3 hrs.\nCounts as both a Battle and Guardian elixir. This effect persists through death."] =
 	"$s3시간 동안 치명타 적중도가 $s1만큼, 주문력이 $s2만큼 증가합니다. 동시에 전투 비약 및 강화 비약으로 간주됩니다. 이 효과는 죽어도 지속됩니다.",
 	["Ironfeather Armor ($s1/$s2)"] = "강철깃털 갑옷 ($s1/$s2)",
@@ -115,8 +110,6 @@ spell_desc_custom_data = {
 	["Use this upgrade kit to upgrade your item to the next level."] = "이 업그레이드 도구를 사용하여 아이템을 다음 레벨로 업그레이드합니다.",
 	["Increases Rage by $s1 to $s2 and increases Strength by $s3 for $s4 sec."] =
 	"분노가 $s1~$s2만큼 증가하고 $s4초 동안 힘이 $s3만큼 증가합니다.",
-	["$s1% chance of dealing $s2 to $s3 Nature damage on a successful melee attack."] =
-	"근접 공격이 성공했을 때 $s1%의 확률로 $s2~$s3의 자연 피해를 입힙니다.",
 	["Permanently enhance a cloak to increase your Spell Power by $s1 and Stamina $s2 This benefit is only active between level $s3 and $s4"] =
 	"망토에 영구적으로 마법을 부여해 주문력을 $s1만큼, 체력을 $s2만큼 증가시킵니다. 이 효과는 $s3에서 $s4 레벨 사이에만 적용됩니다.",
 	["Permanently adds $s1 Stamina to a belt item.\nThis benefit is only active between level $s2 and $s3"] =
@@ -148,7 +141,6 @@ spell_desc_custom_data = {
 	"$s2초에 걸쳐 $s1의 생명력이 회복됩니다. 음식을 먹으려면 앉아 있어야 합니다. 음식을 꾸준히 $s3초 이상 먹으면 포만감을 느끼게 되고 가속도가 $s4만큼, 주문력이 $s5만큼 증가합니다. $s6시간 동안 지속됩니다.",
 	["Permanently adds $s1 hit rating to a chest item.\nThis benefit is only active between level $s2 and $s3"] =
 	"가슴보호구에 영구적으로 적중도를 $s1만큼 추가합니다. 이 효과는 $s2에서 $s3 레벨 사이에만 적용됩니다.",
-	["Absorbs $s1 to $s2 shadow damage.\nLasts $s3 min."] = "$s1에서 $s2의 암흑 피해를 흡수합니다. $s3분 동안 지속됩니다.",
 	["Increases Stamina by $s1 and defense rating by $s2 for $s3 hrs.\nCounts as both a Battle and Guardian elixir. This effect persists through death."] =
 	"$s3시간 동안 체력이 $s1만큼, 방어 숙련도가 $s2만큼 증가합니다. 동시에 전투 비약 및 강화 비약으로 간주됩니다. 이 효과는 죽어도 지속됩니다.",
 	["Restores $s1 health over $s2 sec.\nMust remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Agility and $s5 Stamina.\nLasts for $s6 hour"] =
@@ -173,7 +165,6 @@ spell_desc_custom_data = {
 	"성물 아이템에 영구적으로 가속도를 $s1만큼 추가합니다. 이 효과는 $s2에서 $s3 레벨 사이에만 적용됩니다.",
 	["Restores $s1 health over $s2 sec.\nMust remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Shadow Resistence and $s5 Stamina.\nLasts for $s6 hour"] =
 	"$s2초에 걸쳐 $s1의 생명력이 회복됩니다. 음식을 먹으려면 앉아 있어야 합니다. 음식을 꾸준히 $s3초 이상 먹으면 포만감을 느끼게 되고 암흑 저항력이 $s4만큼, 체력이 $s5만큼 증가합니다. $s6시간 동안 지속됩니다.",
-	["Restores $s1 to $s2 mana."] = "$s1~$s2의 마나를 회복시킵니다.",
 	["Increases critical strike rating by $s1 and attack power by $s2 for $s3 hrs.\nCounts as both a Battle and Guardian elixir. This effect persists through death."] =
 	"$s3시간 동안 치명타 적중도가 $s1만큼, 전투력이 $s2만큼 증가합니다. 동시에 전투 비약 및 강화 비약으로 간주됩니다. 이 효과는 죽어도 지속됩니다.",
 	["Inflicts $s1 to $s2 Fire damage and incapacitates targets in a $s3 yard radius for $s4 sec.\nAny damage will break the effect. Unreliable against targets higher than level $s5"] =
@@ -231,7 +222,6 @@ spell_desc_custom_data = {
 	["Restores $s1 health over $s2 sec.\nMust remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4% Reduced Threat Generated and $s5 Spirit.\nLasts for $s6 hour"] =
 	"$s2초에 걸쳐 $s1의 생명력이 회복됩니다. 음식을 먹으려면 앉아 있어야 합니다. 음식을 꾸준히 $s3초 이상 먹으면 포만감을 느끼게 되고 위협 수준 생성량이 $s4%만큼 감소하고 정신력이 $s5만큼 증가합니다. $s6시간 동안 지속됩니다.",
 	["Restores $s1 to $s2 mana and health."] = "$s1~$s2의 마나와 생명력을 회복시킵니다.",
-	["Heal your pet for $s1 to $s2"] = "소환수의 생명력을 $s1에서 $s2만큼 회복시킵니다.",
 	["Permanently adds $s1 haste rating to a chest item.\nThis benefit is only active between level $s2 and $s3"] =
 	"가슴보호구에 영구적으로 가속도를 $s1만큼 추가합니다. 이 효과는 $s2에서 $s3 레벨 사이에만 적용됩니다.",
 	["When applied to a melee weapon it gives a $s1% chance of casting Shadow Bolt at the opponent when it hits.\nLasts $s2 minutes. Cannot be applied to items higher than level $s3"] =
@@ -246,8 +236,6 @@ spell_desc_custom_data = {
 	"$s2초에 걸쳐 $s1의 생명력이 회복됩니다. 음식을 먹으려면 앉아 있어야 합니다. 음식을 꾸준히 $s3초 이상 먹으면 포만감을 느끼게 되고 적중도가 $s4만큼, 민첩성이 $s5만큼 증가합니다. $s6시간 동안 지속됩니다.",
 	["Absorbs $s1 to $s2 nature damage.\nLasts $s3 min."] = "$s1에서 $s2의 자연 피해를 흡수합니다. $s3분 동안 지속됩니다.",
 	["\"Used by Gnomish Engineers to reinforce their creations\""] = "\"노움 기계공학자들이 발명품을 강화하는 데 사용합니다\"",
-	["$s1% chance of dealing $s2 to $s3 Fire damage on a successful melee attack."] =
-	"근접 공격이 성공했을 때 $s1%의 확률로 $s2~$s3의 화염 피해를 입힙니다.",
 	["Increases Strength by $s1 and armor penetration rating by $s2 for $s3 hrs.\nCounts as both a Battle and Guardian elixir. This effect persists through death."] =
 	"$s3시간 동안 힘이 $s1만큼, 방어구 관통력이 $s2만큼 증가합니다. 동시에 전투 비약 및 강화 비약으로 간주됩니다. 이 효과는 죽어도 지속됩니다.",
 	["Volcanic Armor ($s1/$s2)"] = "화산 갑옷 ($s1/$s2)",
@@ -257,8 +245,6 @@ spell_desc_custom_data = {
 	"$s2초에 걸쳐 $s1의 생명력이 회복됩니다. 음식을 먹으려면 앉아 있어야 합니다. 음식을 꾸준히 $s3초 이상 먹으면 포만감을 느끼게 되고 지능이 $s4만큼, 체력이 $s5만큼 증가합니다. $s6시간 동안 지속됩니다.",
 	["Permanently enchant boots to increase Spirit by $s1 Requires level $s2 or higher to gain this benefit."] =
 	"장화에 영구적으로 마법을 부여해 정신력을 $s1만큼 증가시킵니다. $s2 레벨 이상만 효과를 받을 수 있습니다.",
-	["The dynamite for Non-Engineers that nearly always gets to the target! Inflicts $s1 to $s2 Fire damage in a $s3 yard radius."] =
-	"기계공학을 익히지 않은 초보자용 다이너마이트로, 대부분 대상에게 적중합니다! $s3미터 반경에 $s1~$s2의 화염 피해를 입힙니다.",
 	["Permanently adds $s1 defense rating to an item worn on the chest, legs, hands or feet.\nRequires level $s2 or higher to gain this benefit."] =
 	"가슴이나 다리, 손, 발에 착용하는 방어구에 영구적으로 방어 숙련도를 $s1만큼 추가합니다. $s2 레벨 이상만 효과를 받을 수 있습니다.",
 	["Restores $s1 health over $s2 sec.\nMust remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Armor Penetration Rating and $s5 Agility.\nLasts for $s6 hour"] =
@@ -386,1231 +372,1175 @@ spell_desc_custom_data = {
 	"장화에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다. 효과를 받으려면 $s2 이상의 레벨이 필요합니다.",
 	["Permanently enchant a cloak to give $s1 additional armor. Requires level $s2 or higher to gain this benefit."] =
 	"망토에 영구적으로 마법을 부여하여 방어도를 $s1만큼 추가로 증가시킵니다. 효과를 받으려면 $s2 이상의 레벨이 필요합니다.",
-	
-	
-	
-	
-    ["When struck in combat has a $s1% chance to make you invulnerable to melee damage for $s2 sec. This effect can only occur once every $s3 sec."] =
-    "전투 중 피격 시 $s1% 확률로 $s2초 동안 근접 공격에 면역이 됩니다. 이 효과는 $s3초마다 한 번씩만 발동합니다.",
-    ["Increases your attack speed by $s1% for $s2 sec."] = "공격 속도가 $s1%만큼 증가합니다. 지속시간 $s2초.",
-    ["Teaches you how to make an Arcanite Champion."] = "용사의 아케이나이트검을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Chimeric Gloves."] = "키메라 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Polished Steel Boots."] = "빛나는 강철 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Mantle of the Timbermaw."] = "나무구렁일족 어깨보호대를 만드는 방법을 배웁니다.",
-    ["All spell damage taken is reduced by $s1%."] = "받는 모든 주문 피해가 $s1%만큼 감소합니다.",
-    ["Teaches you how to cook Rainbow Fin Albacore."] = "무지개날개다랑어 구이를 요리하는 방법을 배웁니다.",
-    ["Your healing spells have a chance to ward the target, absorbing $s1 to $s2 damage for $s3 sec."] =
-    "치유 주문 사용 시 일정 확률로 대상에게 수호물을 부여하여 $s3초 동안 $s1 ~ $s2의 피해를 흡수합니다.",
-    ["Teaches you how to make Magical Components."] = "마법 부품을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Murloc Fin Soup."] = "멀록 지느러미 수프를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to cook a delicious Giant Clam Scorcho."] = "맛있는 대합 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make Golden Scale Boots."] = "황금 미늘 장화를 만드는 방법을 배웁니다.",
-    ["Increases reputation gained with the Thorium Brotherhood by $s1% for $s2 hour."] =
-    "$s2시간 동안 토륨 대장조합 평판 획득량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Thorium Shield Spike."] = "토륨 방패 스파이크를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft an Ironfeather Breastplate."] = "무쇠깃털 흉갑을 만드는 방법을 배웁니다.",
-    ["Increases damage done by Holy spells and effects by up to $s1"] = "신성 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Runed Copper Breastplate."] = "구리 룬문자 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Goblin Jumper Cables."] = "고블린 점퍼 케이블을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Detect Lesser Invisibility."] = "하급 투명체 감지의 비약을 만드는 방법을 배웁니다.",
-    ["Increases your resistance to all schools of magic by $s1 for $s2 min. Guardian Elixir."] =
-    "$s2분 동안 모든 계열의 마법 저항력이 $s1만큼 증가합니다. 수호의 비약.",
-    ["Teaches you how to permanently enchant a melee weapon to sometimes empower the wielding matey, increasing agility by $s1 and parry chance by $s2%."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 무기 장착자를 강화하여 민첩성을 $s1만큼, 무기 막기 확률을 $s2%만큼 증가시킵니다.",
-    ["Smite now also decreases the damage of the target's next attack by $s1"] = "성스러운 일격이 대상의 다음 공격 피해를 $s1만큼 감소시킵니다.",
-    ["Teaches you how to make a Silvered Bronze Breastplate."] = "은도금한 청동 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Rubedo."] = "루베도를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Lobster Stew."] = "바닷가재 스튜를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Superior Mana Potion."] = "최상급 마나 물약을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 생명력을 회복시킵니다.",
-    ["Teaches you how to cook Poached Sunscale Salmon."] = "삶은 해비늘연어를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Heavy Silk Bandage."] = "두꺼운 비단 붕대를 만드는 방법을 배웁니다.",
-    ["Your attacks against most pirates have a chance to demoralize them, decreasing their attack power by $s1 for $s2 sec."] =
-    "대부분의 해적을 공격 시 일정 확률로 사기를 꺾어 $s2초 동안 전투력을 $s1만큼 감소시킵니다.",
-    ["Teaches you how to permanently enchant a melee weapon to often strike for $s1 additional fire damage."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 $s1의 추가 화염 피해를 입히도록 합니다.",
-    ["Increases healing done by Rejuvenation by up to $s1"] = "회복 주문의 치유량이 최대 $s1만큼 증가합니다.",
-    ["Your friendly healing spells have a chance to deal $s1 to $s2 damage to the target and increase their attack power by $s3 for $s4 sec."] =
-    "아군에게 치유 주문 사용 시 일정 확률로 대상에게 $s1 ~ $s2의 피해를 입히고 $s4초 동안 전투력을 $s3만큼 증가시킵니다.",
-    ["Teaches you how to cook a Strider Stew."] = "타조 스튜를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Solid Iron Maul."] = "튼튼한 철제 마울을 만드는 방법을 배웁니다.",
-    ["Sends a shadowy bolt at the enemy causing $s1 Shadow damage. Deals $s2% increased damage to members of the Scarlet Crusade."] =
-    "적에게 암흑의 화살을 날려 $s1의 암흑 피해를 입힙니다. 붉은십자군 일원에게는 $s2%만큼 증가된 피해를 입힙니다.",
-    ["Teaches you how to make a Purification Potion."] = "정화 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Runed Mithril Hammer."] = "룬문자 미스릴 해머를 만드는 방법을 배웁니다.",
-    ["Reduces the mana cost of Fire totems by $s1%"] = "불의 토템의 마나 소비량이 $s1%만큼 감소합니다.",
-    ["Teaches you how to make a Delicate Arcanite Converter."] = "정교한 아케이나이트 변환기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Mageweave Bandage."] = "마법 붕대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Small Seaforium Charge."] = "소형 시포리움 폭약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Ice Deflector."] = "냉기 반사장치를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Soothing Turtle Bisque."] = "독특한 거북이 비스크를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Chimeric Boots."] = "키메라 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Crude Philosopher Stone."] = "조잡한 현자의 돌을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase Intellect by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 지능을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Truesilver Transformer."] = "진은 변환기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Robe of the Archmage."] = "대마법사의 로브를 만드는 방법을 배웁니다.",
-    ["Blasts a target for $s1 Fire damage and increases damage done to target by Fire damage by $s2 for $s3 sec."] =
-    "대상에게 $s1의 화염 피해를 입히고 $s3초 동안 화염 마법에 받는 피해를 $s2만큼 증가시킵니다.",
-    ["Teaches you how to make a Lobster Roll."] = "바닷가재 롤을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Dawn Treaders."] = "여명의 가죽장화를 만드는 방법을 배웁니다.",
-    ["Increases your Attack Power by $s1 for every $s2 armor you have."] = "방어도 $s2당 전투력이 $s1만큼 증가합니다.",
-    ["Your failed attacks or spells have a chance to improve your chance to hit with melee and ranged attacks by $s1% and spells by $s2%, and decrease the chance that your attacks will be dodged or parried by $s3%. Lasts $s4 sec."] =
-    "공격이나 주문 실패 시 일정 확률로 $s4초 동안 근접 및 원거리 공격 적중률이 $s1%, 주문 적중률이 $s2%만큼 증가하고, 적이 공격을 회피하거나 무기 막기할 확률이 $s3%만큼 감소합니다.",
-    ["Increases Spirit by $s1, but decreases Intelligence by $s2 for $s3 min. Smoooooth."] =
-    "$s3분 동안 정신력이 $s1만큼 증가하지만 지능은 $s2만큼 감소합니다. 아주 부드럽게요.",
-    ["Heal your pet for $s1 to $s2"] = "소환수의 생명력을 $s1 ~ $s2만큼 회복시킵니다.",
-    ["Teaches you how to make a Lizard King's Hide."] = "도마뱀 왕의 가죽을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Free Action Potion."] = "자유 의지의 물약을 만드는 방법을 배웁니다.",
-    ["Attaches a counterweight to a two-handed sword, mace, axe or polearm making it $s1% faster."] =
-    "양손 도검, 철퇴, 도끼, 장창류에 평형추를 달아 공격 속도를 $s1%만큼 증가시킵니다.",
-    ["Teaches you how to craft Thick Murloc Armor."] = "두꺼운 멀록비늘 갑옷을 만드는 방법을 배웁니다.",
-    ["Inflicts $s1 to $s2 Fire damage and stuns targets in a $s3 yard radius for $s4 sec. Any damage will break the effect."] =
-    "$s3미터 반경 내의 대상들에게 $s1 ~ $s2의 화염 피해를 입히고 $s4초 동안 기절시킵니다. 피해를 입으면 효과가 사라집니다.",
-    ["Teaches you how to make a Red Firework."] = "붉은 폭죽을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Fire Resistance and $s5 Stamina for $s6 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6분 동안 화염 저항력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
-    ["Teaches Frost Ward (Rank $s1)."] = "냉기계 수호 ($s1 레벨) 주문을 배웁니다.",
-    ["Your Healing Wave and Lesser Healing Wave spells have a $s1% additional chance to critically heal."] =
-    "치유의 물결 및 하급 치유의 물결 주문이 극대화 효과를 낼 확률이 추가로 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Radiant Belt."] = "찬란하게 빛나는 허리띠를 만드는 방법을 배웁니다.",
-    ["Corrosive acid that deals $s1 Nature damage every $s2 sec and lowers target's armor by $s3 for $s4 sec."] =
-    "부식성 산으로 대상을 공격하여 $s4초 동안 $s2초마다 $s1의 자연 피해를 입히고 방어도를 $s3만큼 감소시킵니다.",
-    ["Restores $s1 to $s2 health and $s3 to $s4 mana."] = "$s1 ~ $s2의 생명력과 $s3 ~ $s4의 마나를 회복시킵니다.",
-    ["Teaches you how to craft Nightscape Shoulders."] = "밤하늘 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Restores $s1 health and $s2 mana over $s3 sec. Must remain seated while eating. If you spend at least $s4 seconds eating you will become well fed and gain $s5 Mana every $s6 seconds for $s7 min."] =
-    "$s3초에 걸쳐 $s1의 생명력과 $s2의 마나를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s4초 이상 음식을 먹으면 포만감을 느껴 $s7분 동안 $s6초마다 $s5의 마나를 회복합니다.",
-    ["Prevents up to $s1 damage done by each physical or magical attack for $s2 hour. Guardian Elixir."] =
-    "$s2시간 동안 각각의 물리 및 마법 공격으로 받는 피해를 최대 $s1만큼 방지합니다. 수호의 비약.",
-    ["Teaches you how to summon this companion."] = "이 애완동물을 소환하는 방법을 배웁니다.",
-    ["Teaches you how to make a Frost Tiger Blade."] = "빙호검을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Steel Weapon Chain."] = "강철 무기 사슬을 만드는 방법을 배웁니다.",
-    ["Reflects Fire spells back at their caster for $s1 sec."] = "$s1초 동안 화염 주문을 시전자에게 반사합니다.",
-    ["Teaches you how to make the Ebon Hand."] = "칠흑의 손을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Giants."] = "거인의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Heavy Mithril Helm."] = "견고한 미스릴 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Greater Shadow Protection Potion."] = "상급 암흑 보호 물약을 만드는 방법을 배웁니다.",
-    ["Increases reputation gained with the Argent Dawn by $s1% for $s2 hour."] = "$s2시간 동안 은빛 여명회 평판 획득량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Firework Launcher."] = "폭죽 발사대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Green Whelp Armor."] = "새끼 녹색용 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Chimeric Leggings."] = "키메라 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make EZ-Thro Dynamite."] = "초보자용 다이너마이트를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Whirling Wind."] = "회오리 바람의 비약을 만드는 방법을 배웁니다.",
-    ["Tenderize a humanoid or beast corpse."] = "인간형이나 야수의 시체를 방망이질합니다.",
-    ["Teaches you how to make Dark Iron Plate."] = "검은무쇠 판금 갑옷을 만드는 방법을 배웁니다.",
-    ["Replaces the fishing line on your fishing pole with a high test eternium line."] = "낚싯대의 낚싯줄을 고급 이터늄 낚싯줄로 교체합니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. Also restores $s3 health every $s4 seconds for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. 또한 $s5분 동안 $s4초마다 $s3의 생명력을 회복합니다.",
-    ["Your next $s1 damage or healing spells cast within $s2 seconds will grant a bonus of up to $s3 damage and up to $s4 healing, stacking up to $s5 times. Expires after $s6 damage or healing spells or $s7 seconds, whichever occurs first."] =
-    "$s2초 안에 시전하는 다음 $s1회의 공격 또는 치유 주문 사용 시, 공격력이 최대 $s3, 치유량이 최대 $s4만큼 증가하는 보너스를 얻습니다. 이 효과는 최대 $s5번까지 중첩됩니다. 공격 및 치유 주문을 $s6회 시전하거나 $s7초가 지나면 사라집니다.",
-    ["Teaches you how to make an Elixir of Dazzling Light."] = "눈부신 빛의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Runic Leather Armor."] = "룬문자 가죽 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Dark Iron Gauntlets."] = "검은무쇠 건틀릿을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Stamina and Spirit for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 체력과 정신력이 $s4만큼 증가합니다.",
-    ["Teaches you how to cook a Blood Sausage."] = "선지 소시지를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Swift Boots."] = "신속의 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant chest armor to increase all stats by $s1"] =
-    "가슴보호구에 영구적으로 마법을 부여하여 모든 능력치를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to craft Frostsaber Boots."] = "눈호랑이 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lesser Stoneshield Potion."] = "하급 돌방패 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Golden Scale Coif."] = "황금 미늘 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Ghostweave Pants."] = "유령매듭 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Flask of Chromatic Resistance."] = "마력 저항의 영약을 만드는 방법을 배웁니다.",
-    ["$s1% chance of dealing $s2 to $s3 Nature damage on a successful melee attack."] =
-    "근접 공격 적중 시 $s1% 확률로 $s2 ~ $s3의 자연 피해를 입힙니다.",
-    ["Teaches you how to make Strong Anti-Venom."] = "강한 해독제를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Spellpower Goggles Xtreme."] = "초강력 화력 고글을 만드는 방법을 배웁니다.",
-    ["$s1% chance of dealing $s2 to $s3 Fire damage on a successful melee attack."] =
-    "근접 공격 적중 시 $s1% 확률로 $s2 ~ $s3의 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Gnomish Cloaking Device."] = "노움 은폐 장치를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Luring."] = "유인의 비약을 만드는 방법을 배웁니다.",
-    ["Absorbs $s1 to $s2 fire damage. Lasts $s3 hour."] = "$s1 ~ $s2의 화염 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Increases your damage dealt against other players by $s1%."] = "다른 플레이어에게 입히는 피해가 $s1%만큼 증가합니다.",
-    ["Swap all of your current health for up to $s1 of your missing health. Requires a Grombolar Soulstone."] =
-    "그롬볼라의 영혼석을 소모하여, 현재 생명력을 잃은 생명력으로 최대 $s1까지 전환합니다.",
-    ["Teaches you how to make an Elixir of Giant Growth."] = "성장의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Felcloth Hood."] = "지옥매듭 두건을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Masterwork Target Dummy."] = "일급 표적 허수아비를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Nature Protection Potion."] = "자연 보호 물약을 만드는 방법을 배웁니다.",
-    ["Shields the wielder from physical damage, absorbing $s1 to $s2 damage. Lasts $s3 sec."] =
-    "착용자를 물리 피해로부터 보호하여 $s1 ~ $s2의 피해를 흡수합니다. 지속시간 $s3초.",
-    ["Teaches you how to transmute Essence of Earth into Living Essence."] = "대지의 정수를 생명의 정수로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to cook a Seasoned Wolf Kabob."] = "양념 늑대 케밥을 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make Goblin Rocket Fuel."] = "고블린 로켓 연료를 만드는 방법을 배웁니다.",
-    ["Hitting an enemy with Mortal Strike reduces the cooldown of Bladestorm by $s1 seconds. Reduces the Rage cost of Whirlwind by $s2"] =
-    "적에게 죽음의 일격을 적중시키면 칼날폭풍의 재사용 대기시간이 $s1초만큼 감소합니다. 소용돌이의 분노 소비량이 $s2만큼 감소합니다.",
-    ["Teaches you how to make a Small Green Rocket."] = "작은 녹색 폭죽을 만드는 방법을 배웁니다.",
-    ["Increases damage done from spells by up to $s1 for $s2 hour."] = "$s2시간 동안 주문의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Reduces your chance to be dodged or parried with swords by $s1%."] = "도검 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
-    ["Increases damage and healing done by magical spells and effects by up to $s1 and increases your Intellect by $s2 for $s3 sec."] =
-    "$s3초 동안 마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가하고 지능이 $s2만큼 증가합니다.",
-    ["Lets you walk on water for $s1 min. Guardian Elixir."] = "$s1분 동안 수면을 걸을 수 있습니다. 수호의 비약.",
-    ["Increases damage done by Fire spells and effects by up to $s1"] = "화염 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to make Heavy Timbermaw Boots."] = "튼튼한 나무구렁 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Firework Cluster Launcher."] = "연발탄 발사대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Deadly Bronze Poniard."] = "예리한 청동 단검을 만드는 방법을 배웁니다.",
-    ["Places the Goblin Land Mine on the ground. It will explode for $s1 to $s2 fire damage the next time a hostile creature passes near it. The mine has a duration of $s3 min."] =
-    "고블린 지뢰를 지면에 설치합니다. 적대적인 생물이 근처를 지나가면 폭발하여 $s1 ~ $s2의 화염 피해를 입힙니다. 지뢰는 $s3분 동안 지속됩니다.",
-    ["Teaches you how to make a Greater Arcane Elixir."] = "상급 신비의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase Strength by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase its damage by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 무기 공격력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to cook Smoked Bear Meat."] = "곰고기 숯불구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Staff of the Cursed Seer."] = "저주받은 예언자의 지팡이를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Holy Shield."] = "신성 보호막을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Mooncloth Shoulders."] = "달빛매듭 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Crimson Silk Cloak."] = "심홍색 비단 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Red Whelp Gloves."] = "새끼 붉은용 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Thorium Helm."] = "토륨 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to have a chance of stunning and doing additional damage against demons."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 악마를 기절시키고 추가 피해를 입힐 수 있게 합니다.",
-    ["Chance to strike your target with a Frost Arrow for $s1 to $s2 Frost damage."] =
-    "공격 시 일정 확률로 대상에게 냉기 화살을 날려 $s1 ~ $s2의 냉기 피해를 입힙니다.",
-    ["Teaches you how to sew a Gray Woolen Robe."] = "회색 양모 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase its damage to elementals by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 정령에게 입히는 피해를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to cook Slitherskin Mackerel."] = "줄무늬고등어 구이를 요리하는 방법을 배웁니다.",
-    ["Reduces the energy cost of Rake and Tiger's Fury by $s1"] = "갈퀴 발톱과 맹공격의 기력 소비량이 $s1만큼 감소합니다.",
-    ["Teaches you how to make a Lava Gauntlets."] = "용암 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Timbermaw Brawlers."] = "나무구렁일족 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Mooncloth Circlet."] = "달빛매듭 머리장식을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Barkskin Trousers."] = "나무껍질 바지를 만드는 방법을 배웁니다.",
-    ["Gives invisibility for $s1 sec. It can only be used every $s2 minutes."] =
-    "$s1초 동안 투명화 상태가 됩니다. 이 효과는 $s2분마다 한 번씩만 사용할 수 있습니다.",
-    ["Summons an Alarm-O-Bot for $s1 minutes that occasionally sends out a pulse that detects nearby stealthy or invisible enemies."] =
-    "$s1분 동안 자동경보기를 소환합니다. 경보기는 주기적으로 파동을 내보내 주변의 은신 및 투명 상태인 적을 감지해 냅니다.",
-    ["Teaches you how to cook Rockscale Cod."] = "돌비늘대구 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Dark Iron Bomb."] = "검은무쇠 폭탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Thorium Armor."] = "토륨 갑옷을 만드는 방법을 배웁니다.",
-    ["Target's melee attack power is reduced by $s1 for $s2 sec."] = "$s2초 동안 대상의 근접 전투력이 $s1만큼 감소합니다.",
-    ["Teaches you how to make an Elixir of the Sages."] = "현인의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Hide of the Wild."] = "야생의 장막을 만드는 방법을 배웁니다.",
-    ["Increases your movement speed by $s1%."] = "이동 속도가 $s1%만큼 증가합니다.",
-    ["Teaches you how to craft a Volcanic Breastplate."] = "화산 흉갑을 만드는 방법을 배웁니다.",
-    ["When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard."] =
-    "영혼의 조각을 얻을 때 $s1% 확률로 추가 영혼의 조각을 생성합니다.",
-    ["Teaches you how to sew a White Bandit Mask."] = "하얀 산적 복면을 만드는 방법을 배웁니다.",
-    ["Fade now also grants you a $s1% chance to dodge attacks."] = "소실 사용 시 추가로 회피율이 $s1%만큼 증가합니다.",
-    ["Teaches you how to craft a Shifting Cloak."] = "변화의 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a cloak to increase stealth."] = "망토에 영구적으로 마법을 부여하여 은신 능력을 증가시킵니다.",
-    ["Teaches you how to make a Robe of Dazzling Light."] = "눈부신 빛의 로브를 만드는 방법을 배웁니다.",
-    ["Activate a Blue Sigil."] = "푸른색 인장 활성화",
-    ["Teaches you how to cook Sagefish Delight."] = "총명어 별미를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Swift Flight Bracers."] = "날쌘비행 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Fire Resistance."] = "화염 저항의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Woodlands Diplomacy."] = "밀림의 외교 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Malistar's Revenge."] = "말리스터의 복수 방패를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Carrion Surprise."] = "고기말이 별미를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant chest armor to increase mana by $s1"] =
-    "가슴보호구에 영구적으로 마법을 부여하여 마나를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make an Iron Counterweight to help balance a two-handed weapon."] =
-    "양손 무기의 무게 중심을 잡아주는 철제 평형추를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lens of Kajal."] = "카잘의 렌즈를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Green Firework."] = "녹색 폭죽을 만드는 방법을 배웁니다.",
-    ["Decreases your damage taken from other players by $s1%."] = "다른 플레이어에게 받는 피해가 $s1%만큼 감소합니다.",
-    ["Cures all diseases and neutralizes all poisons."] = "모든 질병을 치료하고 모든 독을 해독합니다.",
-    ["Teaches you how to make a Lava Boots."] = "용암 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Red Linen Robe."] = "붉은색 리넨 로브를 만드는 방법을 배웁니다.",
-    ["Diseases target enemy for $s1 Nature damage every $s2 sec for $s3 sec."] =
-    "적을 질병에 감염시켜 $s3초 동안 $s2초마다 $s1의 자연 피해를 입힙니다.",
-    ["Teaches you how to permanently enchant a melee weapon to often heal for $s1 to $s2 and increase Strength by $s3 for $s4 sec. when attacking in melee. Has a reduced effect for players above level $s5"] =
-    "근접 무기에 영구적으로 마법을 부여하여 근접 공격 시 높은 확률로 $s1 ~ $s2의 생명력을 회복하고 $s4초 동안 힘을 $s3만큼 증가시킵니다. $s5레벨 이상의 플레이어에게는 효과가 감소합니다.",
-    ["Teaches you how to make a Black Blood Pendant."] = "검은 피 펜던트를 만드는 방법을 배웁니다.",
-    ["Blasts up to $s1 targets for $s2 to $s3 Nature damage."] = "최대 $s1명의 대상에게 $s2 ~ $s3의 자연 피해를 입힙니다.",
-    ["Poisons target for $s1 Nature damage every $s2 sec for $s3 sec."] = "대상을 독에 감염시켜 $s3초 동안 $s2초마다 $s1의 자연 피해를 입힙니다.",
-    ["Teaches you how to make a Enchanted Philosopher Stone."] = "마력 깃든 현자의 돌을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Brightcloth Pants."] = "빛매듭 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to summon this mount."] = "이 탈것을 소환하는 방법을 배웁니다.",
-    ["Knock back all enemies within $s1 yards. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
-    "반경 $s1미터 내의 모든 적을 밀쳐냅니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
-    ["Your attacks leave a bleed effect on the target, dealing $s1 damage and stacking up to $s2 times."] =
-    "공격 시 대상에게 출혈 효과를 남겨 $s1의 피해를 입힙니다. 최대 $s2번까지 중첩됩니다.",
-    ["Improves your chance to hit with melee and ranged attacks by $s1%."] = "근접 및 원거리 공격의 적중률이 $s1%만큼 증가합니다.",
-    ["Your attacks and spells have a chance to increase your damage done by magical spells and effects by $s1 for $s2 seconds. This effect can only occur during Night."] =
-    "공격이나 주문 사용 시 일정 확률로 $s2초 동안 마법 주문 및 효과의 공격력이 $s1만큼 증가합니다. 이 효과는 밤에만 발동합니다.",
-    ["Teaches you how to sew Reinforced Woolen Shoulders."] = "질긴 양모 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Tender Wolf Steak."] = "연한 늑대 스테이크를 요리하는 방법을 배웁니다.",
-    ["While you are in an area touched by the Firelord, your attack power is increased by $s1"] =
-    "불의 군주의 기운이 닿는 지역에 있는 동안 전투력이 $s1만큼 증가합니다.",
-    ["Absorbs $s1 to $s2 holy damage. Lasts $s3 hour."] = "$s1 ~ $s2의 신성 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Teaches you how to make Shadow Goggles."] = "그림자 고글을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Egg Nog."] = "에그노그를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Nightfall."] = "일몰을 만드는 방법을 배웁니다.",
-    ["Teaches Ferocious Bite (Rank $s1)."] = "흉포한 이빨 ($s1 레벨) 주문을 배웁니다.",
-    ["Teaches you how to sew Boots of the Enchanter."] = "마법부여사의 장화를 만드는 방법을 배웁니다.",
-    ["Divine Protection and Divine Shield now also bless nearby party members, reducing their damage taken by $s1% for as long as you are shielded from harm."] =
-    "신의 가호와 천상의 보호막이 주변 파티원들에게도 축복을 내려 피해에 면역이 되는 시간 동안 파티원이 받는 피해를 $s1%만큼 감소시킵니다.",
-    ["Teaches you how to make a Red Rocket Cluster."] = "빨간색 연발탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Mighty Iron Hammer."] = "거대한 철제 해머를 만드는 방법을 배웁니다.",
-    ["Permanently adds $s1 nature resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 자연 저항력을 $s1만큼 증가시킵니다.",
-    ["Causing damage to an enemy with or taking damage from Shadow Word: Death now gives your Mind Blast a $s1% increased chance to critically strike. Lasts $s2 sec. Stacks up to $s3 times."] =
-    "어둠의 권능: 죽음으로 적에게 피해를 입히거나 자신이 피해를 입으면 $s2초 동안 정신 분열의 극대화 확률이 $s1%만큼 증가합니다. 이 효과는 최대 $s3번까지 중첩됩니다.",
-    ["Cures up to $s1 diseases."] = "최대 $s1개의 질병을 치료합니다.",
-    ["Teaches you how to make a smoking heart of the mountain."] = "연기나는 산의 정수를 만드는 방법을 배웁니다.",
-    ["Imbiber is immune to physical attacks for the next $s1 sec."] = "복용한 대상은 다음 $s1초 동안 물리 공격에 면역이 됩니다.",
-    ["Teaches you how to make a Bone Meal."] = "뼛가루를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Heavy Leather Ball."] = "무거운 가죽 공을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Lava Belt."] = "용암 허리띠를 만드는 방법을 배웁니다.",
-    ["Absorbs $s1 to $s2 frost damage. Lasts $s3 hour."] = "$s1 ~ $s2의 냉기 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Teaches you how to make a Major Healing Potion."] = "일급 치유 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Mithril Scale Shoulders."] = "미스릴 미늘 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Reduces your chance to be dodged or parried with maces by $s1%."] = "철퇴 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you eat for $s3 seconds will also increase your Agility by $s4 for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 $s5분 동안 민첩성이 $s4만큼 증가합니다.",
-    ["Teaches you how to make a Dark Iron Rifle."] = "검은무쇠 소총을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Runecloth Gloves."] = "룬매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook up some Hot Lion Chops."] = "매운 사자 고기를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft a Big Voodoo Mask."] = "부두교 가면을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Flarecore Mantle."] = "화염핵 어깨보호대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Master Engineer's Goggles."] = "전문 기술자의 고글을 만드는 방법을 배웁니다.",
-    ["Teaches Prayer of Shadow Protection (Rank $s1)."] = "암흑 보호의 기원 ($s1 레벨) 주문을 배웁니다.",
-    ["Teaches you how to make a Runed Arcanite Rod."] = "룬문자 아케이나이트 마법막대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase herbalism skill by $s1"] =
-    "장갑에 영구적으로 마법을 부여하여 약초채집 숙련도를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew Red Mageweave Gloves."] = "붉은 마법매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Shadowskin Gloves."] = "암흑가죽 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Succulent Pork Ribs."] = "육즙이 많은 돼지 갈비를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Hammer of the Titans."] = "티탄의 망치를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Stormshroud Armor."] = "폭풍안개 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Mithril Mechanical Dragonling."] = "소형 미스릴 기계용을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a cloak to increase all resistances by $s1"] =
-    "망토에 영구적으로 마법을 부여하여 모든 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to summon Peddlefeet."] = "덜렁발을 소환하는 방법을 배웁니다.",
-    ["Teaches you how to make a Revantusk Disguise."] = "레반투스 위장복을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Green Silk Armor."] = "녹색 비단 갑옷을 만드는 방법을 배웁니다.",
-    ["When applied to a melee weapon it gives a $s1% chance of casting Frostbolt at the opponent when it hits. Lasts $s2 minutes."] =
-    "근접 무기에 바르면 공격 적중 시 $s1% 확률로 적에게 얼음 화살을 발사합니다. 지속시간 $s2분.",
-    ["Teaches you how to sew a Green Woolen Bag."] = "녹색 양모 자루를 만드는 방법을 배웁니다.",
-    ["Increases the damage reduction granted by Barkskin by an additional $s1%."] = "나무 껍질의 피해 감소 효과가 추가로 $s1%만큼 증가합니다.",
-    ["Teaches Conjure Food (Rank $s1)."] = "음식 창조 ($s1 레벨) 주문을 배웁니다.",
-    ["Restores $s1% of your health per second for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain Stamina and Spirit for $s4 min."] =
-    "$s2초 동안 매초 전체 생명력의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s4분 동안 체력과 정신력이 증가합니다.",
-    ["Decreases the magical resistances of your spell targets by $s1"] = "주문 대상의 마법 저항력이 $s1만큼 감소합니다.",
-    ["Teaches you how to craft Dusky Boots."] = "거무스름한 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Blackfire."] = "흑염을 만드는 방법을 배웁니다.",
-    ["Chance to strike your ranged target with a Searing Arrow for $s1 to $s2 Fire damage."] =
-    "공격 시 일정 확률로 대상에게 이글거리는 화살을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Teaches you how to make Invulnerable Mail."] = "무적의 사슬갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to transmute a Heart of Fire into three Elemental Fires."] = "불의 심장 1개를 불의 원소 3개로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to sew Felcloth Shoulders."] = "지옥매듭 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Blood-Spattered Shirt."] = "피에 얼룩진 셔츠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Eternal Wand."] = "영원의 마법봉을 만드는 방법을 배웁니다.",
-    ["Teaches you how to be an Expert Cook, allowing a maximum of $s1 cooking skill."] =
-    "숙련 요리 방법을 배워 요리 숙련도를 최대 $s1까지 올릴 수 있게 됩니다.",
-    ["Teaches you how to sew a Green Holiday Shirt."] = "녹색 축제일 셔츠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Gift of Arthas."] = "아서스의 선물을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Spider Belt."] = "거미줄 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Dark Leather Tunic."] = "암색 가죽 튜닉을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Brightcloth Gloves."] = "빛매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Blue Rocket Cluster."] = "파란색 연발탄을 만드는 방법을 배웁니다.",
-    ["+$s1 Attack Power when fighting Demons."] = "악마와 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Teaches you how to make Powerful Anti-Venom."] = "강력한 해독제를 만드는 방법을 배웁니다.",
-    ["During the night your spells have a chance to Moonfire your target, dealing Arcane damage over time."] =
-    "밤에는 주문 사용 시 일정 확률로 대상에게 달빛 섬광을 시전하여 지속적인 비전 피해를 입힙니다.",
-    ["Teaches you how to make Golden Scale Leggings."] = "황금 미늘 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Staff of the Moon."] = "달의 지팡이를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Warbear Harness."] = "전투곰 멜빵을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Dark Iron Leggings."] = "검은무쇠 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Mighty Rage Potion."] = "강력한 분노의 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Heavy Earthen Gloves."] = "두꺼운 대지의 장갑을 만드는 방법을 배웁니다.",
-    ["Chance on landing a damaging spell to deal $s1 Shadow damage and restore $s2 mana to you."] =
-    "공격 주문 적중 시 일정 확률로 $s1의 암흑 피해를 입히고 자신의 마나를 $s2만큼 회복시킵니다.",
-    ["Teaches you how to make Blackguard."] = "검은 수호자를 만드는 방법을 배웁니다.",
-    ["Your spells and abilities have a chance to grant $s1 Spirit and $s2 Mana per $s3 sec for $s4 sec."] =
-    "주문과 능력이 일정 확률로 $s4초 동안 정신력을 $s1만큼 증가시키고 $s3초마다 $s2의 마나를 회복시킵니다.",
-    ["Permanently adds $s1 shadow resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 암흑 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to craft Guardian Armor."] = "수호 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew an Enchanted Mageweave Pouch."] = "마력 깃든 마법매듭 가방을 만드는 방법을 배웁니다.",
-    ["+$s1 ranged Attack Power."] = "원거리 전투력 $s1 증가.",
-    ["Teaches you how to make a Thorium Belt."] = "토륨 허리띠를 만드는 방법을 배웁니다.",
-    ["+$s1 Frost and Fire Resistance."] = "냉기 및 화염 저항력 $s1 증가.",
-    ["Teaches you how to cook a Tasty Lion Steak."] = "맛있는 사자 스테이크를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Black Dragonscale Shoulders."] = "검은용비늘 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew an Admiral's Hat."] = "함장 모자를 만드는 방법을 배웁니다.",
-    ["Chance on melee attack to increase your damage and healing done by magical spells and effects by up to $s1 for $s2 sec."] =
-    "근접 공격 시 일정 확률로 $s2초 동안 마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가합니다.",
-    ["When applied to a melee weapon it gives a $s1% chance of casting Shadowbolt III at the opponent when it hits. Lasts $s2 minutes."] =
-    "근접 무기에 바르면 공격 적중 시 $s1% 확률로 적에게 어둠의 화살 III을 발사합니다. 지속시간 $s2분.",
-    ["Increases spell damage by up to $s1 for $s2 hour. Battle Elixir."] = "$s2시간 동안 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to make a Major Mana Potion."] = "일급 마나 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Heartseeker."] = "심장추적자를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Fireproof Overwear."] = "방화용 속옷을 만드는 방법을 배웁니다.",
-    ["When struck in combat has a $s1% chance of dealing $s2 to $s3 Fire damage to all targets around you."] =
-    "전투 중 피격 시 $s1% 확률로 주위의 모든 적에게 $s2 ~ $s3의 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Wildvine potion."] = "야생덩굴 물약을 만드는 방법을 배웁니다.",
-    ["Deals $s1 Shadow damage every $s2 sec for $s3 sec. All damage done is then transferred to the caster."] =
-    "$s3초 동안 $s2초마다 $s1의 암흑 피해를 입힙니다. 입힌 피해만큼 시전자의 생명력이 회복됩니다.",
-    ["Teaches you how to make a Ghostweave Boots."] = "유령매듭 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Kodo Hide Bag."] = "코도 가죽 가방을 만드는 방법을 배웁니다.",
-    ["Teleports the user to the Arcanaeum at Teles'aran in Winterspring."] = "여명의 설원 텔레스아란에 있는 아르카나에움으로 사용자를 순간이동시킵니다.",
-    ["Teaches you how to make a Red Dragonscale Leggings."] = "붉은용비늘 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Filet of Redgill."] = "붉은퉁돔 통구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Mechanical Squirrel Box."] = "기계 다람쥐 상자를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Alarm-o-Bot."] = "자동경보기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Flarecore Gloves."] = "화염핵 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Mithril Shield Spike."] = "미스릴 방패 스파이크를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Flask of Petrification."] = "석화의 영약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Chromatic Helm."] = "오색 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Red Woolen Boots."] = "붉은색 양모 장화를 만드는 방법을 배웁니다.",
-    ["Increases reputation gained with Timbermaw Hold by $s1% for $s2 hour."] = "$s2시간 동안 나무구렁 요새 평판 획득량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to sew Hands of Darkness."] = "암흑의 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Big Voodoo Pants."] = "부두교 바지를 만드는 방법을 배웁니다.",
-    ["Delivers a fatal wound for $s1 to $s2 damage."] = "치명적인 상처를 입혀 $s1 ~ $s2의 피해를 입힙니다.",
-    ["Allows the wearer to walk across water for $s1 sec. Any damage or shapeshift will cancel the effect."] =
-    "착용자가 $s1초 동안 수면 위를 걸을 수 있습니다. 피해를 입거나 다른 모습으로 변신하면 효과가 취소됩니다.",
-    ["Teaches you how to permanently enchant a cloak to increase shadow resistance by $s1"] =
-    "망토에 영구적으로 마법을 부여하여 암흑 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to craft Wicked Leather Armor."] = "악의의 가죽 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Heavy Scorpid Leggings."] = "두꺼운 전갈 다리보호구를 만드는 방법을 배웁니다.",
-    ["Party and raid members within $s1 yards gain $s2 additional intellect. If you are in a raid group this effect is reduced to $s3 additional intellect."] =
-    "$s1미터 내의 파티 및 공격대원의 지능이 $s2만큼 증가합니다. 공격대에 속해 있으면 이 효과는 지능이 $s3 증가하는 것으로 감소합니다.",
-    ["Envelops the caster with a Fire shield for $s1 sec and shoots a ring of fire dealing $s2 to $s3 damage to all nearby enemies."] =
-    "$s1초 동안 시전자를 화염 보호막으로 감싸고 주변의 모든 적에게 화염의 고리를 발사하여 $s2 ~ $s3의 피해를 입힙니다.",
-    ["Teaches you how to craft Warbear Woolies."] = "전투곰 다리보호구를 만드는 방법을 배웁니다.",
-    ["Occasionally during combat you will slip and fall, stunning you for $s1 seconds. When you get back up you'll be enraged, increasing your physical damage dealt by $s2 for $s3 seconds."] =
-    "전투 중 가끔 미끄러져 넘어져 $s1초 동안 기절합니다. 다시 일어나면 격노하여 $s3초 동안 물리 공격력이 $s2만큼 증가합니다.",
-    ["Increases your resistance to all schools of magic by $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death and stacks with all other resistance spells and items."] =
-    "$s2시간 동안 모든 계열의 마법 저항력이 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속되며 다른 모든 저항 주문 및 아이템과 중첩됩니다.",
-    ["Reduces the cooldown of your Grounding Totem ability by $s1 sec."] = "마법흡수 토템의 재사용 대기시간이 $s1초만큼 감소합니다.",
-    ["Teaches you how to make a Craftman's Monocle."] = "장인의 단안경을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Leggings of Dazzling Light."] = "눈부신 빛의 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Azure Silk Gloves."] = "감청색 비단 장갑을 만드는 방법을 배웁니다.",
-    ["Your attacks have a $s1% chance to increase your attack speed by $s2% for $s3 sec."] =
-    "공격 시 $s1% 확률로 $s3초 동안 공격 속도가 $s2%만큼 증가합니다.",
-    ["Teaches you how to permanently enchant bracers to increase spell power by $s1"] =
-    "손목보호구에 영구적으로 마법을 부여하여 주문력을 $s1만큼 증가시킵니다.",
-    ["Increases your movement speed by $s1% while in Bear, Cat, or Travel Form. Only active outdoors."] =
-    "곰, 표범, 치타 변신 상태일 때 이동 속도가 $s1%만큼 증가합니다. 야외에서만 적용됩니다.",
-    ["Teaches you how to craft a Big Voodoo Cloak."] = "부두교 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Tough Scorpid Helm."] = "단단한 전갈 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Chromatic Cloak."] = "오색 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Shadow Power."] = "암흑 강화의 비약을 만드는 방법을 배웁니다.",
-    ["Increase the damage of a blunt weapon by $s1 for $s2 minutes."] = "$s2분 동안 둔기류 무기의 공격력을 $s1만큼 증가시킵니다.",
-    ["Increases resistance to shadow by $s1 If an enemy strikes the imbiber, the attacker has a $s2% chance of being inflicted with disease that increases their damage taken by $s3 for $s4 min. Lasts for $s5 min. Guardian Elixir."] =
-    "암흑 저항력이 $s1만큼 증가합니다. 적이 이 물약을 복용한 사람을 공격하면 $s2% 확률로 대상에게 질병을 일으켜 $s4분 동안 받는 피해를 $s3만큼 증가시킵니다. 지속시간 $s5분. 수호의 비약.",
-    ["Teaches you how to make a Heavy Copper Longsword."] = "단단한 구리 장검을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Golden Scale Shoulders."] = "황금 미늘 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Hillman's Leather Vest."] = "산악인의 가죽 조끼를 만드는 방법을 배웁니다.",
-    ["Increases Spell Healing by $s1 for $s2 sec."] = "$s2초 동안 주문 치유량이 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Barbaric Leggings."] = "야만전사의 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant bracers to increase Stamina by $s1"] =
-    "손목보호구에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
-    ["Increases Defense by $s1 for $s2 hour."] = "$s2시간 동안 방어 숙련도가 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Purple Smoke Flare."] = "보라색 조명탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Dream Vision."] = "몽상의 비약을 만드는 방법을 배웁니다.",
-    ["Mark your current overworld location for the next $s1 hours using a Grombolar Soulstone. Use again to destroy the mark and recall yourself to its location."] =
-    "그롬볼라의 영혼석을 사용하여 다음 $s1시간 동안 현재 위치를 표시합니다. 다시 사용하면 표시를 제거하고 해당 위치로 귀환합니다.",
-    ["Transforms the target into a Leper Gnome, reducing its melee and spell damage by $s1 and its movement rate by $s2% for $s3 sec."] =
-    "대상을 오염된 노움으로 변이시켜 $s3초 동안 근접 및 주문 공격력을 $s1만큼 감소시키고 이동 속도를 $s2%만큼 감소시킵니다.",
-    ["Drains target for $s1 Shadow damage every $s2 sec and transfers it to the caster. Lasts for $s3 sec."] =
-    "대상의 생명력을 흡수하여 $s3초 동안 $s2초마다 $s1의 암흑 피해를 입히고 그만큼 시전자의 생명력을 회복시킵니다.",
-    ["+$s1 Attack Power when fighting Beasts."] = "야수와 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Teaches you how to craft a Tough Scorpid Breastplate."] = "단단한 전갈 흉갑을 만드는 방법을 배웁니다.",
-    ["Channels $s1 health into mana every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 생명력을 소비하여 마나를 회복시킵니다.",
-    ["Increased Fishing +$s1"] = "낚시 숙련도 $s1 증가",
-    ["Teaches you how to cook a Kaldorei Spider Kabob."] = "칼도레이 거미 케밥을 요리하는 방법을 배웁니다.",
-    ["Teaches you how to sew Spider Silk Slippers."] = "거미줄 덧신을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Jungle Stew."] = "밀림 스튜를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to sew Felcloth Gloves."] = "지옥매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Gemmed Copper Gauntlets."] = "보석 박힌 구리 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Steam Tonk Controller."] = "통통 전차 조종기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase skinning skill by $s1"] =
-    "장갑에 영구적으로 마법을 부여하여 무두질 숙련도를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to craft Green Dragonscale Leggings."] = "녹색용비늘 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Frost Power."] = "냉기 강화의 비약을 만드는 방법을 배웁니다.",
-    ["Attaches spurs to your boots that increase your mounted movement speed slightly."] =
-    "장화에 박차를 달아 탈것을 탔을 때 이동 속도가 약간 증가합니다.",
-    ["Heal friendly target for $s1 to $s2"] = "아군 대상의 생명력을 $s1 ~ $s2만큼 회복시킵니다.",
-    ["Teaches you how to make Black Amnesty."] = "어둠의 사절을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Barbaric Belt."] = "야만전사의 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to often steal life from the enemy and give it to the wielder. Has a reduced effect for players above level $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 적의 생명력을 훔쳐내어 장착자의 생명력을 회복합니다. $s1레벨 이상의 플레이어에게는 효과가 감소합니다.",
-    ["Teaches you how to make a Lava Bracers."] = "용암 팔보호구를 만드는 방법을 배웁니다.",
-    ["Each time you cast Flash Heal, your next Greater Heal cast within $s1 sec has its casting time reduced by $s2, stacking up to $s3 times."] =
-    "순간 치유를 시전할 때마다 $s1초 안에 시전하는 다음 상급 치유의 시전 시간이 $s2만큼 감소합니다. 이 효과는 최대 $s3번까지 중첩됩니다.",
-    ["Increases your Fishing by $s1 for $s2 hour."] = "$s2시간 동안 낚시 숙련도가 $s1만큼 증가합니다.",
-    ["Absorbs $s1 to $s2 shadow damage. Lasts $s3 hour."] = "$s1 ~ $s2의 암흑 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Reduces the mana cost of your Seal spells by $s1"] = "문장 주문의 마나 소비량이 $s1만큼 감소합니다.",
-    ["Increased Defense +$s1"] = "방어 숙련도 $s1 증가",
-    ["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 attack power and $s5 Stamina for $s6 hour."] =
-    "$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6시간 동안 전투력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
-    ["Teaches you how to craft Mongoose Boots."] = "살쾡이 장화를 만드는 방법을 배웁니다.",
-    ["Your spells and abilities have a chance to grant $s1 Agility for $s2 sec."] =
-    "주문과 능력이 일정 확률로 $s2초 동안 민첩성을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to cook up a Crispy Bat Wing."] = "바삭바삭한 박쥐 날개를 요리하는 방법을 배웁니다.",
-    ["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 spell power and $s5 Stamina for $s6 hour."] =
-    "$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6시간 동안 주문력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
-    ["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Spirit and Stamina for $s5 hour."] =
-    "$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 정신력과 체력이 $s4만큼 증가합니다.",
-    ["Teaches you how to craft Murloc Scale Bracers."] = "멀록 비늘 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Felcloth Boots."] = "지옥매듭 장화를 만드는 방법을 배웁니다.",
-    ["Sends a shadowy bolt at the enemy causing $s1 to $s2 Shadow damage."] = "적에게 암흑의 화살을 날려 $s1 ~ $s2의 암흑 피해를 입힙니다.",
-    ["During the day your melee and ranged attacks have a chance to blast your target with a pillar of flame, dealing Fire damage over time."] =
-    "낮 동안 근접 및 원거리 공격 시 일정 확률로 대상에게 불기둥을 내뿜어 지속적인 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Frost Protection Potion."] = "냉기 보호 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant boots to increase Agility by $s1"] = "장화에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Shawl of Unwarmth."] = "냉기의 숄을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health and $s2 mana over $s3 sec. Must remain seated while eating. If you spend at least $s4 seconds eating you will become well fed and gain $s5 attack power and $s6 spell power for $s7 hour."] =
-    "$s3초에 걸쳐 $s1의 생명력과 $s2의 마나를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s4초 이상 음식을 먹으면 포만감을 느껴 $s7시간 동안 전투력이 $s5만큼, 주문력이 $s6만큼 증가합니다.",
-    ["Teaches you how to make Dark Iron Bracers."] = "검은무쇠 팔보호구를 만드는 방법을 배웁니다.",
-    ["Increases the range of Hammer of Justice by $s1 yards."] = "심판의 망치 사정거리가 $s1미터만큼 증가합니다.",
-    ["Teaches you how to make Shadow Oil."] = "암흑 기름을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a two-handed melee weapon to sometimes bless the wielder with $s1 agility, $s2 armor, and $s3% dodge for $s4 seconds."] =
-    "양손 근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 $s4초 동안 무기 장착자에게 축복을 내려 민첩성을 $s1만큼, 방어도를 $s2만큼, 회피율을 $s3%만큼 증가시킵니다.",
-    ["Inflicts numbing pain that deals $s1 Nature damage every $s2 sec and increases time between target's attacks by $s3% for $s4 sec."] =
-    "마비시키는 고통을 주어 $s4초 동안 $s2초마다 $s1의 자연 피해를 입히고 대상의 공격 속도를 $s3%만큼 감소시킵니다.",
-    ["Teaches you how to make a Mithril Heavy-bore Rifle."] = "미스릴 중구경 라이플을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Arcanite Reaper."] = "아케이나이트 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a shield to increase Spirit by $s1"] =
-    "방패에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
-    ["Hamstring Rage cost reduced by $s1"] = "무력화의 분노 소비량이 $s1만큼 감소합니다.",
-    ["Teaches you how to make a Green Rocket Cluster."] = "녹색 연발탄을 만드는 방법을 배웁니다.",
-    ["Increases your Intellect by $s1 and grants you the ability to walk on water for $s2 sec."] =
-    "지능이 $s1만큼 증가하고 $s2초 동안 수면을 걸을 수 있습니다.",
-    ["Reduces your chance to be dodged or parried with sharp weapons by $s1%."] =
-    "날카로운 무기 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
-    ["Teaches you how to make a Greater Stoneshield Potion."] = "상급 돌방패 물약을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 All Resistances for $s5 minutes."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 모든 저항력이 $s4만큼 증가합니다.",
-    ["Teaches you how to make Dawn's Edge."] = "여명의 도끼를 만드는 방법을 배웁니다.",
-    ["Chance to strike your ranged target with a Flaming Cannonball for $s1 to $s2 Fire damage."] =
-    "공격 시 일정 확률로 대상에게 불타는 포탄을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Teaches you how to permanently enchant bracers to restore $s1 mana every $s2 seconds."] =
-    "손목보호구에 영구적으로 마법을 부여하여 $s2초마다 $s1의 마나를 회복시킵니다.",
-    ["Teaches you how to make Catseye Ultra Goggles."] = "고양이눈 고글을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lava Chestguard."] = "용암 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Big Voodoo Robe."] = "부두교 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Red Mageweave Vest."] = "붉은 마법매듭 조끼를 만드는 방법을 배웁니다.",
-    ["Absorbs $s1 to $s2 arcane damage. Lasts $s3 hour."] = "$s1 ~ $s2의 비전 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Shackles the target demon enemy for up to $s1 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time."] =
-    "대상 악마를 최대 $s1초 동안 속박합니다. 속박된 대상은 이동, 공격, 주문 시전을 할 수 없습니다. 피해를 입으면 속박이 풀립니다. 한 번에 하나의 대상만 속박할 수 있습니다.",
-    ["Increases Agility by $s1 and chance to get a critical hit by $s2% for $s3 hour. Battle Elixir."] =
-    "$s3시간 동안 민첩성이 $s1만큼, 치명타 적중률이 $s2%만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to craft Gloves of the Greatfather."] = "겨울 할아버지 장갑을 만드는 방법을 배웁니다.",
-    ["Shatter a Grombolar Soulstone, taking on the shape of a soul inside for $s1 hour."] =
-    "그롬볼라의 영혼석을 부수어 $s1시간 동안 내면의 영혼의 형태를 취합니다.",
-    ["Teaches you how to craft a Blue Dragonscale Breastplate."] = "푸른용비늘 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Sturdy Tackle Box."] = "튼튼한 낚시 도구 상자를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Arcane Bomb."] = "신비의 폭탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Crocolisk Gumbo."] = "악어 검보 스튜를 요리하는 방법을 배웁니다.",
-    ["Reflects Shadow spells back at their caster for $s1 sec."] = "$s1초 동안 암흑 주문을 시전자에게 반사합니다.",
-    ["Teaches you how to craft Barbaric Gloves."] = "야만전사의 장갑을 만드는 방법을 배웁니다.",
-    ["Transforms the caster to the appearance of a Revantusk Troll."] = "시전자를 레반투스 트롤의 모습으로 변신시킵니다.",
-    ["Teaches you how to make Thorium Boots."] = "토륨 장화를 만드는 방법을 배웁니다.",
-    ["When your spells critically strike you feel a sense of calm, causing your next spell within $s1 sec to cost $s2% less mana. This effect can only occur once every $s3 seconds."] =
-    "주문이 극대화 효과를 발휘하면 마음의 평온을 얻어 $s1초 안에 시전하는 다음 주문의 마나 소비량이 $s2%만큼 감소합니다. 이 효과는 $s3초에 한 번씩만 발동합니다.",
-    ["Unleash Sul on yourself and Thraze on your enemy. Sul absorbs $s1 damage, when the shield breaks it releases a burst of healing on your party, lasts $s2 min. Thraze lowers your target's Strength by $s3 and deals $s4 to $s5 Shadow damage with an additional $s6 Shadow damage over $s7 sec."] =
-    "자신에게 술을, 적에게 트라제를 방출합니다. 술은 $s1의 피해를 흡수하며 보호막이 파괴되면 파티를 강력하게 치유합니다. $s2분 동안 지속됩니다. 트라제는 대상의 힘을 $s3만큼 감소시키고 $s4 ~ $s5의 암흑 피해를 입히며 $s7초에 걸쳐 $s6의 추가 암흑 피해를 입힙니다.",
-    ["Chance to strike your ranged target with a Fire Blast for $s1 to $s2 Fire damage."] =
-    "공격 시 일정 확률로 대상에게 화염 작렬을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Fire Protection Potion."] = "화염 보호 물약을 만드는 방법을 배웁니다.",
-    ["Arcane Explosion generates $s1% less threat."] = "신비한 폭발의 위협 수준이 $s1%만큼 감소합니다.",
-    ["Permanently adds $s1 fire resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 화염 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Heavy Timbermaw Belt."] = "나무구렁 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Murloc Scale Belt."] = "멀록 비늘 허리띠를 만드는 방법을 배웁니다.",
-    ["Attempts to remove $s1 Curse, $s2 Disease and $s3 hostile Magic effect from the Imbiber."] =
-    "복용한 대상에게 걸린 $s1개의 저주, $s2개의 질병, $s3개의 적대적 마법 효과를 제거합니다.",
-    ["While applied to target weapon it increases spell damage by up to $s1 Lasts for $s2 hour."] =
-    "대상 무기에 바르면 주문 공격력이 최대 $s1만큼 증가합니다. 지속시간 $s2시간.",
-    ["Teaches you how to make a Searing Grips."] = "이글거리는 손아귀를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Small Red Rocket."] = "작은 빨간색 폭죽을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Flarecore Robe."] = "화염핵 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to transmute Essence of Undeath into Essence of Water."] = "불사의 정수를 물의 정수로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to make a Large Green Rocket Cluster."] = "큰 녹색 연발탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Sniper Scope."] = "저격용 조준경을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. Also restores $s3 Mana every $s4 seconds for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. 또한 $s5분 동안 $s4초마다 $s3의 마나를 회복합니다.",
-    ["Teaches you how to make an Invisibility Potion."] = "투명 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Dark Iron Pulverizer."] = "검은무쇠 분쇄기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Loch Frenzy Delight."] = "호수프렌지 별미를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Hardened Iron Shortsword."] = "단단한 철제 쇼트소드를 만드는 방법을 배웁니다.",
-    ["Increases spell damage by up to $s1 for $s2 min. Battle Elixir."] = "$s2분 동안 주문 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to make a Gloves of Dazzling Light."] = "눈부신 빛의 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Black Whelp Cloak."] = "새끼 검은용 망토를 만드는 방법을 배웁니다.",
-    ["Increases reputation gained with Valor's Expedition by $s1% for $s2 hour."] =
-    "$s2시간 동안 발로의 원정대 평판 획득량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Flask of Distilled Wisdom."] = "순수한 지혜의 영약을 만드는 방법을 배웁니다.",
-    ["Increases damage done by $s1 and attack speed by $s2% for $s3 sec."] = "$s3초 동안 공격력이 $s1만큼, 공격 속도가 $s2%만큼 증가합니다.",
-    ["Increases attack power by $s1 for $s2 sec. If you are swimming when you activate this item it will instead last $s3 sec."] =
-    "$s2초 동안 전투력이 $s1만큼 증가합니다. 수영 중일 때 이 아이템을 사용하면 대신 $s3초 동안 지속됩니다.",
-    ["Teaches you how to craft Devilsaur Gauntlets."] = "데빌사우루스 건틀릿을 만드는 방법을 배웁니다.",
-    ["Protects the wearer from the Mark of Kazzak."] = "카자크의 징표로부터 착용자를 보호합니다.",
-    ["Teaches you how to make Complicated Components."] = "복잡한 부품을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lesson of the Doom Lord."] = "파멸의 군주 수업을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Stronghold Gauntlets."] = "아성의 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Gnomish Universal Remote."] = "노움의 만능 원격조종기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Pristine Black Diamond Amulet."] = "온전한 검은 다이아몬드 아뮬렛을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make the Stable Flamecore Engine."] = "안정적인 화염핵 엔진을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Red Mageweave Shoulders."] = "붉은 마법매듭 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Green Silk Pack."] = "녹색 비단 배낭을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Festival Suit."] = "축제 의상을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Armor for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 방어도가 $s4만큼 증가합니다.",
-    ["Has a $s1% chance when struck in combat of increasing chance to block by $s2% for $s3 sec."] =
-    "전투 중 피격 시 $s1% 확률로 $s3초 동안 방패 막기 확률이 $s2%만큼 증가합니다.",
-    ["Channels a bolt of lightning and hurls it towards all enemies in front of the caster causing $s1 to $s2 Nature damage. The caster is then surrounded by a barrier of electricity for $s3 min."] =
-    "번개 화살을 시전하여 전방의 모든 적에게 $s1 ~ $s2의 자연 피해를 입힙니다. 그 후 $s3분 동안 전기 보호막이 시전자를 감쌉니다.",
-    ["Blasts a target for $s1 to $s2 Fire damage."] = "대상에게 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Improves your chance to hit with melee and ranged attacks by $s1% for $s2 hour."] =
-    "$s2시간 동안 근접 및 원거리 공격 적중률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Onyxia Scale Shield."] = "오닉시아 비늘 방패를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to cause your spell casts to occasionally grant the wisdom of dragons, increasing intellect by $s1 and restoring $s2 mana every $s3 seconds for $s4 seconds."] =
-    "근접 무기에 영구적으로 마법을 부여하여 주문 시전 시 일정 확률로 용의 지혜를 얻어 $s4초 동안 지능이 $s1만큼 증가하고 $s3초마다 $s2의 마나를 회복합니다.",
-    ["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 haste rating and Stamina for $s5 hour."] =
-    "$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 가속도와 체력이 $s4만큼 증가합니다.",
-    ["Teaches you how to make a Dark Iron Helm."] = "검은무쇠 투구를 만드는 방법을 배웁니다.",
-    ["Increases the duration of Retaliation and Recklessness by $s1 seconds."] = "보복과 무모한 희생의 지속시간이 $s1초만큼 증가합니다.",
-    ["Teaches you how to make Wildthorn Mail."] = "찔레가시 사슬갑옷을 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain +$s4 Defense and a $s5% chance to resist fear effects. Lasts $s6 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6분 동안 방어 숙련도가 $s4만큼, 공포 저항 확률이 $s5%만큼 증가합니다.",
-    ["Unleash a volley of frostbolts at targets within $s1 yards in front of you, dealing $s2 damage and slowing them by $s3% for $s4 sec."] =
-    "전방 $s1미터 반경 내의 적들에게 연발 얼음 화살을 발사하여 $s2의 피해를 입히고 $s4초 동안 이동 속도를 $s3%만큼 감소시킵니다.",
-    ["Teaches you how to craft Volcanic Leggings."] = "화산 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Silvered Bronze Shoulders."] = "은도금한 청동 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Soul Mirror."] = "영혼의 거울을 만드는 방법을 배웁니다.",
-    ["Attack Power increased by $s1 when fighting Dragonkin."] = "용족과 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Teaches you how to transmute Essence of Water into Essence of Undeath."] = "물의 정수를 불사의 정수로 변환하는 방법을 배웁니다.",
-    ["A protective mana shield surrounds the caster absorbing $s1 damage. While the shield holds, increases mana regeneration by $s2 every $s3 sec for $s4 min."] =
-    "마나 보호막이 시전자를 감싸 $s1의 피해를 흡수합니다. 보호막이 유지되는 동안 $s4분 동안 $s3초마다 마나 회복량이 $s2만큼 증가합니다.",
-    ["Teaches you how to craft Black Dragonscale Boots."] = "검은용비늘 장화를 만드는 방법을 배웁니다.",
-    ["Increases damage done by Frost spells and effects by up to $s1"] = "냉기 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Dusky Leather Leggings."] = "거무스름한 가죽 다리보호구를 만드는 방법을 배웁니다.",
-    ["Wounds the target for $s1 to $s2 damage and deals an additional $s3 damage every $s4 sec for $s5 sec."] =
-    "대상에게 $s1 ~ $s2의 상처를 입히고 $s5초 동안 $s4초마다 $s3의 추가 피해를 입힙니다.",
-    ["Teaches you how to make a Stratholme Saperavi."] = "스트라솔름 포도주를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Iron Diplomacy."] = "강철의 외교 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Mooncloth Bag."] = "달빛매듭 가방을 만드는 방법을 배웁니다.",
-    ["Increases the amount of charges for your Earth Shield by $s1"] = "대지의 보호막 효과가 $s1만큼 추가로 충전됩니다.",
-    ["Teaches you how to make Dark Iron Mail."] = "검은무쇠 사슬 갑옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to sometimes bless the wielder, healing you for $s1-$s2 and increasing your healing received by $s3% for $s4 seconds."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 장착자에게 축복을 내려 생명력을 $s1 ~ $s2만큼 회복시키고 $s4초 동안 받는 치유 효과를 $s3%만큼 증가시킵니다.",
-    ["Teaches you how to cook a delicious Redridge Goulash."] = "맛있는 붉은마루산 굴라시 스튜를 요리하는 방법을 배웁니다.",
-    ["Shoot a player, and Kwee Q. Peddlefeet will find them!"] = "플레이어에게 발사하면 덜렁발 큐 큐피드가 찾아갑니다!",
-    ["Teaches you how to make a Greater Catseye Elixir."] = "상급 고양이눈 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Molten Helm."] = "화산 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to transmute Essence of Fire into Essence of Earth."] = "불의 정수를 대지의 정수로 변환하는 방법을 배웁니다.",
-    ["Attaches a permanent scope to a bow, crossbow, or gun that increases its chance to hit by $s1%. Attaching this scope to a ranged weapon causes it to become soulbound."] =
-    "활, 석궁, 총에 조준경을 부착하여 적중률을 $s1%만큼 증가시킵니다. 이 조준경을 부착하면 원거리 무기가 영혼 귀속됩니다.",
-    ["Teaches you how to make Metal Armor Components."] = "금속 방어구 부품을 만드는 방법을 배웁니다.",
-    ["Increases damage done by Shadow spells and effects by up to $s1"] = "암흑 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Chromatic Gauntlets."] = "오색 건틀릿을 만드는 방법을 배웁니다.",
-    ["On dodge, block, or parry you sometimes release a shockwave slowing enemies in front of you."] =
-    "회피, 방어 또는 무기 막기 시 일정 확률로 전방의 적들을 느리게 하는 충격파를 발산합니다.",
-    ["Moonkin Form now also increases the Arcane Resistance of all party and raid members by $s1"] =
-    "달빛야수 변신 시 파티 및 공격대원의 비전 저항력이 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Fine Leather Gloves."] = "고급 가죽 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Mooncloth Vest."] = "달빛매듭 조끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Tough Scorpid Leggings."] = "단단한 전갈 다리보호구를 만드는 방법을 배웁니다.",
-    ["Increases damage done by Nature spells and effects by up to $s1"] = "자연 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["While you are in an area touched by the Firelord, your attack power and spell damage is increased by $s1"] =
-    "불의 군주의 기운이 닿는 지역에 있는 동안 전투력과 주문 공격력이 $s1만큼 증가합니다.",
-    ["Teaches you how to make Enchanted Thorium Leggings."] = "마력 깃든 토륨 다리보호구를 만드는 방법을 배웁니다.",
-    ["Increases the critical strike chance of Fire Blast, Ice Lance, and Arcane Missiles by $s1%."] =
-    "화염 작렬, 얼음창, 신비한 화살의 극대화 확률이 $s1%만큼 증가합니다.",
-    ["Chance to bathe your melee target in flames for $s1 to $s2 Fire damage."] =
-    "공격 시 일정 확률로 근접 대상에게 화염을 뒤집어씌워 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Potion of Plagueward."] = "역병막이 물약을 만드는 방법을 배웁니다.",
-    ["Afflicts you with Balefire, burning you for each stack you have. Melee damage taken has a chance to burn attackers, causing damage for every stack of Balefire you both have. Lasts $s1 min."] =
-    "지옥불의 저주에 걸려 중첩 횟수에 비례한 피해를 입습니다. 근접 피해를 입을 때마다 일정 확률로 공격자를 불태워 자신과 상대 모두에게 지옥불 중첩에 해당하는 피해를 줍니다. $s1분 지속.",
-    ["Absorbs $s1 to $s2 Fire damage. Lasts $s3 sec."] = "$s1 ~ $s2의 화염 피해를 흡수합니다. 지속시간 $s3초.",
-    ["Teaches you how to make a High Elven Shield."] = "하이 엘프 방패를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Dolanaar Tea."] = "돌라나르 차를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Dark Iron Destroyer."] = "검은무쇠 파괴자를 만드는 방법을 배웁니다.",
-    ["Increases damage and healing done by magical spells and effects by up to $s1"] =
-    "마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Deadly Scope."] = "초정밀 조준경을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase Agility by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
-    ["+$s1 Attack Power when fighting Elementals."] = "정령과 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Chance on spell cast to increase your damage and healing by up to $s1 for $s2 sec."] =
-    "주문 시전 시 일정 확률로 $s2초 동안 공격력과 치유량이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to summon Baron Rivendare's steed. This is a very fast mount."] =
-    "남작 리븐데어의 죽음의 군마를 소환하는 방법을 배웁니다. 아주 빠른 탈것입니다.",
-    ["Teaches you how to sew Truefaith Gloves."] = "신앙의 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Mithril Spurs."] = "미스릴 박차를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Barbaric Bracers."] = "야만전사의 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Cooked Glossy Mightfish."] = "빛깔좋은 망둥어 요리를 하는 방법을 배웁니다.",
-    ["Teaches you how to craft Pilferer's Gloves."] = "좀도둑 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Fortitude."] = "인내의 비약을 만드는 방법을 배웁니다.",
-    ["Reflects Arcane spells back at their caster for $s1 sec."] = "$s1초 동안 비전 주문을 시전자에게 반사합니다.",
-    ["Increases spell holy damage by up to $s1 for $s2 min. Battle Elixir"] = "$s2분 동안 신성 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약",
-    ["Teaches you how to cook a delicious Clam Chowder."] = "맛있는 조개 수프를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase fishing skill by $s1"] =
-    "장갑에 영구적으로 마법을 부여하여 낚시 숙련도를 $s1만큼 증가시킵니다.",
-    ["Blasts open difficult locked doors."] = "자물쇠로 채워진 문을 날려버립니다.",
-    ["Teaches you how to make a Discolored Healing Potion."] = "변색된 치유 물약을 만드는 방법을 배웁니다.",
-    ["Consume $s1 stacks of Raw Fury of the Black Flight to transform into a Black Drakonid, granting $s2 strength for $s3 sec."] =
-    "검은용군단의 원초적 분노 중첩 $s1개를 소비하여 검은 용기병으로 변신하고 $s3초 동안 힘이 $s2만큼 증가합니다.",
-    ["Reduces the rage cost of Maul and Swipe by $s1"] = "후려치기와 휘둘러치기의 분노 소비량이 $s1만큼 감소합니다.",
-    ["Teaches you how to sew Inferno Gloves."] = "지옥불 장갑을 만드는 방법을 배웁니다.",
-    ["Transforms $s1 Felcloth into $s2 Mooncloth without the aid of a moonwell."] =
-    "달샘의 힘을 빌리지 않고 지옥매듭 옷감 $s1개를 달빛 옷감 $s2개로 변환합니다.",
-    ["Removes $s1 poison effect."] = "$s1개의 독 효과를 해제합니다.",
-    ["Teaches you how to craft Runic Leather Pants."] = "룬문자 가죽 바지를 만드는 방법을 배웁니다.",
-    ["Teaches Prayer of Fortitude (Rank $s1)."] = "인내의 기원 ($s1 레벨) 주문을 배웁니다.",
-    ["+$s1 Attack Power."] = "전투력 $s1 증가.",
-    ["Teaches you how to make a Large Red Rocket."] = "큰 빨간색 폭죽을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Blue Linen Robe."] = "파란색 리넨 로브를 만드는 방법을 배웁니다.",
-    ["Place a chest at the target area. When the chest is opened, players in a $s1 yard radius will be feared for $s2 seconds. Lasts $s3 minutes. Not useable in instances and battlegrounds."] =
-    "대상 지역에 궤짝을 놓습니다. 궤짝을 열면 $s1미터 반경의 플레이어들이 $s2초 동안 공포에 질립니다. 지속시간 $s3분. 인스턴스 던전과 전장에서는 사용할 수 없습니다.",
-    ["Improves your chance to hit with all spells and attacks by $s1%."] = "모든 공격과 주문의 적중률이 $s1%만큼 증가합니다.",
-    ["You turn to stone, protecting you from all physical attacks and spells for $s1 min, but during that time you cannot attack, move or cast spells. You can only have the effect of one flask at a time."] =
-    "자신의 몸을 석화시켜 $s1분 동안 모든 물리 공격과 마법 주문으로부터 보호하지만, 그동안 이동이나 공격, 주문 시전을 할 수 없습니다. 영약 효과는 한 번에 1개씩만 지속됩니다.",
-    ["Teaches you how to craft a Corehound Belt."] = "화산사냥개 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Tough Scorpid Shoulders."] = "단단한 전갈 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Chance on damage or healing spell cast to restore $s1 to $s2 mana."] =
-    "공격 또는 치유 주문 시전 시 일정 확률로 마나를 $s1 ~ $s2만큼 회복합니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain a chance upon taking damage to reduce the attack power of enemies behind you by $s4 for $s5 sec. Lasts $s6 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 피격 시 일정 확률로 $s5초 동안 등 뒤에 있는 적의 전투력을 $s4만큼 감소시킵니다. 지속시간 $s6분.",
-    ["Teaches you how to make an Ultra-Flash Shadow Reflector."] = "초광자 암흑 반사기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Bristle Whisker Catfish."] = "표범메기 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to sew a Brightcloth Robe."] = "빛매듭 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to create Lesser Wizard Oil."] = "하급 마술사 오일을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to often chill the target, reducing their movement and attack speed. Has a reduced effect for players above level $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 대상에게 자주 한기를 느끼게 만들어 이동 및 공격 속도를 감소시킵니다. $s1레벨 이상의 플레이어에게는 효과가 감소합니다.",
-    ["Increases the effect that healing potions have on the wearer by $s1%. This effect does not stack."] =
-    "착용자가 치유 물약을 사용할 때 치유 효과가 $s1%만큼 증가합니다. 이 효과는 중첩되지 않습니다.",
-    ["Increases run speed by $s1% for $s2 sec. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
-    "$s2초 동안 달리기 속도가 $s1%만큼 증가합니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
-    ["Set out a great feast that will feed your party! Everybody eat me!"] = "파티를 배불리 먹일 수 있는 성대한 잔칫상을 차립니다! 모두 드십시오!",
-    ["Increases damage done by magical spells and effects by up to $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death."] =
-    "$s2시간 동안 마법 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속됩니다.",
-    ["Teaches you how to make Temper-proof Bracers."] = "튼튼한 팔보호구를 만드는 방법을 배웁니다.",
-    ["Spell damage taken by target increased by $s1% for $s2 sec."] = "$s2초 동안 대상이 받는 주문 피해가 $s1%만큼 증가합니다.",
-    ["Reduces the cooldown of your Divine Illumination by $s1 seconds."] = "신의 계시 재사용 대기시간이 $s1초만큼 감소합니다.",
-    ["Increase Rage by $s1"] = "분노를 $s1만큼 생성합니다.",
-    ["Chance to strike your melee target with lightning for $s1 to $s2 Nature damage."] =
-    "근접 공격 시 일정 확률로 대상에게 번개를 떨어뜨려 $s1 ~ $s2의 자연 피해를 입힙니다.",
-    ["Teaches you how to sew a Black Swashbuckler's Shirt."] = "검은색 모험가 셔츠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Major Troll's Blood Elixir."] = "일급 트롤의 피 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Fiery Chain Girdle."] = "불타는 사슬 벨트를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Black Dragonscale Leggings."] = "검은용비늘 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Runic Leather Headband."] = "룬문자 가죽 머리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Silvered Bronze Leggings."] = "은도금한 청동 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Serenity."] = "평온의 곤봉을 만드는 방법을 배웁니다.",
-    ["The dynamite for Non-Engineers that nearly always gets to the target! Inflicts $s1 to $s2 Fire damage in a $s3 yard radius."] =
-    "기계공학 비숙련자도 대개 목표물에 맞힐 수 있는 다이너마이트입니다! 반경 $s3미터 내의 적에게 $s1 ~ $s2의 화염 피해를 입힙니다.",
-    ["Change the school of magic that this wand fires."] = "이 마법봉에서 발사되는 마법의 계열을 바꿉니다.",
-    ["You attack all nearby enemies for $s1 sec causing weapon damage plus an additional $s2 every $s3 sec."] =
-    "$s1초 동안 주변의 모든 적을 공격하여 무기 공격력과 함께 $s3초마다 $s2의 추가 피해를 입힙니다.",
-    ["Teaches you how to sew a Red Woolen Bag."] = "붉은색 양모 자루를 만드는 방법을 배웁니다.",
-    ["Wounds the target for $s1 to $s2 damage and lowers Intellect of target by $s3 for $s4 sec."] =
-    "대상에게 $s1 ~ $s2의 피해를 입히고 $s4초 동안 지능을 $s3만큼 감소시킵니다.",
-    ["Increases melee and ranged attack power by $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death."] =
-    "$s2시간 동안 근접 및 원거리 전투력이 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속됩니다.",
-    ["Increases your spell damage by up to $s1 and your healing by up to $s2 for $s3 sec."] =
-    "$s3초 동안 주문 공격력이 최대 $s1만큼, 주문 치유량이 최대 $s2만큼 증가합니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and increase your healing done by spells and abilities by $s4 for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 마법 주문 및 능력이 치유량이 $s4만큼 증가합니다.",
-    ["Teaches you how to craft the Might of the Timbermaw."] = "나무구렁일족의 힘을 만드는 방법을 배웁니다.",
-    ["Attach an embroidery onto your cloak, increasing damage and healing done by magical spells and effects by $s1 Only the tailor's cloak can be enchanted and enchanting a cloak will cause it to become soulbound."] =
-    "망토에 자수를 수놓아 마법 주문 및 효과의 공격력 및 치유량을 $s1만큼 증가시킵니다. 자신이 사용할 망토에만 부여할 수 있으며, 영혼이 귀속됩니다.",
-    ["Teaches you how to permanently enchant a two-handed melee weapon to increase Intellect by $s1"] =
-    "양손 근접 무기에 영구적으로 마법을 부여하여 지능을 $s1만큼 증가시킵니다.",
-    ["Gives the imbiber lesser invisibility for $s1 sec."] = "복용한 대상을 $s1초 동안 하급 투명화 상태로 만듭니다.",
-    ["Teaches you how to sew a Rich Purple Silk Shirt."] = "진보라색 비단 셔츠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Wicked Leather Pants."] = "악의의 가죽 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Large Blue Rocket Cluster."] = "큰 파란색 연발탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Polished Philosopher Stone."] = "빛나는 현자의 돌을 만드는 방법을 배웁니다.",
-    ["Your spells and abilities have a chance to grant $s1 Spell Damage for $s2 sec."] =
-    "주문과 능력이 일정 확률로 $s2초 동안 주문 공격력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to permanently enchant a cloak to increase armor by $s1"] = "망토에 영구적으로 마법을 부여하여 방어도를 $s1만큼 증가시킵니다.",
-    ["Your spells and abilities have a chance to grant $s1 Strength for $s2 sec."] =
-    "주문과 능력이 일정 확률로 $s2초 동안 힘을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make an Iron Shield Spike."] = "철제 방패 스파이크를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Green Iron Gauntlets."] = "녹색 철제 건틀릿을 만드는 방법을 배웁니다.",
-    ["Increases damage done by Earth Shock, Flame Shock, and Frost Shock by up to $s1"] =
-    "대지 충격, 화염 충격, 냉기 충격의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Devilsaur Leggings."] = "데빌사우루스 다리보호구를 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Fire Resistance for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 화염 저항력이 $s4만큼 증가합니다.",
-    ["Teaches you how to make a Suspicious Stew."] = "수상한 스튜를 만드는 방법을 배웁니다.",
-    ["When struck in combat has a $s1% chance of inflicting $s2 to $s3 Nature damage to the attacker."] =
-    "전투 중 피격 시 $s1% 확률로 공격자에게 $s2 ~ $s3의 자연 피해를 입힙니다.",
-    ["Teaches you how to make a Rugged Saddle."] = "거친 가죽 안장을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Spotted Yellowtail."] = "점박이놀래기 구이를 요리하는 방법을 배웁니다.",
-    ["When struck in combat has a $s1% chance to heal you for $s2 to $s3"] = "전투 중 피격 시 $s1% 확률로 생명력을 $s2 ~ $s3만큼 회복합니다.",
-    ["Defense +$s1 for $s2 sec."] = "$s2초 동안 방어 숙련도가 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Goblin Jumper Cable XL."] = "고블린 점퍼 케이블 XL을 만드는 방법을 배웁니다.",
-    ["Increases the critical strike chance of your next attack made within $s1 seconds by $s2%."] =
-    "$s1초 내에 하는 다음 공격의 치명타 적중률이 $s2%만큼 증가합니다.",
-    ["Teaches you how to sew an Earthen Silk Belt."] = "대지의 비단 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Heavy Mithril Pants."] = "견고한 미스릴 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Mooncloth Leggings."] = "달빛매듭 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Felcloth Robe."] = "지옥매듭 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Baked Salmon."] = "연어 구이를 요리하는 방법을 배웁니다.",
-    ["Arcane Blast has a $s1% chance to make your next Ice Lance act as if the target is frozen. Fireball has a $s2% chance to make your next Arcane Barrage a guaranteed critical strike. Frostbolt has a $s3% chance to make your next Fire Blast deal $s4% increased damage."] =
-    "비전 작렬 사용 시 $s1% 확률로 다음 얼음창이 대상이 얼어붙은 상태인 것처럼 효과를 냅니다. 화염구 사용 시 $s2% 확률로 다음 비전 탄막이 항상 극대화 효과를 냅니다. 얼음 화살 사용 시 $s3% 확률로 다음 화염 작렬의 공격력이 $s4%만큼 증가합니다.",
-    ["The chomper chomps the target, chomping their movement speed by $s1% for $s2 sec."] =
-    "적을 강하게 물어뜯어 $s2초 동안 이동 속도를 $s1%만큼 둔화시킵니다.",
-    ["Teaches you how to permanently enchant bracers to increase Strength by $s1"] =
-    "손목보호구에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to cook Longjaw Mud Snapper."] = "긴주둥이진흙퉁돔 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Shoulderpads of Dazzling Light."] = "눈부신 빛의 어깨보호대를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Tough Scorpid Boots."] = "단단한 전갈 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Red Linen Vest."] = "붉은색 리넨 조끼를 만드는 방법을 배웁니다.",
-    ["Deals $s1 Nature damage every $s2 sec to any enemy in an $s3 yard radius around the caster for $s4 sec."] =
-    "$s4초 동안 시전자 주위 $s3미터 반경 내의 적들에게 $s2초마다 $s1의 자연 피해를 입힙니다.",
-    ["+$s1 Arcane and Shadow Resistance"] = "비전 및 암흑 저항력 $s1 증가",
-    ["Teaches you how to craft Living Shoulders."] = "살아있는 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Hearth with a Bloody Visual."] = "붉은 효과의 귀환.",
-    ["Teaches you how to cook Smoked Sagefish."] = "훈제 총명어를 요리하는 방법을 배웁니다.",
-    ["Reduces your chance that Avenging Wrath will be dispelled by $s1%."] = "응징의 격노가 무효화될 확률이 $s1%만큼 감소합니다.",
-    ["Summon three baby Spiderlings to protect you for $s1 min."] = "$s1분 동안 새끼 거미 3마리를 소환하여 자신을 보호하게 합니다.",
-    ["Teaches you how to make Thorium Shells."] = "토륨 탄환을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Gooey Spider Cake."] = "쫄깃쫄깃한 거미 케이크를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to sew a Red Mageweave Headband."] = "붉은 마법매듭 머리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Scorpid Surprise."] = "전갈 별미를 요리하는 방법을 배웁니다.",
-    ["Calls forth $s1 Silithid that will fight for you."] = "자신을 위해 싸울 $s1마리의 실리시드를 소환합니다.",
-    ["Summon and control your Remote Controlled Goblin Car."] = "원격조종 고블린 자동차를 소환하여 조종합니다.",
-    ["Teaches you how to make a Basilisk Scale Gloves."] = "바실리스크 비늘 장갑을 만드는 방법을 배웁니다.",
-    ["Your attacks with this wand have a chance to blast the target for $s1 fire damage."] =
-    "마법봉으로 공격 시 일정 확률로 화염 폭발을 일으켜 $s1의 화염 피해를 입힙니다.",
-    ["Teaches you how to make a Frostguard."] = "서리수호검을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Blue Linen Vest."] = "파란색 리넨 조끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Thorium Grenade."] = "토륨 수류탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Voice Amplification Modulator."] = "주문 확성 변조기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Frostweave Tunic."] = "서리매듭 튜닉을 만드는 방법을 배웁니다.",
-    ["Increases the damage and healing of Holy Shock by $s1%."] = "신성 충격의 공격력 및 치유량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to craft Turtle Scale Gloves."] = "거북 껍질 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Fiery Chain Shoulders."] = "불타는 사슬 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Chance on melee attack to heal you for $s1 to $s2"] = "근접 공격 시 일정 확률로 생명력을 $s1 ~ $s2만큼 회복합니다.",
-    ["Teaches you how to make a Blue Dragonscale Boots."] = "푸른용비늘 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Enchanted Thorium Breastplate."] = "마력 깃든 토륨 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Dark Iron Reaver."] = "검은무쇠 학살자를 만드는 방법을 배웁니다.",
-    ["Removes any loss of control effect with a duration of $s1 seconds or more. This effect can only occur once every $s2 min."] =
-    "지속시간이 $s1초 이상인 제어 불가 효과를 제거합니다. 이 효과는 $s2분마다 한 번씩만 발동합니다.",
-    ["Teaches you how to make Bright-Eye Goggles."] = "초롱초롱 고글을 만드는 방법을 배웁니다.",
-    ["Restores $s1 to $s2 mana."] = "$s1 ~ $s2의 마나를 회복합니다.",
-    ["Take a swig from the tankard, putting you to sleep for $s1 sec. During that time the imbiber regenerates $s2 health and $s3 mana."] =
-    "조끼를 크게 한 모금 들이켜 $s1초 동안 잠이 듭니다. 그 동안 마신 사람은 생명력을 $s2만큼, 마나를 $s3만큼 회복합니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 increased attack power against undead for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 언데드에 대한 전투력이 $s4만큼 증가합니다.",
-    ["Teaches you how to make a Bleakwood Hew."] = "귀신나무 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Frost Oil."] = "냉기 기름을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Band of Fire Repellant."] = "화염 격퇴의 반지를 만드는 방법을 배웁니다.",
-    ["Chance to strike your ranged target with a Venom Shot for $s1 to $s2 Nature damage."] =
-    "원거리 공격 시 일정 확률로 대상에게 맹독 화살을 날려 $s1 ~ $s2의 자연 피해를 입힙니다.",
-    ["Teaches you how to transmute Iron into Gold."] = "철을 금으로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to sew Phoenix Pants."] = "불사조 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Snowmaster $s1"] = "눈뭉치제조기 $s1을(를) 만드는 방법을 배웁니다.",
-    ["Teaches you how to bake a Gingerbread Cookie."] = "생강 과자빵 굽는 방법을 배웁니다.",
-    ["Permanently adds $s1 resistance to all magic schools to a shoulder slot item."] =
-    "어깨보호구에 영구적으로 모든 마법 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Stanchion of Dazzling Light."] = "눈부신 빛의 융기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Runecloth Pants."] = "룬매듭 바지를 만드는 방법을 배웁니다.",
-    ["Increases damage done by Arcane spells and effects by up to $s1"] = "비전 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to craft Volcanic Shoulders."] = "화산 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Cloth Armor Components."] = "천 방어구 부품을 만드는 방법을 배웁니다.",
-    ["Blasts a target for $s1 to $s2 Frost damage."] = "대상에게 $s1 ~ $s2의 냉기 피해를 입힙니다.",
-    ["Heal self for $s1 to $s2 and Increases Strength by $s3 for $s4 sec."] =
-    "자신의 생명력을 $s1 ~ $s2만큼 회복시키고 $s4초 동안 힘을 $s3만큼 증가시킵니다.",
-    ["Teaches you how to permanently enchant chest armor to increase health by $s1"] =
-    "가슴보호구에 영구적으로 마법을 부여하여 생명력을 $s1만큼 증가시킵니다.",
-    ["The casting time on your Regrowth spell is reduced by $s1 sec."] = "재생 주문의 시전 시간이 $s1초만큼 감소합니다.",
-    ["Teaches you how to craft Tough Scorpid Gloves."] = "단단한 전갈 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Sulfuron Hammer."] = "설퍼론 망치를 만드는 방법을 배웁니다.",
-    ["Conjures a sudden burst of water, dealing $s1 to $s2 Frost damage to your target and protecting yourself with a bubble that absorbs $s3 damage for $s4 sec."] =
-    "갑작스러운 물기둥을 소환하여 대상에게 $s1 ~ $s2의 냉기 피해를 입히고 $s4초 동안 자신을 감싸 $s3의 피해를 흡수하는 물거품을 생성합니다.",
-    ["Restores $s1 mana every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 마나를 회복합니다.",
-    ["Teaches you how to make a Lava Leggings."] = "용암 다리보호구를 만드는 방법을 배웁니다.",
-    ["Hand of Freedom's cooldown is reduced by $s1 seconds."] = "자유의 손길 재사용 대기시간이 $s1초만큼 감소합니다.",
-    ["Chance to gain additional Dragon Scales when skinning Dragons."] = "용을 무두질할 때 추가 용비늘을 얻을 확률이 있습니다.",
-    ["Teaches you how to make a Swiftness Potion."] = "신속의 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Phoenix Gloves."] = "불사조 장갑을 만드는 방법을 배웁니다.",
-    ["Chance on hit to increase attack power by $s1 for $s2 sec."] = "적중 시 일정 확률로 $s2초 동안 전투력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Flask of Supreme Power."] = "강력한 마력의 영약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Runic Leather Shoulders."] = "룬문자 가죽 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Blazing Rapier."] = "불타는 레이피어를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Westfall Stew."] = "서부정통 스튜를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to sometimes empower the wielder, increasing melee attack power by $s1 and melee attack speed by $s2%."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 무기 장착자를 강화하여 근접 전투력을 $s1만큼, 근접 공격 속도를 $s2%만큼 증가시킵니다.",
-    ["Increases your chance to dodge an attack by $s1%."] = "회피율이 $s1%만큼 증가합니다.",
-    ["Teaches you how to cook Nightfin Soup."] = "밤비늘퉁돔 수프를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make Gauntlets of Impossible Grip."] = "파괴할 수 없는 악력의 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Minor Agility."] = "최하급 민첩의 비약을 만드는 방법을 배웁니다.",
-    ["Your attacks have a chance to apply Deviate Poison, which causes the target to take up to $s1 additional damage from spells."] =
-    "공격 시 일정 확률로 대상에게 돌연변이 맹독을 감염시켜 주문으로 입는 피해를 최대 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew a Stylish Green Shirt."] = "세련된 녹색 셔츠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Ogre's Strength."] = "오우거의 힘 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to transmute Essence of Air into Essence of Fire."] = "바람의 정수를 불의 정수로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to sew a Colorful Kilt."] = "붉은색 킬트를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Fine Leather Pants."] = "고급 가죽 바지를 만드는 방법을 배웁니다.",
-    ["Chance to strike your ranged target with a Quill Shot for $s1 to $s2 Nature damage."] =
-    "원거리 공격 시 일정 확률로 가시 화살을 쏘아 $s1 ~ $s2의 자연 피해를 입힙니다.",
-    ["Transforms $s1 Thorium Bars and an Arcane Crystal into $s2 Arcanite Bars."] =
-    "토륨 주괴 $s1개와 신비한 수정을 아케이나이트 주괴 $s2개로 변환합니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase its damage to beasts by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 야수에게 입히는 피해를 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Thorium Tube."] = "토륨관을 만드는 방법을 배웁니다.",
-    ["Casting Power Word: Shield when you are not in combat makes the absorption effect $s1% stronger."] =
-    "비전투 중에 신의 권능: 보호막을 시전하면 피해 흡수량이 $s1%만큼 증가합니다.",
-    ["Teaches you how to permanently enchant a shield to increase frost resistance by $s1"] =
-    "방패에 영구적으로 마법을 부여하여 냉기 저항력을 $s1만큼 증가시킵니다.",
-    ["Permanently adds $s1 frost resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 냉기 저항력을 $s1만큼 증가시킵니다.",
-    ["Restores $s1 mana over $s2 sec. Must remain seated while drinking. If you spend at least $s3 seconds drinking you will become well quenched and gain $s4 increased spell damage against undead for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 마나를 회복합니다. 마시는 동안에는 앉아 있어야 합니다. $s3초 이상 음료를 마시면 갈증이 해소되어 $s5분 동안 언데드에게 입히는 주문 피해가 $s4만큼 증가합니다.",
-    ["Teaches you how to make an Elixir of Valorous Diplomacy."] = "무용의 외교 비약을 만드는 방법을 배웁니다.",
-    ["Teaches Flame Shock (Rank $s1)."] = "화염 충격 ($s1 레벨) 주문을 배웁니다.",
-    ["Teaches you how to cook Lean Venison."] = "사슴 살코기 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Golden Iron Destroyer."] = "황금 철제 해머를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Enchanted Thorium Helm."] = "마력 깃든 토륨 투구를 만드는 방법을 배웁니다.",
-    ["Increases spell arcane damage by up to $s1 for $s2 min. Battle Elixir."] =
-    "$s2분 동안 비전 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to craft Living Leggings."] = "살아있는 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Runic Leather Belt."] = "룬문자 가죽 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Greater Adept's Robe."] = "상급사제용 로브를 만드는 방법을 배웁니다.",
-    ["Makes you better able to think like a pirate."] = "해적처럼 생각할 수 있게 해줍니다.",
-    ["Target enemy loses $s1 health and mana every $s2 sec for $s3 sec."] = "대상 적은 $s3초 동안 $s2초마다 $s1의 생명력과 마나를 잃습니다.",
-    ["+$s1 Attack Power when fighting Undead."] = "언데드와 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Attack Power increased by $s1 when fighting Humanoids."] = "인간형과 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Ghostweave Circlet."] = "유령매듭 머리장식을 만드는 방법을 배웁니다.",
-    ["Increases healing done by Healing Stream Totem by $s1"] = "치유의 토템의 치유량이 $s1만큼 증가합니다.",
-    ["Permanently adds $s1 arcane resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 비전 저항력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Girdle of the Dawn."] = "여명의 벨트를 만드는 방법을 배웁니다.",
-    ["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 hit rating and Stamina for $s5 hour."] =
-    "$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 적중도와 체력이 $s4만큼 증가합니다.",
-    ["Summon and control your Remote Controlled Gnome Car."] = "원격조종 노움 자동차를 소환하여 조종합니다.",
-    ["Teaches you how to permanently enchant a shield to increase armor by $s1"] =
-    "방패에 영구적으로 마법을 부여하여 방어도를 $s1만큼 증가시킵니다.",
-    ["Heal, Lesser Heal, Greater Heal, and Flash Heal have a $s1% increased chance to critically heal."] =
-    "치유, 하급 치유, 상급 치유, 순간 치유 주문이 극대화 효과를 낼 확률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to craft a Wicked Leather Headband."] = "악의의 가죽 머리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Superior Defense."] = "최상급 방어의 비약을 만드는 방법을 배웁니다.",
-    ["Decreases Nature resistance by $s1"] = "자연 저항력이 $s1만큼 감소합니다.",
-    ["Teaches you how to craft a Molten Belt."] = "작열의 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Mooncloth Gloves."] = "달빛매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Increases healing done by magical spells by up to $s1 for $s2 hour."] = "$s2시간 동안 마법 주문의 치유량이 최대 $s1만큼 증가합니다.",
-    ["Unlock the bonds of the Blackstone Quartermaster."] = "블랙스톤 병참장교의 구속을 풉니다.",
-    ["Teaches you how to make a Copper Chain Vest."] = "구리 사슬 조끼를 만드는 방법을 배웁니다.",
-    ["Increases spell fire damage by up to $s1 for $s2 min. Battle Elixir."] =
-    "$s2분 동안 화염 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to make a Moonsight Rifle."] = "달빛 라이플을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Accurate Scope."] = "조준경을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Charcoal Grippers."] = "숯불 손아귀를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Crab Claw."] = "집게발을 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft a Deviate Scale Belt."] = "돌연변이 비늘 허리띠를 만드는 방법을 배웁니다.",
-    ["Improves your chance to hit with spells by $s1%."] = "주문 적중률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Blue Glittering Axe."] = "화려한 푸른 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Wicked Leather Belt."] = "악의의 가죽 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Argent Boots."] = "은빛 여명회 장화를 만드는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Strength for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 힘이 $s4만큼 증가합니다.",
-    ["This item appears to be cursed."] = "이 아이템은 저주받은 것 같습니다.",
-    ["Teaches you how to make Radiant Boots."] = "찬란하게 빛나는 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Storm Gauntlets."] = "폭풍 건틀릿을 만드는 방법을 배웁니다.",
-    ["Attack Power increased by $s1 when fighting Beasts."] = "야수와 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Increases the damage dealt by your Priest periodic effects by $s1%."] = "사제 주기적인 효과로 입히는 피해가 $s1%만큼 증가합니다.",
-    ["Inflicts $s1 to $s2 Holy damage to Undead in a $s3 yard radius."] = "반경 $s3미터 내의 언데드에게 $s1 ~ $s2의 신성 피해를 입힙니다.",
-    ["Unlock Title: The Bloodthirsty."] = "칭호 획득: 피투성이.",
-    ["Your damaging spells have a chance to draw a rune at your location for $s1 sec, standing in this rune increases the effectiveness of your other Rune Warder set effects by $s2%."] =
-    "공격 주문 사용 시 일정 확률로 $s1초 동안 시전자의 위치에 룬을 그립니다. 이 룬 위에 서 있으면 다른 룬 감시자 세트 효과의 위력이 $s2%만큼 증가합니다.",
-    ["Restores $s1 to $s2 health."] = "$s1 ~ $s2의 생명력을 회복합니다.",
-    ["Increases the effect that healing and mana potions have on the wearer by $s1%."] =
-    "착용자가 치유 및 마나 물약을 사용할 때 그 효과가 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Seafarer's Swig."] = "뱃사람의 음료를 만드는 방법을 배웁니다.",
-    ["Your attacks and ranged attacks have a chance to embed a knife into your target, dealing $s1 to $s2 damage, doubled if the target is stunned."] =
-    "근접 및 원거리 공격 시 일정 확률로 대상에게 나이프를 꽂아 넣어 $s1 ~ $s2의 피해를 입힙니다. 대상이 기절한 상태라면 피해가 두 배가 됩니다.",
-    ["Teaches you how to make an Elixir of Pure Arcane Power."] = "순수한 비전 마력의 비약을 만드는 방법을 배웁니다.",
-    ["Reflects Frost spells back at their caster for $s1 sec."] = "$s1초 동안 냉기 주문을 시전자에게 반사합니다.",
-    ["Causes the target to bleed for $s1 damage every $s2 sec for $s3 sec. Stacks up to $s4 times."] =
-    "대상에게 출혈을 일으켜 $s3초 동안 $s2초마다 $s1의 피해를 입힙니다. 최대 $s4번까지 중첩됩니다.",
-    ["Teaches you how to make a Parachute Cloak."] = "낙하산 망토를 만드는 방법을 배웁니다.",
-    ["Transfers the Balefire curse from you to an enemy target. Only usable in the Blasted Lands."] =
-    "지옥불의 저주를 자신에게서 적 대상에게로 옮깁니다. 저주받은 땅에서만 사용할 수 있습니다.",
-    ["Totem of Wrath's effect now lasts an additional $s1 seconds after it is removed."] =
-    "격노의 토템의 효과가 파괴된 후에도 추가로 $s1초 동안 지속됩니다.",
-    ["Sobers you up a little."] = "술이 조금 깹니다.",
-    ["Take on the visual of a Gnome Pit Crewman."] = "노움 정비공의 모습으로 변신합니다.",
-    ["Absorbs $s1 to $s2 nature damage. Lasts $s3 hour."] = "$s1 ~ $s2의 자연 피해를 흡수합니다. 지속시간 $s3시간.",
-    ["Your ranged attacks have a high chance to reduce your target's movement speed and attack speed by $s1% for $s2 sec."] =
-    "원거리 공격 시 높은 확률로 $s2초 동안 대상의 이동 속도와 공격 속도를 $s1%만큼 감소시킵니다.",
-    ["Teaches you how to make a Large Red Rocket Cluster."] = "큰 빨간색 연발탄을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Black Dragonscale Breastplate."] = "검은용비늘 흉갑을 만드는 방법을 배웁니다.",
-    ["Increases healing done by Flash of Light by up to $s1"] = "빛의 섬광의 치유량이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to sew a Cloak of Warding."] = "수호의 망토를 만드는 방법을 배웁니다.",
-    ["$s1% chance on melee hit to gain $s2 extra attack."] = "근접 공격 적중 시 $s1% 확률로 $s2회의 추가 공격을 가합니다.",
-    ["Increases Spirit by $s1 and restores $s2 Mana per $s3 sec for $s4 sec."] =
-    "$s4초 동안 정신력이 $s1만큼 증가하고 $s3초마다 $s2의 마나를 회복시킵니다.",
-    ["Teaches you how to make Radiant Gloves."] = "찬란하게 빛나는 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Hot Coal Cheaters."] = "뜨거운 숯불 사기꾼을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Runecloth Bag."] = "룬매듭 가방을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Spellpower Goggles Xtreme Plus."] = "최신형 주문증폭 고글을 만드는 방법을 배웁니다.",
-    ["Blasts open simple locked doors."] = "단순한 자물쇠로 채워진 문을 날려버립니다.",
-    ["Allows opening of simple locks. The skeleton key is consumed in the process."] =
-    "단순한 자물쇠를 열 수 있습니다. 사용하는 과정에서 해골 열쇠는 소모됩니다.",
-    ["Teaches you how to cook a Curiously Tasty Omelet. Don't ask, you don't want to know."] =
-    "진기한 맛의 오믈렛을 요리하는 방법을 배웁니다. 묻지 마세요, 알고 싶지 않을 테니까요.",
-    ["Teaches you how to make a World Enlarger."] = "아제로스 확대기를 만드는 방법을 배웁니다.",
-    ["Dispels Polymorph effects on a friendly target. Also restores $s1 to $s2 health and mana."] =
-    "아군 대상의 변이 효과를 해제합니다. 또한 생명력과 마나를 $s1 ~ $s2만큼 회복시킵니다.",
-    ["Teaches you how to permanently enchant boots to increase Spirit by $s1"] = "장화에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Portable Bronze Mortar."] = "휴대용 청동 박격포를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase Agility by $s1"] =
-    "장갑에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
-    ["Teaches Gift of the Wild (Rank $s1)."] = "야생의 선물 ($s1 레벨) 주문을 배웁니다.",
-    ["Wounds the target for $s1 to $s2 damage."] = "대상에게 상처를 입혀 $s1 ~ $s2의 피해를 입힙니다.",
-    ["Take on the visual of a Goblin Pit Crewman."] = "고블린 정비공의 모습으로 변신합니다.",
-    ["Teaches you how to make a Black Diamond Amulet."] = "검은 다이아몬드 아뮬렛을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lovingly Crafted Boomstick."] = "정성이 가득 담긴 붐스틱을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Dark Leather Gloves."] = "암색 가죽 장갑을 만드는 방법을 배웁니다.",
-    ["Inflicts $s1% weapon damage and reduces healing received by the target by $s2% for $s3 sec."] =
-    "무기 공격력의 $s1%에 해당하는 피해를 입히고 $s3초 동안 대상이 받는 치유 효과를 $s2%만큼 감소시킵니다.",
-    ["Teaches you how to make a Felstone Grog."] = "펠스톤 그로그주를 만드는 방법을 배웁니다.",
-    ["Deals $s1 Shadow damage every $s2 sec for $s3 sec and lowers their Strength for the duration of the disease."] =
-    "대상에게 $s3초 동안 $s2초마다 $s1의 암흑 피해를 입히고, 질병이 지속되는 동안 대상의 힘을 감소시킵니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Stamina and Spirit for $s5 min. Also packs quite a kick..."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 체력과 정신력이 $s4만큼 증가합니다. 취기가 오를 수도 있습니다...",
-    ["Teaches you how to cook Brilliant Smallfish."] = "비단잉어 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Runic Leather Bracers."] = "룬문자 가죽 팔보호구를 만드는 방법을 배웁니다.",
-    ["Increases damage and healing done by magical spells and effects by up to $s1 and your chance to critically strike with spells by $s2% for $s3 sec."] =
-    "$s3초 동안 마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가하고 주문의 극대화 확률이 $s2%만큼 증가합니다.",
-    ["Teaches you how to make a Goblin Land Mine."] = "고블린 지뢰를 만드는 방법을 배웁니다.",
-    ["Reduces your chance to be dodged or parried by $s1%."] = "공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
-    ["Teaches you how to craft a Gem-studded Leather Belt."] = "보석 박힌 가죽 허리띠를 만드는 방법을 배웁니다.",
-    ["Reduces the casting time of your Immolate spell by $s1 sec."] = "제물 주문의 시전 시간이 $s1초만큼 감소합니다.",
-    ["Teaches you how to make a Hyper-Radiant Flame Reflector."] = "극고온 화염 반사기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Inlaid Philosopher Stone."] = "세공된 현자의 돌을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Festival Dress."] = "축제 드레스를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Azure Shoulders."] = "감청색 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Duration of incoming crowd control effects reduced by $s1%. Does not stack with similar effects."] =
-    "자신에게 걸리는 군중 제어 효과의 지속시간이 $s1%만큼 감소합니다. 유사한 효과와 중첩되지 않습니다.",
-    ["Call on the power of Elune and morph into a Moonkin."] = "엘룬의 힘을 빌려 달빛야수로 변신합니다.",
-    ["Teaches you how to sew Frostweave Pants."] = "서리매듭 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Guardian Leather Bracers."] = "수호 가죽 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Barbecued Buzzard Wing."] = "대머리수리 날개 구이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Limited Invulnerability Potion."] = "제한된 무적 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Red Dragonscale Breastplate."] = "붉은용비늘 흉갑을 만드는 방법을 배웁니다.",
-    ["Attack Power increased by $s1 when fighting Undead."] = "언데드와 전투 시 전투력이 $s1만큼 증가합니다.",
-    ["Teaches you how to sew a Red Linen Bag."] = "빨간 리넨 가방을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Virtuous Diplomacy."] = "고결의 외교 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Crimson Silk Shoulders."] = "심홍색 비단 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Chance on hit or spellcast to haunt the target, increasing spell damage taken by $s1 for $s2 sec."] =
-    "적중 또는 주문 시전 시 일정 확률로 대상을 괴롭혀 $s2초 동안 주문으로 받는 피해를 $s1만큼 증가시킵니다.",
-    ["Inflicts $s1 to $s2 Fire damage and stuns targets for $s3 sec in a $s4 yard radius. Any damage will break the effect."] =
-    "반경 $s4미터 내의 적에게 $s1 ~ $s2의 화염 피해를 입히고 $s3초 동안 기절시킵니다. 피해를 입으면 효과가 사라집니다.",
-    ["Blasts open nearly any locked door."] = "거의 모든 자물쇠로 채워진 문을 날려버립니다.",
-    ["Teaches you how to make a Small Blue Rocket."] = "작은 파란색 폭죽을 만드는 방법을 배웁니다.",
-    ["Killing a target with Shadow Word: Death now also decreases the cooldown of Shadowfiend by $s1 seconds."] =
-    "어둠의 권능: 죽음으로 대상을 처치하면 추가로 어둠의 마귀 재사용 대기시간이 $s1초만큼 감소합니다.",
-    ["Teaches you how to craft a Guardian Cloak."] = "수호 망토를 만드는 방법을 배웁니다.",
-    ["Teaches Eviscerate (Rank $s1)."] = "절개 ($s1 레벨) 주문을 배웁니다.",
-    ["Teaches you how to make Blackfury."] = "검은분노를 만드는 방법을 배웁니다.",
-    ["Improves your chance to hit by $s1% and your chance to hit with spells by $s2% for $s3 hour. Battle Elixir."] =
-    "$s3시간 동안 적중률이 $s1%만큼 증가하고 주문 적중률이 $s2%만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to sew a Frostweave Robe."] = "서리매듭 로브를 만드는 방법을 배웁니다.",
-    ["While applied to target weapon it restores $s1 mana to the caster every $s2 seconds. Lasts for $s3 minutes."] =
-    "대상 무기에 바르면 $s2초마다 시전자의 마나를 $s1만큼 회복시킵니다. 지속시간 $s3분.",
-    ["Teaches you how to make Gloves of the Dawn."] = "여명의 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Grilled Squid."] = "오징어 구이를 요리하는 방법을 배웁니다.",
-    ["Your spells and abilities have a chance to grant $s1 Spell Healing for $s2 sec."] =
-    "주문과 능력이 일정 확률로 $s2초 동안 주문 치유량을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to permanently enchant boots to increase Stamina by $s1"] = "장화에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew the Wisdom of the Timbermaw."] = "나무구렁일족의 지혜를 만드는 방법을 배웁니다.",
-    ["Teaches you how to create Minor Wizard Oil."] = "최하급 마술사 오일을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Savory Deviate Delight."] = "돌연변이 물고기 별미를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Greater Firepower."] = "상급 화염 강화의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase Strength by $s1"] = "장갑에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to craft a Golden Mantle of the Dawn."] = "여명의 황금 어깨보호대를 만드는 방법을 배웁니다.",
-    ["Blasts a target for $s1 to $s2 Nature damage."] = "대상에게 $s1 ~ $s2의 자연 피해를 입힙니다.",
-    ["Teaches you how to make a Whitesoul Helm."] = "순백의 투구를 만드는 방법을 배웁니다.",
-    ["Your attacks and spells have a chance to transform you into a Worgen, increasing your stats by $s1 for $s2 sec. This effect can only occur during Night."] =
-    "공격이나 주문 사용 시 일정 확률로 늑대인간으로 변신하여 $s2초 동안 능력치가 $s1만큼 증가합니다. 이 효과는 밤에만 발동합니다.",
-    ["Teaches you how to make a Dazzling Mithril Rapier."] = "눈부신 미스릴 레이피어를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a White Leather Jerkin."] = "흰색 가죽 웃옷을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Gloves of Spell Mastery."] = "주문 전문화 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Smoked Lava Kisser."] = "훈제 용암 키스 물고기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lava Helm."] = "용암 투구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Mithril Head Trout."] = "미스릴송어 구이를 요리하는 방법을 배웁니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you eat for $s3 seconds will also increase your damage and healing from magical spells and effects by up to $s4 for $s5 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 $s5분 동안 마법 주문 및 효과의 공격력과 치유량이 최대 $s4만큼 증가합니다.",
-    ["Teaches you how to make a Thorium Rifle."] = "토륨 소총을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Shadow Crescent Axe."] = "암흑 초승달 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Black Silk Pack."] = "검은색 비단 배낭을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Enchanted Battlehammer."] = "마력 깃든 전투망치를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Elixir of Lesser Agility."] = "하급 민첩의 비약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a shield to increase Stamina by $s1"] =
-    "방패에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
-    ["Deals $s1 to $s2 damage every time you block."] = "방어할 때마다 $s1 ~ $s2의 피해를 입힙니다.",
-    ["Teaches you how to make Dark Iron Boots."] = "검은무쇠 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Thorium Leggings."] = "토륨 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Earthen Leather Shoulders."] = "대지의 가죽 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Discombobulator Ray."] = "유전자 역결합 광선창을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Fine Leather Boots."] = "고급 가죽 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Flarecore Leggings."] = "화염핵 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to summon this mount"] = "이 탈것을 소환하는 방법을 배웁니다.",
-    ["Teaches you how to transmute Thorium and Arcane Crystals into Arcanite."] = "토륨 주괴와 신비한 수정을 아케이나이트로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to craft a Heavy Scorpid Belt."] = "두꺼운 전갈 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a cloak to increase Agility by $s1"] =
-    "망토에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to create Minor Mana Oil."] = "최하급 마나 오일을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Fillet of Frenzy."] = "프렌지살 요리를 하는 방법을 배웁니다.",
-    ["Teaches you how to make a Jade Serpentblade."] = "비취 비늘검을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Masterwork Stormhammer."] = "명인의 폭풍망치를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Stormshroud Pants."] = "폭풍안개 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make an Annihilator."] = "파괴의 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Massive Iron Axe."] = "큰 철제 도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase mount speed by $s1%."] =
-    "장갑에 영구적으로 마법을 부여하여 탈것 속도를 $s1%만큼 증가시킵니다.",
-    ["Teaches you how to make a Large Seaforium Charge."] = "대형 시포리움 폭약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a two-handed melee weapon to increase Agility by $s1"] =
-    "양손 근접 무기에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew a Stylish Blue Shirt."] = "세련된 파란색 셔츠를 만드는 방법을 배웁니다.",
-    ["Captures a mounted player target up to $s1 yards away in a net for $s2 sec. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
-    "최대 $s1미터 거리에 있는 탈것을 탄 플레이어 대상을 $s2초 동안 그물로 사로잡습니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
-    ["Teaches you how to cook Heavy Kodo Stew."] = "코도 고기 스튜를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Greater Arcane Protection Potion."] = "상급 비전 보호 물약을 만드는 방법을 배웁니다.",
-    ["Increases damage done by Chain Lightning and Lightning Bolt by up to $s1"] = "연쇄 번개와 번개 화살의 공격력이 최대 $s1만큼 증가합니다.",
-    ["Increases your chance to parry an attack by $s1%."] = "무기 막기 확률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to sew Red Mageweave Pants."] = "붉은 마법매듭 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Golden Scale Cuirass."] = "황금 미늘 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Searing Mitts."] = "이글거리는 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Dragonbreath Chili."] = "용숨결 칠리를 요리하는 방법을 배웁니다.",
-    ["Permanently adds $s1 frost resistance to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot."] =
-    "다리보호구 또는 투구에 영구적으로 냉기 저항력을 $s1만큼 증가시킵니다. 선택한 장비 슬롯의 다른 마법부여와 중첩되지 않습니다.",
-    ["Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $s3 sec for $s4 sec."] =
-    "적에게 암흑의 화살을 날려 $s1의 암흑 피해를 입히고 $s4초 동안 $s3초마다 $s2의 피해를 입힙니다.",
-    ["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4% movement speed and you will take $s5 Fire damage every $s6 seconds. Lasts $s7 min."] =
-    "$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s7분 동안 이동 속도가 $s4%만큼 증가하지만 $s6초마다 $s5의 화염 피해를 입습니다.",
-    ["Teaches you how to make a Dark Iron Sunderer."] = "검은무쇠 분리자를 만드는 방법을 배웁니다.",
-    ["Increases spell frost damage by up to $s1 for $s2 min. Battle Elixir."] =
-    "$s2분 동안 냉기 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Absorbs $s1 to $s2 damage. Lasts $s3 sec."] = "$s1 ~ $s2의 피해를 흡수합니다. 지속시간 $s3초.",
-    ["Removes one harmful magic effect from the imbiber every $s1 seconds for $s2 seconds."] =
-    "$s2초 동안 $s1초마다 복용한 대상의 해로운 마법 효과를 1개씩 제거합니다.",
-    ["Spirit increased by $s1 during the night."] = "밤 동안 정신력이 $s1만큼 증가합니다.",
-    ["Heal a friendly target for $s1 to $s2 health, or deal $s3 to $s4 Nature damage to an enemy."] =
-    "아군 대상의 생명력을 $s1 ~ $s2만큼 회복시키거나 적에게 $s3 ~ $s4의 자연 피해를 입힙니다.",
-    ["Allows an experienced leatherworker to turn Deeprock Salt into Refined Deeprock Salt. Use of the device exposes the user to sub-core micro radiation and should not be used more than once every few days."] =
-    "숙련된 가죽세공인이 깊은바위 소금을 정제된 깊은바위 소금으로 변환할 수 있게 해줍니다. 이 기계를 사용하면 미세한 방사능에 노출되므로 며칠에 한 번만 사용하는 것이 좋습니다.",
-    ["Dealing shadow damage has a chance to inflict you with Shadowheart, increasing your damage and healing done by magical spells and effects by $s1 but reducing your resistances by $s2 to $s3 for $s4 sec."] =
-    "암흑 피해를 입힐 때 일정 확률로 암흑의 심장 효과에 걸려, $s4초 동안 마법 주문 및 효과의 공격력과 치유량이 $s1만큼 증가하지만 모든 저항력이 $s2 ~ $s3만큼 감소합니다.",
-    ["Teaches you how to craft a Guardian Belt."] = "수호 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Murloc Scale Breastplate."] = "멀록 비늘 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Brightcloth Cloak."] = "빛매듭 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Radiant Leggings."] = "찬란하게 빛나는 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant gloves to increase mining skill by $s1"] =
-    "장갑에 영구적으로 마법을 부여하여 채광 숙련도를 $s1만큼 증가시킵니다.",
-    ["Increases the damage of your Moonfire spell by up to $s1%."] = "달빛 섬광 주문의 공격력이 최대 $s1%만큼 증가합니다.",
-    ["Teaches you how to craft Frostsaber Leggings."] = "눈호랑이 다리보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to brew Captain Rumsey's Lager."] = "럼지 선장의 맥주를 담그는 방법을 배웁니다.",
-    ["Teaches you how to make a Thick Leatherworker's Bag."] = "두꺼운 가죽세공인의 가방을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Flame Deflector."] = "화염 반사장치를 만드는 방법을 배웁니다.",
-    ["Allows you to fish in lava and magma."] = "용암과 마그마에서 낚시를 할 수 있습니다.",
-    ["Teaches you how to make Leather Armor Components."] = "가죽 방어구 부품을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Magic Resistance Potion."] = "마법 저항 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Corruption."] = "부패를 만드는 방법을 배웁니다.",
-    ["Increases your Primary Stats by $s1 and Stamina by an additional $s2 when in Arenas, Battlegrounds, and PvP Objectives."] =
-    "투기장, 전장, PvP 목표 수행 중에 주 능력치가 $s1만큼, 체력이 추가로 $s2만큼 증가합니다.",
-    ["Teaches you how to permanently enchant bracers to increase Spirit by $s1"] =
-    "손목보호구에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to cook Roast Raptor."] = "랩터 숯불구이를 요리하는 방법을 배웁니다.",
-    ["Receiving damage has a chance to summon a stone golem to heal you for a short time."] =
-    "피해를 입으면 일정 확률로 돌 골렘을 소환하여 짧은 시간 동안 자신을 치유하게 합니다.",
-    ["Restores $s1 to $s2 mana at the cost of $s3 to $s4 life."] = "$s3 ~ $s4의 생명력을 희생하여 $s1 ~ $s2의 마나를 회복합니다.",
-    ["Teaches you how to sew a Runecloth Headband."] = "룬매듭 머리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Dark Leather Shoulders."] = "암색 가죽 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches Shadow Ward (Rank $s1)."] = "암흑계 수호 ($s1 레벨) 주문을 배웁니다.",
-    ["Begin winding up the cannon, building up $s1 damage per second, up to $s2 damage. When you move or stop winding you release the cannon ball, dealing its damage to all targets in front of you, with the damage split evenly."] =
-    "대포 장전을 시작하여 초당 $s1의 공격력을 축적, 최대 $s2까지 높입니다. 이동하거나 장전을 중단하면 포탄을 발사하여 전방의 모든 대상에게 공격력을 고르게 나누어 입힙니다.",
-    ["Teaches you how to make a Shadow Protection Potion."] = "암흑 보호 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Green Iron Shoulders."] = "녹색 철제 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Increases healing done by Lesser Healing Wave by up to $s1"] = "하급 치유의 물결의 치유량이 최대 $s1만큼 증가합니다.",
-    ["Teaches you how to make a Gyrofreeze Ice Reflector."] = "회전냉각식 냉기 반사기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Powerful Seaforium Charge."] = "강력한 시포리움 폭약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to create a Frostweave Belt."] = "서리매듭 허리띠를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Corehound Boots."] = "화산사냥개 장화를 만드는 방법을 배웁니다.",
-    ["Increases the critical strike chance of Shield Slam by $s1%."] = "방패 밀쳐내기의 극대화 확률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to cook a Goretusk Liver Pie."] = "뿔엄니멧돼지 간 파이를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to craft Tough Scorpid Bracers."] = "단단한 전갈 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Holy Protection Potion."] = "신성 보호 물약을 만드는 방법을 배웁니다.",
-    ["Improves your chance to get a critical strike with melee and ranged attacks by $s1%."] =
-    "근접 및 원거리 공격의 치명타 적중률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make Trinket Components."] = "장신구 부품을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Argent Shoulders."] = "은빛 여명회 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a two-handed melee weapon to increase its damage by $s1"] =
-    "양손 근접 무기에 영구적으로 마법을 부여하여 무기 공격력을 $s1만큼 증가시킵니다.",
-    ["Your melee attacks have a chance to capture the Raw Fury of the Black Flight."] =
-    "근접 공격 시 일정 확률로 검은용군단의 원초적 분노를 얻습니다.",
-    ["Teaches you how to make a Large Blue Rocket."] = "큰 파란색 폭죽을 만드는 방법을 배웁니다.",
-    ["Increases your chance to block attacks with a shield by $s1%."] = "방패로 공격을 방어할 확률이 $s1%만큼 증가합니다.",
-    ["Teaches you how to make Mail Armor Components."] = "사슬 방어구 부품을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Wicked Leather Bracers."] = "악의의 가죽 팔보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Robe of the Void."] = "공허의 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Ley-Stabilized Arcane Reflector."] = "지맥 안정화 비전 반사기를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Flask of the Titans."] = "티탄의 영약을 만드는 방법을 배웁니다.",
-    ["Increases spell shadow damage by up to $s1 for $s2 min. Battle Elixir."] =
-    "$s2분 동안 암흑 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
-    ["Teaches you how to sew Truefaith Vestments."] = "신앙의 예복을 만드는 방법을 배웁니다.",
-    ["Transforms $s1 Deeprock Salt into $s2 Refined Deeprock Salt."] = "깊은바위 소금 $s1개를 정제된 깊은바위 소금 $s2개로 변환합니다.",
-    ["Teaches you how to craft Wicked Leather Gauntlets."] = "악의의 가죽 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Frostsaber Gloves."] = "눈호랑이 장갑을 만드는 방법을 배웁니다.",
-    ["Lowers all stats by $s1 and deals $s2 Nature damage every $s3 sec to all enemies within an $s4 yard radius of the caster for $s5 sec."] =
-    "모든 능력치를 $s1만큼 감소시키고 $s5초 동안 시전자 반경 $s4미터 내의 모든 적에게 $s3초마다 $s2의 자연 피해를 입힙니다.",
-    ["Teaches you how to make a Great Rage Potion."] = "상급 분노의 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Flash Bomb."] = "섬광탄을 만드는 방법을 배웁니다.",
-    ["Dispels the Balefire curse from a friendly target."] = "아군 대상의 지옥불의 저주를 해제합니다.",
-    ["Improves your casting speed and causes periodic effects to occur more frequently with spells by $s1%."] =
-    "주문 시전 속도와 주문으로 부여된 주기적인 효과의 발생 주기가 $s1%만큼 증가합니다.",
-    ["Teaches you how to make a Radiant Breastplate."] = "찬란하게 빛나는 흉갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew a Shadow Hood."] = "그림자 두건을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Rugged Leather Pants."] = "튼튼한 가죽 바지를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Deepdive Helmet."] = "잠수용 헬멧을 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Minor Magic Resistance Potion."] = "최하급 마법 저항 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to transmute Living Essence into Essence of Earth."] = "생명의 정수를 대지의 정수로 변환하는 방법을 배웁니다.",
-    ["Teaches you how to make a Large Green Rocket."] = "큰 녹색 폭죽을 만드는 방법을 배웁니다.",
-    ["Your attacks have a chance to interrogate the target, stunning them for $s1 sec."] =
-    "공격 시 일정 확률로 대상을 심문하여 $s1초 동안 기절시킵니다.",
-    ["Teaches you how to make an Iridescent Hammer."] = "오색 망치를 만드는 방법을 배웁니다.",
-    ["Thunder Clap generates $s1% more threat."] = "천둥벼락의 위협 수준이 $s1%만큼 증가합니다.",
-    ["Teaches you how to permanently enchant a melee weapon to often inflict a curse on the target, inflicting Shadow damage and reducing their melee damage."] =
-    "근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 대상에게 저주를 걸어 암흑 피해를 입히고 근접 공격력을 감소시킵니다.",
-    ["Improves your chance to get a critical strike with ranged weapons by $s1%."] = "원거리 무기의 치명타 적중률이 $s1%만큼 증가합니다.",
-    ["Increases healing done by up to $s1 and damage done by up to $s2 for all magical spells and effects."] =
-    "모든 마법 주문 및 효과의 치유량이 최대 $s1만큼, 공격력이 최대 $s2만큼 증가합니다.",
-    ["Teaches you how to permanently enchant a two-handed melee weapon to increase Spirit by $s1"] =
-    "양손 근접 무기에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew a Crimson Silk Robe."] = "심홍색 비단 로브를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make Dark Iron Shoulders."] = "검은무쇠 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft Runic Leather Gauntlets."] = "룬문자 가죽 건틀릿을 만드는 방법을 배웁니다.",
-    ["Teaches you how to sew Frostweave Gloves."] = "서리매듭 장갑을 만드는 방법을 배웁니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase Spirit by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to make a Greater Fire Protection Potion."] = "상급 화염 보호 물약을 만드는 방법을 배웁니다.",
-    ["Increases your spell damage by $s1 for every $s2 armor you have."] = "방어도 $s2당 주문 공격력이 $s1만큼 증가합니다.",
-    ["Increases fire and shadow resistance by $s1 An incredibly strong alcoholic beverage."] =
-    "화염 및 암흑 저항력이 $s1만큼 증가합니다. 엄청나게 독한 술입니다.",
-    ["Sometimes heals bearer of $s1 to $s2 damage when damaging an enemy in melee."] =
-    "근접 공격으로 적에게 피해를 입히면 일정 확률로 착용자의 생명력을 $s1 ~ $s2만큼 회복합니다.",
-    ["Teaches you how to make Green Iron Boots."] = "녹색 철제 장화를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Radiant Circlet."] = "찬란하게 빛나는 머리장식을 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook Hot Smoked Bass."] = "농어 훈제를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to make a Spellweaver."] = "마법매듭사를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Potion of Curing."] = "독 치료의 물약을 만드는 방법을 배웁니다.",
-    ["Teaches you how to craft a Hillman's Belt."] = "산악인의 허리띠를 만드는 방법을 배웁니다.",
-    ["Reduces your chance to be dodged or parried with axes by $s1%."] = "도끼 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
-    ["Teaches you how to permanently enchant a melee weapon to increase Frost spell power by $s1"] =
-    "근접 무기에 영구적으로 마법을 부여하여 냉기 주문력을 $s1만큼 증가시킵니다.",
-    ["Teaches you how to sew a Heavy Woolen Cloak."] = "두꺼운 양모 망토를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Lifelike Mechanical Toad."] = "감쪽같은 기계개구리를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make the Edge of Winter."] = "겨울의 칼날도끼를 만드는 방법을 배웁니다.",
-    ["Teaches you how to cook a Deviate Feast."] = "돌연변이 물고기 별미를 요리하는 방법을 배웁니다.",
-    ["Teaches you how to sew Runecloth Shoulders."] = "룬매듭 어깨보호구를 만드는 방법을 배웁니다.",
-    ["Teaches you how to make a Demon Forged Breastplate."] = "악마가 벼려낸 흉갑을 만드는 방법을 배웁니다.",
-    ["Turns you into a fish giving water breath and increasing your movement speed, but attacking or casting while in this form breaks the effect. Does not work out of water or at the water's surface."] =
-    "물고기로 변신하여 수중 호흡이 가능해지고 이동 속도가 증가하지만, 이 상태에서 공격하거나 주문을 시전하면 효과가 취소됩니다. 물 밖이나 수면에서는 작동하지 않습니다.",
-    ["Whenever you block an attack with your shield you have a chance to conjure a protective bubble around you, absorbing $s1 damage. When the bubble pops you restore $s2 to $s3 mana."] =
-    "방패로 공격을 방어할 때마다 일정 확률로 보호 거품을 생성하여 $s1의 피해를 흡수합니다. 거품이 터지면 마나를 $s2 ~ $s3만큼 회복합니다.",
-    ["Enchants the main hand weapon with fire, granting each attack a chance to deal $s1 to $s2 additional fire damage, and increasing your damage done by Fire spells and effects by up to $s3"] =
-    "주장비 무기에 화염 마법을 부여하여 공격 시 일정 확률로 $s1 ~ $s2의 추가 화염 피해를 입히고 화염 주문 및 효과의 공격력을 최대 $s3만큼 증가시킵니다.",
-    ["The first time Avenger's Shield deals damage, it now grants you an absorption effect equal to $s1% of the damage dealt."] =
-    "응징의 방패가 처음으로 피해를 입히면 가한 피해의 $s1%에 해당하는 흡수 효과를 얻습니다.",
 
 
 
-    
+
+	["When struck in combat has a $s1% chance to make you invulnerable to melee damage for $s2 sec. This effect can only occur once every $s3 sec."] =
+	"전투 중 피격 시 $s1% 확률로 $s2초 동안 근접 공격에 면역이 됩니다. 이 효과는 $s3초마다 한 번씩만 발동합니다.",
+	["Increases your attack speed by $s1% for $s2 sec."] = "공격 속도가 $s1%만큼 증가합니다. 지속시간 $s2초.",
+	["Teaches you how to make an Arcanite Champion."] = "용사의 아케이나이트검을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Chimeric Gloves."] = "키메라 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Polished Steel Boots."] = "빛나는 강철 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Mantle of the Timbermaw."] = "나무구렁일족 어깨보호대를 만드는 방법을 배웁니다.",
+	["All spell damage taken is reduced by $s1%."] = "받는 모든 주문 피해가 $s1%만큼 감소합니다.",
+	["Teaches you how to cook Rainbow Fin Albacore."] = "무지개날개다랑어 구이를 요리하는 방법을 배웁니다.",
+	["Your healing spells have a chance to ward the target, absorbing $s1 to $s2 damage for $s3 sec."] =
+	"치유 주문 사용 시 일정 확률로 대상에게 수호물을 부여하여 $s3초 동안 $s1 ~ $s2의 피해를 흡수합니다.",
+	["Teaches you how to make Magical Components."] = "마법 부품을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Murloc Fin Soup."] = "멀록 지느러미 수프를 요리하는 방법을 배웁니다.",
+	["Teaches you how to cook a delicious Giant Clam Scorcho."] = "맛있는 대합 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make Golden Scale Boots."] = "황금 미늘 장화를 만드는 방법을 배웁니다.",
+	["Increases reputation gained with the Thorium Brotherhood by $s1% for $s2 hour."] =
+	"$s2시간 동안 토륨 대장조합 평판 획득량이 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Thorium Shield Spike."] = "토륨 방패 스파이크를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft an Ironfeather Breastplate."] = "무쇠깃털 흉갑을 만드는 방법을 배웁니다.",
+	["Increases damage done by Holy spells and effects by up to $s1"] = "신성 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to make a Runed Copper Breastplate."] = "구리 룬문자 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Goblin Jumper Cables."] = "고블린 점퍼 케이블을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Detect Lesser Invisibility."] = "하급 투명체 감지의 비약을 만드는 방법을 배웁니다.",
+	["Increases your resistance to all schools of magic by $s1 for $s2 min. Guardian Elixir."] =
+	"$s2분 동안 모든 계열의 마법 저항력이 $s1만큼 증가합니다. 수호의 비약.",
+	["Teaches you how to permanently enchant a melee weapon to sometimes empower the wielding matey, increasing agility by $s1 and parry chance by $s2%."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 무기 장착자를 강화하여 민첩성을 $s1만큼, 무기 막기 확률을 $s2%만큼 증가시킵니다.",
+	["Smite now also decreases the damage of the target's next attack by $s1"] = "성스러운 일격이 대상의 다음 공격 피해를 $s1만큼 감소시킵니다.",
+	["Teaches you how to make a Silvered Bronze Breastplate."] = "은도금한 청동 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Rubedo."] = "루베도를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Lobster Stew."] = "바닷가재 스튜를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Superior Mana Potion."] = "최상급 마나 물약을 만드는 방법을 배웁니다.",
+	["Restores $s1 health every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 생명력을 회복시킵니다.",
+	["Teaches you how to cook Poached Sunscale Salmon."] = "삶은 해비늘연어를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Heavy Silk Bandage."] = "두꺼운 비단 붕대를 만드는 방법을 배웁니다.",
+	["Your attacks against most pirates have a chance to demoralize them, decreasing their attack power by $s1 for $s2 sec."] =
+	"대부분의 해적을 공격 시 일정 확률로 사기를 꺾어 $s2초 동안 전투력을 $s1만큼 감소시킵니다.",
+	["Teaches you how to permanently enchant a melee weapon to often strike for $s1 additional fire damage."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 $s1의 추가 화염 피해를 입히도록 합니다.",
+	["Increases healing done by Rejuvenation by up to $s1"] = "회복 주문의 치유량이 최대 $s1만큼 증가합니다.",
+	["Your friendly healing spells have a chance to deal $s1 to $s2 damage to the target and increase their attack power by $s3 for $s4 sec."] =
+	"아군에게 치유 주문 사용 시 일정 확률로 대상에게 $s1 ~ $s2의 피해를 입히고 $s4초 동안 전투력을 $s3만큼 증가시킵니다.",
+	["Teaches you how to cook a Strider Stew."] = "타조 스튜를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Solid Iron Maul."] = "튼튼한 철제 마울을 만드는 방법을 배웁니다.",
+	["Sends a shadowy bolt at the enemy causing $s1 Shadow damage. Deals $s2% increased damage to members of the Scarlet Crusade."] =
+	"적에게 암흑의 화살을 날려 $s1의 암흑 피해를 입힙니다. 붉은십자군 일원에게는 $s2%만큼 증가된 피해를 입힙니다.",
+	["Teaches you how to make a Purification Potion."] = "정화 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Runed Mithril Hammer."] = "룬문자 미스릴 해머를 만드는 방법을 배웁니다.",
+	["Reduces the mana cost of Fire totems by $s1%"] = "불의 토템의 마나 소비량이 $s1%만큼 감소합니다.",
+	["Teaches you how to make a Delicate Arcanite Converter."] = "정교한 아케이나이트 변환기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Mageweave Bandage."] = "마법 붕대를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Small Seaforium Charge."] = "소형 시포리움 폭약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Ice Deflector."] = "냉기 반사장치를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Soothing Turtle Bisque."] = "독특한 거북이 비스크를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Chimeric Boots."] = "키메라 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Crude Philosopher Stone."] = "조잡한 현자의 돌을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase Intellect by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 지능을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Truesilver Transformer."] = "진은 변환기를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Robe of the Archmage."] = "대마법사의 로브를 만드는 방법을 배웁니다.",
+	["Blasts a target for $s1 Fire damage and increases damage done to target by Fire damage by $s2 for $s3 sec."] =
+	"대상에게 $s1의 화염 피해를 입히고 $s3초 동안 화염 마법에 받는 피해를 $s2만큼 증가시킵니다.",
+	["Teaches you how to make a Lobster Roll."] = "바닷가재 롤을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Dawn Treaders."] = "여명의 가죽장화를 만드는 방법을 배웁니다.",
+	["Increases your Attack Power by $s1 for every $s2 armor you have."] = "방어도 $s2당 전투력이 $s1만큼 증가합니다.",
+	["Your failed attacks or spells have a chance to improve your chance to hit with melee and ranged attacks by $s1% and spells by $s2%, and decrease the chance that your attacks will be dodged or parried by $s3%. Lasts $s4 sec."] =
+	"공격이나 주문 실패 시 일정 확률로 $s4초 동안 근접 및 원거리 공격 적중률이 $s1%, 주문 적중률이 $s2%만큼 증가하고, 적이 공격을 회피하거나 무기 막기할 확률이 $s3%만큼 감소합니다.",
+	["Increases Spirit by $s1, but decreases Intelligence by $s2 for $s3 min. Smoooooth."] =
+	"$s3분 동안 정신력이 $s1만큼 증가하지만 지능은 $s2만큼 감소합니다. 아주 부드럽게요.",
+	["Heal your pet for $s1 to $s2"] = "소환수의 생명력을 $s1 ~ $s2만큼 회복시킵니다.",
+	["Teaches you how to make a Lizard King's Hide."] = "도마뱀 왕의 가죽을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Free Action Potion."] = "자유 의지의 물약을 만드는 방법을 배웁니다.",
+	["Attaches a counterweight to a two-handed sword, mace, axe or polearm making it $s1% faster."] =
+	"양손 도검, 철퇴, 도끼, 장창류에 평형추를 달아 공격 속도를 $s1%만큼 증가시킵니다.",
+	["Teaches you how to craft Thick Murloc Armor."] = "두꺼운 멀록비늘 갑옷을 만드는 방법을 배웁니다.",
+	["Inflicts $s1 to $s2 Fire damage and stuns targets in a $s3 yard radius for $s4 sec. Any damage will break the effect."] =
+	"$s3미터 반경 내의 대상들에게 $s1 ~ $s2의 화염 피해를 입히고 $s4초 동안 기절시킵니다. 피해를 입으면 효과가 사라집니다.",
+	["Teaches you how to make a Red Firework."] = "붉은 폭죽을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Fire Resistance and $s5 Stamina for $s6 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6분 동안 화염 저항력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
+	["Teaches Frost Ward (Rank $s1)."] = "냉기계 수호 ($s1 레벨) 주문을 배웁니다.",
+	["Your Healing Wave and Lesser Healing Wave spells have a $s1% additional chance to critically heal."] =
+	"치유의 물결 및 하급 치유의 물결 주문이 극대화 효과를 낼 확률이 추가로 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Radiant Belt."] = "찬란하게 빛나는 허리띠를 만드는 방법을 배웁니다.",
+	["Corrosive acid that deals $s1 Nature damage every $s2 sec and lowers target's armor by $s3 for $s4 sec."] =
+	"부식성 산으로 대상을 공격하여 $s4초 동안 $s2초마다 $s1의 자연 피해를 입히고 방어도를 $s3만큼 감소시킵니다.",
+	["Restores $s1 to $s2 health and $s3 to $s4 mana."] = "$s1 ~ $s2의 생명력과 $s3 ~ $s4의 마나를 회복시킵니다.",
+	["Teaches you how to craft Nightscape Shoulders."] = "밤하늘 어깨보호구를 만드는 방법을 배웁니다.",
+	["Restores $s1 health and $s2 mana over $s3 sec. Must remain seated while eating. If you spend at least $s4 seconds eating you will become well fed and gain $s5 Mana every $s6 seconds for $s7 min."] =
+	"$s3초에 걸쳐 $s1의 생명력과 $s2의 마나를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s4초 이상 음식을 먹으면 포만감을 느껴 $s7분 동안 $s6초마다 $s5의 마나를 회복합니다.",
+	["Prevents up to $s1 damage done by each physical or magical attack for $s2 hour. Guardian Elixir."] =
+	"$s2시간 동안 각각의 물리 및 마법 공격으로 받는 피해를 최대 $s1만큼 방지합니다. 수호의 비약.",
+	["Teaches you how to summon this companion."] = "이 애완동물을 소환하는 방법을 배웁니다.",
+	["Teaches you how to make a Frost Tiger Blade."] = "빙호검을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Steel Weapon Chain."] = "강철 무기 사슬을 만드는 방법을 배웁니다.",
+	["Reflects Fire spells back at their caster for $s1 sec."] = "$s1초 동안 화염 주문을 시전자에게 반사합니다.",
+	["Teaches you how to make the Ebon Hand."] = "칠흑의 손을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Giants."] = "거인의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Heavy Mithril Helm."] = "견고한 미스릴 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Greater Shadow Protection Potion."] = "상급 암흑 보호 물약을 만드는 방법을 배웁니다.",
+	["Increases reputation gained with the Argent Dawn by $s1% for $s2 hour."] = "$s2시간 동안 은빛 여명회 평판 획득량이 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Firework Launcher."] = "폭죽 발사대를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Green Whelp Armor."] = "새끼 녹색용 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Chimeric Leggings."] = "키메라 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make EZ-Thro Dynamite."] = "초보자용 다이너마이트를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Whirling Wind."] = "회오리 바람의 비약을 만드는 방법을 배웁니다.",
+	["Tenderize a humanoid or beast corpse."] = "인간형이나 야수의 시체를 방망이질합니다.",
+	["Teaches you how to make Dark Iron Plate."] = "검은무쇠 판금 갑옷을 만드는 방법을 배웁니다.",
+	["Replaces the fishing line on your fishing pole with a high test eternium line."] = "낚싯대의 낚싯줄을 고급 이터늄 낚싯줄로 교체합니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. Also restores $s3 health every $s4 seconds for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. 또한 $s5분 동안 $s4초마다 $s3의 생명력을 회복합니다.",
+	["Your next $s1 damage or healing spells cast within $s2 seconds will grant a bonus of up to $s3 damage and up to $s4 healing, stacking up to $s5 times. Expires after $s6 damage or healing spells or $s7 seconds, whichever occurs first."] =
+	"$s2초 안에 시전하는 다음 $s1회의 공격 또는 치유 주문 사용 시, 공격력이 최대 $s3, 치유량이 최대 $s4만큼 증가하는 보너스를 얻습니다. 이 효과는 최대 $s5번까지 중첩됩니다. 공격 및 치유 주문을 $s6회 시전하거나 $s7초가 지나면 사라집니다.",
+	["Teaches you how to make an Elixir of Dazzling Light."] = "눈부신 빛의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Runic Leather Armor."] = "룬문자 가죽 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Dark Iron Gauntlets."] = "검은무쇠 건틀릿을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Stamina and Spirit for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 체력과 정신력이 $s4만큼 증가합니다.",
+	["Teaches you how to cook a Blood Sausage."] = "선지 소시지를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Swift Boots."] = "신속의 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant chest armor to increase all stats by $s1"] =
+	"가슴보호구에 영구적으로 마법을 부여하여 모든 능력치를 $s1만큼 증가시킵니다.",
+	["Teaches you how to craft Frostsaber Boots."] = "눈호랑이 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lesser Stoneshield Potion."] = "하급 돌방패 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Golden Scale Coif."] = "황금 미늘 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Ghostweave Pants."] = "유령매듭 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Flask of Chromatic Resistance."] = "마력 저항의 영약을 만드는 방법을 배웁니다.",
+	["$s1% chance of dealing $s2 to $s3 Nature damage on a successful melee attack."] =
+	"근접 공격 적중 시 $s1% 확률로 $s2 ~ $s3의 자연 피해를 입힙니다.",
+	["Teaches you how to make Strong Anti-Venom."] = "강한 해독제를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Spellpower Goggles Xtreme."] = "초강력 화력 고글을 만드는 방법을 배웁니다.",
+	["$s1% chance of dealing $s2 to $s3 Fire damage on a successful melee attack."] =
+	"근접 공격 적중 시 $s1% 확률로 $s2 ~ $s3의 화염 피해를 입힙니다.",
+	["Teaches you how to make a Gnomish Cloaking Device."] = "노움 은폐 장치를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Luring."] = "유인의 비약을 만드는 방법을 배웁니다.",
+	["Absorbs $s1 to $s2 fire damage. Lasts $s3 hour."] = "$s1 ~ $s2의 화염 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Swap all of your current health for up to $s1 of your missing health. Requires a Grombolar Soulstone."] =
+	"그롬볼라의 영혼석을 소모하여, 현재 생명력을 잃은 생명력으로 최대 $s1까지 전환합니다.",
+	["Teaches you how to make an Elixir of Giant Growth."] = "성장의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Felcloth Hood."] = "지옥매듭 두건을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Masterwork Target Dummy."] = "일급 표적 허수아비를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Nature Protection Potion."] = "자연 보호 물약을 만드는 방법을 배웁니다.",
+	["Shields the wielder from physical damage, absorbing $s1 to $s2 damage. Lasts $s3 sec."] =
+	"착용자를 물리 피해로부터 보호하여 $s1 ~ $s2의 피해를 흡수합니다. 지속시간 $s3초.",
+	["Teaches you how to transmute Essence of Earth into Living Essence."] = "대지의 정수를 생명의 정수로 변환하는 방법을 배웁니다.",
+	["Teaches you how to cook a Seasoned Wolf Kabob."] = "양념 늑대 케밥을 요리하는 방법을 배웁니다.",
+	["Teaches you how to make Goblin Rocket Fuel."] = "고블린 로켓 연료를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Small Green Rocket."] = "작은 녹색 폭죽을 만드는 방법을 배웁니다.",
+	["Increases damage done from spells by up to $s1 for $s2 hour."] = "$s2시간 동안 주문의 공격력이 최대 $s1만큼 증가합니다.",
+	["Reduces your chance to be dodged or parried with swords by $s1%."] = "도검 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
+	["Increases damage and healing done by magical spells and effects by up to $s1 and increases your Intellect by $s2 for $s3 sec."] =
+	"$s3초 동안 마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가하고 지능이 $s2만큼 증가합니다.",
+	["Lets you walk on water for $s1 min. Guardian Elixir."] = "$s1분 동안 수면을 걸을 수 있습니다. 수호의 비약.",
+	["Increases damage done by Fire spells and effects by up to $s1"] = "화염 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to make Heavy Timbermaw Boots."] = "튼튼한 나무구렁 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Firework Cluster Launcher."] = "연발탄 발사대를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Deadly Bronze Poniard."] = "예리한 청동 단검을 만드는 방법을 배웁니다.",
+	["Places the Goblin Land Mine on the ground. It will explode for $s1 to $s2 fire damage the next time a hostile creature passes near it. The mine has a duration of $s3 min."] =
+	"고블린 지뢰를 지면에 설치합니다. 적대적인 생물이 근처를 지나가면 폭발하여 $s1 ~ $s2의 화염 피해를 입힙니다. 지뢰는 $s3분 동안 지속됩니다.",
+	["Teaches you how to make a Greater Arcane Elixir."] = "상급 신비의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase Strength by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase its damage by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 무기 공격력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to cook Smoked Bear Meat."] = "곰고기 숯불구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Staff of the Cursed Seer."] = "저주받은 예언자의 지팡이를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Holy Shield."] = "신성 보호막을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Mooncloth Shoulders."] = "달빛매듭 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Crimson Silk Cloak."] = "심홍색 비단 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Red Whelp Gloves."] = "새끼 붉은용 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Thorium Helm."] = "토륨 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to have a chance of stunning and doing additional damage against demons."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 악마를 기절시키고 추가 피해를 입힐 수 있게 합니다.",
+	["Chance to strike your target with a Frost Arrow for $s1 to $s2 Frost damage."] =
+	"공격 시 일정 확률로 대상에게 냉기 화살을 날려 $s1 ~ $s2의 냉기 피해를 입힙니다.",
+	["Teaches you how to sew a Gray Woolen Robe."] = "회색 양모 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase its damage to elementals by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 정령에게 입히는 피해를 $s1만큼 증가시킵니다.",
+	["Teaches you how to cook Slitherskin Mackerel."] = "줄무늬고등어 구이를 요리하는 방법을 배웁니다.",
+	["Reduces the energy cost of Rake and Tiger's Fury by $s1"] = "갈퀴 발톱과 맹공격의 기력 소비량이 $s1만큼 감소합니다.",
+	["Teaches you how to make a Lava Gauntlets."] = "용암 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Timbermaw Brawlers."] = "나무구렁일족 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Mooncloth Circlet."] = "달빛매듭 머리장식을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Barkskin Trousers."] = "나무껍질 바지를 만드는 방법을 배웁니다.",
+	["Gives invisibility for $s1 sec. It can only be used every $s2 minutes."] =
+	"$s1초 동안 투명화 상태가 됩니다. 이 효과는 $s2분마다 한 번씩만 사용할 수 있습니다.",
+	["Summons an Alarm-O-Bot for $s1 minutes that occasionally sends out a pulse that detects nearby stealthy or invisible enemies."] =
+	"$s1분 동안 자동경보기를 소환합니다. 경보기는 주기적으로 파동을 내보내 주변의 은신 및 투명 상태인 적을 감지해 냅니다.",
+	["Teaches you how to cook Rockscale Cod."] = "돌비늘대구 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Dark Iron Bomb."] = "검은무쇠 폭탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Thorium Armor."] = "토륨 갑옷을 만드는 방법을 배웁니다.",
+	["Target's melee attack power is reduced by $s1 for $s2 sec."] = "$s2초 동안 대상의 근접 전투력이 $s1만큼 감소합니다.",
+	["Teaches you how to make an Elixir of the Sages."] = "현인의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Hide of the Wild."] = "야생의 장막을 만드는 방법을 배웁니다.",
+	["Increases your movement speed by $s1%."] = "이동 속도가 $s1%만큼 증가합니다.",
+	["Teaches you how to craft a Volcanic Breastplate."] = "화산 흉갑을 만드는 방법을 배웁니다.",
+	["When you acquire a Soul Shard you have a $s1% chance to create an additional Soul Shard."] =
+	"영혼의 조각을 얻을 때 $s1% 확률로 추가 영혼의 조각을 생성합니다.",
+	["Teaches you how to sew a White Bandit Mask."] = "하얀 산적 복면을 만드는 방법을 배웁니다.",
+	["Fade now also grants you a $s1% chance to dodge attacks."] = "소실 사용 시 추가로 회피율이 $s1%만큼 증가합니다.",
+	["Teaches you how to craft a Shifting Cloak."] = "변화의 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a cloak to increase stealth."] = "망토에 영구적으로 마법을 부여하여 은신 능력을 증가시킵니다.",
+	["Teaches you how to make a Robe of Dazzling Light."] = "눈부신 빛의 로브를 만드는 방법을 배웁니다.",
+	["Activate a Blue Sigil."] = "푸른색 인장 활성화",
+	["Teaches you how to cook Sagefish Delight."] = "총명어 별미를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Swift Flight Bracers."] = "날쌘비행 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Fire Resistance."] = "화염 저항의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Woodlands Diplomacy."] = "밀림의 외교 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Malistar's Revenge."] = "말리스터의 복수 방패를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Carrion Surprise."] = "고기말이 별미를 요리하는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant chest armor to increase mana by $s1"] =
+	"가슴보호구에 영구적으로 마법을 부여하여 마나를 $s1만큼 증가시킵니다.",
+	["Teaches you how to make an Iron Counterweight to help balance a two-handed weapon."] =
+	"양손 무기의 무게 중심을 잡아주는 철제 평형추를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lens of Kajal."] = "카잘의 렌즈를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Green Firework."] = "녹색 폭죽을 만드는 방법을 배웁니다.",
+	["Cures all diseases and neutralizes all poisons."] = "모든 질병을 치료하고 모든 독을 해독합니다.",
+	["Teaches you how to make a Lava Boots."] = "용암 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Red Linen Robe."] = "붉은색 리넨 로브를 만드는 방법을 배웁니다.",
+	["Diseases target enemy for $s1 Nature damage every $s2 sec for $s3 sec."] =
+	"적을 질병에 감염시켜 $s3초 동안 $s2초마다 $s1의 자연 피해를 입힙니다.",
+	["Teaches you how to permanently enchant a melee weapon to often heal for $s1 to $s2 and increase Strength by $s3 for $s4 sec. when attacking in melee. Has a reduced effect for players above level $s5"] =
+	"근접 무기에 영구적으로 마법을 부여하여 근접 공격 시 높은 확률로 $s1 ~ $s2의 생명력을 회복하고 $s4초 동안 힘을 $s3만큼 증가시킵니다. $s5레벨 이상의 플레이어에게는 효과가 감소합니다.",
+	["Teaches you how to make a Black Blood Pendant."] = "검은 피 펜던트를 만드는 방법을 배웁니다.",
+	["Blasts up to $s1 targets for $s2 to $s3 Nature damage."] = "최대 $s1명의 대상에게 $s2 ~ $s3의 자연 피해를 입힙니다.",
+	["Poisons target for $s1 Nature damage every $s2 sec for $s3 sec."] = "대상을 독에 감염시켜 $s3초 동안 $s2초마다 $s1의 자연 피해를 입힙니다.",
+	["Teaches you how to make a Enchanted Philosopher Stone."] = "마력 깃든 현자의 돌을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Brightcloth Pants."] = "빛매듭 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to summon this mount."] = "이 탈것을 소환하는 방법을 배웁니다.",
+	["Knock back all enemies within $s1 yards. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
+	"반경 $s1미터 내의 모든 적을 밀쳐냅니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
+	["Your attacks leave a bleed effect on the target, dealing $s1 damage and stacking up to $s2 times."] =
+	"공격 시 대상에게 출혈 효과를 남겨 $s1의 피해를 입힙니다. 최대 $s2번까지 중첩됩니다.",
+	["Your attacks and spells have a chance to increase your damage done by magical spells and effects by $s1 for $s2 seconds. This effect can only occur during Night."] =
+	"공격이나 주문 사용 시 일정 확률로 $s2초 동안 마법 주문 및 효과의 공격력이 $s1만큼 증가합니다. 이 효과는 밤에만 발동합니다.",
+	["Teaches you how to sew Reinforced Woolen Shoulders."] = "질긴 양모 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Tender Wolf Steak."] = "연한 늑대 스테이크를 요리하는 방법을 배웁니다.",
+	["While you are in an area touched by the Firelord, your attack power is increased by $s1"] =
+	"불의 군주의 기운이 닿는 지역에 있는 동안 전투력이 $s1만큼 증가합니다.",
+	["Absorbs $s1 to $s2 holy damage. Lasts $s3 hour."] = "$s1 ~ $s2의 신성 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Teaches you how to make Shadow Goggles."] = "그림자 고글을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Egg Nog."] = "에그노그를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Nightfall."] = "일몰을 만드는 방법을 배웁니다.",
+	["Teaches Ferocious Bite (Rank $s1)."] = "흉포한 이빨 ($s1 레벨) 주문을 배웁니다.",
+	["Teaches you how to sew Boots of the Enchanter."] = "마법부여사의 장화를 만드는 방법을 배웁니다.",
+	["Divine Protection and Divine Shield now also bless nearby party members, reducing their damage taken by $s1% for as long as you are shielded from harm."] =
+	"신의 가호와 천상의 보호막이 주변 파티원들에게도 축복을 내려 피해에 면역이 되는 시간 동안 파티원이 받는 피해를 $s1%만큼 감소시킵니다.",
+	["Teaches you how to make a Red Rocket Cluster."] = "빨간색 연발탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Mighty Iron Hammer."] = "거대한 철제 해머를 만드는 방법을 배웁니다.",
+	["Permanently adds $s1 nature resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 자연 저항력을 $s1만큼 증가시킵니다.",
+	["Causing damage to an enemy with or taking damage from Shadow Word: Death now gives your Mind Blast a $s1% increased chance to critically strike. Lasts $s2 sec. Stacks up to $s3 times."] =
+	"어둠의 권능: 죽음으로 적에게 피해를 입히거나 자신이 피해를 입으면 $s2초 동안 정신 분열의 극대화 확률이 $s1%만큼 증가합니다. 이 효과는 최대 $s3번까지 중첩됩니다.",
+	["Cures up to $s1 diseases."] = "최대 $s1개의 질병을 치료합니다.",
+	["Teaches you how to make a smoking heart of the mountain."] = "연기나는 산의 정수를 만드는 방법을 배웁니다.",
+	["Imbiber is immune to physical attacks for the next $s1 sec."] = "복용한 대상은 다음 $s1초 동안 물리 공격에 면역이 됩니다.",
+	["Teaches you how to make a Bone Meal."] = "뼛가루를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Heavy Leather Ball."] = "무거운 가죽 공을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Lava Belt."] = "용암 허리띠를 만드는 방법을 배웁니다.",
+	["Absorbs $s1 to $s2 frost damage. Lasts $s3 hour."] = "$s1 ~ $s2의 냉기 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Teaches you how to make a Major Healing Potion."] = "일급 치유 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Mithril Scale Shoulders."] = "미스릴 미늘 어깨보호구를 만드는 방법을 배웁니다.",
+	["Reduces your chance to be dodged or parried with maces by $s1%."] = "철퇴 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you eat for $s3 seconds will also increase your Agility by $s4 for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 $s5분 동안 민첩성이 $s4만큼 증가합니다.",
+	["Teaches you how to make a Dark Iron Rifle."] = "검은무쇠 소총을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Runecloth Gloves."] = "룬매듭 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook up some Hot Lion Chops."] = "매운 사자 고기를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft a Big Voodoo Mask."] = "부두교 가면을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Flarecore Mantle."] = "화염핵 어깨보호대를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Master Engineer's Goggles."] = "전문 기술자의 고글을 만드는 방법을 배웁니다.",
+	["Teaches Prayer of Shadow Protection (Rank $s1)."] = "암흑 보호의 기원 ($s1 레벨) 주문을 배웁니다.",
+	["Teaches you how to make a Runed Arcanite Rod."] = "룬문자 아케이나이트 마법막대를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase herbalism skill by $s1"] =
+	"장갑에 영구적으로 마법을 부여하여 약초채집 숙련도를 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew Red Mageweave Gloves."] = "붉은 마법매듭 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Shadowskin Gloves."] = "암흑가죽 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Succulent Pork Ribs."] = "육즙이 많은 돼지 갈비를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Hammer of the Titans."] = "티탄의 망치를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Stormshroud Armor."] = "폭풍안개 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Mithril Mechanical Dragonling."] = "소형 미스릴 기계용을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a cloak to increase all resistances by $s1"] =
+	"망토에 영구적으로 마법을 부여하여 모든 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to summon Peddlefeet."] = "덜렁발을 소환하는 방법을 배웁니다.",
+	["Teaches you how to make a Revantusk Disguise."] = "레반투스 위장복을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Green Silk Armor."] = "녹색 비단 갑옷을 만드는 방법을 배웁니다.",
+	["When applied to a melee weapon it gives a $s1% chance of casting Frostbolt at the opponent when it hits. Lasts $s2 minutes."] =
+	"근접 무기에 바르면 공격 적중 시 $s1% 확률로 적에게 얼음 화살을 발사합니다. 지속시간 $s2분.",
+	["Teaches you how to sew a Green Woolen Bag."] = "녹색 양모 자루를 만드는 방법을 배웁니다.",
+	["Increases the damage reduction granted by Barkskin by an additional $s1%."] = "나무 껍질의 피해 감소 효과가 추가로 $s1%만큼 증가합니다.",
+	["Teaches Conjure Food (Rank $s1)."] = "음식 창조 ($s1 레벨) 주문을 배웁니다.",
+	["Restores $s1% of your health per second for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain Stamina and Spirit for $s4 min."] =
+	"$s2초 동안 매초 전체 생명력의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s4분 동안 체력과 정신력이 증가합니다.",
+	["Teaches you how to craft Dusky Boots."] = "거무스름한 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blackfire."] = "흑염을 만드는 방법을 배웁니다.",
+	["Chance to strike your ranged target with a Searing Arrow for $s1 to $s2 Fire damage."] =
+	"공격 시 일정 확률로 대상에게 이글거리는 화살을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Teaches you how to make Invulnerable Mail."] = "무적의 사슬갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to transmute a Heart of Fire into three Elemental Fires."] = "불의 심장 1개를 불의 원소 3개로 변환하는 방법을 배웁니다.",
+	["Teaches you how to sew Felcloth Shoulders."] = "지옥매듭 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blood-Spattered Shirt."] = "피에 얼룩진 셔츠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Eternal Wand."] = "영원의 마법봉을 만드는 방법을 배웁니다.",
+	["Teaches you how to be an Expert Cook, allowing a maximum of $s1 cooking skill."] =
+	"숙련 요리 방법을 배워 요리 숙련도를 최대 $s1까지 올릴 수 있게 됩니다.",
+	["Teaches you how to sew a Green Holiday Shirt."] = "녹색 축제일 셔츠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Gift of Arthas."] = "아서스의 선물을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Spider Belt."] = "거미줄 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Dark Leather Tunic."] = "암색 가죽 튜닉을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Brightcloth Gloves."] = "빛매듭 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blue Rocket Cluster."] = "파란색 연발탄을 만드는 방법을 배웁니다.",
+	["+$s1 Attack Power when fighting Demons."] = "악마와 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to make Powerful Anti-Venom."] = "강력한 해독제를 만드는 방법을 배웁니다.",
+	["During the night your spells have a chance to Moonfire your target, dealing Arcane damage over time."] =
+	"밤에는 주문 사용 시 일정 확률로 대상에게 달빛 섬광을 시전하여 지속적인 비전 피해를 입힙니다.",
+	["Teaches you how to make Golden Scale Leggings."] = "황금 미늘 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Staff of the Moon."] = "달의 지팡이를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Warbear Harness."] = "전투곰 멜빵을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Dark Iron Leggings."] = "검은무쇠 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Mighty Rage Potion."] = "강력한 분노의 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Heavy Earthen Gloves."] = "두꺼운 대지의 장갑을 만드는 방법을 배웁니다.",
+	["Chance on landing a damaging spell to deal $s1 Shadow damage and restore $s2 mana to you."] =
+	"공격 주문 적중 시 일정 확률로 $s1의 암흑 피해를 입히고 자신의 마나를 $s2만큼 회복시킵니다.",
+	["Teaches you how to make Blackguard."] = "검은 수호자를 만드는 방법을 배웁니다.",
+	["Permanently adds $s1 shadow resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 암흑 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to craft Guardian Armor."] = "수호 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew an Enchanted Mageweave Pouch."] = "마력 깃든 마법매듭 가방을 만드는 방법을 배웁니다.",
+	["+$s1 ranged Attack Power."] = "원거리 전투력 $s1 증가.",
+	["Teaches you how to make a Thorium Belt."] = "토륨 허리띠를 만드는 방법을 배웁니다.",
+	["+$s1 Frost and Fire Resistance."] = "냉기 및 화염 저항력 $s1 증가.",
+	["Teaches you how to cook a Tasty Lion Steak."] = "맛있는 사자 스테이크를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Black Dragonscale Shoulders."] = "검은용비늘 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew an Admiral's Hat."] = "함장 모자를 만드는 방법을 배웁니다.",
+	["When applied to a melee weapon it gives a $s1% chance of casting Shadowbolt III at the opponent when it hits. Lasts $s2 minutes."] =
+	"근접 무기에 바르면 공격 적중 시 $s1% 확률로 적에게 어둠의 화살 III을 발사합니다. 지속시간 $s2분.",
+	["Increases spell damage by up to $s1 for $s2 hour. Battle Elixir."] = "$s2시간 동안 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Teaches you how to make a Major Mana Potion."] = "일급 마나 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Heartseeker."] = "심장추적자를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Fireproof Overwear."] = "방화용 속옷을 만드는 방법을 배웁니다.",
+	["When struck in combat has a $s1% chance of dealing $s2 to $s3 Fire damage to all targets around you."] =
+	"전투 중 피격 시 $s1% 확률로 주위의 모든 적에게 $s2 ~ $s3의 화염 피해를 입힙니다.",
+	["Teaches you how to make a Wildvine potion."] = "야생덩굴 물약을 만드는 방법을 배웁니다.",
+	["Deals $s1 Shadow damage every $s2 sec for $s3 sec. All damage done is then transferred to the caster."] =
+	"$s3초 동안 $s2초마다 $s1의 암흑 피해를 입힙니다. 입힌 피해만큼 시전자의 생명력이 회복됩니다.",
+	["Teaches you how to make a Ghostweave Boots."] = "유령매듭 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Kodo Hide Bag."] = "코도 가죽 가방을 만드는 방법을 배웁니다.",
+	["Teleports the user to the Arcanaeum at Teles'aran in Winterspring."] = "여명의 설원 텔레스아란에 있는 아르카나에움으로 사용자를 순간이동시킵니다.",
+	["Teaches you how to make a Red Dragonscale Leggings."] = "붉은용비늘 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Filet of Redgill."] = "붉은퉁돔 통구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Mechanical Squirrel Box."] = "기계 다람쥐 상자를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Alarm-o-Bot."] = "자동경보기를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Flarecore Gloves."] = "화염핵 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Mithril Shield Spike."] = "미스릴 방패 스파이크를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Flask of Petrification."] = "석화의 영약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Chromatic Helm."] = "오색 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Red Woolen Boots."] = "붉은색 양모 장화를 만드는 방법을 배웁니다.",
+	["Increases reputation gained with Timbermaw Hold by $s1% for $s2 hour."] = "$s2시간 동안 나무구렁 요새 평판 획득량이 $s1%만큼 증가합니다.",
+	["Teaches you how to sew Hands of Darkness."] = "암흑의 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Big Voodoo Pants."] = "부두교 바지를 만드는 방법을 배웁니다.",
+	["Delivers a fatal wound for $s1 to $s2 damage."] = "치명적인 상처를 입혀 $s1 ~ $s2의 피해를 입힙니다.",
+	["Allows the wearer to walk across water for $s1 sec. Any damage or shapeshift will cancel the effect."] =
+	"착용자가 $s1초 동안 수면 위를 걸을 수 있습니다. 피해를 입거나 다른 모습으로 변신하면 효과가 취소됩니다.",
+	["Teaches you how to permanently enchant a cloak to increase shadow resistance by $s1"] =
+	"망토에 영구적으로 마법을 부여하여 암흑 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to craft Wicked Leather Armor."] = "악의의 가죽 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Heavy Scorpid Leggings."] = "두꺼운 전갈 다리보호구를 만드는 방법을 배웁니다.",
+	["Party and raid members within $s1 yards gain $s2 additional intellect. If you are in a raid group this effect is reduced to $s3 additional intellect."] =
+	"$s1미터 내의 파티 및 공격대원의 지능이 $s2만큼 증가합니다. 공격대에 속해 있으면 이 효과는 지능이 $s3 증가하는 것으로 감소합니다.",
+	["Envelops the caster with a Fire shield for $s1 sec and shoots a ring of fire dealing $s2 to $s3 damage to all nearby enemies."] =
+	"$s1초 동안 시전자를 화염 보호막으로 감싸고 주변의 모든 적에게 화염의 고리를 발사하여 $s2 ~ $s3의 피해를 입힙니다.",
+	["Teaches you how to craft Warbear Woolies."] = "전투곰 다리보호구를 만드는 방법을 배웁니다.",
+	["Occasionally during combat you will slip and fall, stunning you for $s1 seconds. When you get back up you'll be enraged, increasing your physical damage dealt by $s2 for $s3 seconds."] =
+	"전투 중 가끔 미끄러져 넘어져 $s1초 동안 기절합니다. 다시 일어나면 격노하여 $s3초 동안 물리 공격력이 $s2만큼 증가합니다.",
+	["Increases your resistance to all schools of magic by $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death and stacks with all other resistance spells and items."] =
+	"$s2시간 동안 모든 계열의 마법 저항력이 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속되며 다른 모든 저항 주문 및 아이템과 중첩됩니다.",
+	["Reduces the cooldown of your Grounding Totem ability by $s1 sec."] = "마법흡수 토템의 재사용 대기시간이 $s1초만큼 감소합니다.",
+	["Teaches you how to make a Craftman's Monocle."] = "장인의 단안경을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Leggings of Dazzling Light."] = "눈부신 빛의 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Azure Silk Gloves."] = "감청색 비단 장갑을 만드는 방법을 배웁니다.",
+	["Your attacks have a $s1% chance to increase your attack speed by $s2% for $s3 sec."] =
+	"공격 시 $s1% 확률로 $s3초 동안 공격 속도가 $s2%만큼 증가합니다.",
+	["Teaches you how to permanently enchant bracers to increase spell power by $s1"] =
+	"손목보호구에 영구적으로 마법을 부여하여 주문력을 $s1만큼 증가시킵니다.",
+	["Increases your movement speed by $s1% while in Bear, Cat, or Travel Form. Only active outdoors."] =
+	"곰, 표범, 치타 변신 상태일 때 이동 속도가 $s1%만큼 증가합니다. 야외에서만 적용됩니다.",
+	["Teaches you how to craft a Big Voodoo Cloak."] = "부두교 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Tough Scorpid Helm."] = "단단한 전갈 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Chromatic Cloak."] = "오색 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Shadow Power."] = "암흑 강화의 비약을 만드는 방법을 배웁니다.",
+	["Increase the damage of a blunt weapon by $s1 for $s2 minutes."] = "$s2분 동안 둔기류 무기의 공격력을 $s1만큼 증가시킵니다.",
+	["Increases resistance to shadow by $s1 If an enemy strikes the imbiber, the attacker has a $s2% chance of being inflicted with disease that increases their damage taken by $s3 for $s4 min. Lasts for $s5 min. Guardian Elixir."] =
+	"암흑 저항력이 $s1만큼 증가합니다. 적이 이 물약을 복용한 사람을 공격하면 $s2% 확률로 대상에게 질병을 일으켜 $s4분 동안 받는 피해를 $s3만큼 증가시킵니다. 지속시간 $s5분. 수호의 비약.",
+	["Teaches you how to make a Heavy Copper Longsword."] = "단단한 구리 장검을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Golden Scale Shoulders."] = "황금 미늘 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Hillman's Leather Vest."] = "산악인의 가죽 조끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Barbaric Leggings."] = "야만전사의 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant bracers to increase Stamina by $s1"] =
+	"손목보호구에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
+	["Increases Defense by $s1 for $s2 hour."] = "$s2시간 동안 방어 숙련도가 $s1만큼 증가합니다.",
+	["Teaches you how to make a Purple Smoke Flare."] = "보라색 조명탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Dream Vision."] = "몽상의 비약을 만드는 방법을 배웁니다.",
+	["Mark your current overworld location for the next $s1 hours using a Grombolar Soulstone. Use again to destroy the mark and recall yourself to its location."] =
+	"그롬볼라의 영혼석을 사용하여 다음 $s1시간 동안 현재 위치를 표시합니다. 다시 사용하면 표시를 제거하고 해당 위치로 귀환합니다.",
+	["Transforms the target into a Leper Gnome, reducing its melee and spell damage by $s1 and its movement rate by $s2% for $s3 sec."] =
+	"대상을 오염된 노움으로 변이시켜 $s3초 동안 근접 및 주문 공격력을 $s1만큼 감소시키고 이동 속도를 $s2%만큼 감소시킵니다.",
+	["Drains target for $s1 Shadow damage every $s2 sec and transfers it to the caster. Lasts for $s3 sec."] =
+	"대상의 생명력을 흡수하여 $s3초 동안 $s2초마다 $s1의 암흑 피해를 입히고 그만큼 시전자의 생명력을 회복시킵니다.",
+	["+$s1 Attack Power when fighting Beasts."] = "야수와 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to craft a Tough Scorpid Breastplate."] = "단단한 전갈 흉갑을 만드는 방법을 배웁니다.",
+	["Channels $s1 health into mana every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 생명력을 소비하여 마나를 회복시킵니다.",
+	["Increased Fishing +$s1"] = "낚시 숙련도 $s1 증가",
+	["Teaches you how to cook a Kaldorei Spider Kabob."] = "칼도레이 거미 케밥을 요리하는 방법을 배웁니다.",
+	["Teaches you how to sew Spider Silk Slippers."] = "거미줄 덧신을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Jungle Stew."] = "밀림 스튜를 요리하는 방법을 배웁니다.",
+	["Teaches you how to sew Felcloth Gloves."] = "지옥매듭 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Gemmed Copper Gauntlets."] = "보석 박힌 구리 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Steam Tonk Controller."] = "통통 전차 조종기를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase skinning skill by $s1"] =
+	"장갑에 영구적으로 마법을 부여하여 무두질 숙련도를 $s1만큼 증가시킵니다.",
+	["Teaches you how to craft Green Dragonscale Leggings."] = "녹색용비늘 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Frost Power."] = "냉기 강화의 비약을 만드는 방법을 배웁니다.",
+	["Attaches spurs to your boots that increase your mounted movement speed slightly."] =
+	"장화에 박차를 달아 탈것을 탔을 때 이동 속도가 약간 증가합니다.",
+	["Heal friendly target for $s1 to $s2"] = "아군 대상의 생명력을 $s1 ~ $s2만큼 회복시킵니다.",
+	["Teaches you how to make Black Amnesty."] = "어둠의 사절을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Barbaric Belt."] = "야만전사의 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to often steal life from the enemy and give it to the wielder. Has a reduced effect for players above level $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 적의 생명력을 훔쳐내어 장착자의 생명력을 회복합니다. $s1레벨 이상의 플레이어에게는 효과가 감소합니다.",
+	["Teaches you how to make a Lava Bracers."] = "용암 팔보호구를 만드는 방법을 배웁니다.",
+	["Increases your Fishing by $s1 for $s2 hour."] = "$s2시간 동안 낚시 숙련도가 $s1만큼 증가합니다.",
+	["Absorbs $s1 to $s2 shadow damage. Lasts $s3 hour."] = "$s1 ~ $s2의 암흑 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Reduces the mana cost of your Seal spells by $s1"] = "문장 주문의 마나 소비량이 $s1만큼 감소합니다.",
+	["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 attack power and $s5 Stamina for $s6 hour."] =
+	"$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6시간 동안 전투력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
+	["Teaches you how to craft Mongoose Boots."] = "살쾡이 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook up a Crispy Bat Wing."] = "바삭바삭한 박쥐 날개를 요리하는 방법을 배웁니다.",
+	["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 spell power and $s5 Stamina for $s6 hour."] =
+	"$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6시간 동안 주문력이 $s4만큼, 체력이 $s5만큼 증가합니다.",
+	["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Spirit and Stamina for $s5 hour."] =
+	"$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 정신력과 체력이 $s4만큼 증가합니다.",
+	["Teaches you how to craft Murloc Scale Bracers."] = "멀록 비늘 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Felcloth Boots."] = "지옥매듭 장화를 만드는 방법을 배웁니다.",
+	["Sends a shadowy bolt at the enemy causing $s1 to $s2 Shadow damage."] = "적에게 암흑의 화살을 날려 $s1 ~ $s2의 암흑 피해를 입힙니다.",
+	["During the day your melee and ranged attacks have a chance to blast your target with a pillar of flame, dealing Fire damage over time."] =
+	"낮 동안 근접 및 원거리 공격 시 일정 확률로 대상에게 불기둥을 내뿜어 지속적인 화염 피해를 입힙니다.",
+	["Teaches you how to make a Frost Protection Potion."] = "냉기 보호 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant boots to increase Agility by $s1"] = "장화에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Shawl of Unwarmth."] = "냉기의 숄을 만드는 방법을 배웁니다.",
+	["Restores $s1 health and $s2 mana over $s3 sec. Must remain seated while eating. If you spend at least $s4 seconds eating you will become well fed and gain $s5 attack power and $s6 spell power for $s7 hour."] =
+	"$s3초에 걸쳐 $s1의 생명력과 $s2의 마나를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s4초 이상 음식을 먹으면 포만감을 느껴 $s7시간 동안 전투력이 $s5만큼, 주문력이 $s6만큼 증가합니다.",
+	["Teaches you how to make Dark Iron Bracers."] = "검은무쇠 팔보호구를 만드는 방법을 배웁니다.",
+	["Increases the range of Hammer of Justice by $s1 yards."] = "심판의 망치 사정거리가 $s1미터만큼 증가합니다.",
+	["Teaches you how to make Shadow Oil."] = "암흑 기름을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a two-handed melee weapon to sometimes bless the wielder with $s1 agility, $s2 armor, and $s3% dodge for $s4 seconds."] =
+	"양손 근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 $s4초 동안 무기 장착자에게 축복을 내려 민첩성을 $s1만큼, 방어도를 $s2만큼, 회피율을 $s3%만큼 증가시킵니다.",
+	["Inflicts numbing pain that deals $s1 Nature damage every $s2 sec and increases time between target's attacks by $s3% for $s4 sec."] =
+	"마비시키는 고통을 주어 $s4초 동안 $s2초마다 $s1의 자연 피해를 입히고 대상의 공격 속도를 $s3%만큼 감소시킵니다.",
+	["Teaches you how to make a Mithril Heavy-bore Rifle."] = "미스릴 중구경 라이플을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Arcanite Reaper."] = "아케이나이트 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a shield to increase Spirit by $s1"] =
+	"방패에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
+	["Hamstring Rage cost reduced by $s1"] = "무력화의 분노 소비량이 $s1만큼 감소합니다.",
+	["Teaches you how to make a Green Rocket Cluster."] = "녹색 연발탄을 만드는 방법을 배웁니다.",
+	["Increases your Intellect by $s1 and grants you the ability to walk on water for $s2 sec."] =
+	"지능이 $s1만큼 증가하고 $s2초 동안 수면을 걸을 수 있습니다.",
+	["Reduces your chance to be dodged or parried with sharp weapons by $s1%."] =
+	"날카로운 무기 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
+	["Teaches you how to make a Greater Stoneshield Potion."] = "상급 돌방패 물약을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 All Resistances for $s5 minutes."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 모든 저항력이 $s4만큼 증가합니다.",
+	["Teaches you how to make Dawn's Edge."] = "여명의 도끼를 만드는 방법을 배웁니다.",
+	["Chance to strike your ranged target with a Flaming Cannonball for $s1 to $s2 Fire damage."] =
+	"공격 시 일정 확률로 대상에게 불타는 포탄을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Teaches you how to permanently enchant bracers to restore $s1 mana every $s2 seconds."] =
+	"손목보호구에 영구적으로 마법을 부여하여 $s2초마다 $s1의 마나를 회복시킵니다.",
+	["Teaches you how to make Catseye Ultra Goggles."] = "고양이눈 고글을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lava Chestguard."] = "용암 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Big Voodoo Robe."] = "부두교 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Red Mageweave Vest."] = "붉은 마법매듭 조끼를 만드는 방법을 배웁니다.",
+	["Absorbs $s1 to $s2 arcane damage. Lasts $s3 hour."] = "$s1 ~ $s2의 비전 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Shackles the target demon enemy for up to $s1 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time."] =
+	"대상 악마를 최대 $s1초 동안 속박합니다. 속박된 대상은 이동, 공격, 주문 시전을 할 수 없습니다. 피해를 입으면 속박이 풀립니다. 한 번에 하나의 대상만 속박할 수 있습니다.",
+	["Increases Agility by $s1 and chance to get a critical hit by $s2% for $s3 hour. Battle Elixir."] =
+	"$s3시간 동안 민첩성이 $s1만큼, 치명타 적중률이 $s2%만큼 증가합니다. 전투 비약.",
+	["Teaches you how to craft Gloves of the Greatfather."] = "겨울 할아버지 장갑을 만드는 방법을 배웁니다.",
+	["Shatter a Grombolar Soulstone, taking on the shape of a soul inside for $s1 hour."] =
+	"그롬볼라의 영혼석을 부수어 $s1시간 동안 내면의 영혼의 형태를 취합니다.",
+	["Teaches you how to craft a Blue Dragonscale Breastplate."] = "푸른용비늘 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Sturdy Tackle Box."] = "튼튼한 낚시 도구 상자를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Arcane Bomb."] = "신비의 폭탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Crocolisk Gumbo."] = "악어 검보 스튜를 요리하는 방법을 배웁니다.",
+	["Reflects Shadow spells back at their caster for $s1 sec."] = "$s1초 동안 암흑 주문을 시전자에게 반사합니다.",
+	["Teaches you how to craft Barbaric Gloves."] = "야만전사의 장갑을 만드는 방법을 배웁니다.",
+	["Transforms the caster to the appearance of a Revantusk Troll."] = "시전자를 레반투스 트롤의 모습으로 변신시킵니다.",
+	["Teaches you how to make Thorium Boots."] = "토륨 장화를 만드는 방법을 배웁니다.",
+	["When your spells critically strike you feel a sense of calm, causing your next spell within $s1 sec to cost $s2% less mana. This effect can only occur once every $s3 seconds."] =
+	"주문이 극대화 효과를 발휘하면 마음의 평온을 얻어 $s1초 안에 시전하는 다음 주문의 마나 소비량이 $s2%만큼 감소합니다. 이 효과는 $s3초에 한 번씩만 발동합니다.",
+	["Unleash Sul on yourself and Thraze on your enemy. Sul absorbs $s1 damage, when the shield breaks it releases a burst of healing on your party, lasts $s2 min. Thraze lowers your target's Strength by $s3 and deals $s4 to $s5 Shadow damage with an additional $s6 Shadow damage over $s7 sec."] =
+	"자신에게 술을, 적에게 트라제를 방출합니다. 술은 $s1의 피해를 흡수하며 보호막이 파괴되면 파티를 강력하게 치유합니다. $s2분 동안 지속됩니다. 트라제는 대상의 힘을 $s3만큼 감소시키고 $s4 ~ $s5의 암흑 피해를 입히며 $s7초에 걸쳐 $s6의 추가 암흑 피해를 입힙니다.",
+	["Chance to strike your ranged target with a Fire Blast for $s1 to $s2 Fire damage."] =
+	"공격 시 일정 확률로 대상에게 화염 작렬을 날려 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Teaches you how to make a Fire Protection Potion."] = "화염 보호 물약을 만드는 방법을 배웁니다.",
+	["Permanently adds $s1 fire resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 화염 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Heavy Timbermaw Belt."] = "나무구렁 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Murloc Scale Belt."] = "멀록 비늘 허리띠를 만드는 방법을 배웁니다.",
+	["Attempts to remove $s1 Curse, $s2 Disease and $s3 hostile Magic effect from the Imbiber."] =
+	"복용한 대상에게 걸린 $s1개의 저주, $s2개의 질병, $s3개의 적대적 마법 효과를 제거합니다.",
+	["While applied to target weapon it increases spell damage by up to $s1 Lasts for $s2 hour."] =
+	"대상 무기에 바르면 주문 공격력이 최대 $s1만큼 증가합니다. 지속시간 $s2시간.",
+	["Teaches you how to make a Searing Grips."] = "이글거리는 손아귀를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Small Red Rocket."] = "작은 빨간색 폭죽을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Flarecore Robe."] = "화염핵 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to transmute Essence of Undeath into Essence of Water."] = "불사의 정수를 물의 정수로 변환하는 방법을 배웁니다.",
+	["Teaches you how to make a Large Green Rocket Cluster."] = "큰 녹색 연발탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Sniper Scope."] = "저격용 조준경을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. Also restores $s3 Mana every $s4 seconds for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. 또한 $s5분 동안 $s4초마다 $s3의 마나를 회복합니다.",
+	["Teaches you how to make an Invisibility Potion."] = "투명 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Dark Iron Pulverizer."] = "검은무쇠 분쇄기를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Loch Frenzy Delight."] = "호수프렌지 별미를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Hardened Iron Shortsword."] = "단단한 철제 쇼트소드를 만드는 방법을 배웁니다.",
+	["Increases spell damage by up to $s1 for $s2 min. Battle Elixir."] = "$s2분 동안 주문 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Teaches you how to make a Gloves of Dazzling Light."] = "눈부신 빛의 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Black Whelp Cloak."] = "새끼 검은용 망토를 만드는 방법을 배웁니다.",
+	["Increases reputation gained with Valor's Expedition by $s1% for $s2 hour."] =
+	"$s2시간 동안 발로의 원정대 평판 획득량이 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Flask of Distilled Wisdom."] = "순수한 지혜의 영약을 만드는 방법을 배웁니다.",
+	["Increases damage done by $s1 and attack speed by $s2% for $s3 sec."] = "$s3초 동안 공격력이 $s1만큼, 공격 속도가 $s2%만큼 증가합니다.",
+	["Increases attack power by $s1 for $s2 sec. If you are swimming when you activate this item it will instead last $s3 sec."] =
+	"$s2초 동안 전투력이 $s1만큼 증가합니다. 수영 중일 때 이 아이템을 사용하면 대신 $s3초 동안 지속됩니다.",
+	["Teaches you how to craft Devilsaur Gauntlets."] = "데빌사우루스 건틀릿을 만드는 방법을 배웁니다.",
+	["Protects the wearer from the Mark of Kazzak."] = "카자크의 징표로부터 착용자를 보호합니다.",
+	["Teaches you how to make Complicated Components."] = "복잡한 부품을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lesson of the Doom Lord."] = "파멸의 군주 수업을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Stronghold Gauntlets."] = "아성의 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Gnomish Universal Remote."] = "노움의 만능 원격조종기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Pristine Black Diamond Amulet."] = "온전한 검은 다이아몬드 아뮬렛을 만드는 방법을 배웁니다.",
+	["Teaches you how to make the Stable Flamecore Engine."] = "안정적인 화염핵 엔진을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Red Mageweave Shoulders."] = "붉은 마법매듭 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Green Silk Pack."] = "녹색 비단 배낭을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Festival Suit."] = "축제 의상을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Armor for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 방어도가 $s4만큼 증가합니다.",
+	["Has a $s1% chance when struck in combat of increasing chance to block by $s2% for $s3 sec."] =
+	"전투 중 피격 시 $s1% 확률로 $s3초 동안 방패 막기 확률이 $s2%만큼 증가합니다.",
+	["Channels a bolt of lightning and hurls it towards all enemies in front of the caster causing $s1 to $s2 Nature damage. The caster is then surrounded by a barrier of electricity for $s3 min."] =
+	"번개 화살을 시전하여 전방의 모든 적에게 $s1 ~ $s2의 자연 피해를 입힙니다. 그 후 $s3분 동안 전기 보호막이 시전자를 감쌉니다.",
+	["Blasts a target for $s1 to $s2 Fire damage."] = "대상에게 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Improves your chance to hit with melee and ranged attacks by $s1% for $s2 hour."] =
+	"$s2시간 동안 근접 및 원거리 공격 적중률이 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Onyxia Scale Shield."] = "오닉시아 비늘 방패를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to cause your spell casts to occasionally grant the wisdom of dragons, increasing intellect by $s1 and restoring $s2 mana every $s3 seconds for $s4 seconds."] =
+	"근접 무기에 영구적으로 마법을 부여하여 주문 시전 시 일정 확률로 용의 지혜를 얻어 $s4초 동안 지능이 $s1만큼 증가하고 $s3초마다 $s2의 마나를 회복합니다.",
+	["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 haste rating and Stamina for $s5 hour."] =
+	"$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 가속도와 체력이 $s4만큼 증가합니다.",
+	["Teaches you how to make a Dark Iron Helm."] = "검은무쇠 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Wildthorn Mail."] = "찔레가시 사슬갑옷을 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain +$s4 Defense and a $s5% chance to resist fear effects. Lasts $s6 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s6분 동안 방어 숙련도가 $s4만큼, 공포 저항 확률이 $s5%만큼 증가합니다.",
+	["Unleash a volley of frostbolts at targets within $s1 yards in front of you, dealing $s2 damage and slowing them by $s3% for $s4 sec."] =
+	"전방 $s1미터 반경 내의 적들에게 연발 얼음 화살을 발사하여 $s2의 피해를 입히고 $s4초 동안 이동 속도를 $s3%만큼 감소시킵니다.",
+	["Teaches you how to craft Volcanic Leggings."] = "화산 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Silvered Bronze Shoulders."] = "은도금한 청동 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Soul Mirror."] = "영혼의 거울을 만드는 방법을 배웁니다.",
+	["Attack Power increased by $s1 when fighting Dragonkin."] = "용족과 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to transmute Essence of Water into Essence of Undeath."] = "물의 정수를 불사의 정수로 변환하는 방법을 배웁니다.",
+	["A protective mana shield surrounds the caster absorbing $s1 damage. While the shield holds, increases mana regeneration by $s2 every $s3 sec for $s4 min."] =
+	"마나 보호막이 시전자를 감싸 $s1의 피해를 흡수합니다. 보호막이 유지되는 동안 $s4분 동안 $s3초마다 마나 회복량이 $s2만큼 증가합니다.",
+	["Teaches you how to craft Black Dragonscale Boots."] = "검은용비늘 장화를 만드는 방법을 배웁니다.",
+	["Increases damage done by Frost spells and effects by up to $s1"] = "냉기 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to craft Dusky Leather Leggings."] = "거무스름한 가죽 다리보호구를 만드는 방법을 배웁니다.",
+	["Wounds the target for $s1 to $s2 damage and deals an additional $s3 damage every $s4 sec for $s5 sec."] =
+	"대상에게 $s1 ~ $s2의 상처를 입히고 $s5초 동안 $s4초마다 $s3의 추가 피해를 입힙니다.",
+	["Teaches you how to make a Stratholme Saperavi."] = "스트라솔름 포도주를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Iron Diplomacy."] = "강철의 외교 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Mooncloth Bag."] = "달빛매듭 가방을 만드는 방법을 배웁니다.",
+	["Increases the amount of charges for your Earth Shield by $s1"] = "대지의 보호막 효과가 $s1만큼 추가로 충전됩니다.",
+	["Teaches you how to make Dark Iron Mail."] = "검은무쇠 사슬 갑옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to sometimes bless the wielder, healing you for $s1-$s2 and increasing your healing received by $s3% for $s4 seconds."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 장착자에게 축복을 내려 생명력을 $s1 ~ $s2만큼 회복시키고 $s4초 동안 받는 치유 효과를 $s3%만큼 증가시킵니다.",
+	["Teaches you how to cook a delicious Redridge Goulash."] = "맛있는 붉은마루산 굴라시 스튜를 요리하는 방법을 배웁니다.",
+	["Shoot a player, and Kwee Q. Peddlefeet will find them!"] = "플레이어에게 발사하면 덜렁발 큐 큐피드가 찾아갑니다!",
+	["Teaches you how to make a Greater Catseye Elixir."] = "상급 고양이눈 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Molten Helm."] = "화산 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to transmute Essence of Fire into Essence of Earth."] = "불의 정수를 대지의 정수로 변환하는 방법을 배웁니다.",
+	["Attaches a permanent scope to a bow, crossbow, or gun that increases its chance to hit by $s1%. Attaching this scope to a ranged weapon causes it to become soulbound."] =
+	"활, 석궁, 총에 조준경을 부착하여 적중률을 $s1%만큼 증가시킵니다. 이 조준경을 부착하면 원거리 무기가 영혼 귀속됩니다.",
+	["Teaches you how to make Metal Armor Components."] = "금속 방어구 부품을 만드는 방법을 배웁니다.",
+	["Increases damage done by Shadow spells and effects by up to $s1"] = "암흑 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to craft Chromatic Gauntlets."] = "오색 건틀릿을 만드는 방법을 배웁니다.",
+	["On dodge, block, or parry you sometimes release a shockwave slowing enemies in front of you."] =
+	"회피, 방어 또는 무기 막기 시 일정 확률로 전방의 적들을 느리게 하는 충격파를 발산합니다.",
+	["Moonkin Form now also increases the Arcane Resistance of all party and raid members by $s1"] =
+	"달빛야수 변신 시 파티 및 공격대원의 비전 저항력이 $s1만큼 증가합니다.",
+	["Teaches you how to craft Fine Leather Gloves."] = "고급 가죽 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Mooncloth Vest."] = "달빛매듭 조끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Tough Scorpid Leggings."] = "단단한 전갈 다리보호구를 만드는 방법을 배웁니다.",
+	["Increases damage done by Nature spells and effects by up to $s1"] = "자연 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["While you are in an area touched by the Firelord, your attack power and spell damage is increased by $s1"] =
+	"불의 군주의 기운이 닿는 지역에 있는 동안 전투력과 주문 공격력이 $s1만큼 증가합니다.",
+	["Teaches you how to make Enchanted Thorium Leggings."] = "마력 깃든 토륨 다리보호구를 만드는 방법을 배웁니다.",
+	["Chance to bathe your melee target in flames for $s1 to $s2 Fire damage."] =
+	"공격 시 일정 확률로 근접 대상에게 화염을 뒤집어씌워 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Teaches you how to make a Potion of Plagueward."] = "역병막이 물약을 만드는 방법을 배웁니다.",
+	["Afflicts you with Balefire, burning you for each stack you have. Melee damage taken has a chance to burn attackers, causing damage for every stack of Balefire you both have. Lasts $s1 min."] =
+	"지옥불의 저주에 걸려 중첩 횟수에 비례한 피해를 입습니다. 근접 피해를 입을 때마다 일정 확률로 공격자를 불태워 자신과 상대 모두에게 지옥불 중첩에 해당하는 피해를 줍니다. $s1분 지속.",
+	["Absorbs $s1 to $s2 Fire damage. Lasts $s3 sec."] = "$s1 ~ $s2의 화염 피해를 흡수합니다. 지속시간 $s3초.",
+	["Teaches you how to make a High Elven Shield."] = "하이 엘프 방패를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Dolanaar Tea."] = "돌라나르 차를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Dark Iron Destroyer."] = "검은무쇠 파괴자를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Deadly Scope."] = "초정밀 조준경을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase Agility by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
+	["+$s1 Attack Power when fighting Elementals."] = "정령과 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to summon Baron Rivendare's steed. This is a very fast mount."] =
+	"남작 리븐데어의 죽음의 군마를 소환하는 방법을 배웁니다. 아주 빠른 탈것입니다.",
+	["Teaches you how to sew Truefaith Gloves."] = "신앙의 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Mithril Spurs."] = "미스릴 박차를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Barbaric Bracers."] = "야만전사의 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Cooked Glossy Mightfish."] = "빛깔좋은 망둥어 요리를 하는 방법을 배웁니다.",
+	["Teaches you how to craft Pilferer's Gloves."] = "좀도둑 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Fortitude."] = "인내의 비약을 만드는 방법을 배웁니다.",
+	["Reflects Arcane spells back at their caster for $s1 sec."] = "$s1초 동안 비전 주문을 시전자에게 반사합니다.",
+	["Increases spell holy damage by up to $s1 for $s2 min. Battle Elixir"] = "$s2분 동안 신성 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약",
+	["Teaches you how to cook a delicious Clam Chowder."] = "맛있는 조개 수프를 요리하는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase fishing skill by $s1"] =
+	"장갑에 영구적으로 마법을 부여하여 낚시 숙련도를 $s1만큼 증가시킵니다.",
+	["Blasts open difficult locked doors."] = "자물쇠로 채워진 문을 날려버립니다.",
+	["Teaches you how to make a Discolored Healing Potion."] = "변색된 치유 물약을 만드는 방법을 배웁니다.",
+	["Consume $s1 stacks of Raw Fury of the Black Flight to transform into a Black Drakonid, granting $s2 strength for $s3 sec."] =
+	"검은용군단의 원초적 분노 중첩 $s1개를 소비하여 검은 용기병으로 변신하고 $s3초 동안 힘이 $s2만큼 증가합니다.",
+	["Reduces the rage cost of Maul and Swipe by $s1"] = "후려치기와 휘둘러치기의 분노 소비량이 $s1만큼 감소합니다.",
+	["Teaches you how to sew Inferno Gloves."] = "지옥불 장갑을 만드는 방법을 배웁니다.",
+	["Transforms $s1 Felcloth into $s2 Mooncloth without the aid of a moonwell."] =
+	"달샘의 힘을 빌리지 않고 지옥매듭 옷감 $s1개를 달빛 옷감 $s2개로 변환합니다.",
+	["Removes $s1 poison effect."] = "$s1개의 독 효과를 해제합니다.",
+	["Teaches you how to craft Runic Leather Pants."] = "룬문자 가죽 바지를 만드는 방법을 배웁니다.",
+	["Teaches Prayer of Fortitude (Rank $s1)."] = "인내의 기원 ($s1 레벨) 주문을 배웁니다.",
+	["Teaches you how to make a Large Red Rocket."] = "큰 빨간색 폭죽을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Blue Linen Robe."] = "파란색 리넨 로브를 만드는 방법을 배웁니다.",
+	["Place a chest at the target area. When the chest is opened, players in a $s1 yard radius will be feared for $s2 seconds. Lasts $s3 minutes. Not useable in instances and battlegrounds."] =
+	"대상 지역에 궤짝을 놓습니다. 궤짝을 열면 $s1미터 반경의 플레이어들이 $s2초 동안 공포에 질립니다. 지속시간 $s3분. 인스턴스 던전과 전장에서는 사용할 수 없습니다.",
+	["You turn to stone, protecting you from all physical attacks and spells for $s1 min, but during that time you cannot attack, move or cast spells. You can only have the effect of one flask at a time."] =
+	"자신의 몸을 석화시켜 $s1분 동안 모든 물리 공격과 마법 주문으로부터 보호하지만, 그동안 이동이나 공격, 주문 시전을 할 수 없습니다. 영약 효과는 한 번에 1개씩만 지속됩니다.",
+	["Teaches you how to craft a Corehound Belt."] = "화산사냥개 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Tough Scorpid Shoulders."] = "단단한 전갈 어깨보호구를 만드는 방법을 배웁니다.",
+	["Chance on damage or healing spell cast to restore $s1 to $s2 mana."] =
+	"공격 또는 치유 주문 시전 시 일정 확률로 마나를 $s1 ~ $s2만큼 회복합니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain a chance upon taking damage to reduce the attack power of enemies behind you by $s4 for $s5 sec. Lasts $s6 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 피격 시 일정 확률로 $s5초 동안 등 뒤에 있는 적의 전투력을 $s4만큼 감소시킵니다. 지속시간 $s6분.",
+	["Teaches you how to make an Ultra-Flash Shadow Reflector."] = "초광자 암흑 반사기를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Bristle Whisker Catfish."] = "표범메기 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to sew a Brightcloth Robe."] = "빛매듭 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to create Lesser Wizard Oil."] = "하급 마술사 오일을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to often chill the target, reducing their movement and attack speed. Has a reduced effect for players above level $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 대상에게 자주 한기를 느끼게 만들어 이동 및 공격 속도를 감소시킵니다. $s1레벨 이상의 플레이어에게는 효과가 감소합니다.",
+	["Increases the effect that healing potions have on the wearer by $s1%. This effect does not stack."] =
+	"착용자가 치유 물약을 사용할 때 치유 효과가 $s1%만큼 증가합니다. 이 효과는 중첩되지 않습니다.",
+	["Increases run speed by $s1% for $s2 sec. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
+	"$s2초 동안 달리기 속도가 $s1%만큼 증가합니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
+	["Set out a great feast that will feed your party! Everybody eat me!"] = "파티를 배불리 먹일 수 있는 성대한 잔칫상을 차립니다! 모두 드십시오!",
+	["Increases damage done by magical spells and effects by up to $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death."] =
+	"$s2시간 동안 마법 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속됩니다.",
+	["Teaches you how to make Temper-proof Bracers."] = "튼튼한 팔보호구를 만드는 방법을 배웁니다.",
+	["Spell damage taken by target increased by $s1% for $s2 sec."] = "$s2초 동안 대상이 받는 주문 피해가 $s1%만큼 증가합니다.",
+	["Reduces the cooldown of your Divine Illumination by $s1 seconds."] = "신의 계시 재사용 대기시간이 $s1초만큼 감소합니다.",
+	["Increase Rage by $s1"] = "분노를 $s1만큼 생성합니다.",
+	["Chance to strike your melee target with lightning for $s1 to $s2 Nature damage."] =
+	"근접 공격 시 일정 확률로 대상에게 번개를 떨어뜨려 $s1 ~ $s2의 자연 피해를 입힙니다.",
+	["Teaches you how to sew a Black Swashbuckler's Shirt."] = "검은색 모험가 셔츠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Major Troll's Blood Elixir."] = "일급 트롤의 피 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Fiery Chain Girdle."] = "불타는 사슬 벨트를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Black Dragonscale Leggings."] = "검은용비늘 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Runic Leather Headband."] = "룬문자 가죽 머리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Silvered Bronze Leggings."] = "은도금한 청동 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Serenity."] = "평온의 곤봉을 만드는 방법을 배웁니다.",
+	["The dynamite for Non-Engineers that nearly always gets to the target! Inflicts $s1 to $s2 Fire damage in a $s3 yard radius."] =
+	"기계공학 비숙련자도 대개 목표물에 맞힐 수 있는 다이너마이트입니다! 반경 $s3미터 내의 적에게 $s1 ~ $s2의 화염 피해를 입힙니다.",
+	["Change the school of magic that this wand fires."] = "이 마법봉에서 발사되는 마법의 계열을 바꿉니다.",
+	["You attack all nearby enemies for $s1 sec causing weapon damage plus an additional $s2 every $s3 sec."] =
+	"$s1초 동안 주변의 모든 적을 공격하여 무기 공격력과 함께 $s3초마다 $s2의 추가 피해를 입힙니다.",
+	["Teaches you how to sew a Red Woolen Bag."] = "붉은색 양모 자루를 만드는 방법을 배웁니다.",
+	["Wounds the target for $s1 to $s2 damage and lowers Intellect of target by $s3 for $s4 sec."] =
+	"대상에게 $s1 ~ $s2의 피해를 입히고 $s4초 동안 지능을 $s3만큼 감소시킵니다.",
+	["Increases melee and ranged attack power by $s1 for $s2 hrs. Counts as both a Battle and Guardian elixir. This effect persists through death."] =
+	"$s2시간 동안 근접 및 원거리 전투력이 $s1만큼 증가합니다. 전투 비약 및 수호의 비약으로 간주됩니다. 이 효과는 죽은 후에도 지속됩니다.",
+	["Increases your spell damage by up to $s1 and your healing by up to $s2 for $s3 sec."] =
+	"$s3초 동안 주문 공격력이 최대 $s1만큼, 주문 치유량이 최대 $s2만큼 증가합니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and increase your healing done by spells and abilities by $s4 for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 마법 주문 및 능력이 치유량이 $s4만큼 증가합니다.",
+	["Teaches you how to craft the Might of the Timbermaw."] = "나무구렁일족의 힘을 만드는 방법을 배웁니다.",
+	["Attach an embroidery onto your cloak, increasing damage and healing done by magical spells and effects by $s1 Only the tailor's cloak can be enchanted and enchanting a cloak will cause it to become soulbound."] =
+	"망토에 자수를 수놓아 마법 주문 및 효과의 공격력 및 치유량을 $s1만큼 증가시킵니다. 자신이 사용할 망토에만 부여할 수 있으며, 영혼이 귀속됩니다.",
+	["Teaches you how to permanently enchant a two-handed melee weapon to increase Intellect by $s1"] =
+	"양손 근접 무기에 영구적으로 마법을 부여하여 지능을 $s1만큼 증가시킵니다.",
+	["Gives the imbiber lesser invisibility for $s1 sec."] = "복용한 대상을 $s1초 동안 하급 투명화 상태로 만듭니다.",
+	["Teaches you how to sew a Rich Purple Silk Shirt."] = "진보라색 비단 셔츠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Wicked Leather Pants."] = "악의의 가죽 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Large Blue Rocket Cluster."] = "큰 파란색 연발탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Polished Philosopher Stone."] = "빛나는 현자의 돌을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a cloak to increase armor by $s1"] = "망토에 영구적으로 마법을 부여하여 방어도를 $s1만큼 증가시킵니다.",
+	["Teaches you how to make an Iron Shield Spike."] = "철제 방패 스파이크를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Green Iron Gauntlets."] = "녹색 철제 건틀릿을 만드는 방법을 배웁니다.",
+	["Increases damage done by Earth Shock, Flame Shock, and Frost Shock by up to $s1"] =
+	"대지 충격, 화염 충격, 냉기 충격의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to craft Devilsaur Leggings."] = "데빌사우루스 다리보호구를 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Fire Resistance for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 화염 저항력이 $s4만큼 증가합니다.",
+	["Teaches you how to make a Suspicious Stew."] = "수상한 스튜를 만드는 방법을 배웁니다.",
+	["When struck in combat has a $s1% chance of inflicting $s2 to $s3 Nature damage to the attacker."] =
+	"전투 중 피격 시 $s1% 확률로 공격자에게 $s2 ~ $s3의 자연 피해를 입힙니다.",
+	["Teaches you how to make a Rugged Saddle."] = "거친 가죽 안장을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Spotted Yellowtail."] = "점박이놀래기 구이를 요리하는 방법을 배웁니다.",
+	["When struck in combat has a $s1% chance to heal you for $s2 to $s3"] = "전투 중 피격 시 $s1% 확률로 생명력을 $s2 ~ $s3만큼 회복합니다.",
+	["Defense +$s1 for $s2 sec."] = "$s2초 동안 방어 숙련도가 $s1만큼 증가합니다.",
+	["Teaches you how to make a Goblin Jumper Cable XL."] = "고블린 점퍼 케이블 XL을 만드는 방법을 배웁니다.",
+	["Increases the critical strike chance of your next attack made within $s1 seconds by $s2%."] =
+	"$s1초 내에 하는 다음 공격의 치명타 적중률이 $s2%만큼 증가합니다.",
+	["Teaches you how to sew an Earthen Silk Belt."] = "대지의 비단 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Heavy Mithril Pants."] = "견고한 미스릴 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Mooncloth Leggings."] = "달빛매듭 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Felcloth Robe."] = "지옥매듭 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Baked Salmon."] = "연어 구이를 요리하는 방법을 배웁니다.",
+	["The chomper chomps the target, chomping their movement speed by $s1% for $s2 sec."] =
+	"적을 강하게 물어뜯어 $s2초 동안 이동 속도를 $s1%만큼 둔화시킵니다.",
+	["Teaches you how to permanently enchant bracers to increase Strength by $s1"] =
+	"손목보호구에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
+	["Teaches you how to cook Longjaw Mud Snapper."] = "긴주둥이진흙퉁돔 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Shoulderpads of Dazzling Light."] = "눈부신 빛의 어깨보호대를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Tough Scorpid Boots."] = "단단한 전갈 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Red Linen Vest."] = "붉은색 리넨 조끼를 만드는 방법을 배웁니다.",
+	["Deals $s1 Nature damage every $s2 sec to any enemy in an $s3 yard radius around the caster for $s4 sec."] =
+	"$s4초 동안 시전자 주위 $s3미터 반경 내의 적들에게 $s2초마다 $s1의 자연 피해를 입힙니다.",
+	["+$s1 Arcane and Shadow Resistance"] = "비전 및 암흑 저항력 $s1 증가",
+	["Teaches you how to craft Living Shoulders."] = "살아있는 어깨보호구를 만드는 방법을 배웁니다.",
+	["Hearth with a Bloody Visual."] = "붉은 효과의 귀환.",
+	["Teaches you how to cook Smoked Sagefish."] = "훈제 총명어를 요리하는 방법을 배웁니다.",
+	["Reduces your chance that Avenging Wrath will be dispelled by $s1%."] = "응징의 격노가 무효화될 확률이 $s1%만큼 감소합니다.",
+	["Summon three baby Spiderlings to protect you for $s1 min."] = "$s1분 동안 새끼 거미 3마리를 소환하여 자신을 보호하게 합니다.",
+	["Teaches you how to make Thorium Shells."] = "토륨 탄환을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Gooey Spider Cake."] = "쫄깃쫄깃한 거미 케이크를 요리하는 방법을 배웁니다.",
+	["Teaches you how to sew a Red Mageweave Headband."] = "붉은 마법매듭 머리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Scorpid Surprise."] = "전갈 별미를 요리하는 방법을 배웁니다.",
+	["Calls forth $s1 Silithid that will fight for you."] = "자신을 위해 싸울 $s1마리의 실리시드를 소환합니다.",
+	["Summon and control your Remote Controlled Goblin Car."] = "원격조종 고블린 자동차를 소환하여 조종합니다.",
+	["Teaches you how to make a Basilisk Scale Gloves."] = "바실리스크 비늘 장갑을 만드는 방법을 배웁니다.",
+	["Your attacks with this wand have a chance to blast the target for $s1 fire damage."] =
+	"마법봉으로 공격 시 일정 확률로 화염 폭발을 일으켜 $s1의 화염 피해를 입힙니다.",
+	["Teaches you how to make a Frostguard."] = "서리수호검을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Blue Linen Vest."] = "파란색 리넨 조끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Thorium Grenade."] = "토륨 수류탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Voice Amplification Modulator."] = "주문 확성 변조기를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Frostweave Tunic."] = "서리매듭 튜닉을 만드는 방법을 배웁니다.",
+	["Increases the damage and healing of Holy Shock by $s1%."] = "신성 충격의 공격력 및 치유량이 $s1%만큼 증가합니다.",
+	["Teaches you how to craft Turtle Scale Gloves."] = "거북 껍질 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Fiery Chain Shoulders."] = "불타는 사슬 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blue Dragonscale Boots."] = "푸른용비늘 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Enchanted Thorium Breastplate."] = "마력 깃든 토륨 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Dark Iron Reaver."] = "검은무쇠 학살자를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Bright-Eye Goggles."] = "초롱초롱 고글을 만드는 방법을 배웁니다.",
+	["Restores $s1 to $s2 mana."] = "$s1 ~ $s2의 마나를 회복합니다.",
+	["Take a swig from the tankard, putting you to sleep for $s1 sec. During that time the imbiber regenerates $s2 health and $s3 mana."] =
+	"조끼를 크게 한 모금 들이켜 $s1초 동안 잠이 듭니다. 그 동안 마신 사람은 생명력을 $s2만큼, 마나를 $s3만큼 회복합니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 increased attack power against undead for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 언데드에 대한 전투력이 $s4만큼 증가합니다.",
+	["Teaches you how to make a Bleakwood Hew."] = "귀신나무 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Frost Oil."] = "냉기 기름을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Band of Fire Repellant."] = "화염 격퇴의 반지를 만드는 방법을 배웁니다.",
+	["Chance to strike your ranged target with a Venom Shot for $s1 to $s2 Nature damage."] =
+	"원거리 공격 시 일정 확률로 대상에게 맹독 화살을 날려 $s1 ~ $s2의 자연 피해를 입힙니다.",
+	["Teaches you how to transmute Iron into Gold."] = "철을 금으로 변환하는 방법을 배웁니다.",
+	["Teaches you how to sew Phoenix Pants."] = "불사조 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Snowmaster $s1"] = "눈뭉치제조기 $s1을(를) 만드는 방법을 배웁니다.",
+	["Teaches you how to bake a Gingerbread Cookie."] = "생강 과자빵 굽는 방법을 배웁니다.",
+	["Permanently adds $s1 resistance to all magic schools to a shoulder slot item."] =
+	"어깨보호구에 영구적으로 모든 마법 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Stanchion of Dazzling Light."] = "눈부신 빛의 융기를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Runecloth Pants."] = "룬매듭 바지를 만드는 방법을 배웁니다.",
+	["Increases damage done by Arcane spells and effects by up to $s1"] = "비전 주문 및 효과의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to craft Volcanic Shoulders."] = "화산 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Cloth Armor Components."] = "천 방어구 부품을 만드는 방법을 배웁니다.",
+	["Blasts a target for $s1 to $s2 Frost damage."] = "대상에게 $s1 ~ $s2의 냉기 피해를 입힙니다.",
+	["Heal self for $s1 to $s2 and Increases Strength by $s3 for $s4 sec."] =
+	"자신의 생명력을 $s1 ~ $s2만큼 회복시키고 $s4초 동안 힘을 $s3만큼 증가시킵니다.",
+	["Teaches you how to permanently enchant chest armor to increase health by $s1"] =
+	"가슴보호구에 영구적으로 마법을 부여하여 생명력을 $s1만큼 증가시킵니다.",
+	["The casting time on your Regrowth spell is reduced by $s1 sec."] = "재생 주문의 시전 시간이 $s1초만큼 감소합니다.",
+	["Teaches you how to craft Tough Scorpid Gloves."] = "단단한 전갈 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Sulfuron Hammer."] = "설퍼론 망치를 만드는 방법을 배웁니다.",
+	["Conjures a sudden burst of water, dealing $s1 to $s2 Frost damage to your target and protecting yourself with a bubble that absorbs $s3 damage for $s4 sec."] =
+	"갑작스러운 물기둥을 소환하여 대상에게 $s1 ~ $s2의 냉기 피해를 입히고 $s4초 동안 자신을 감싸 $s3의 피해를 흡수하는 물거품을 생성합니다.",
+	["Restores $s1 mana every $s2 sec for $s3 sec."] = "$s3초 동안 $s2초마다 $s1의 마나를 회복합니다.",
+	["Teaches you how to make a Lava Leggings."] = "용암 다리보호구를 만드는 방법을 배웁니다.",
+	["Hand of Freedom's cooldown is reduced by $s1 seconds."] = "자유의 손길 재사용 대기시간이 $s1초만큼 감소합니다.",
+	["Chance to gain additional Dragon Scales when skinning Dragons."] = "용을 무두질할 때 추가 용비늘을 얻을 확률이 있습니다.",
+	["Teaches you how to make a Swiftness Potion."] = "신속의 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Phoenix Gloves."] = "불사조 장갑을 만드는 방법을 배웁니다.",
+	["Chance on hit to increase attack power by $s1 for $s2 sec."] = "적중 시 일정 확률로 $s2초 동안 전투력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Flask of Supreme Power."] = "강력한 마력의 영약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Runic Leather Shoulders."] = "룬문자 가죽 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blazing Rapier."] = "불타는 레이피어를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Westfall Stew."] = "서부정통 스튜를 요리하는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to sometimes empower the wielder, increasing melee attack power by $s1 and melee attack speed by $s2%."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 일정 확률로 무기 장착자를 강화하여 근접 전투력을 $s1만큼, 근접 공격 속도를 $s2%만큼 증가시킵니다.",
+	["Teaches you how to cook Nightfin Soup."] = "밤비늘퉁돔 수프를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make Gauntlets of Impossible Grip."] = "파괴할 수 없는 악력의 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Minor Agility."] = "최하급 민첩의 비약을 만드는 방법을 배웁니다.",
+	["Your attacks have a chance to apply Deviate Poison, which causes the target to take up to $s1 additional damage from spells."] =
+	"공격 시 일정 확률로 대상에게 돌연변이 맹독을 감염시켜 주문으로 입는 피해를 최대 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew a Stylish Green Shirt."] = "세련된 녹색 셔츠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Ogre's Strength."] = "오우거의 힘 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to transmute Essence of Air into Essence of Fire."] = "바람의 정수를 불의 정수로 변환하는 방법을 배웁니다.",
+	["Teaches you how to sew a Colorful Kilt."] = "붉은색 킬트를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Fine Leather Pants."] = "고급 가죽 바지를 만드는 방법을 배웁니다.",
+	["Chance to strike your ranged target with a Quill Shot for $s1 to $s2 Nature damage."] =
+	"원거리 공격 시 일정 확률로 가시 화살을 쏘아 $s1 ~ $s2의 자연 피해를 입힙니다.",
+	["Transforms $s1 Thorium Bars and an Arcane Crystal into $s2 Arcanite Bars."] =
+	"토륨 주괴 $s1개와 신비한 수정을 아케이나이트 주괴 $s2개로 변환합니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase its damage to beasts by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 야수에게 입히는 피해를 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Thorium Tube."] = "토륨관을 만드는 방법을 배웁니다.",
+	["Casting Power Word: Shield when you are not in combat makes the absorption effect $s1% stronger."] =
+	"비전투 중에 신의 권능: 보호막을 시전하면 피해 흡수량이 $s1%만큼 증가합니다.",
+	["Teaches you how to permanently enchant a shield to increase frost resistance by $s1"] =
+	"방패에 영구적으로 마법을 부여하여 냉기 저항력을 $s1만큼 증가시킵니다.",
+	["Permanently adds $s1 frost resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 냉기 저항력을 $s1만큼 증가시킵니다.",
+	["Restores $s1 mana over $s2 sec. Must remain seated while drinking. If you spend at least $s3 seconds drinking you will become well quenched and gain $s4 increased spell damage against undead for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 마나를 회복합니다. 마시는 동안에는 앉아 있어야 합니다. $s3초 이상 음료를 마시면 갈증이 해소되어 $s5분 동안 언데드에게 입히는 주문 피해가 $s4만큼 증가합니다.",
+	["Teaches you how to make an Elixir of Valorous Diplomacy."] = "무용의 외교 비약을 만드는 방법을 배웁니다.",
+	["Teaches Flame Shock (Rank $s1)."] = "화염 충격 ($s1 레벨) 주문을 배웁니다.",
+	["Teaches you how to cook Lean Venison."] = "사슴 살코기 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Golden Iron Destroyer."] = "황금 철제 해머를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Enchanted Thorium Helm."] = "마력 깃든 토륨 투구를 만드는 방법을 배웁니다.",
+	["Increases spell arcane damage by up to $s1 for $s2 min. Battle Elixir."] =
+	"$s2분 동안 비전 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Teaches you how to craft Living Leggings."] = "살아있는 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Runic Leather Belt."] = "룬문자 가죽 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Greater Adept's Robe."] = "상급사제용 로브를 만드는 방법을 배웁니다.",
+	["Makes you better able to think like a pirate."] = "해적처럼 생각할 수 있게 해줍니다.",
+	["Target enemy loses $s1 health and mana every $s2 sec for $s3 sec."] = "대상 적은 $s3초 동안 $s2초마다 $s1의 생명력과 마나를 잃습니다.",
+	["+$s1 Attack Power when fighting Undead."] = "언데드와 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Attack Power increased by $s1 when fighting Humanoids."] = "인간형과 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to make a Ghostweave Circlet."] = "유령매듭 머리장식을 만드는 방법을 배웁니다.",
+	["Increases healing done by Healing Stream Totem by $s1"] = "치유의 토템의 치유량이 $s1만큼 증가합니다.",
+	["Permanently adds $s1 arcane resistance to a shoulder slot item."] = "어깨보호구에 영구적으로 비전 저항력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Girdle of the Dawn."] = "여명의 벨트를 만드는 방법을 배웁니다.",
+	["Restores $s1% of your health and mana every sec for $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 hit rating and Stamina for $s5 hour."] =
+	"$s2초 동안 매초 전체 생명력과 마나의 $s1%를 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5시간 동안 적중도와 체력이 $s4만큼 증가합니다.",
+	["Summon and control your Remote Controlled Gnome Car."] = "원격조종 노움 자동차를 소환하여 조종합니다.",
+	["Teaches you how to permanently enchant a shield to increase armor by $s1"] =
+	"방패에 영구적으로 마법을 부여하여 방어도를 $s1만큼 증가시킵니다.",
+	["Heal, Lesser Heal, Greater Heal, and Flash Heal have a $s1% increased chance to critically heal."] =
+	"치유, 하급 치유, 상급 치유, 순간 치유 주문이 극대화 효과를 낼 확률이 $s1%만큼 증가합니다.",
+	["Teaches you how to craft a Wicked Leather Headband."] = "악의의 가죽 머리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Superior Defense."] = "최상급 방어의 비약을 만드는 방법을 배웁니다.",
+	["Decreases Nature resistance by $s1"] = "자연 저항력이 $s1만큼 감소합니다.",
+	["Teaches you how to craft a Molten Belt."] = "작열의 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Mooncloth Gloves."] = "달빛매듭 장갑을 만드는 방법을 배웁니다.",
+	["Increases healing done by magical spells by up to $s1 for $s2 hour."] = "$s2시간 동안 마법 주문의 치유량이 최대 $s1만큼 증가합니다.",
+	["Unlock the bonds of the Blackstone Quartermaster."] = "블랙스톤 병참장교의 구속을 풉니다.",
+	["Teaches you how to make a Copper Chain Vest."] = "구리 사슬 조끼를 만드는 방법을 배웁니다.",
+	["Increases spell fire damage by up to $s1 for $s2 min. Battle Elixir."] =
+	"$s2분 동안 화염 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Teaches you how to make a Moonsight Rifle."] = "달빛 라이플을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Accurate Scope."] = "조준경을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Charcoal Grippers."] = "숯불 손아귀를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Crab Claw."] = "집게발을 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft a Deviate Scale Belt."] = "돌연변이 비늘 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Blue Glittering Axe."] = "화려한 푸른 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Wicked Leather Belt."] = "악의의 가죽 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Argent Boots."] = "은빛 여명회 장화를 만드는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Strength for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 힘이 $s4만큼 증가합니다.",
+	["This item appears to be cursed."] = "이 아이템은 저주받은 것 같습니다.",
+	["Teaches you how to make Radiant Boots."] = "찬란하게 빛나는 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Storm Gauntlets."] = "폭풍 건틀릿을 만드는 방법을 배웁니다.",
+	["Attack Power increased by $s1 when fighting Beasts."] = "야수와 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Increases the damage dealt by your Priest periodic effects by $s1%."] = "사제 주기적인 효과로 입히는 피해가 $s1%만큼 증가합니다.",
+	["Inflicts $s1 to $s2 Holy damage to Undead in a $s3 yard radius."] = "반경 $s3미터 내의 언데드에게 $s1 ~ $s2의 신성 피해를 입힙니다.",
+	["Unlock Title: The Bloodthirsty."] = "칭호 획득: 피투성이.",
+	["Your damaging spells have a chance to draw a rune at your location for $s1 sec, standing in this rune increases the effectiveness of your other Rune Warder set effects by $s2%."] =
+	"공격 주문 사용 시 일정 확률로 $s1초 동안 시전자의 위치에 룬을 그립니다. 이 룬 위에 서 있으면 다른 룬 감시자 세트 효과의 위력이 $s2%만큼 증가합니다.",
+	["Restores $s1 to $s2 health."] = "$s1 ~ $s2의 생명력을 회복합니다.",
+	["Increases the effect that healing and mana potions have on the wearer by $s1%."] =
+	"착용자가 치유 및 마나 물약을 사용할 때 그 효과가 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Seafarer's Swig."] = "뱃사람의 음료를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Pure Arcane Power."] = "순수한 비전 마력의 비약을 만드는 방법을 배웁니다.",
+	["Reflects Frost spells back at their caster for $s1 sec."] = "$s1초 동안 냉기 주문을 시전자에게 반사합니다.",
+	["Causes the target to bleed for $s1 damage every $s2 sec for $s3 sec. Stacks up to $s4 times."] =
+	"대상에게 출혈을 일으켜 $s3초 동안 $s2초마다 $s1의 피해를 입힙니다. 최대 $s4번까지 중첩됩니다.",
+	["Teaches you how to make a Parachute Cloak."] = "낙하산 망토를 만드는 방법을 배웁니다.",
+	["Transfers the Balefire curse from you to an enemy target. Only usable in the Blasted Lands."] =
+	"지옥불의 저주를 자신에게서 적 대상에게로 옮깁니다. 저주받은 땅에서만 사용할 수 있습니다.",
+	["Totem of Wrath's effect now lasts an additional $s1 seconds after it is removed."] =
+	"격노의 토템의 효과가 파괴된 후에도 추가로 $s1초 동안 지속됩니다.",
+	["Sobers you up a little."] = "술이 조금 깹니다.",
+	["Take on the visual of a Gnome Pit Crewman."] = "노움 정비공의 모습으로 변신합니다.",
+	["Absorbs $s1 to $s2 nature damage. Lasts $s3 hour."] = "$s1 ~ $s2의 자연 피해를 흡수합니다. 지속시간 $s3시간.",
+	["Your ranged attacks have a high chance to reduce your target's movement speed and attack speed by $s1% for $s2 sec."] =
+	"원거리 공격 시 높은 확률로 $s2초 동안 대상의 이동 속도와 공격 속도를 $s1%만큼 감소시킵니다.",
+	["Teaches you how to make a Large Red Rocket Cluster."] = "큰 빨간색 연발탄을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Black Dragonscale Breastplate."] = "검은용비늘 흉갑을 만드는 방법을 배웁니다.",
+	["Increases healing done by Flash of Light by up to $s1"] = "빛의 섬광의 치유량이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to sew a Cloak of Warding."] = "수호의 망토를 만드는 방법을 배웁니다.",
+	["$s1% chance on melee hit to gain $s2 extra attack."] = "근접 공격 적중 시 $s1% 확률로 $s2회의 추가 공격을 가합니다.",
+	["Teaches you how to make Radiant Gloves."] = "찬란하게 빛나는 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Hot Coal Cheaters."] = "뜨거운 숯불 사기꾼을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Runecloth Bag."] = "룬매듭 가방을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Spellpower Goggles Xtreme Plus."] = "최신형 주문증폭 고글을 만드는 방법을 배웁니다.",
+	["Blasts open simple locked doors."] = "단순한 자물쇠로 채워진 문을 날려버립니다.",
+	["Allows opening of simple locks. The skeleton key is consumed in the process."] =
+	"단순한 자물쇠를 열 수 있습니다. 사용하는 과정에서 해골 열쇠는 소모됩니다.",
+	["Teaches you how to cook a Curiously Tasty Omelet. Don't ask, you don't want to know."] =
+	"진기한 맛의 오믈렛을 요리하는 방법을 배웁니다. 묻지 마세요, 알고 싶지 않을 테니까요.",
+	["Teaches you how to make a World Enlarger."] = "아제로스 확대기를 만드는 방법을 배웁니다.",
+	["Dispels Polymorph effects on a friendly target. Also restores $s1 to $s2 health and mana."] =
+	"아군 대상의 변이 효과를 해제합니다. 또한 생명력과 마나를 $s1 ~ $s2만큼 회복시킵니다.",
+	["Teaches you how to permanently enchant boots to increase Spirit by $s1"] = "장화에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Portable Bronze Mortar."] = "휴대용 청동 박격포를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase Agility by $s1"] =
+	"장갑에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
+	["Teaches Gift of the Wild (Rank $s1)."] = "야생의 선물 ($s1 레벨) 주문을 배웁니다.",
+	["Wounds the target for $s1 to $s2 damage."] = "대상에게 상처를 입혀 $s1 ~ $s2의 피해를 입힙니다.",
+	["Take on the visual of a Goblin Pit Crewman."] = "고블린 정비공의 모습으로 변신합니다.",
+	["Teaches you how to make a Black Diamond Amulet."] = "검은 다이아몬드 아뮬렛을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lovingly Crafted Boomstick."] = "정성이 가득 담긴 붐스틱을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Dark Leather Gloves."] = "암색 가죽 장갑을 만드는 방법을 배웁니다.",
+	["Inflicts $s1% weapon damage and reduces healing received by the target by $s2% for $s3 sec."] =
+	"무기 공격력의 $s1%에 해당하는 피해를 입히고 $s3초 동안 대상이 받는 치유 효과를 $s2%만큼 감소시킵니다.",
+	["Teaches you how to make a Felstone Grog."] = "펠스톤 그로그주를 만드는 방법을 배웁니다.",
+	["Deals $s1 Shadow damage every $s2 sec for $s3 sec and lowers their Strength for the duration of the disease."] =
+	"대상에게 $s3초 동안 $s2초마다 $s1의 암흑 피해를 입히고, 질병이 지속되는 동안 대상의 힘을 감소시킵니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4 Stamina and Spirit for $s5 min. Also packs quite a kick..."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s5분 동안 체력과 정신력이 $s4만큼 증가합니다. 취기가 오를 수도 있습니다...",
+	["Teaches you how to cook Brilliant Smallfish."] = "비단잉어 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Runic Leather Bracers."] = "룬문자 가죽 팔보호구를 만드는 방법을 배웁니다.",
+	["Increases damage and healing done by magical spells and effects by up to $s1 and your chance to critically strike with spells by $s2% for $s3 sec."] =
+	"$s3초 동안 마법 주문 및 효과의 공격력 및 치유량이 최대 $s1만큼 증가하고 주문의 극대화 확률이 $s2%만큼 증가합니다.",
+	["Teaches you how to make a Goblin Land Mine."] = "고블린 지뢰를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Gem-studded Leather Belt."] = "보석 박힌 가죽 허리띠를 만드는 방법을 배웁니다.",
+	["Reduces the casting time of your Immolate spell by $s1 sec."] = "제물 주문의 시전 시간이 $s1초만큼 감소합니다.",
+	["Teaches you how to make a Hyper-Radiant Flame Reflector."] = "극고온 화염 반사기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Inlaid Philosopher Stone."] = "세공된 현자의 돌을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Festival Dress."] = "축제 드레스를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Azure Shoulders."] = "감청색 어깨보호구를 만드는 방법을 배웁니다.",
+	["Call on the power of Elune and morph into a Moonkin."] = "엘룬의 힘을 빌려 달빛야수로 변신합니다.",
+	["Teaches you how to sew Frostweave Pants."] = "서리매듭 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Guardian Leather Bracers."] = "수호 가죽 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Barbecued Buzzard Wing."] = "대머리수리 날개 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Limited Invulnerability Potion."] = "제한된 무적 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Red Dragonscale Breastplate."] = "붉은용비늘 흉갑을 만드는 방법을 배웁니다.",
+	["Attack Power increased by $s1 when fighting Undead."] = "언데드와 전투 시 전투력이 $s1만큼 증가합니다.",
+	["Teaches you how to sew a Red Linen Bag."] = "빨간 리넨 가방을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Virtuous Diplomacy."] = "고결의 외교 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Crimson Silk Shoulders."] = "심홍색 비단 어깨보호구를 만드는 방법을 배웁니다.",
+	["Chance on hit or spellcast to haunt the target, increasing spell damage taken by $s1 for $s2 sec."] =
+	"적중 또는 주문 시전 시 일정 확률로 대상을 괴롭혀 $s2초 동안 주문으로 받는 피해를 $s1만큼 증가시킵니다.",
+	["Inflicts $s1 to $s2 Fire damage and stuns targets for $s3 sec in a $s4 yard radius. Any damage will break the effect."] =
+	"반경 $s4미터 내의 적에게 $s1 ~ $s2의 화염 피해를 입히고 $s3초 동안 기절시킵니다. 피해를 입으면 효과가 사라집니다.",
+	["Blasts open nearly any locked door."] = "거의 모든 자물쇠로 채워진 문을 날려버립니다.",
+	["Teaches you how to make a Small Blue Rocket."] = "작은 파란색 폭죽을 만드는 방법을 배웁니다.",
+	["Killing a target with Shadow Word: Death now also decreases the cooldown of Shadowfiend by $s1 seconds."] =
+	"어둠의 권능: 죽음으로 대상을 처치하면 추가로 어둠의 마귀 재사용 대기시간이 $s1초만큼 감소합니다.",
+	["Teaches you how to craft a Guardian Cloak."] = "수호 망토를 만드는 방법을 배웁니다.",
+	["Teaches Eviscerate (Rank $s1)."] = "절개 ($s1 레벨) 주문을 배웁니다.",
+	["Teaches you how to make Blackfury."] = "검은분노를 만드는 방법을 배웁니다.",
+	["Improves your chance to hit by $s1% and your chance to hit with spells by $s2% for $s3 hour. Battle Elixir."] =
+	"$s3시간 동안 적중률이 $s1%만큼 증가하고 주문 적중률이 $s2%만큼 증가합니다. 전투 비약.",
+	["Teaches you how to sew a Frostweave Robe."] = "서리매듭 로브를 만드는 방법을 배웁니다.",
+	["While applied to target weapon it restores $s1 mana to the caster every $s2 seconds. Lasts for $s3 minutes."] =
+	"대상 무기에 바르면 $s2초마다 시전자의 마나를 $s1만큼 회복시킵니다. 지속시간 $s3분.",
+	["Teaches you how to make Gloves of the Dawn."] = "여명의 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Grilled Squid."] = "오징어 구이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant boots to increase Stamina by $s1"] = "장화에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew the Wisdom of the Timbermaw."] = "나무구렁일족의 지혜를 만드는 방법을 배웁니다.",
+	["Teaches you how to create Minor Wizard Oil."] = "최하급 마술사 오일을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Savory Deviate Delight."] = "돌연변이 물고기 별미를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Greater Firepower."] = "상급 화염 강화의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase Strength by $s1"] = "장갑에 영구적으로 마법을 부여하여 힘을 $s1만큼 증가시킵니다.",
+	["Teaches you how to craft a Golden Mantle of the Dawn."] = "여명의 황금 어깨보호대를 만드는 방법을 배웁니다.",
+	["Blasts a target for $s1 to $s2 Nature damage."] = "대상에게 $s1 ~ $s2의 자연 피해를 입힙니다.",
+	["Teaches you how to make a Whitesoul Helm."] = "순백의 투구를 만드는 방법을 배웁니다.",
+	["Your attacks and spells have a chance to transform you into a Worgen, increasing your stats by $s1 for $s2 sec. This effect can only occur during Night."] =
+	"공격이나 주문 사용 시 일정 확률로 늑대인간으로 변신하여 $s2초 동안 능력치가 $s1만큼 증가합니다. 이 효과는 밤에만 발동합니다.",
+	["Teaches you how to make a Dazzling Mithril Rapier."] = "눈부신 미스릴 레이피어를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a White Leather Jerkin."] = "흰색 가죽 웃옷을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Gloves of Spell Mastery."] = "주문 전문화 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Smoked Lava Kisser."] = "훈제 용암 키스 물고기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lava Helm."] = "용암 투구를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Mithril Head Trout."] = "미스릴송어 구이를 요리하는 방법을 배웁니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you eat for $s3 seconds will also increase your damage and healing from magical spells and effects by up to $s4 for $s5 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 $s5분 동안 마법 주문 및 효과의 공격력과 치유량이 최대 $s4만큼 증가합니다.",
+	["Teaches you how to make a Thorium Rifle."] = "토륨 소총을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Shadow Crescent Axe."] = "암흑 초승달 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Black Silk Pack."] = "검은색 비단 배낭을 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Enchanted Battlehammer."] = "마력 깃든 전투망치를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Elixir of Lesser Agility."] = "하급 민첩의 비약을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a shield to increase Stamina by $s1"] =
+	"방패에 영구적으로 마법을 부여하여 체력을 $s1만큼 증가시킵니다.",
+	["Deals $s1 to $s2 damage every time you block."] = "방어할 때마다 $s1 ~ $s2의 피해를 입힙니다.",
+	["Teaches you how to make Dark Iron Boots."] = "검은무쇠 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Thorium Leggings."] = "토륨 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Earthen Leather Shoulders."] = "대지의 가죽 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Discombobulator Ray."] = "유전자 역결합 광선창을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Fine Leather Boots."] = "고급 가죽 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Flarecore Leggings."] = "화염핵 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to summon this mount"] = "이 탈것을 소환하는 방법을 배웁니다.",
+	["Teaches you how to transmute Thorium and Arcane Crystals into Arcanite."] = "토륨 주괴와 신비한 수정을 아케이나이트로 변환하는 방법을 배웁니다.",
+	["Teaches you how to craft a Heavy Scorpid Belt."] = "두꺼운 전갈 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a cloak to increase Agility by $s1"] =
+	"망토에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
+	["Teaches you how to create Minor Mana Oil."] = "최하급 마나 오일을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Fillet of Frenzy."] = "프렌지살 요리를 하는 방법을 배웁니다.",
+	["Teaches you how to make a Jade Serpentblade."] = "비취 비늘검을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Masterwork Stormhammer."] = "명인의 폭풍망치를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Stormshroud Pants."] = "폭풍안개 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make an Annihilator."] = "파괴의 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Massive Iron Axe."] = "큰 철제 도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase mount speed by $s1%."] =
+	"장갑에 영구적으로 마법을 부여하여 탈것 속도를 $s1%만큼 증가시킵니다.",
+	["Teaches you how to make a Large Seaforium Charge."] = "대형 시포리움 폭약을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a two-handed melee weapon to increase Agility by $s1"] =
+	"양손 근접 무기에 영구적으로 마법을 부여하여 민첩성을 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew a Stylish Blue Shirt."] = "세련된 파란색 셔츠를 만드는 방법을 배웁니다.",
+	["Captures a mounted player target up to $s1 yards away in a net for $s2 sec. Requires Warmode. Only usable within the Eastern Kingdoms and Kalimdor."] =
+	"최대 $s1미터 거리에 있는 탈것을 탄 플레이어 대상을 $s2초 동안 그물로 사로잡습니다. 전쟁 모드가 필요합니다. 동부 왕국과 칼림도어에서만 사용할 수 있습니다.",
+	["Teaches you how to cook Heavy Kodo Stew."] = "코도 고기 스튜를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Greater Arcane Protection Potion."] = "상급 비전 보호 물약을 만드는 방법을 배웁니다.",
+	["Increases damage done by Chain Lightning and Lightning Bolt by up to $s1"] = "연쇄 번개와 번개 화살의 공격력이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to sew Red Mageweave Pants."] = "붉은 마법매듭 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Golden Scale Cuirass."] = "황금 미늘 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Searing Mitts."] = "이글거리는 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Dragonbreath Chili."] = "용숨결 칠리를 요리하는 방법을 배웁니다.",
+	["Permanently adds $s1 frost resistance to a leg or head slot item. Does not stack with other enchantments for the selected equipment slot."] =
+	"다리보호구 또는 투구에 영구적으로 냉기 저항력을 $s1만큼 증가시킵니다. 선택한 장비 슬롯의 다른 마법부여와 중첩되지 않습니다.",
+	["Sends a shadowy bolt at the enemy causing $s1 Shadow damage and dealing $s2 damage every $s3 sec for $s4 sec."] =
+	"적에게 암흑의 화살을 날려 $s1의 암흑 피해를 입히고 $s4초 동안 $s3초마다 $s2의 피해를 입힙니다.",
+	["Restores $s1 health over $s2 sec. Must remain seated while eating. If you spend at least $s3 seconds eating you will become well fed and gain $s4% movement speed and you will take $s5 Fire damage every $s6 seconds. Lasts $s7 min."] =
+	"$s2초에 걸쳐 $s1의 생명력을 회복합니다. 음식을 먹는 동안에는 앉아 있어야 합니다. $s3초 이상 음식을 먹으면 포만감을 느껴 $s7분 동안 이동 속도가 $s4%만큼 증가하지만 $s6초마다 $s5의 화염 피해를 입습니다.",
+	["Teaches you how to make a Dark Iron Sunderer."] = "검은무쇠 분리자를 만드는 방법을 배웁니다.",
+	["Increases spell frost damage by up to $s1 for $s2 min. Battle Elixir."] =
+	"$s2분 동안 냉기 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Absorbs $s1 to $s2 damage. Lasts $s3 sec."] = "$s1 ~ $s2의 피해를 흡수합니다. 지속시간 $s3초.",
+	["Removes one harmful magic effect from the imbiber every $s1 seconds for $s2 seconds."] =
+	"$s2초 동안 $s1초마다 복용한 대상의 해로운 마법 효과를 1개씩 제거합니다.",
+	["Spirit increased by $s1 during the night."] = "밤 동안 정신력이 $s1만큼 증가합니다.",
+	["Heal a friendly target for $s1 to $s2 health, or deal $s3 to $s4 Nature damage to an enemy."] =
+	"아군 대상의 생명력을 $s1 ~ $s2만큼 회복시키거나 적에게 $s3 ~ $s4의 자연 피해를 입힙니다.",
+	["Allows an experienced leatherworker to turn Deeprock Salt into Refined Deeprock Salt. Use of the device exposes the user to sub-core micro radiation and should not be used more than once every few days."] =
+	"숙련된 가죽세공인이 깊은바위 소금을 정제된 깊은바위 소금으로 변환할 수 있게 해줍니다. 이 기계를 사용하면 미세한 방사능에 노출되므로 며칠에 한 번만 사용하는 것이 좋습니다.",
+	["Dealing shadow damage has a chance to inflict you with Shadowheart, increasing your damage and healing done by magical spells and effects by $s1 but reducing your resistances by $s2 to $s3 for $s4 sec."] =
+	"암흑 피해를 입힐 때 일정 확률로 암흑의 심장 효과에 걸려, $s4초 동안 마법 주문 및 효과의 공격력과 치유량이 $s1만큼 증가하지만 모든 저항력이 $s2 ~ $s3만큼 감소합니다.",
+	["Teaches you how to craft a Guardian Belt."] = "수호 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Murloc Scale Breastplate."] = "멀록 비늘 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Brightcloth Cloak."] = "빛매듭 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Radiant Leggings."] = "찬란하게 빛나는 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant gloves to increase mining skill by $s1"] =
+	"장갑에 영구적으로 마법을 부여하여 채광 숙련도를 $s1만큼 증가시킵니다.",
+	["Increases the damage of your Moonfire spell by up to $s1%."] = "달빛 섬광 주문의 공격력이 최대 $s1%만큼 증가합니다.",
+	["Teaches you how to craft Frostsaber Leggings."] = "눈호랑이 다리보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to brew Captain Rumsey's Lager."] = "럼지 선장의 맥주를 담그는 방법을 배웁니다.",
+	["Teaches you how to make a Thick Leatherworker's Bag."] = "두꺼운 가죽세공인의 가방을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Flame Deflector."] = "화염 반사장치를 만드는 방법을 배웁니다.",
+	["Allows you to fish in lava and magma."] = "용암과 마그마에서 낚시를 할 수 있습니다.",
+	["Teaches you how to make Leather Armor Components."] = "가죽 방어구 부품을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Magic Resistance Potion."] = "마법 저항 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Corruption."] = "부패를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant bracers to increase Spirit by $s1"] =
+	"손목보호구에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to cook Roast Raptor."] = "랩터 숯불구이를 요리하는 방법을 배웁니다.",
+	["Receiving damage has a chance to summon a stone golem to heal you for a short time."] =
+	"피해를 입으면 일정 확률로 돌 골렘을 소환하여 짧은 시간 동안 자신을 치유하게 합니다.",
+	["Restores $s1 to $s2 mana at the cost of $s3 to $s4 life."] = "$s3 ~ $s4의 생명력을 희생하여 $s1 ~ $s2의 마나를 회복합니다.",
+	["Teaches you how to sew a Runecloth Headband."] = "룬매듭 머리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Dark Leather Shoulders."] = "암색 가죽 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches Shadow Ward (Rank $s1)."] = "암흑계 수호 ($s1 레벨) 주문을 배웁니다.",
+	["Begin winding up the cannon, building up $s1 damage per second, up to $s2 damage. When you move or stop winding you release the cannon ball, dealing its damage to all targets in front of you, with the damage split evenly."] =
+	"대포 장전을 시작하여 초당 $s1의 공격력을 축적, 최대 $s2까지 높입니다. 이동하거나 장전을 중단하면 포탄을 발사하여 전방의 모든 대상에게 공격력을 고르게 나누어 입힙니다.",
+	["Teaches you how to make a Shadow Protection Potion."] = "암흑 보호 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Green Iron Shoulders."] = "녹색 철제 어깨보호구를 만드는 방법을 배웁니다.",
+	["Increases healing done by Lesser Healing Wave by up to $s1"] = "하급 치유의 물결의 치유량이 최대 $s1만큼 증가합니다.",
+	["Teaches you how to make a Gyrofreeze Ice Reflector."] = "회전냉각식 냉기 반사기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Powerful Seaforium Charge."] = "강력한 시포리움 폭약을 만드는 방법을 배웁니다.",
+	["Teaches you how to create a Frostweave Belt."] = "서리매듭 허리띠를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Corehound Boots."] = "화산사냥개 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Goretusk Liver Pie."] = "뿔엄니멧돼지 간 파이를 요리하는 방법을 배웁니다.",
+	["Teaches you how to craft Tough Scorpid Bracers."] = "단단한 전갈 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Holy Protection Potion."] = "신성 보호 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Trinket Components."] = "장신구 부품을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Argent Shoulders."] = "은빛 여명회 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a two-handed melee weapon to increase its damage by $s1"] =
+	"양손 근접 무기에 영구적으로 마법을 부여하여 무기 공격력을 $s1만큼 증가시킵니다.",
+	["Your melee attacks have a chance to capture the Raw Fury of the Black Flight."] =
+	"근접 공격 시 일정 확률로 검은용군단의 원초적 분노를 얻습니다.",
+	["Teaches you how to make a Large Blue Rocket."] = "큰 파란색 폭죽을 만드는 방법을 배웁니다.",
+	["Teaches you how to make Mail Armor Components."] = "사슬 방어구 부품을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Wicked Leather Bracers."] = "악의의 가죽 팔보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Robe of the Void."] = "공허의 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Ley-Stabilized Arcane Reflector."] = "지맥 안정화 비전 반사기를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Flask of the Titans."] = "티탄의 영약을 만드는 방법을 배웁니다.",
+	["Increases spell shadow damage by up to $s1 for $s2 min. Battle Elixir."] =
+	"$s2분 동안 암흑 주문의 공격력이 최대 $s1만큼 증가합니다. 전투 비약.",
+	["Teaches you how to sew Truefaith Vestments."] = "신앙의 예복을 만드는 방법을 배웁니다.",
+	["Transforms $s1 Deeprock Salt into $s2 Refined Deeprock Salt."] = "깊은바위 소금 $s1개를 정제된 깊은바위 소금 $s2개로 변환합니다.",
+	["Teaches you how to craft Wicked Leather Gauntlets."] = "악의의 가죽 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Frostsaber Gloves."] = "눈호랑이 장갑을 만드는 방법을 배웁니다.",
+	["Lowers all stats by $s1 and deals $s2 Nature damage every $s3 sec to all enemies within an $s4 yard radius of the caster for $s5 sec."] =
+	"모든 능력치를 $s1만큼 감소시키고 $s5초 동안 시전자 반경 $s4미터 내의 모든 적에게 $s3초마다 $s2의 자연 피해를 입힙니다.",
+	["Teaches you how to make a Great Rage Potion."] = "상급 분노의 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Flash Bomb."] = "섬광탄을 만드는 방법을 배웁니다.",
+	["Dispels the Balefire curse from a friendly target."] = "아군 대상의 지옥불의 저주를 해제합니다.",
+	["Improves your casting speed and causes periodic effects to occur more frequently with spells by $s1%."] =
+	"주문 시전 속도와 주문으로 부여된 주기적인 효과의 발생 주기가 $s1%만큼 증가합니다.",
+	["Teaches you how to make a Radiant Breastplate."] = "찬란하게 빛나는 흉갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew a Shadow Hood."] = "그림자 두건을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Rugged Leather Pants."] = "튼튼한 가죽 바지를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Deepdive Helmet."] = "잠수용 헬멧을 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Minor Magic Resistance Potion."] = "최하급 마법 저항 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to transmute Living Essence into Essence of Earth."] = "생명의 정수를 대지의 정수로 변환하는 방법을 배웁니다.",
+	["Teaches you how to make a Large Green Rocket."] = "큰 녹색 폭죽을 만드는 방법을 배웁니다.",
+	["Your attacks have a chance to interrogate the target, stunning them for $s1 sec."] =
+	"공격 시 일정 확률로 대상을 심문하여 $s1초 동안 기절시킵니다.",
+	["Teaches you how to make an Iridescent Hammer."] = "오색 망치를 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to often inflict a curse on the target, inflicting Shadow damage and reducing their melee damage."] =
+	"근접 무기에 영구적으로 마법을 부여하여 공격 시 높은 확률로 대상에게 저주를 걸어 암흑 피해를 입히고 근접 공격력을 감소시킵니다.",
+	["Improves your chance to get a critical strike with ranged weapons by $s1%."] = "원거리 무기의 치명타 적중률이 $s1%만큼 증가합니다.",
+	["Teaches you how to permanently enchant a two-handed melee weapon to increase Spirit by $s1"] =
+	"양손 근접 무기에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew a Crimson Silk Robe."] = "심홍색 비단 로브를 만드는 방법을 배웁니다.",
+	["Teaches you how to make Dark Iron Shoulders."] = "검은무쇠 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to craft Runic Leather Gauntlets."] = "룬문자 가죽 건틀릿을 만드는 방법을 배웁니다.",
+	["Teaches you how to sew Frostweave Gloves."] = "서리매듭 장갑을 만드는 방법을 배웁니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase Spirit by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 정신력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to make a Greater Fire Protection Potion."] = "상급 화염 보호 물약을 만드는 방법을 배웁니다.",
+	["Increases your spell damage by $s1 for every $s2 armor you have."] = "방어도 $s2당 주문 공격력이 $s1만큼 증가합니다.",
+	["Increases fire and shadow resistance by $s1 An incredibly strong alcoholic beverage."] =
+	"화염 및 암흑 저항력이 $s1만큼 증가합니다. 엄청나게 독한 술입니다.",
+	["Sometimes heals bearer of $s1 to $s2 damage when damaging an enemy in melee."] =
+	"근접 공격으로 적에게 피해를 입히면 일정 확률로 착용자의 생명력을 $s1 ~ $s2만큼 회복합니다.",
+	["Teaches you how to make Green Iron Boots."] = "녹색 철제 장화를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Radiant Circlet."] = "찬란하게 빛나는 머리장식을 만드는 방법을 배웁니다.",
+	["Teaches you how to cook Hot Smoked Bass."] = "농어 훈제를 요리하는 방법을 배웁니다.",
+	["Teaches you how to make a Spellweaver."] = "마법매듭사를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Potion of Curing."] = "독 치료의 물약을 만드는 방법을 배웁니다.",
+	["Teaches you how to craft a Hillman's Belt."] = "산악인의 허리띠를 만드는 방법을 배웁니다.",
+	["Reduces your chance to be dodged or parried with axes by $s1%."] = "도끼 사용 시 공격이 빗나가거나 무기 막기 당할 확률이 $s1%만큼 감소합니다.",
+	["Teaches you how to permanently enchant a melee weapon to increase Frost spell power by $s1"] =
+	"근접 무기에 영구적으로 마법을 부여하여 냉기 주문력을 $s1만큼 증가시킵니다.",
+	["Teaches you how to sew a Heavy Woolen Cloak."] = "두꺼운 양모 망토를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Lifelike Mechanical Toad."] = "감쪽같은 기계개구리를 만드는 방법을 배웁니다.",
+	["Teaches you how to make the Edge of Winter."] = "겨울의 칼날도끼를 만드는 방법을 배웁니다.",
+	["Teaches you how to cook a Deviate Feast."] = "돌연변이 물고기 별미를 요리하는 방법을 배웁니다.",
+	["Teaches you how to sew Runecloth Shoulders."] = "룬매듭 어깨보호구를 만드는 방법을 배웁니다.",
+	["Teaches you how to make a Demon Forged Breastplate."] = "악마가 벼려낸 흉갑을 만드는 방법을 배웁니다.",
+	["Turns you into a fish giving water breath and increasing your movement speed, but attacking or casting while in this form breaks the effect. Does not work out of water or at the water's surface."] =
+	"물고기로 변신하여 수중 호흡이 가능해지고 이동 속도가 증가하지만, 이 상태에서 공격하거나 주문을 시전하면 효과가 취소됩니다. 물 밖이나 수면에서는 작동하지 않습니다.",
+	["Whenever you block an attack with your shield you have a chance to conjure a protective bubble around you, absorbing $s1 damage. When the bubble pops you restore $s2 to $s3 mana."] =
+	"방패로 공격을 방어할 때마다 일정 확률로 보호 거품을 생성하여 $s1의 피해를 흡수합니다. 거품이 터지면 마나를 $s2 ~ $s3만큼 회복합니다.",
+	["Enchants the main hand weapon with fire, granting each attack a chance to deal $s1 to $s2 additional fire damage, and increasing your damage done by Fire spells and effects by up to $s3"] =
+	"주장비 무기에 화염 마법을 부여하여 공격 시 일정 확률로 $s1 ~ $s2의 추가 화염 피해를 입히고 화염 주문 및 효과의 공격력을 최대 $s3만큼 증가시킵니다.",
+	["The first time Avenger's Shield deals damage, it now grants you an absorption effect equal to $s1% of the damage dealt."] =
+	"응징의 방패가 처음으로 피해를 입히면 가한 피해의 $s1%에 해당하는 흡수 효과를 얻습니다.",
+
+
+
+
 	-- ascension 클래스
 
 	["Your Cleanse spell has a $s1% chance to increase the target's resistance to Disease, Magic and Poison by $s2% for $s3 sec."] =
@@ -1744,7 +1674,7 @@ spell_desc_custom_data = {
 	"아군 대상의 생명력을 성기사의 최대 생명력만큼 회복시키고 $s1의 마나를 회복시킵니다. 자신에게 사용 시 $s2분 동안 천상의 보호막, 신의 가호, 보호의 손길을 다시 받을 수 없으며 자신에게 신의 축복을 사용할 수 없습니다. 또한 응징의 격노 사용 후 $s3초 이내에는 자신에게 사용할 수 없습니다.",
 	["Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring $s1 mana every $s2 seconds for $s3 min. Players may only have one Blessing on them per Paladin at any one time."] =
 	"대상과 같은 직업을 가진 공격대나 파티의 모든 구성원에게 상급 지혜의 축복을 내려 $s3분 동안 $s2초마다 $s1의 마나를 회복시킵니다. 성기사 한 명당 하나의 축복만 활성화할 수 있습니다.",
-    -- ascension 전사
+	-- ascension 전사
 	["Your melee hits have a chance of allowing the use of Execute regardless of the target's health state. This chance increases with every hit until it occurs. In addition, you keep at least $s1 rage after using Execute."] =
 	"근접 공격 적중 시 대상의 생명력 상태와 관계없이 마무리를 사용할 수 있는 확률이 생깁니다. 이 확률은 성공할 때까지 적중할 때마다 증가합니다. 추가로 마무리 사용 후 분노가 최소 $s1만큼 유지됩니다.",
 	["Your Heroic Strike, Bloodthirst, and Whirlwind hits have a $s1% chance of making your next Slam instant for $s2 sec."] =
@@ -1803,13 +1733,13 @@ spell_desc_custom_data = {
 	"치명타로 적중당한 후 $s2초에 걸쳐 전체 생명력의 $s1%를 회복합니다.",
 	["Stuns the opponent for $s1 sec and deals $s2 damage (based on attack power)."] =
 	"상대를 $s1초 동안 기절시키고 $s2의 피해(전투력에 비례)를 입힙니다.",
-    
-    
-    
-    
-    -- epoch 클래스
-    
-    ["Increases the armor bonus of your Devotion Aura by $s1%."] = "기원의 오라로 인한 방어도가 $s1%만큼 증가합니다.",
+
+
+
+
+	-- epoch 클래스
+
+	["Increases the armor bonus of your Devotion Aura by $s1%."] = "기원의 오라로 인한 방어도가 $s1%만큼 증가합니다.",
 	["Places a Hand on the party member, transfering $s1 damage taken per hit to the caster. Lasts $s2 sec. Players may only have one Hand on them per Paladin at any one time."] =
 	"파티원에게 손길을 걸어 대상이 피격 시 받는 피해 중 $s1의 피해를 시전자가 대신 입게 합니다. $s2초 동안 지속됩니다. 성기사마다 하나의 대상에게 하나의 손길만 효력을 발휘합니다.",
 	["Protects the paladin from all damage and spells for $s1 sec, but decreases damage dealt by $s2%. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection, Hand of Protection again or use Avenging Wrath for $s3 min."] =
@@ -1932,7 +1862,8 @@ spell_desc_custom_data = {
 	"적을 명상 상태로 만들어 최대 $s1초 동안 행동 불가 상태로 만듭니다. 대상이 피해를 입으면 깨어납니다. 인간형에게만 사용할 수 있습니다.",
 	["The amount of damage caused by targets affected by Sanctity Aura is increased by $s1%."] =
 	"고결의 오라의 영향을 받는 대상이 입히는 피해가 $s1%만큼 증가합니다.",
-    ["Heals a friendly target for an amount equal to the Paladin's maximum health. Drains all of the Paladin's remaining mana when used."] = "아군 대상의 생명력을 성기사의 최대 생명력만큼 회복시킵니다. 사용 시 성기사의 남은 마나를 모두 소진합니다.",
+	["Heals a friendly target for an amount equal to the Paladin's maximum health. Drains all of the Paladin's remaining mana when used."] =
+	"아군 대상의 생명력을 성기사의 최대 생명력만큼 회복시킵니다. 사용 시 성기사의 남은 마나를 모두 소진합니다.",
 	["The hunter takes on the aspects of a beast, becoming untrackable. Only one Aspect can be active at a time."] =
 	"사냥꾼이 야수의 상을 취하여 추적할 수 없는 상태가 됩니다. 한 번에 하나의 상만 활성화할 수 있습니다.",
 	["Gores the enemy, causing $s1 to $s2 damage. This attack has a $s3% chance to inflict double damage."] =
@@ -1990,8 +1921,6 @@ spell_desc_custom_data = {
 	["Increases the duration of your Disarm ability by $s1 secs."] = "무장 해제의 지속시간이 $s1초만큼 증가합니다.",
 	["Your Shadow damage spells have a $s1% chance to cause your target to be vulnerable to Shadow damage. This vulnerability increases the Shadow damage dealt to your target by $s2% and lasts $s3 sec. Stacks up to $s4 times."] =
 	"암흑 공격 주문이 적중했을 때 $s1% 확률로 대상이 암흑 공격에 취약해지게 만듭니다. 이 효과는 대상이 받는 암흑 피해를 $s2%만큼 증가시키며 $s3초 동안 지속됩니다. 최대 $s4번까지 중첩됩니다.",
-	["Your Felhunter regains $s1% of its maximum mana each time it hits with its Shadow Bite ability."] =
-	"지옥사냥개가 어둠의 이빨로 적중시킬 때마다 전체 마나의 $s1%를 회복합니다.",
 	["Gives your Counterspell a $s1% chance to silence the target for $s2 sec."] =
 	"마법 차단 사용 시 $s1% 확률로 $s2초 동안 대상을 침묵시킵니다.",
 	["Gives your Chill effects a $s1% chance to freeze the target in place for $s2 sec. If the target is immune to being frozen, it will be considered as frozen."] =
@@ -2014,8 +1943,6 @@ spell_desc_custom_data = {
 	["Increases your target's armor value by $s1% for $s2 sec after getting a critical effect from one of your healing spells."] =
 	"치유 주문이 극대화 효과를 발휘하면 $s2초 동안 대상의 방어도가 $s1%만큼 증가합니다.",
 	["Increases your total Stamina by $s1% and your total Agility by $s2%."] = "전체 체력이 $s1%만큼, 전체 민첩성이 $s2%만큼 증가합니다.",
-	["Your Corruption, Bane of Agony, Siphon Life and Seed of Corruption spells also cause the Shadow Embrace effect, which reduces physical damage caused by $s1%."] =
-	"부패, 고통의 저주, 생명력 착취, 부패의 씨앗이 어둠의 선물 효과를 일으켜 물리 피해를 $s1%만큼 감소시킵니다.",
 	["Increases spell damage by up to $s1% of your total Intellect."] = "주문 공격력이 전체 지능의 최대 $s1%만큼 증가합니다.",
 	["Increases the threat generated by your attacks by $s1% while in Defensive Stance and reduces your chance to be dodged or parried by $s2%."] =
 	"방어 태세 시 공격으로 생성되는 위협 수준이 $s1%만큼 증가하고, 적이 자신의 공격을 무기 막기 하거나 회피할 확률이 $s2%만큼 감소합니다.",
@@ -2060,15 +1987,11 @@ spell_desc_custom_data = {
 	"치명타를 맞은 후 $s2초 동안 근접 공격 피해가 $s1%만큼 증가합니다. 이 효과는 최대 $s3회의 공격 동안만 적용됩니다.",
 	["Increases the critical strike chance of your Overpower ability by $s1%. Increases the critical strike chance of your Overpower ability by $s2%."] =
 	"제압의 극대화 확률이 $s1%만큼 증가합니다. 제압의 극대화 확률이 $s2%만큼 증가합니다.",
-	["Reduces the target's movement speed by $s1% for $s2 sec. Only one Bane per Warlock can be active on any one target."] =
-	"$s2초 동안 대상의 이동 속도를 $s1%만큼 감소시킵니다. 흑마법사는 한 대상에 하나의 파멸만 활성화할 수 있습니다.",
 	["Hastens your spellcasting, increasing spell casting speed by $s1% and gives you $s2% chance to avoid interruption caused by damage while casting. Lasts $s3 sec."] =
 	"주문 시전 속도가 $s1%만큼 가속되고, 주문을 시전하는 동안 피해를 입어도 $s2% 확률로 시전이 지연되지 않습니다. $s3초 동안 지속됩니다.",
 	["Reduces the cooldown of your Succubus' Lash of Pain spell by $s1 sec."] = "서큐버스의 고통의 채찍 재사용 대기시간이 $s1초만큼 감소합니다.",
 	["Increases the armor bonus of your Inner Fire spell by $s1% and increases the number of charges by $s2"] =
 	"내면의 열정으로 증가하는 방어도가 $s1%만큼, 사용 횟수가 $s2회만큼 증가합니다.",
-	["Shadow energy slowly destroys the target, causing $s1 to $s2 damage over $s3 sec. In addition, if the Unstable Affliction is dispelled it will cause $s4 to $s5 damage to the dispeller and silence them for $s6 sec."] =
-	"어둠의 마력으로 대상의 생명력을 서서히 파괴하여 $s3초에 걸쳐 $s1~$s2의 피해를 입힙니다. 불안정한 고통이 무효화되면 무효화시킨 대상은 $s4~$s5의 피해를 입고 $s6초 동안 침묵 상태가 됩니다.",
 	["Increases your chance to hit with spells by $s1% and reduces the threat caused by Fire, Frost and Nature spells by $s2%."] =
 	"주문 적중률이 $s1%만큼 증가하고, 화염, 냉기, 자연 주문으로 생성되는 위협 수준이 $s2%만큼 감소합니다.",
 	["Your Healing Touch spell gains an additional $s1% of your bonus healing effects."] =
@@ -2084,8 +2007,6 @@ spell_desc_custom_data = {
 	"성스러운 빛샘을 만듭니다. 공격대원이나 파티원이 빛샘을 클릭하면 $s2초에 걸쳐 $s1의 생명력을 회복합니다. 직접적인 피해를 받으면 효과가 취소됩니다. 이 빛샘은 각 대원당 한 번만 사용할 수 있습니다. 빛샘은 $s3분 또는 $s4회 사용 시까지 유지됩니다.",
 	["All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by $s1 sec."] =
 	"모든 주문이 극대화 효과를 발휘하면 자연의 축복을 받아 다음 주문의 시전 시간이 $s1초만큼 단축됩니다.",
-	["Deals $s1 damage and transfers $s2 health from the target to the caster every $s3 sec. Lasts $s4 sec."] =
-	"$s3초마다 $s1의 피해를 입히고 대상의 생명력을 $s2만큼 시전자에게 이전합니다. $s4초 동안 지속됩니다.",
 	["Reduces the cooldown of your Taunt ability by $s1 sec alongside increasing the range by $s2 yards."] =
 	"도발의 재사용 대기시간이 $s1초만큼 감소하고 사정거리가 $s2미터만큼 증가합니다.",
 	["Increases your chance to resist movement impairing effects by $s1% and increases your movement speed by $s2%. This does not stack with other movement speed increasing effects."] =
@@ -2111,7 +2032,6 @@ spell_desc_custom_data = {
 	["Reduces threat caused by Tranquility by $s1%."] = "평온으로 생성되는 위협 수준이 $s1%만큼 감소합니다.",
 	["Increases your chance to block attacks with a shield by $s1% and has a $s2% chance to generate $s3 rage when a block occurs."] =
 	"방패 막기 확률이 $s1%만큼 증가하고 방패로 방어할 때 $s2% 확률로 $s3의 분노를 생성합니다.",
-	["Reduces the chance for enemies to resist your Affliction spells by $s1%."] = "적이 고통 주문에 저항할 확률이 $s1%만큼 감소합니다.",
 	["Increases the critical strike damage bonus of your Destruction spells by $s1%."] =
 	"파괴 주문의 극대화 피해 보너스가 $s1%만큼 증가합니다.",
 	["Increases the damage dealt by your critical strikes with maces by $s1%, and gives you a $s2% chance to stun your target for $s3 sec with a mace."] =
@@ -2162,7 +2082,6 @@ spell_desc_custom_data = {
 	"투척과 죽음의 투척 사용 시 $s1% 확률로 보조 무기에 발린 독의 지속시간을 $s2분만큼 소모하여 대상에게 적용합니다.",
 	["Increases the critical strike chance of your Wrath, Enervate, Starfire, and Zenith spells by $s1%."] =
 	"천벌, 무기력, 별빛 섬광, 제니스 주문의 극대화 확률이 $s1%만큼 증가합니다.",
-	["Increases the effect of your Curse of Weakness by $s1%."] = "무력화 저주의 효과가 $s1%만큼 증가합니다.",
 	["Increases attack power by $s1% and reduces threat caused by $s2% while in Berserker Stance."] =
 	"광폭 태세 시 전투력이 $s1%만큼 증가하고 위협 수준이 $s2%만큼 감소합니다.",
 	["Sunder the target's armor causing the Sunder Armor effect. In addition, causes $s1% of weapon damage plus $s2 for each application of Sunder Armor on the target. A Rogue's Expose Armor ability is considered $s3 stacks of Sunder Armor. The Sunder Armor effect can stack up to $s4 times."] =
@@ -2191,8 +2110,6 @@ spell_desc_custom_data = {
 	"윤회 주문의 재사용 대기시간이 $s1분만큼 감소하고 부활 시 회복되는 생명력과 마나가 추가로 $s2%만큼 증가합니다.",
 	["Summons a Totem of Wrath with $s1 health at the feet of the caster. The totem increases the chance to hit and critically strike with spells by $s2% for all party and raid members within $s3 yards. Lasts $s4 min. Learning this talent also causes your Fire Elemental Totem to gain the Totem of Wrath effect."] =
 	"시전자의 발 밑에 $s1의 생명력을 지닌 격노의 토템을 소환합니다. 이 토템은 반경 $s3미터 내에 있는 모든 파티원 및 공격대원의 주문 적중률과 극대화 확률을 $s2%만큼 증가시킵니다. $s4분 동안 지속됩니다. 이 특성을 연마하면 불의 정령 토템도 격노의 토템 효과를 얻게 됩니다.",
-	["Increases the effect of your next Bane of Doom or Bane of Agony by $s1%, your next Bane of Exhaustion by an additional $s2%, or your next Bane of Tongues by an additional $s3%. Lasts $s4 sec."] =
-	"다음 파멸의 저주 또는 고통의 파멸 효과가 $s1%만큼, 피로의 파멸 효과가 $s2%만큼, 언어의 파멸 효과가 $s3%만큼 추가로 증가합니다. $s4초 동안 지속됩니다.",
 	["Increases your melee critical strike chance while in Bear, Dire Bear, Cat Form, or Moonkin Form by $s1%."] =
 	"곰, 광포한 곰, 표범, 달빛야수 변신 중일 때 근접 치명타 확률이 $s1%만큼 증가합니다.",
 	["Decreases the cooldown of your Fade ability by $s1 sec."] = "소실의 재사용 대기시간이 $s1초만큼 감소합니다.",
@@ -2271,25 +2188,13 @@ spell_desc_custom_data = {
 	"칼날 발톱의 기력 소모량이 $s1만큼 감소하고 가르기의 분노 소모량이 $s2만큼 감소합니다. 칼날 발톱의 기력 소모량이 $s3만큼 감소하고 가르기의 분노 소모량이 $s4만큼 감소합니다.",
 	["Gives your Destruction spells a $s1% chance to daze the target for $s2 sec."] =
 	"파괴 주문이 $s1% 확률로 대상을 $s2초 동안 멍해지게 만듭니다.",
-	["Increases the damage bonus effect of your Curse of the Elements spell by an additional $s1%."] =
-	"원소의 저주로 인한 피해 증가 효과가 $s1%만큼 추가로 증가합니다.",
 	["A strike that deals $s1% weapon damage and increases your chance to dodge by $s2% for $s3 sec. Awards $s4 combo point."] =
 	"대상에게 무기 공격력의 $s1%에 해당하는 피해를 입히고 $s3초 동안 회피율을 $s2%만큼 증가시킵니다. $s4의 연계 포인트를 얻습니다.",
-	["Drains $s1 of your pet's Mana, returning $s2% to you."] = "소환수의 마나를 $s1만큼 흡수하여 그 중 $s2%를 자신의 마나로 회복합니다.",
 	["Increases your spell damage and critical strike chance by $s1%."] = "주문 공격력과 극대화 확률이 $s1%만큼 증가합니다.",
 	["Reduces all damage taken by $s1% and causes your successful melee attacks to regenerate $s2 mana (based on weapon speed and attack power). Lasts $s3 sec."] =
 	"받는 모든 피해가 $s1%만큼 감소하고, 근접 공격 적중 시 $s2의 마나를 회복합니다(무기 속도 및 전투력에 비례). $s3초 동안 지속됩니다.",
-	["Increases the damage dealt or life drained by your Shadow spells by $s1%."] =
-	"암흑 주문의 공격력이나 흡수하는 생명력이 $s1%만큼 증가합니다.",
-	["Your Corruption spell gains an additional $s1% of your bonus spell damage effects, and your Seed of Corruption requires $s2% less damage to trigger its explosion."] =
-	"부패 주문 시전 시 주문 공격력 증가 효과의 $s1%만큼을 추가로 받으며, 부패의 씨앗이 폭발하는 데 필요한 피해량이 $s2%만큼 감소합니다.",
 	["Protects the target with an earthen shield, giving a $s1% chance of ignoring spell interruption when damaged and causing attacks to heal the shielded target for $s2 This effect can only occur once every few seconds. $s3 charges. Lasts $s4 min. Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time."] =
 	"대지의 보호막으로 대상을 보호합니다. 피해를 입을 때 $s1% 확률로 시전 지연 효과를 무시하며, 보호막이 걸린 대상을 공격받을 시 $s2의 생명력을 회복합니다. 이 효과는 몇 초에 한 번씩만 발동합니다. $s3회 사용 가능합니다. $s4분 동안 지속됩니다. 대지의 보호막은 한 번에 한 대상에게만 사용할 수 있으며, 대상은 한 번에 하나의 원소 보호막만 유지할 수 있습니다.",
-	["Gives your Corruption, Drain Life, and Seed of Corruption spells a $s1% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by $s2%."] =
-	"부패, 생명력 흡수, 부패의 씨앗으로 피해를 입혔을 때 $s1% 확률로 어둠의 무아지경 상태가 됩니다. 어둠의 무아지경 상태에서는 다음 어둠의 화살 시전 시간이 $s2%만큼 단축됩니다.",
-	["Increases the damage done by your Bane of Agony by $s1%."] = "고통의 파멸로 입히는 피해가 $s1%만큼 증가합니다.",
-	["Gives you a $s1% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."] =
-	"생명력 흡수, 마나 흡수, 영혼 흡수를 정신 집중하여 시전하는 동안 피해를 입어도 $s1% 확률로 시전이 지연되지 않습니다.",
 	["Increases your maximum Energy by $s1 and your Energy regeneration by $s2%."] =
 	"최대 기력이 $s1만큼 증가하고 기력 회복 속도가 $s2%만큼 증가합니다.",
 	["Gives your Fire spells a $s1% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by $s2%."] =
@@ -2312,8 +2217,6 @@ spell_desc_custom_data = {
 	"냉기 주문으로 입히는 피해가 $s1%만큼 증가합니다. 화염 피해에 면역인 적에게는 이 효과가 세 배로 증가합니다.",
 	["Your Arcane Missiles spell gains an additional $s1% of your bonus spell damage effects, but mana cost is increased by $s2%."] =
 	"신비한 화살 시전 시 주문 공격력 증가 효과의 $s1%만큼을 추가로 받지만, 마나 소비량이 $s2%만큼 증가합니다.",
-	["Returns $s1% of your maximum mana if the target is killed by you while you drain its soul, and increases the damage of Drain Soul by $s2%. In addition, your Affliction spells generate $s3% less threat."] =
-	"영혼 흡수 중에 대상이 죽으면 전체 마나의 $s1%를 회복하고, 영혼 흡수의 피해량이 $s2%만큼 증가합니다. 또한 고통 주문으로 생성되는 위협 수준이 $s3%만큼 감소합니다.",
 	["Reduces the cooldown of your Shock spells by $s1 sec."] = "충격 주문의 재사용 대기시간이 $s1초만큼 감소합니다.",
 	["Increases the damage done by your Starfire, Moonfire, Zenith, Wrath, and Enervate spells by $s1%."] =
 	"별빛 섬광, 달빛 섬광, 제니스, 천벌, 무기력 주문으로 입히는 피해가 $s1%만큼 증가합니다.",
@@ -2367,8 +2270,6 @@ spell_desc_custom_data = {
 	"곰과 광포한 곰 형상에서 생성되는 위협 수준이 $s1%만큼 증가하고 숨기 상태일 때 적에게 발견될 확률이 감소합니다.",
 	["Instantly Whirlwind up to $s1 nearby targets and for the next $s2 sec you will perform a whirlwind attack every $s3 sec. While under the effects of Bladestorm, you can move but cannot perform any other abilities but you do not feel pity or remorse or fear, you cannot be stopped unless killed, and your movement speed cannot be reduced below $s4%."] =
 	"즉시 주위 최대 $s1명의 대상에게 소용돌이를 시전하며 이후 $s2초 동안 $s3초마다 소용돌이 공격을 수행합니다. 칼날폭풍 상태에서는 이동이 가능하지만 다른 능력을 수행할 수는 없습니다. 하지만 어떠한 연민이나 가책, 공포도 느끼지 않으므로 죽기 전까지 멈출 수 없으며, 이동 속도는 $s4% 아래로 떨어지지 않습니다.",
-	["Increases the damage of Bane of Agony, Bane of Doom, Siphon Life, Corruption and Seed of Corruption by $s1% and reduces the chance your Affliction spells will be dispelled by an additional $s2%."] =
-	"고통의 파멸, 파멸의 저주, 생명력 착취, 부패, 부패의 씨앗의 피해량이 $s1%만큼 증가하고 고통 주문이 무효화될 확률이 추가로 $s2%만큼 감소합니다.",
 	["Reduces all damage taken by $s1%, and for $s2 sec after casting Blink, your chance to be hit by all attacks and spells is reduced by $s3%."] =
 	"받는 모든 피해가 $s1%만큼 감소하고, 점멸 시전 후 $s2초 동안 모든 공격 및 주문에 적중당할 확률이 $s3%만큼 감소합니다.",
 	["Increases the chance to apply poisons to your target by $s1%, and increases the duration of your poison on your weapon by $s2%."] =
@@ -2391,8 +2292,6 @@ spell_desc_custom_data = {
 	["When activated, your next Nature spell with a casting time less than $s1 sec. becomes an instant cast spell."] =
 	"활성화되면 다음에 시전하는 시전 시간 $s1초 미만의 자연 주문이 즉시 시전됩니다.",
 	["Gives your Fire spells a $s1% chance to stun the target for $s2 sec."] = "화염 주문이 $s1% 확률로 대상을 $s2초 동안 기절시킵니다.",
-	["Increases the amount drained by your Drain Life and Drain Soul spells by an additional $s1% for each unique Affliction effect on the target, up to a maximum of $s2% additional effect."] =
-	"대상에게 걸린 각 고유한 고통 효과당 생명력 흡수와 영혼 흡수 주문의 흡수량이 추가로 $s1%만큼 증가합니다. 이 효과는 최대 $s2%까지 적용됩니다.",
 	["When activated, this spell gives your next Fire, Frost, or Nature damage spell a $s1% critical strike chance and it restores mana instead of spending it."] =
 	"이 주문을 활성화하면 다음 화염, 냉기 또는 자연 피해 주문의 극대화 확률이 $s1%가 되며 마나를 소비하는 대신 회복합니다.",
 	["Increases the damage dealt by your poisons and Envenom ability by $s1% and gives your poisons an additional $s2% chance to resist dispel effects."] =
@@ -2444,8 +2343,6 @@ spell_desc_custom_data = {
 	["Increases the duration of your Shadow Word: Pain spell by $s1 sec."] = "어둠의 권능: 고통 주문의 지속시간이 $s1초만큼 증가합니다.",
 	["Gives you $s1% chance to gain $s2 Rage when you shapeshift into Bear and Dire Bear Form or $s3 Energy when you shapeshift into Cat Form."] =
 	"곰과 광포한 곰 형상으로 변신할 때 $s1% 확률로 $s2의 분노를 얻거나 표범 형상으로 변신할 때 $s3의 기력을 얻습니다.",
-	["Reduces the casting time of your Corruption spell by $s1 sec, and the casting time of your Seed of Corruption spell by $s2 sec."] =
-	"부패의 시전 시간이 $s1초만큼, 부패의 씨앗 주문의 시전 시간이 $s2초만큼 단축됩니다.",
 	["Increases your chance to dodge by an additional $s1%."] = "회피율이 $s1%만큼 추가로 증가합니다.",
 	["Your Mind Blast, Mass Dispel, and damaging Holy spells have an additional $s1% chance to hit. In addition, your Mass Dispel cast time is reduced by $s2 sec."] =
 	"정신 분열, 대규모 무효화, 피해를 입히는 신성 주문의 적중률이 추가로 $s1%만큼 증가합니다. 또한 대규모 무효화의 시전 시간이 $s2초만큼 단축됩니다.",
@@ -2486,7 +2383,7 @@ spell_desc_custom_data = {
 	["Gives your Revenge ability a $s1% chance to stun the target for $s2 sec."] = "복수 사용 시 $s1% 확률로 대상을 $s2초 동안 기절시킵니다.",
 	["Reduces the mana cost of your Frost spells by $s1% and reduces the threat caused by your Frost spells by $s2%."] =
 	"냉기 주문의 마나 소비량이 $s1%만큼 감소하고 위협 수준이 $s2%만큼 감소합니다.",
-		["Deals $s1 damage and transfers $s2 health from the target to the caster every $s3 sec. Lasts $s4 sec."] =
+	["Deals $s1 damage and transfers $s2 health from the target to the caster every $s3 sec. Lasts $s4 sec."] =
 	"매 $s3초마다 $s1의 피해를 입히고 대상에게서 시전자에게로 $s2의 생명력을 이전합니다. $s4초 동안 지속됩니다.",
 	["Gives you a $s1% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."] =
 	"생명력 흡수, 마나 흡수 또는 영혼 흡수 주문을 정신 집중하여 시전하는 동안 피해를 입어도 $s1% 확률로 시전이 지연되지 않습니다.",
@@ -2500,8 +2397,6 @@ spell_desc_custom_data = {
 	"암흑 주문으로 입히는 피해나 흡수하는 생명력이 $s1%만큼 증가합니다.",
 	["Reduces the casting time of your Corruption spell by $s1 sec, and the casting time of your Seed of Corruption spell by $s2 sec."] =
 	"부패 주문의 시전 시간이 $s1초만큼, 부패의 씨앗 주문의 시전 시간이 $s2초만큼 단축됩니다.",
-	["Each time Moonfire deals periodic damage, your next Starfire costs $s1% less mana and casts $s2 seconds faster, stacking up to $s3 times."] =
-	"달빛 섬광이 주기적인 피해를 입힐 때마다 다음 별빛 섬광의 마나 소비량이 $s1%만큼 감소하고 시전 시간이 $s2초만큼 단축됩니다. 이 효과는 최대 $s3번까지 중첩됩니다.",
 	["Returns $s1% of your maximum mana if the target is killed by you while you drain its soul, and increases the damage of Drain Soul by $s2%. In addition, your Affliction spells generate $s3% less threat."] =
 	"영혼 흡수 중에 대상이 죽으면 전체 마나의 $s1%를 회복하고, 영혼 흡수의 피해량이 $s2%만큼 증가합니다. 또한 고통 주문으로 생성되는 위협 수준이 $s3%만큼 감소합니다.",
 	["Increases the amount drained by your Drain Life and Drain Soul spells by an additional $s1% for each unique Affliction effect on the target, up to a maximum of $s2% additional effect."] =
@@ -2512,8 +2407,6 @@ spell_desc_custom_data = {
 	["Reduces the chance for enemies to resist your Affliction spells by $s1%."] = "적이 고통 주문에 저항할 확률이 $s1%만큼 감소합니다.",
 	["Defias Leather ($s1/$s2)"] = "데피아즈단 가죽갑옷 ($s1/$s2)",
 	["Increases the damage done by your Bane of Agony by $s1%."] = "고통의 파멸로 입히는 피해가 $s1%만큼 증가합니다.",
-	["Using Innervate on another target also grants you Innervate at $s1% effectiveness."] =
-	"다른 대상에게 정신 자극을 사용하면 시전자도 $s1% 효율의 정신 자극 효과를 얻습니다.",
 	["Increases the melee attack power bonus of your Windfury Totem by $s1% and increases the damage caused and spell damage granted by your Flametongue Totem by $s2%."] =
 	"질풍의 토템으로 인한 근접 전투력 보너스가 $s1%만큼 증가하고 불꽃의 토템으로 입히는 피해 및 주문 공격력 보너스가 $s2%만큼 증가합니다.",
 	["Reduces the cooldown of your Sprint and Evasion abilities by $s1 min."] = "전력 질주와 회피의 재사용 대기시간이 $s1분만큼 감소합니다.",
@@ -2529,8 +2422,6 @@ spell_desc_custom_data = {
 	"부패, 고통의 파멸, 생명력 착취, 부패의 씨앗 주문 시전 시 어둠의 선물 효과를 추가로 일으켜 대상이 입히는 물리 피해를 $s1%만큼 감소시킵니다.",
 	["Increases the damage bonus effect of your Curse of the Elements spell by an additional $s1%."] =
 	"원소의 저주로 인한 피해 증가 효과가 $s1%만큼 추가로 증가합니다.",
-	["Every time your Hurricane spell deals damage its cooldown is reduced by $s1 sec."] =
-	"허리케인 주문으로 피해를 입힐 때마다 재사용 대기시간이 $s1초만큼 감소합니다.",
 	["Shadow energy slowly destroys the target, causing $s1 to $s2 damage over $s3 sec. In addition, if the Unstable Affliction is dispelled it will cause $s4 to $s5 damage to the dispeller and silence them for $s6 sec."] =
 	"어둠의 마력으로 대상의 생명력을 서서히 파괴하여 $s3초에 걸쳐 $s1~$s2의 피해를 입힙니다. 불안정한 고통이 무효화되면 무효화시킨 대상에게 $s4~$s5의 피해를 입히고 $s6초 동안 침묵 상태로 만듭니다.",
 	["Increases the effect of your next Bane of Doom or Bane of Agony by $s1%, your next Bane of Exhaustion by an additional $s2%, or your next Bane of Tongues by an additional $s3%. Lasts $s4 sec."] =
@@ -2538,13 +2429,6 @@ spell_desc_custom_data = {
 	["Increases the damage of Bane of Agony, Bane of Doom, Siphon Life, Corruption and Seed of Corruption by $s1% and reduces the chance your Affliction spells will be dispelled by an additional $s2%."] =
 	"고통의 파멸, 파멸의 저주, 생명력 착취, 부패, 부패의 씨앗의 피해량이 $s1%만큼 증가하고 고통 주문이 무효화될 확률이 추가로 $s2%만큼 감소합니다.",
 	["Featherheart Raiment ($s1/$s2)"] = "깃털장식 의복 ($s1/$s2)",
-	["Teaches you how to cook Hot Wolf Ribs."] = "늑대 양념 갈비 조제법을 배웁니다.",
-	["Teaches you how to cook up a Crispy Lizard Tail."] = "바삭바삭한 도마뱀 꼬리 조제법을 배웁니다.",
-	["Increases the duration of your Chill effects by $s1 sec and reduces the target's speed by an additional $s2%."] = "빙결 효과의 지속시간이 $s1초만큼 증가하고 대상의 이동 속도를 추가로 $s2%만큼 감소시킵니다.",
-	["Teaches you how to cook Roasted Kodo Meat."] = "코도 숯불구이 조제법을 배웁니다.",
-	["Teaches you how to cook a hot Undermine Clam Chowder."] = "언더마인 조개 수프 조제법을 배웁니다.",
-	["Click to show clock settings."] = "시계 설정을 보려면 클릭하십시오.",
-	["Teaches you how to create a Felcloth Cloak."] = "지옥매듭 망토 제작법을 배웁니다.",
 	["Improves your chance to hit with spells by $s1%."] = "주문 적중률이 $s1%만큼 증가합니다.",
 	["Arcane Blast has a $s1% chance to make your next Ice Lance act as if the target is frozen. Fireball has a $s2% chance to make your next Arcane Barrage a guaranteed critical strike. Frostbolt has a $s3% chance to make your next Fire Blast deal $s4% increased damage."] =
 	"비전 작렬 시전 시 $s1%의 확률로 다음에 시전하는 얼음창이 대상이 빙결 상태인 것처럼 적중합니다. 화염구 시전 시 $s2%의 확률로 다음에 시전하는 비전 탄막이 치명타로 적중합니다. 얼음 화살 시전 시 $s3%의 확률로 다음에 시전하는 화염 작렬의 공격력이 $s4%만큼 증가합니다.",
@@ -2645,8 +2529,8 @@ spell_desc_custom_data = {
 	["The duration of your Rip is increased by $s1 seconds and the critical strike chance of Shred is increased by $s2%. Cooldown of Challenging Roar reduced by $s3%."] =
 	"도려내기의 지속시간이 $s1초만큼 증가하고 칼날 발톱의 치명타 적중률이 $s2%만큼 증가합니다. 도전의 포효의 재사용 대기시간이 $s3%만큼 감소합니다.",
 	["Increases Spell Healing by $s1 for $s2 sec."] = "$s2초 동안 주문 치유량이 $s1만큼 증가합니다.",
-	["Increased Defense +$s1"] = "방어 숙련 향상 +$s1",
+	["Increased Defense +$s1"] = "방어 숙련도 $s1 증가",
 	["Aspect of the Viper gains an additional $s1% of your current level."] = "독사의 상 효과가 현재 레벨의 $s1%만큼 추가로 증가합니다.",
-	
+
 
 }
