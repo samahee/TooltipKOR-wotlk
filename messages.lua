@@ -501,6 +501,10 @@ local function IsQuestTooltipSectionBreak(text)
         or string.find(text, "^Rewards:")
         or string.find(text, "^Required Level:")
         or string.find(text, "^Quest Level:")
+        or string.find(text, "Requirements:")
+        or string.find(text, "Rewards:")
+        or string.find(text, "Required Level")
+        or string.find(text, "Quest Level")
 end
 
 local function PrepareQuestTooltipLine(line, width)
@@ -517,30 +521,40 @@ local function PrepareQuestTooltipLine(line, width)
     end
 end
 
-local function UpdateQuestLinkTooltip(tooltip, questId)
-    if not tooltip or not questId then return end
+local function SetQuestTooltipText(line, text)
+    if not line or not line.SetText then return end
+
+    line:SetText(text)
+end
+
+local function UpdateQuestLinkTooltip(tooltip, questId, fixedWidth)
+    if not tooltip or not questId then return false end
 
     local title, objectives = GetQuestTranslation(questId)
-    if not title and not objectives then return end
+    if not title and not objectives then return false end
 
     local name = tooltip:GetName()
-    if not name then return end
+    if not name then return false end
 
-    local originalWidth = tooltip:GetWidth() or 0
+    local originalWidth = fixedWidth or tooltip.__TKOR_QuestLinkWidth or tooltip:GetWidth() or 0
+    tooltip.__TKOR_QuestLinkWidth = originalWidth
     local wrapWidth = originalWidth > 80 and (originalWidth - 36) or 420
+    local lines = tooltip:NumLines() or 0
 
     local titleLine = _G[name .. "TextLeft1"]
+    local titleUpdated = false
     if title and titleLine then
         PrepareQuestTooltipLine(titleLine, wrapWidth)
-        titleLine:SetText(title)
+        SetQuestTooltipText(titleLine, title)
+        titleUpdated = true
     end
 
+    local objectiveUpdated = not objectives
     if objectives then
         local objectiveText = table.concat(objectives, "\n")
         local objectiveLine
         local objectiveLineIndex
         local sectionStartIndex
-        local lines = tooltip:NumLines() or 0
 
         for i = 3, lines do
             local line = _G[name .. "TextLeft" .. i]
@@ -560,12 +574,21 @@ local function UpdateQuestLinkTooltip(tooltip, questId)
 
         if objectiveLine then
             PrepareQuestTooltipLine(objectiveLine, wrapWidth)
-            objectiveLine:SetText(objectiveText)
+            SetQuestTooltipText(objectiveLine, objectiveText)
+            objectiveUpdated = true
 
             if sectionStartIndex then
                 for i = (objectiveLineIndex or 0) + 1, sectionStartIndex - 1 do
                     local line = _G[name .. "TextLeft" .. i]
                     if line then
+                        line:SetText("")
+                    end
+                end
+            else
+                for i = (objectiveLineIndex or 0) + 1, lines do
+                    local line = _G[name .. "TextLeft" .. i]
+                    local text = line and line:GetText()
+                    if text and text ~= "" and not IsQuestTooltipSectionBreak(text) then
                         line:SetText("")
                     end
                 end
@@ -579,6 +602,7 @@ local function UpdateQuestLinkTooltip(tooltip, questId)
         tooltip:SetWidth(originalWidth)
     end
     tooltip:Show()
+    return titleUpdated and objectiveUpdated
 end
 
 local function HookQuestLinks()
@@ -587,23 +611,55 @@ local function HookQuestLinks()
     if not questLinkUpdater and CreateFrame then
         questLinkUpdater = CreateFrame("Frame")
         questLinkUpdater:Hide()
-        questLinkUpdater:SetScript("OnUpdate", function(self)
-            self:Hide()
+        questLinkUpdater:SetScript("OnUpdate", function(self, elapsed)
+            self.elapsed = (self.elapsed or 0) + (elapsed or 0)
+            if self.elapsed < 0.05 then return end
+
+            self.elapsed = 0
+            local updated
             if self.tooltip and self.questId then
-                UpdateQuestLinkTooltip(self.tooltip, self.questId)
+                updated = UpdateQuestLinkTooltip(self.tooltip, self.questId, self.width)
+                if updated and self.tooltip.SetAlpha then
+                    self.tooltip:SetAlpha(1)
+                    self.visibleOnce = true
+                end
             end
-            self.tooltip = nil
-            self.questId = nil
+
+            self.attempts = (self.attempts or 0) - 1
+            if self.attempts <= 0 then
+                if self.tooltip and self.tooltip.SetAlpha then
+                    self.tooltip:SetAlpha(1)
+                end
+                self:Hide()
+                self.tooltip = nil
+                self.questId = nil
+                self.width = nil
+                self.visibleOnce = nil
+            end
         end)
     end
 
     local function afterSetHyperlink(self, link)
         local questId = tonumber(string.match(link or "", "quest:(%d+)"))
         if questId then
-            UpdateQuestLinkTooltip(self, questId)
+            self.__TKOR_QuestLinkWidth = nil
+            local originalWidth = self:GetWidth()
+            local hasTranslation = GetQuestTranslation(questId) ~= nil
+            if hasTranslation and self.SetAlpha then
+                self:SetAlpha(0)
+            end
+
+            local updated = UpdateQuestLinkTooltip(self, questId, originalWidth)
+            if updated and self.SetAlpha then
+                self:SetAlpha(1)
+            end
             if questLinkUpdater then
                 questLinkUpdater.tooltip = self
                 questLinkUpdater.questId = questId
+                questLinkUpdater.width = originalWidth
+                questLinkUpdater.attempts = 10
+                questLinkUpdater.elapsed = 0
+                questLinkUpdater.visibleOnce = updated or nil
                 questLinkUpdater:Show()
             end
         end
