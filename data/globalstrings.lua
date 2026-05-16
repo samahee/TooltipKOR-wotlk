@@ -1431,6 +1431,7 @@ ITEM_PURCHASED_COLON = "구입한 물건:";
 ITEM_QUANTITY_TEMPLATE = "%2$sx%1$d";
 ITEM_RACES_ALLOWED = "종족: %s";
 ITEM_RANDOM_ENCHANT = "<무작위 마법부여>";
+ITEM_READABLE = "<살펴보려면 오른쪽 클릭>";
 ITEM_REQ_PURCHASE_GROUP = "%s 필요";
 ITEM_REQ_REPUTATION = "%s: %s 평판 필요";
 ITEM_REQ_SKILL = "요구 사항: %s";
