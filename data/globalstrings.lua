@@ -64,6 +64,7 @@ COMBAT_THREAT_DECREASE_2 = "위협 수준 낮아짐";
 COMBAT_THREAT_INCREASE_1 = "위협 수준 높음";
 COMBAT_THREAT_INCREASE_3 = "당신을 공격합니다!";
 
+
 -- 캐릭터 기본 능력치 패널 (Expand 버튼 열면 나오는 것)
 -- 기본 속성
 -- STRENGTH
@@ -550,6 +551,28 @@ DEFAULT_STATDEFENSE_TOOLTIP =
 DEFAULT_STATSPELLBONUS_TOOLTIP = "주문 공격 시 추가 피해";
 DEFENSE = "방어 숙련";
 DEFENSE_ABBR = "방어 숙련";
+
+
+
+
+DRUNK_MESSAGE_ITEM_OTHER1 = "%s|1이;가; %s로부터의 술기운이 가셔 보입니다.";
+DRUNK_MESSAGE_ITEM_OTHER2 = "%s|1이;가; %s|1으로;로; 살짝 술기운이 오르는 것 같습니다.";
+DRUNK_MESSAGE_ITEM_OTHER3 = "%s|1이;가; %s|1으로;로; 취기가 도는 것 같습니다.";
+DRUNK_MESSAGE_ITEM_OTHER4 = "%s|1이;가; %s|1을;를; 마시고 나서 완전히 취한 것 같습니다.";
+DRUNK_MESSAGE_ITEM_SELF1 = "%s|1을;를; 마신 후 술기운이 가신 것 같습니다.";
+DRUNK_MESSAGE_ITEM_SELF2 = "%s|1으로;로; 살짝 술기운이 오르는 것 같습니다.";
+DRUNK_MESSAGE_ITEM_SELF3 = "%s 때문에 취기가 도는 것 같습니다.";
+DRUNK_MESSAGE_ITEM_SELF4 = "%s|1을;를; 마시고 나니 완전히 취한 것 같습니다.";
+DRUNK_MESSAGE_OTHER1 = "%s|1이;가; 술 기운이 가신 것 같습니다.";
+DRUNK_MESSAGE_OTHER2 = "%s|1이;가; 술기운이 오르는 것 같습니다.";
+DRUNK_MESSAGE_OTHER3 = "%s|1이;가; 술에 취해 비틀거리고 있습니다.";
+DRUNK_MESSAGE_OTHER4 = "%s|1이;가; 완전히 곤드레만드레 취했습니다.";
+DRUNK_MESSAGE_SELF1 = "술기운이 가신 것 같습니다.";
+DRUNK_MESSAGE_SELF2 = "술기운이 오르는 것 같습니다.";
+DRUNK_MESSAGE_SELF3 = "술에 취해 비틀거리고 있습니다.";
+DRUNK_MESSAGE_SELF4 = "당신은 완전히 곤드레만드레 취했습니다.";
+
+
 
 
 

@@ -72,6 +72,19 @@ local captureTypeRules = {
     ["You won: %2$s |cff818181(Disenchant - %1$d)|r"] = { nil, "item" },
     ["You won: %2$s |cff818181(Greed - %1$d)|r"] = { nil, "item" },
     ["You won: %2$s |cff818181(Need - %1$d)|r"] = { nil, "item" },
+
+    ["Auction expired: %s"] = { "item" },
+    ["Sale Pending: %s"] = { "item" },
+    ["Outbid on %s"] = { "item" },
+    ["Auction cancelled: %s"] = { "item" },
+    ["Auction successful: %s"] = { "item" },
+    ["Auction won: %s"] = { "item" },
+    ["경매 만료: %s"] = { "item" },
+    ["판매 정보 - %s"] = { "item" },
+    ["입찰금 반환: %s"] = { "item" },
+    ["경매 취소: %s"] = { "item" },
+    ["경매 판매 완료: %s"] = { "item" },
+    ["경매 낙찰: %s"] = { "item" },
 }
 
 local function TranslateMoneyUnits(text)
@@ -374,6 +387,8 @@ local function TranslateMessage(message)
 
     return TranslateDynamicParts(message)
 end
+
+TooltipKOR_TranslateMessage = TranslateMessage
 
 local function MessageEventFilter(self, event, message, ...)
     local translated = TranslateMessage(message)

@@ -39,3 +39,4 @@ buff_dbuff.lua
 search.lua
 tooltip_translate.lua
 messages.lua
+mail.lua
