@@ -1,8 +1,180 @@
+-- 메뉴 버튼
+CHARACTER = "캐릭터";
+CHARACTER_BUTTON = "캐릭터 정보";
+SPELLBOOK = "마법책";
+SPELLBOOK_ABILITIES_BUTTON = "마법책 및 능력";
+SPELLBOOK_BUTTON = "마법책";
+TALENTS = "특성";
+TALENTS_BUTTON = "특성";
+ACHIEVEMENTS = "업적";
+ACHIEVEMENT_BUTTON = "업적";
+QUESTLOG_BUTTON = "퀘스트 목록";
+SOCIALS = "커뮤니티";
+SOCIAL_BUTTON = "커뮤니티";
+PLAYER_V_PLAYER = "플레이어 대 플레이어";
+GAMEOPTIONS_MENU = "설정";
+
+
+-- 장비 부위
+HEADSLOT = "머리";
+NECKSLOT = "목";
+SHOULDERSLOT = "어깨";
+SHIRTSLOT = "속옷";
+CHESTSLOT = "가슴";
+WAISTSLOT = "허리";
+LEGSSLOT = "다리";
+FEETSLOT = "발";
+WRISTSLOT = "손목";
+HANDSSLOT = "손";
+FINGER0SLOT = "손가락";
+FINGER0SLOT_UNIQUE = "반지 1";
+FINGER1SLOT = "손가락";
+FINGER1SLOT_UNIQUE = "반지 2";
+TRINKET0SLOT = "장신구";
+TRINKET0SLOT_UNIQUE = "장신구 1";
+TRINKET1SLOT = "장신구";
+TRINKET1SLOT_UNIQUE = "장신구 2";
+BACKSLOT = "등";
+MAINHANDSLOT = "주장비";
+SECONDARYHANDSLOT = "보조장비";
+RANGEDSLOT = "원거리 장비";
+RELICSLOT = "성물";
+TABARDSLOT = "겉옷";
+BACKPACK_TOOLTIP = "소지품";
+BAGSLOT = "가방";
+
+
+-- 캐릭터 기본 능력치 패널 (Expand 버튼 열면 나오는 것)
+-- 기본 속성
+-- STRENGTH
+-- AGILITY
+-- STAMINA
+-- INTELLECT
+-- SPIRIT
+-- ARMOR
+-- 근접
+-- MELEE_DAMAGE
+-- MELEE_AP
+-- MELEE_CRIT_CHANCE
+-- MELEE_HASTE
+-- 원거리
+-- RANGED_DAMAGE
+-- RANGED_AP
+-- RANGED_CRIT_CHANCE
+-- RANGED_HASTE
+-- 주문
+-- SPELL_POWER
+-- SPELL_HEALING
+-- SPELL_HIT
+-- SPELL_CRIT_CHANCE
+-- SPELL_HASTE
+-- MANA_REGEN
+-- 방어
+-- DEFENSE
+-- DODGE
+-- PARRY
+-- BLOCK
+-- RESILIENCE
+-- 저항
+-- RESISTANCE0_NAME(Physical)
+-- RESISTANCE1_NAME(Holy)
+-- RESISTANCE2_NAME(Fire)
+-- RESISTANCE3_NAME(Nature)
+-- RESISTANCE4_NAME(Frost)
+-- RESISTANCE5_NAME(Shadow)
+-- ARCANE_RESISTANCE
+
+
+-- 아이템 툴팁/마부 관련 문자열 (마부 라인)
+-- 상태창 아이템 슬롯 tooltip과 "초록 마부 라인"이 여기 계열
+-- 마법부여
+-- ENCHANTED
+-- TEMP_ENCHANTMENT
+-- ITEM_RANDOM_ENCHANT
+-- ITEM_ENCHANT_TIME_LEFT_MIN
+-- ITEM_ENCHANT_TIME_LEFT_SEC
+-- 아이템 스탯 모드
+-- ITEM_MOD_STRENGTH_SHORT
+-- ITEM_MOD_AGILITY_SHORT
+-- ITEM_MOD_STAMINA_SHORT
+-- ITEM_MOD_INTELLECT_SHORT
+-- ITEM_MOD_SPIRIT_SHORT
+
+-- 또는 긴 형식:
+
+-- ITEM_MOD_STRENGTH
+-- ITEM_MOD_AGILITY
+-- ...
+-- 특수 효과
+-- ITEM_SPELL_TRIGGER_ONUSE
+-- ITEM_SPELL_TRIGGER_ONEQUIP
+-- ITEM_SPELL_TRIGGER_ONPROC
+
+
+-- CharacterFrame 자체 탭/헤더
+-- CHARACTER_BUTTON
+-- PAPERDOLLFRAME_TOOLTIP
+-- SKILLS
+-- REPUTATION
+-- CURRENCY
+-- TITLE
+-- PLAYER_LEVEL
+
+
+-- 핵심 문자열 키
+-- HEADSLOT ~ TABARDSLOT
+-- INVTYPE_*
+-- STRENGTH ~ RESILIENCE
+-- RESISTANCE*
+-- ITEM_MOD_*
+-- ITEM_SPELL_TRIGGER_*
+-- ENCHANTED / TEMP_ENCHANTMENT
+
+
+-- prefixes
+-- HEADSLOT
+-- .*SLOT$
+
+-- INVTYPE_
+
+-- STRENGTH
+-- AGILITY
+-- STAMINA
+-- INTELLECT
+-- SPIRIT
+-- ARMOR
+
+-- MELEE_
+-- RANGED_
+-- SPELL_
+
+-- DEFENSE
+-- DODGE
+-- PARRY
+-- BLOCK
+-- RESILIENCE
+
+-- RESISTANCE
+
+-- ITEM_MOD_
+-- ITEM_SPELL_TRIGGER_
+-- ENCHANT
+
+
+-- 보류 추천:
+
+-- ERR_*
+-- SPELL_FAILED_*
+-- 일부 ACTION_* combat error text
+-- UI_ERROR_*
+
 AGI = "민첩성";
 AGILITY_COLON = "민첩성:";
 
 
-
+AMMOSLOT = "탄환 및 화살";
+AMMO_DAMAGE_TEMPLATE = "초당 %g의 피해 추가";
+AMMO_SCHOOL_DAMAGE_TEMPLATE = "초당 %g %s의 피해 추가";
 ARMOR = "방어도";
 ARMOR_TEMPLATE = "방어도 %d";
 ATTACK = "공격";
@@ -24,7 +196,7 @@ DURABILITYDAMAGE_DEATH = "현재 착용 중인 장비의 내구도가 10%만큼 
 DURABILITY_ABBR = "내구도";
 DURABILITY_TEMPLATE = "내구도 %d / %d";
 RANGED = "원거리 공격";
-RANGEDSLOT = "원거리 장비";
+
 RANGED_ATTACK = "원거리 숙련도:";
 RANGED_ATTACK_POWER = "원거리 전투력";
 RANGED_ATTACK_POWER_TOOLTIP = "원거리 무기의 공격력이 초당 %.1f만큼 증가";
@@ -1045,7 +1217,7 @@ FACTION_STANDING_LABEL8_FEMALE = "확고한 동맹";
 
 
 
-
+-- 아이템 타입
 INVTYPE_2HWEAPON = "양손 장비";
 INVTYPE_AMMO = "탄약";
 INVTYPE_BAG = "가방";
@@ -1237,14 +1409,14 @@ ITEM_OPENABLE = "<열려면 오른쪽 클릭>";
 ITEM_PROPOSED_ENCHANT = "받게될 효과: %s";
 ITEM_PROSPECTABLE = "보석 추출 가능";
 ITEM_PURCHASED_COLON = "구입한 물건:";
-ITEM_QUALITY0_DESC = "하급";
-ITEM_QUALITY1_DESC = "일반";
-ITEM_QUALITY2_DESC = "고급";
-ITEM_QUALITY3_DESC = "희귀";
-ITEM_QUALITY4_DESC = "영웅";
-ITEM_QUALITY5_DESC = "전설";
-ITEM_QUALITY6_DESC = "유물";
-ITEM_QUALITY7_DESC = "계승";
+-- ITEM_QUALITY0_DESC = "하급";
+-- ITEM_QUALITY1_DESC = "일반";
+-- ITEM_QUALITY2_DESC = "고급";
+-- ITEM_QUALITY3_DESC = "희귀";
+-- ITEM_QUALITY4_DESC = "영웅";
+-- ITEM_QUALITY5_DESC = "전설";
+-- ITEM_QUALITY6_DESC = "유물";
+-- ITEM_QUALITY7_DESC = "계승";
 ITEM_QUANTITY_TEMPLATE = "%2$sx%1$d";
 ITEM_RACES_ALLOWED = "종족: %s";
 ITEM_RANDOM_ENCHANT = "<무작위 마법부여>";
@@ -1630,7 +1802,7 @@ PLAYER_NOT_FOUND = "해당 플레이어를 찾을 수 없습니다.";
 PLAYER_OFFLINE = "오프라인";
 PLAYER_OPTIONS_LABEL = "플레이어 메뉴";
 PLAYER_STATUS = "플레이어 정보";
-PLAYER_V_PLAYER = "플레이어 대 플레이어";
+
 
 
 
@@ -2505,8 +2677,8 @@ TOO_FAR_TO_LOOT = "그 시체에서 너무 멀리 떨어져 있습니다.";
 
 
 
-UNITFRAME_LABEL = "개체창";
-UNITFRAME_SUBTEXT = "인터페이스의 개체창 표시 및 작동 방식을 변경합니다.";
+-- UNITFRAME_LABEL = "개체창";
+-- UNITFRAME_SUBTEXT = "인터페이스의 개체창 표시 및 작동 방식을 변경합니다.";
 UNITNAME_SUMMON_TITLE1 = "%s의 소환수";
 UNITNAME_SUMMON_TITLE10 = "%s의 탈것";
 UNITNAME_SUMMON_TITLE11 = "%s의 빛샘";

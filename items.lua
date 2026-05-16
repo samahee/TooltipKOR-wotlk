@@ -29,12 +29,20 @@ local function ApplyTemplateResult(template, captures)
 end
 
 local function TranslateItemLine(text)
-    for _, pair in ipairs(tooltip_template_data) do
-        local from, to = pair[1], pair[2]
-        local captures = { string.match(text, TemplateToPattern(from)) }
+    for key, value in pairs(tooltip_template_data) do
+        local from, to
+        if type(key) == "string" and type(value) == "string" then
+            from, to = key, value
+        elseif type(value) == "table" then
+            from, to = value[1], value[2]
+        end
 
-        if captures[1] then
-            return ApplyTemplateResult(to, captures)
+        if type(from) == "string" and type(to) == "string" then
+            local captures = { string.match(text, TemplateToPattern(from)) }
+
+            if captures[1] or text == from then
+                return ApplyTemplateResult(to, captures)
+            end
         end
     end
 
@@ -96,6 +104,12 @@ local function GetCleanItemName(text)
     clean = string.gsub(clean, "%(%s*%d+%s*%)", "") -- (10) 형태의 갯수 표시 제거
     clean = string.match(clean, "^%s*(.-)%s*$")     -- 문자열 앞뒤 공백 제거
     return clean
+end
+
+local function TranslateQualityLine(text)
+    local plain = StripColors(text)
+    plain = string.match(plain or "", "^%s*(.-)%s*$") or ""
+    return tooltip_template_data[string.lower(plain)]
 end
 
 local function TranslateKnownName(text)
@@ -198,7 +212,8 @@ local function UpdateTooltipText(tooltip)
 
                 if not skip then
                     local newText = originalText
-                    local translatedLine = TranslateItemLine(plainText)
+                    local qualityText = TranslateQualityLine(plainText)
+                    local translatedLine = qualityText or TranslateItemLine(plainText)
                     local colonPos = string.find(originalText, ":")
 
                     if translatedLine ~= plainText then
@@ -267,6 +282,20 @@ local function UpdateTooltipText(tooltip)
                         lineObj:SetText(newText)
                         isUpdated = true
                     end
+                end
+            end
+        end
+
+        local rightLineObj = _G[nameString .. "TextRight" .. i]
+        if rightLineObj then
+            local originalRightText = rightLineObj:GetText()
+            if originalRightText and originalRightText ~= "" then
+                local plainRightText = StripColors(originalRightText)
+                local translatedRightLine = TranslateItemLine(plainRightText)
+
+                if translatedRightLine ~= plainRightText then
+                    rightLineObj:SetText(translatedRightLine)
+                    isUpdated = true
                 end
             end
         end
