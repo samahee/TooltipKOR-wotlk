@@ -1614,6 +1614,12 @@ PVP_RANK_LEADER = "지도자";
 
 
 
+QUEST_TOOLTIP_ACTIVE = "해당 퀘스트를 수행 중입니다.";
+QUEST_TOOLTIP_REQUIREMENTS = "요구 조건:";
+
+
+
+
 RAGE = "분노";
 RAGE_COST = "분노 %d";
 RAGE_COST_PER_TIME = "분노 %d 추가로 초마다 %d";

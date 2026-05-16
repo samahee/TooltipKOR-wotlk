@@ -18,6 +18,8 @@ data\item_tooltip_data.lua
 data\map_data.lua
 data\subzones_data.lua
 data\object_data.lua
+data\quest_data_wotlk.lua
+data\quest_data_epoch.lua
 data\tooltip_translate_data.lua
 data\messages_data.lua
 data\unit_data.lua

@@ -9,6 +9,7 @@ local placeNameMap
 local installed = false
 local debugQuestMessages = false
 local lastAcceptedQuestIndex
+local questLinkUpdater
 
 local captureTypeRules = {
     ["Discovered %s: %d experience gained"] = { "map" },
@@ -432,6 +433,181 @@ local function HookCombatText()
     _G.__TKOR_CombatTextHooked = true
 end
 
+local function IsEpochRealm()
+    if type(GetRealmName) ~= "function" then return false end
+
+    local realm = GetRealmName()
+    return realm == "Kezan" or realm == "Gurubashi"
+end
+
+local function GetQuestTranslation(questId)
+    local data
+    if IsEpochRealm() and type(Quest_Data_epoch) == "table" then
+        data = Quest_Data_epoch[questId]
+    end
+    if not data and type(Quest_Data_wotlk) == "table" then
+        data = Quest_Data_wotlk[questId]
+    end
+    if not data and type(Quest_Data) == "table" then
+        data = Quest_Data[questId]
+    end
+
+    if type(data) ~= "table" then return nil end
+
+    local title = data.T or data[1]
+    local objectives = data.O or data[3]
+    if type(title) ~= "string" or title == "" then
+        title = nil
+    end
+    if type(objectives) == "string" and objectives ~= "" then
+        objectives = { objectives }
+    elseif type(objectives) ~= "table" or not objectives[1] then
+        objectives = nil
+    end
+
+    if not title and not objectives then return nil end
+    return title, objectives
+end
+
+local function IsQuestTooltipSectionBreak(text)
+    if type(text) ~= "string" then return false end
+
+    return text == ""
+        or text == "Requirements:"
+        or text == "요구 조건:"
+        or text == "Rewards:"
+        or text == "보상:"
+        or text == "Description"
+        or text == "Objectives"
+        or text == "Required Level:"
+        or text == "Quest Level:"
+        or string.find(text, "^Requirements:")
+        or string.find(text, "^요구 조건:")
+        or string.find(text, "^Rewards:")
+        or string.find(text, "^Required Level:")
+        or string.find(text, "^Quest Level:")
+end
+
+local function PrepareQuestTooltipLine(line, width)
+    if not line then return end
+
+    if line.SetWidth then
+        line:SetWidth(width)
+    end
+    if line.SetWordWrap then
+        line:SetWordWrap(true)
+    end
+    if line.SetNonSpaceWrap then
+        line:SetNonSpaceWrap(true)
+    end
+end
+
+local function UpdateQuestLinkTooltip(tooltip, questId)
+    if not tooltip or not questId then return end
+
+    local title, objectives = GetQuestTranslation(questId)
+    if not title and not objectives then return end
+
+    local name = tooltip:GetName()
+    if not name then return end
+
+    local originalWidth = tooltip:GetWidth() or 0
+    local wrapWidth = originalWidth > 80 and (originalWidth - 36) or 420
+
+    local titleLine = _G[name .. "TextLeft1"]
+    if title and titleLine then
+        PrepareQuestTooltipLine(titleLine, wrapWidth)
+        titleLine:SetText(title)
+    end
+
+    if objectives then
+        local objectiveText = table.concat(objectives, "\n")
+        local objectiveLine
+        local objectiveLineIndex
+        local sectionStartIndex
+        local lines = tooltip:NumLines() or 0
+
+        for i = 3, lines do
+            local line = _G[name .. "TextLeft" .. i]
+            local text = line and line:GetText()
+
+            if text and IsQuestTooltipSectionBreak(text) then
+                sectionStartIndex = i
+                break
+            elseif text and text ~= "" and not objectiveLine then
+                objectiveLine = line
+                objectiveLineIndex = i
+            elseif objectiveLine and text and IsQuestTooltipSectionBreak(text) then
+                sectionStartIndex = i
+                break
+            end
+        end
+
+        if objectiveLine then
+            PrepareQuestTooltipLine(objectiveLine, wrapWidth)
+            objectiveLine:SetText(objectiveText)
+
+            if sectionStartIndex then
+                for i = (objectiveLineIndex or 0) + 1, sectionStartIndex - 1 do
+                    local line = _G[name .. "TextLeft" .. i]
+                    if line then
+                        line:SetText("")
+                    end
+                end
+            end
+        elseif lines >= 2 and tooltip.AddLine then
+            tooltip:AddLine(objectiveText, 1, 1, 1, true)
+        end
+    end
+
+    if tooltip.SetWidth and originalWidth > 0 then
+        tooltip:SetWidth(originalWidth)
+    end
+    tooltip:Show()
+end
+
+local function HookQuestLinks()
+    if not ItemRefTooltip or ItemRefTooltip.__TKOR_QuestLinkHooked or not ItemRefTooltip.SetHyperlink then return end
+
+    if not questLinkUpdater and CreateFrame then
+        questLinkUpdater = CreateFrame("Frame")
+        questLinkUpdater:Hide()
+        questLinkUpdater:SetScript("OnUpdate", function(self)
+            self:Hide()
+            if self.tooltip and self.questId then
+                UpdateQuestLinkTooltip(self.tooltip, self.questId)
+            end
+            self.tooltip = nil
+            self.questId = nil
+        end)
+    end
+
+    local function afterSetHyperlink(self, link)
+        local questId = tonumber(string.match(link or "", "quest:(%d+)"))
+        if questId then
+            UpdateQuestLinkTooltip(self, questId)
+            if questLinkUpdater then
+                questLinkUpdater.tooltip = self
+                questLinkUpdater.questId = questId
+                questLinkUpdater:Show()
+            end
+        end
+    end
+
+    if type(hooksecurefunc) == "function" then
+        hooksecurefunc(ItemRefTooltip, "SetHyperlink", afterSetHyperlink)
+    else
+        local origSetHyperlink = ItemRefTooltip.SetHyperlink
+        ItemRefTooltip.SetHyperlink = function(self, link, ...)
+            local result = origSetHyperlink(self, link, ...)
+            afterSetHyperlink(self, link)
+            return result
+        end
+    end
+
+    ItemRefTooltip.__TKOR_QuestLinkHooked = true
+end
+
 local function DebugPrint(message)
     if DEFAULT_CHAT_FRAME and DEFAULT_CHAT_FRAME.AddMessage then
         DEFAULT_CHAT_FRAME:AddMessage("|cff66ccff[TooltipKOR Debug]|r " .. tostring(message))
@@ -493,6 +669,7 @@ local function Install()
     HookChatEvents()
     HookUIErrorsFrame()
     HookCombatText()
+    HookQuestLinks()
     HookQuestDebugEvents()
 end
 
