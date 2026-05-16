@@ -1,5 +1,5 @@
 -- mail.lua
--- Translates mail subjects after Blizzard builds the mail UI.
+-- Translates mail subjects after Blizzard builds the mail UI (경매장 메일 제목, 아이템 한글화).
 
 local function TranslateTextObject(textObject)
     if not textObject or not textObject.GetText or not textObject.SetText then return end
