@@ -45,6 +45,25 @@ BACKPACK_TOOLTIP = "소지품";
 BAGSLOT = "가방";
 
 
+-- 메세지
+ERR_QUEST_REWARD_EXP_I = "경험치를 획득했습니다: %d XP";
+ERR_QUEST_ACCEPTED_S = "퀘스트를 수락했습니다: %s";
+COMBAT_THREAT_DECREASE_0 = "대상 변경!";
+COMBAT_TEXT_ABSORB = "흡수";
+COMBAT_TEXT_BLOCK = "방어함";
+COMBAT_TEXT_DEFLECT = "튕김";
+COMBAT_TEXT_DODGE = "피함";
+COMBAT_TEXT_EVADE = "벗어남";
+COMBAT_TEXT_IMMUNE = "면역";
+COMBAT_TEXT_MISS = "빗나감";
+COMBAT_TEXT_PARRY = "막음";
+COMBAT_TEXT_REFLECT = "반사함";
+COMBAT_TEXT_RESIST = "저항함";
+COMBAT_THREAT_DECREASE_1 = "대상 변경!";
+COMBAT_THREAT_DECREASE_2 = "위협 수준 낮아짐";
+COMBAT_THREAT_INCREASE_1 = "위협 수준 높음";
+COMBAT_THREAT_INCREASE_3 = "당신을 공격합니다!";
+
 -- 캐릭터 기본 능력치 패널 (Expand 버튼 열면 나오는 것)
 -- 기본 속성
 -- STRENGTH
