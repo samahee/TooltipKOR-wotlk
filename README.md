@@ -164,15 +164,12 @@
 
 10. 경매장에서 보내는 메일 제목 한글화
 
-
-   ![메일제목](images/mail_01.png)
+    ![메일제목](images/mail_01.png)
 
 11. 퀘스트 링크 한글화
 
-
-   ![퀘스트](images/quest_02.png)
+    ![퀘스트](images/quest_02.png)
 
 12. 아이템 획득 메세지 한글화
 
-
-   ![메세지](images/message_01.png)
+    ![메세지](images/message_01.png)
