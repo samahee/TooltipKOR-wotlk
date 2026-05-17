@@ -172,9 +172,26 @@ local function TranslatePlaceName(text)
 end
 
 local function TranslateSpellName(text)
-    if type(text) ~= "string" or type(spell_name_data) ~= "table" then return text end
+    if type(text) ~= "string" then return text end
 
-    return spell_name_data[text] or text
+    if type(spell_name_data) == "table" and spell_name_data[text] then
+        return spell_name_data[text]
+    end
+    if type(spell_name_custom_data) == "table" and spell_name_custom_data[text] then
+        return spell_name_custom_data[text]
+    end
+
+    local baseName = string.gsub(text, "%s*%b()$", "")
+    if baseName ~= text and baseName ~= "" then
+        if type(spell_name_data) == "table" and spell_name_data[baseName] then
+            return spell_name_data[baseName]
+        end
+        if type(spell_name_custom_data) == "table" and spell_name_custom_data[baseName] then
+            return spell_name_custom_data[baseName]
+        end
+    end
+
+    return text
 end
 
 local function TranslateDynamicParts(text)
@@ -346,6 +363,13 @@ local function FillTemplate(template, captures, sourceSpecs, captureTypes)
 end
 
 local function CompileMessages()
+    local function AddPatternMessage(from, to, captureTypes)
+        if type(from) == "string" and type(to) == "string" and HasFormat(from) then
+            local pattern, specs = TemplateToPattern(from)
+            table.insert(patternMessages, { pattern = pattern, specs = specs, to = to, captureTypes = captureTypes, priority = string.len(from) })
+        end
+    end
+
     for from, to in pairs(MessageData) do
         if type(from) == "string" and type(to) == "string" then
             if HasFormat(from) then
@@ -356,6 +380,17 @@ local function CompileMessages()
             end
         end
     end
+
+    AddPatternMessage(_G.FACTION_STANDING_INCREASED, _G.FACTION_STANDING_INCREASED, { "map" })
+    AddPatternMessage(_G.FACTION_STANDING_INCREASED_BONUS, _G.FACTION_STANDING_INCREASED_BONUS, { "map" })
+    AddPatternMessage(_G.FACTION_STANDING_INCREASED_GENERIC, _G.FACTION_STANDING_INCREASED_GENERIC, { "map" })
+    AddPatternMessage(_G.FACTION_STANDING_DECREASED, _G.FACTION_STANDING_DECREASED, { "map" })
+    AddPatternMessage(_G.FACTION_STANDING_DECREASED_GENERIC, _G.FACTION_STANDING_DECREASED_GENERIC, { "map" })
+
+    AddPatternMessage(_G.ERR_LEARN_ABILITY_S, _G.ERR_LEARN_ABILITY_S, { "spell" })
+    AddPatternMessage(_G.ERR_LEARN_SPELL_S, _G.ERR_LEARN_SPELL_S, { "spell" })
+    AddPatternMessage(_G.ERR_PET_LEARN_ABILITY_S, _G.ERR_PET_LEARN_ABILITY_S, { "spell" })
+    AddPatternMessage(_G.ERR_PET_LEARN_SPELL_S, _G.ERR_PET_LEARN_SPELL_S, { "spell" })
 
     table.sort(patternMessages, function(a, b)
         return (a.priority or 0) > (b.priority or 0)
@@ -417,6 +452,7 @@ local function HookChatEvents()
         "CHAT_MSG_MONEY",
         "CHAT_MSG_SKILL",
         "CHAT_MSG_COMBAT_MISC_INFO",
+        "CHAT_MSG_COMBAT_FACTION_CHANGE",
     }
 
     for _, event in ipairs(events) do
