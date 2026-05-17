@@ -98,7 +98,7 @@ end
 local function TranslateItemLinks(text)
     if type(text) ~= "string" or type(item_data) ~= "table" then return text end
 
-    return string.gsub(text, "(|Hitem:(%d+):.-|h)%[(.-)%](|h)", function(linkStart, itemIdText, itemName, linkEnd)
+    local translated = string.gsub(text, "(|Hitem:(%d+):.-|h)%[(.-)%](|h)", function(linkStart, itemIdText, itemName, linkEnd)
         local itemId = tonumber(itemIdText)
         local data = itemId and item_data[itemId]
         local korName = type(data) == "table" and data[2]
@@ -109,6 +109,7 @@ local function TranslateItemLinks(text)
 
         return linkStart .. "[" .. itemName .. "]" .. linkEnd
     end)
+    return translated
 end
 
 local function GetItemNameMap()
@@ -130,9 +131,10 @@ local function TranslatePlainItemNames(text)
     if type(text) ~= "string" or not string.find(text, "%[") or string.find(text, "|Hitem:") then return text end
 
     local names = GetItemNameMap()
-    return string.gsub(text, "%[(.-)%]", function(itemName)
+    local translated = string.gsub(text, "%[(.-)%]", function(itemName)
         return "[" .. (names[itemName] or itemName) .. "]"
     end)
+    return translated
 end
 
 local function TranslatePlainItemName(text)
@@ -195,7 +197,8 @@ local function TranslateSpellName(text)
 end
 
 local function TranslateDynamicParts(text)
-    return TranslatePlainItemNames(TranslateItemLinks(TranslateMoneyUnits(text)))
+    local translated = TranslatePlainItemNames(TranslateItemLinks(TranslateMoneyUnits(text)))
+    return translated
 end
 
 local function StripMessageColors(text)
@@ -346,7 +349,8 @@ local function FillTemplate(template, captures, sourceSpecs, captureTypes)
                         captureIndex = index
                     end
 
-                    table.insert(result, TranslateCapturedValue(captureValues[captureIndex] or "", captureTypes and captureTypes[captureIndex]))
+                    local translatedValue = TranslateCapturedValue(captureValues[captureIndex] or "", captureTypes and captureTypes[captureIndex])
+                    table.insert(result, translatedValue)
                     i = i + string.len(spec) + 1
                 else
                     table.insert(result, ch)
