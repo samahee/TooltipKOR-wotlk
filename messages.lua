@@ -89,9 +89,9 @@ local captureTypeRules = {
 
 local function TranslateMoneyUnits(text)
     if type(text) ~= "string" then return text end
-    text = string.gsub(text, "Gold", "골드")
-    text = string.gsub(text, "Silver", "실버")
-    text = string.gsub(text, "Copper", "코퍼")
+    text = string.gsub(text, "%f[%a]Gold%f[%A]", "골드")
+    text = string.gsub(text, "%f[%a]Silver%f[%A]", "실버")
+    text = string.gsub(text, "%f[%a]Copper%f[%A]", "코퍼")
     return text
 end
 
@@ -296,7 +296,7 @@ local function TranslateCapturedValue(value, captureType)
     if type(value) ~= "string" or value == "" then return value end
 
     if captureType == "item" then
-        return TranslatePlainItemName(TranslateDynamicParts(value))
+        return TranslatePlainItemName(TranslatePlainItemNames(TranslateItemLinks(value)))
     elseif captureType == "map" then
         return TranslatePlaceName(value)
     elseif captureType == "spell" then
@@ -363,7 +363,16 @@ local function FillTemplate(template, captures, sourceSpecs, captureTypes)
         end
     end
 
-    return TranslateDynamicParts(table.concat(result))
+    local filled = table.concat(result)
+    if captureTypes then
+        for _, captureType in ipairs(captureTypes) do
+            if captureType == "item" then
+                return TranslatePlainItemNames(TranslateItemLinks(filled))
+            end
+        end
+    end
+
+    return TranslateDynamicParts(filled)
 end
 
 local function CompileMessages()
