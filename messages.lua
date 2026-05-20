@@ -95,6 +95,29 @@ local function TranslateMoneyUnits(text)
     return text
 end
 
+local function IsMoneyAmountText(text)
+    if type(text) ~= "string" then return false end
+    if string.find(text, "|H") or string.find(text, "%[") then return false end
+
+    local plain = string.gsub(text, "|c%x%x%x%x%x%x%x%x", "")
+    plain = string.gsub(plain, "|r", "")
+    plain = string.gsub(plain, "%s+", " ")
+    plain = string.match(plain, "^%s*(.-)%s*$") or ""
+
+    local found = string.find(plain, "%d+%s*Gold")
+        or string.find(plain, "%d+%s*Silver")
+        or string.find(plain, "%d+%s*Copper")
+    if not found then return false end
+
+    local remainder = plain
+    remainder = string.gsub(remainder, "%d+%s*Gold", "")
+    remainder = string.gsub(remainder, "%d+%s*Silver", "")
+    remainder = string.gsub(remainder, "%d+%s*Copper", "")
+    remainder = string.gsub(remainder, "%s+", "")
+
+    return remainder == ""
+end
+
 local function TranslateItemLinks(text)
     if type(text) ~= "string" or type(item_data) ~= "table" then return text end
 
@@ -296,7 +319,7 @@ local function TranslateCapturedValue(value, captureType)
     if type(value) ~= "string" or value == "" then return value end
 
     if captureType == "item" then
-        return TranslatePlainItemName(TranslatePlainItemNames(TranslateItemLinks(value)))
+        return TranslatePlainItemName(TranslatePlainItemNames(TranslateItemLinks(TranslateMoneyUnits(value))))
     elseif captureType == "map" then
         return TranslatePlaceName(value)
     elseif captureType == "spell" then
@@ -367,7 +390,7 @@ local function FillTemplate(template, captures, sourceSpecs, captureTypes)
     if captureTypes then
         for _, captureType in ipairs(captureTypes) do
             if captureType == "item" then
-                return TranslatePlainItemNames(TranslateItemLinks(filled))
+                return TranslatePlainItemNames(TranslateItemLinks(TranslateMoneyUnits(filled)))
             end
         end
     end
@@ -412,6 +435,16 @@ end
 
 local function TranslateKnownMessage(message)
     if type(message) ~= "string" or message == "" then return message end
+
+    local lootedMoney = string.match(message, "^You loot (.+)$")
+    local translatedLootTemplate = MessageData["You loot %s"]
+    if not lootedMoney and type(translatedLootTemplate) == "string" and HasFormat(translatedLootTemplate) then
+        local translatedLootPattern = TemplateToPattern(translatedLootTemplate)
+        lootedMoney = string.match(message, translatedLootPattern)
+    end
+    if IsMoneyAmountText(lootedMoney) then
+        return FillTemplate(translatedLootTemplate or "아이템을 획득했습니다: %s", { lootedMoney }, { "s" }, { nil })
+    end
 
     local exact = exactMessages[message]
     if exact then return TranslateDynamicParts(exact) end
