@@ -109,6 +109,10 @@ end
 local function HookAfter(fn_name, post)
   local orig = (getglobal and getglobal(fn_name)) or (_G and _G[fn_name])
   if type(orig) ~= "function" then return end
+  if type(hooksecurefunc) == "function" then
+    hooksecurefunc(fn_name, post)
+    return
+  end
   local function w(a1,a2,a3,a4) local r1,r2,r3,r4=orig(a1,a2,a3,a4); post(); return r1,r2,r3,r4 end
   if setglobal then setglobal(fn_name, w) end
   if _G then _G[fn_name] = w end
@@ -129,17 +133,8 @@ local function IsWorldMapDropDown()
        or n=="WorldMapFrameContinentDropDown" or n=="WorldMapFrameZoneDropDown")
 end
 local function Wrap_AddButton_Once()
-  if TooltipKOR.Map.__dd_wrapped then return end
-  local add = (getglobal and getglobal("UIDropDownMenu_AddButton")) or (_G and _G["UIDropDownMenu_AddButton"])
-  if type(add) ~= "function" then return end
-  local orig = add
-  local function add_wrap(info, level)
-    if info and info.text and IsWorldMapDropDown() then info.text = KR(info.text) end
-    return orig(info, level)
-  end
-  if setglobal then setglobal("UIDropDownMenu_AddButton", add_wrap) end
-  if _G then _G["UIDropDownMenu_AddButton"] = add_wrap end
-  TooltipKOR.Map.__dd_wrapped = true
+  -- Do not replace UIDropDownMenu_AddButton here.
+  -- It is shared by secure unit popup menus such as Set Focus.
 end
 local function FixOpenDropDownOnce()
   if not IsWorldMapDropDown() then return end
@@ -155,8 +150,31 @@ local function FixOpenDropDownOnce()
     i=i+1
   end
 end
+local function FixVisibleDropDownLists()
+  local worldMap = (getglobal and getglobal("WorldMapFrame")) or (_G and _G["WorldMapFrame"])
+  if not (worldMap and worldMap.IsShown and worldMap:IsShown()) then return end
+
+  for listIndex=1, 2 do
+    local list = (getglobal and getglobal("DropDownList"..listIndex)) or (_G and _G["DropDownList"..listIndex])
+    if list and list.IsShown and list:IsShown() then
+      local i=1; while true do
+        local btn = (getglobal and getglobal("DropDownList"..listIndex.."Button"..i)) or (_G and _G["DropDownList"..listIndex.."Button"..i])
+        if not btn then break end
+        local fs = btn.NormalText or (btn.GetName and getglobal(btn:GetName().."NormalText")) or (btn.GetFontString and btn:GetFontString())
+        if fs and fs.GetText and fs.SetText then
+          local t = fs:GetText()
+          if t and t~="" then
+            local k=KR(t)
+            if k~=t then fs:SetText(k) end
+          end
+        end
+        i=i+1
+      end
+    end
+  end
+end
 local function EnsureDropDownHooks() Wrap_AddButton_Once() end
-local function OnMenuToggle() Wrap_AddButton_Once(); FixOpenDropDownOnce() end
+local function OnMenuToggle() Wrap_AddButton_Once(); FixOpenDropDownOnce(); FixVisibleDropDownLists() end
 
 -- 후킹/보정
 EnsureDropDownHooks()
@@ -198,4 +216,9 @@ if ev then
 end
 
 -- 시작 시 1회 보정
+local dd_ev = CreateFrame and CreateFrame("Frame")
+if dd_ev then
+  dd_ev:SetScript("OnUpdate", FixVisibleDropDownLists)
+end
+
 FixWorldMapLabelsOnce()
