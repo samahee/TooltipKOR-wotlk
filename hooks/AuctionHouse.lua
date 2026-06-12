@@ -1,5 +1,6 @@
 -- hooks/AuctionHouse.lua
 -- 경매장 검색 결과 한글화 모듈
+-- items.lua 의 Normalize 함수를 그대로 사용
 
 local ADDON_NAME = "TooltipKOR-wotlk"
 
@@ -23,7 +24,8 @@ local function GetCacheSize()
 end
 
 --------------------------------------------------
--- # 유틸 함수
+-- # items.lua 의 Normalize 함수를 그대로 사용
+-- (정규식 패턴이 중요함!)
 --------------------------------------------------
 local function Normalize(str)
     if not str then return "" end
@@ -68,7 +70,7 @@ local function TranslateItemName(name)
 end
 
 --------------------------------------------------
--- # GetAuctionItemInfo 후킹 (원본 저장 → 재할당)
+-- # GetAuctionItemInfo 후킹
 --------------------------------------------------
 local origGetAuctionItemInfo = _G.GetAuctionItemInfo
 
@@ -184,6 +186,14 @@ SlashCmdList["TKOR_AH"] = function(msg)
         print("[TKOR] 디버깅:")
         print(string.format("  GetAuctionItemInfo: %s", GetAuctionItemInfo and "있음" or "없음"))
         print(string.format("  origGetAuctionItemInfo: %s", origGetAuctionItemInfo and "있음" or "없음"))
+        print(string.format("  TKOR_eng_to_kor: %s", _G.TKOR_eng_to_kor and "있음" or "없음"))
+        
+        -- Normalize 테스트 (items.lua 와 동일한 패턴 사용)
+        print("[TKOR] Normalize 테스트:")
+        local testNorm = {"linen cloth", "Silk Cloth", "WOOL CLOTH"}
+        for _, name in ipairs(testNorm) do
+            print(string.format("  %s → %s", name, Normalize(name)))
+        end
         
         -- 경매장 버튼 확인
         for i = 1, 5 do
@@ -196,11 +206,22 @@ SlashCmdList["TKOR_AH"] = function(msg)
             end
         end
         
-        -- Normalize 테스트
-        print("[TKOR] Normalize 테스트:")
-        local testNorm = {"linen cloth", "Silk Cloth", "WOOL CLOTH"}
-        for _, name in ipairs(testNorm) do
-            print(string.format("  %s → %s", name, Normalize(name)))
+        -- TKOR_eng_to_kor 확인 (linen cloth 예시)
+        print("[TKOR] TKOR_eng_to_kor 확인 (예시):")
+        if _G.TKOR_eng_to_kor then
+            local linen_norm = Normalize("Linen Cloth")
+            print(string.format("  Normalize('Linen Cloth'): %s", linen_norm))
+            print(string.format("  TKOR_eng_to_kor['%s']: %s", linen_norm, _G.TKOR_eng_to_kor[linen_norm] or "없음"))
+            
+            -- 일부 데이터 확인
+            local count = 0
+            for key, value in pairs(_G.TKOR_eng_to_kor) do
+                if count < 3 then
+                    print(string.format("    %s → %s", key, value))
+                    count = count + 1
+                end
+                if count >= 3 then break end
+            end
         end
     else
         print("[경매장] 명령어: /tkor_ah on/off/test/status/debug")
