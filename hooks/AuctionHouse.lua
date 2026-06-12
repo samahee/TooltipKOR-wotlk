@@ -1,22 +1,19 @@
 -- hooks/AuctionHouse.lua
 -- 경매장 검색 결과 한글화 모듈
--- GetAuctionItemInfo() 후킹으로 모든 페이지에서 자동 적용
--- items.lua 의 TKOR_eng_to_kor 직접 사용
+-- GetAuctionItemInfo() 후킹 + 경매장 프레임 직접 수정
 
 local ADDON_NAME = "TooltipKOR-wotlk"
 
 --------------------------------------------------
 -- # 설정 변수
 --------------------------------------------------
-TKOR_AH_ENABLED = TKOR_AH_ENABLED or true  -- 활성화 여부
+TKOR_AH_ENABLED = TKOR_AH_ENABLED or true
 
 --------------------------------------------------
--- # 캐시 (성능 최적화)
+-- # 캐시
 --------------------------------------------------
 local TKOR_AH_NameCache = {}
 local MAX_CACHE_SIZE = 5000
-local cache_hit_count = 0
-local cache_miss_count = 0
 
 local function GetCacheSize()
     local size = 0
@@ -26,27 +23,8 @@ local function GetCacheSize()
     return size
 end
 
-local function CleanupCache()
-    if GetCacheSize() > MAX_CACHE_SIZE then
-        local items_to_keep = {}
-        local current = 0
-        for key, value in pairs(TKOR_AH_NameCache) do
-            if current < 2500 then
-                items_to_keep[key] = value
-            end
-            current = current + 1
-        end
-        for key in pairs(TKOR_AH_NameCache) do
-            TKOR_AH_NameCache[key] = nil
-        end
-        for key, value in pairs(items_to_keep) do
-            TKOR_AH_NameCache[key] = value
-        end
-    end
-end
-
 --------------------------------------------------
--- # 유틸 함수 (items.lua 의 Normalize() 과 동일)
+-- # 유틸 함수
 --------------------------------------------------
 local function Normalize(str)
     if not str then return "" end
@@ -73,29 +51,17 @@ local function TranslateItemName(name)
     
     local normName = Normalize(cleanName)
     local cacheKey = "list_" .. normName
+    
+    -- 캐시 확인
     if TKOR_AH_NameCache[cacheKey] then
-        cache_hit_count = cache_hit_count + 1
         return TKOR_AH_NameCache[cacheKey]
     end
     
-    -- ✅ items.lua 의 TKOR_eng_to_kor 사용 (O(1) 검색!)
+    -- ✅ items.lua 의 TKOR_eng_to_kor 사용
     local eng_to_kor = _G.TKOR_eng_to_kor
     if eng_to_kor and eng_to_kor[normName] then
         local translatedName = eng_to_kor[normName]
-        
-        -- 캐시 저장
         TKOR_AH_NameCache[cacheKey] = translatedName
-        local lowerKey = "list_" .. string.lower(normName)
-        if lowerKey ~= cacheKey then
-            TKOR_AH_NameCache[lowerKey] = translatedName
-        end
-        
-        cache_miss_count = cache_miss_count + 1
-        
-        if GetCacheSize() > MAX_CACHE_SIZE then
-            CleanupCache()
-        end
-        
         return translatedName
     end
     
@@ -108,17 +74,21 @@ end
 local origGetAuctionItemInfo = GetAuctionItemInfo
 
 function GetAuctionItemInfo(slot, connection, index)
-    if connection ~= "list" then
+    -- ✅ 연결 타입 확인 (list, buyout, bid 등)
+    if connection ~= "list" and connection ~= "bid" and connection ~= "buyout" then
         return origGetAuctionItemInfo(slot, connection, index)
     end
     
+    -- slot 범위 확인
     if not slot or slot < 1 or slot > 50 then
         return origGetAuctionItemInfo(slot, connection, index)
     end
     
-    local name, _, texture, stackCount, cost, level, quality, numBids, 
+    -- 원본 호출
+    local name, texture, stackCount, cost, level, quality, numBids, 
            timeLeft, owner, itemLink, canUse = origGetAuctionItemInfo(slot, connection, index)
     
+    -- 이름 변환
     if name and name ~= "" then
         local translatedName = TranslateItemName(name)
         if translatedName and translatedName ~= name then
@@ -134,30 +104,29 @@ _G.GetAuctionItemInfo_orig = _G.GetAuctionItemInfo_orig or GetAuctionItemInfo_or
 _G.GetAuctionItemInfo = GetAuctionItemInfo
 
 --------------------------------------------------
--- # 경매장 버튼 업데이트
+-- # 경매장 버튼 직접 수정 (후킹 + 직접 적용)
 --------------------------------------------------
-local TKOR_AH_UpdateFrame = CreateFrame("Frame")
-TKOR_AH_UpdateFrame:SetScript("OnEvent", function(self, event, frame, ...)
-    if event == "AUCTION_HOUSE_UPDATE" and TKOR_AH_ENABLED then
-        TKOR_ProcessAuctionButtons()
-    elseif event == "AUCTION_BIDDER_UPDATE" and TKOR_AH_ENABLED then
-        TKOR_ProcessAuctionButtons()
-    end
-end)
-
 local function TKOR_ProcessAuctionButtons()
     if not TKOR_AH_ENABLED then return end
     
+    -- 1. GetAuctionItemInfo 결과를 사용한 변환 (50 개)
     for i = 1, 50 do
-        local button = _G["AuctionHouseFrameAuctionButton" .. i]
-        if button then
-            local buttonName = _G[button:GetName() .. "Name"]
-            if buttonName then
-                local originalText = buttonName:GetText()
-                if originalText and originalText ~= "" then
-                    local translatedName = TranslateItemName(originalText)
-                    if translatedName and translatedName ~= originalText then
-                        buttonName:SetText(translatedName)
+        -- 연결 타입: "list", "bid", "buyout" 모두 시도
+        local testConn = {"list", "bid", "buyout"}
+        for _, conn in ipairs(testConn) do
+            local name, _, _, _, _, _, _, _, _, _, _, _ = GetAuctionItemInfo(i, conn)
+            if name and name ~= "" then
+                local button = _G["AuctionHouseFrameAuctionButton" .. i]
+                if button then
+                    local buttonName = _G[button:GetName() .. "Name"]
+                    if buttonName then
+                        local currentText = buttonName:GetText()
+                        if currentText and currentText ~= "" then
+                            local translatedName = TranslateItemName(currentText)
+                            if translatedName and translatedName ~= currentText then
+                                buttonName:SetText(translatedName)
+                            end
+                        end
                     end
                 end
             end
@@ -178,16 +147,22 @@ TKOR_AH_Frame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" and ... == ADDON_NAME then
         TKOR_AH_ENABLED = true
     elseif event == "AUCTION_HOUSE_SHOW" then
-        cache_hit_count = 0
-        cache_miss_count = 0
+        print("[TKOR] 경매장 열림")
     elseif event == "AUCTION_HOUSE_UPDATE" then
-        cache_miss_count = cache_miss_count + 1
+        print("[TKOR] 경매장 업데이트")
         TKOR_ProcessAuctionButtons()
+    elseif event == "PLAYER_LOGIN" then
+        print("[TKOR] 경매장 한글화 모듈 로드됨")
+        if _G.TKOR_eng_to_kor then
+            local count = 0
+            for _ in pairs(_G.TKOR_eng_to_kor) do count = count + 1 end
+            print(string.format("[TKOR] eng_to_kor 데이터: %d 개", count))
+        end
     end
 end)
 
 --------------------------------------------------
--- # 명령어 (메세지 없음)
+-- # 명령어
 --------------------------------------------------
 SLASH_TKOR_AH1 = "/tkor_ah"
 SLASH_TKOR_AH2 = "/경매장"
@@ -196,9 +171,44 @@ SlashCmdList["TKOR_AH"] = function(msg)
         TKOR_AH_ENABLED = true
     elseif msg == "off" then
         TKOR_AH_ENABLED = false
-    elseif msg == "clear" then
-        for key in pairs(TKOR_AH_NameCache) do
-            TKOR_AH_NameCache[key] = nil
+    elseif msg == "test" then
+        print("[TKOR] 테스트:")
+        local testNames = {"Linen Cloth", "Silk Cloth", "Wool Cloth"}
+        for _, name in ipairs(testNames) do
+            local result = TranslateItemName(name)
+            print(string.format("  %s → %s", name, result))
         end
+    elseif msg == "status" then
+        print("[TKOR] 상태:")
+        print(string.format("  활성화: %s", TKOR_AH_ENABLED))
+        if _G.TKOR_eng_to_kor then
+            local count = 0
+            for _ in pairs(_G.TKOR_eng_to_kor) do count = count + 1 end
+            print(string.format("  eng_to_kor: %d 개", count))
+        end
+        print(string.format("  캐시: %d 개", GetCacheSize()))
+    elseif msg == "debug" then
+        print("[TKOR] 디버깅:")
+        print(string.format("  GetAuctionItemInfo: %s", GetAuctionItemInfo and "있음" or "없음"))
+        print(string.format("  origGetAuctionItemInfo: %s", _G.GetAuctionItemInfo_orig and "있음" or "없음"))
+        
+        -- 경매장 버튼 확인
+        for i = 1, 5 do
+            local button = _G["AuctionHouseFrameAuctionButton" .. i]
+            if button then
+                local buttonName = _G[button:GetName() .. "Name"]
+                if buttonName then
+                    print(string.format("  Button %d Name: %s", i, buttonName:GetText() or "없음"))
+                end
+            end
+        end
+        
+        -- GetAuctionItemInfo 테스트
+        for i = 1, 3 do
+            local name = GetAuctionItemInfo(i, "list")
+            print(string.format("  GetAuctionItemInfo(%d, 'list'): %s", i, name or "없음"))
+        end
+    else
+        print("[경매장] 명령어: /tkor_ah on/off/test/status/debug")
     end
 end
