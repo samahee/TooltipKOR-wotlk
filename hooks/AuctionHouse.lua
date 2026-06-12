@@ -69,24 +69,24 @@ local function TranslateItemName(name)
 end
 
 --------------------------------------------------
--- # GetAuctionItemInfo 후킹
+-- # GetAuctionItemInfo 후킹 (인수 순서: connection, index)
 --------------------------------------------------
 local origGetAuctionItemInfo = GetAuctionItemInfo
 
-function GetAuctionItemInfo(slot, connection, index)
-    -- ✅ 연결 타입 확인 (list, buyout, bid 등)
+function GetAuctionItemInfo(connection, index, ...)
+    -- 연결 타입 확인
     if connection ~= "list" and connection ~= "bid" and connection ~= "buyout" then
-        return origGetAuctionItemInfo(slot, connection, index)
+        return origGetAuctionItemInfo(connection, index, ...)
     end
     
-    -- slot 범위 확인
-    if not slot or slot < 1 or slot > 50 then
-        return origGetAuctionItemInfo(slot, connection, index)
+    -- index 범위 확인
+    if not index or index < 1 or index > 50 then
+        return origGetAuctionItemInfo(connection, index, ...)
     end
     
     -- 원본 호출
     local name, texture, stackCount, cost, level, quality, numBids, 
-           timeLeft, owner, itemLink, canUse = origGetAuctionItemInfo(slot, connection, index)
+           timeLeft, owner, itemLink, canUse = origGetAuctionItemInfo(connection, index, ...)
     
     -- 이름 변환
     if name and name ~= "" then
@@ -114,7 +114,7 @@ local function TKOR_ProcessAuctionButtons()
         -- 연결 타입: "list", "bid", "buyout" 모두 시도
         local testConn = {"list", "bid", "buyout"}
         for _, conn in ipairs(testConn) do
-            local name, _, _, _, _, _, _, _, _, _, _, _ = GetAuctionItemInfo(i, conn)
+            local name = GetAuctionItemInfo(conn, i)
             if name and name ~= "" then
                 local button = _G["AuctionHouseFrameAuctionButton" .. i]
                 if button then
@@ -180,7 +180,7 @@ SlashCmdList["TKOR_AH"] = function(msg)
         end
     elseif msg == "status" then
         print("[TKOR] 상태:")
-        print(string.format("  활성화: %s", TKOR_AH_ENABLED))
+        print(string.format("  활성화: %s", TKOR_AH_ENABLED and "ON" or "OFF"))
         if _G.TKOR_eng_to_kor then
             local count = 0
             for _ in pairs(_G.TKOR_eng_to_kor) do count = count + 1 end
@@ -203,10 +203,10 @@ SlashCmdList["TKOR_AH"] = function(msg)
             end
         end
         
-        -- GetAuctionItemInfo 테스트
+        -- GetAuctionItemInfo 테스트 (올바른 순서: index, connection)
         for i = 1, 3 do
-            local name = GetAuctionItemInfo(i, "list")
-            print(string.format("  GetAuctionItemInfo(%d, 'list'): %s", i, name or "없음"))
+            local name = GetAuctionItemInfo("list", i)
+            print(string.format("  GetAuctionItemInfo('list', %d): %s", i, name or "없음"))
         end
     else
         print("[경매장] 명령어: /tkor_ah on/off/test/status/debug")
