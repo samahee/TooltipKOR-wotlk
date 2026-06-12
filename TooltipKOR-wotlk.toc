@@ -40,3 +40,4 @@ search.lua
 tooltip_translate.lua
 messages.lua
 mail.lua
+hooks\AuctionHouse.lua
