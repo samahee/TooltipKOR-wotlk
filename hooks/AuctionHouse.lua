@@ -167,58 +167,39 @@ _G.GetAuctionItemInfo_orig = _G.GetAuctionItemInfo_orig or GetAuctionItemInfo_or
 _G.GetAuctionItemInfo = GetAuctionItemInfo
 
 --------------------------------------------------
--- # 추가: AuctionHouseFrame_Update 후킹 (보완)
+-- # 추가: 경매장 프레임 업데이트 감지
 --------------------------------------------------
--- 프레임 업데이트 시 텍스트 직접 수정 (이중 보호)
-local origAuctionHouseFrame_Update = AuctionHouseFrame_Update
+-- 프레임이 업데이트될 때 텍스트 직접 수정 (보완용)
+local TKOR_AH_UpdateFrame = CreateFrame("Frame")
+TKOR_AH_UpdateFrame:SetScript("OnEvent", function(self, event, frame, ...)
+    if event == "AUCTION_HOUSE_UPDATE" and TKOR_AH_ENABLED then
+        TKOR_ProcessAuctionButtons()
+    elseif event == "AUCTION_BIDDER_UPDATE" and TKOR_AH_ENABLED then
+        TKOR_ProcessAuctionButtons()
+    end
+end)
 
-if origAuctionHouseFrame_Update then
-    function AuctionHouseFrame_Update()
-        origAuctionHouseFrame_Update()
-        
-        -- 모든 버튼의 이름 텍스트를 한글로 변경 (보완용)
-        if not TKOR_AH_ENABLED then return end
-        
-        for i = 1, NUM_AUCTION_LIST_ITEMS do
-            local button = _G["AuctionHouseFrameAuctionButton" .. i]
-            if button and not button.TKOR_AH_Translated then
-                local buttonName = _G[button:GetName() .. "Name"]
-                if buttonName then
-                    local originalText = buttonName:GetText()
-                    if originalText and originalText ~= "" then
-                        local cleanText = CleanString(originalText)
-                        local translatedName = TranslateItemName(originalText)
-                        if translatedName and translatedName ~= originalText then
-                            buttonName:SetText(translatedName)
-                        end
+-- 경매장 버튼을 처리하는 함수
+local function TKOR_ProcessAuctionButtons()
+    if not TKOR_AH_ENABLED then return end
+    
+    -- 검색 결과 리스트 처리
+    for i = 1, NUM_AUCTION_LIST_ITEMS do
+        local button = _G["AuctionHouseFrameAuctionButton" .. i]
+        if button then
+            local buttonName = _G[button:GetName() .. "Name"]
+            if buttonName then
+                local originalText = buttonName:GetText()
+                if originalText and originalText ~= "" then
+                    local cleanText = CleanString(originalText)
+                    local translatedName = TranslateItemName(originalText)
+                    if translatedName and translatedName ~= originalText then
+                        buttonName:SetText(translatedName)
                     end
                 end
-                button.TKOR_AH_Translated = true
             end
         end
     end
-else
-    -- AuctionHouseFrame_Update 가 없는 경우 (다른 애드온이 대체한 경우)
-    hooksecurefunc("AuctionHouseFrame_Update", function()
-        if not TKOR_AH_ENABLED then return end
-        
-        for i = 1, NUM_AUCTION_LIST_ITEMS do
-            local button = _G["AuctionHouseFrameAuctionButton" .. i]
-            if button and not button.TKOR_AH_Translated then
-                local buttonName = _G[button:GetName() .. "Name"]
-                if buttonName then
-                    local originalText = buttonName:GetText()
-                    if originalText and originalText ~= "" then
-                        local translatedName = TranslateItemName(originalText)
-                        if translatedName and translatedName ~= originalText then
-                            buttonName:SetText(translatedName)
-                        end
-                    end
-                end
-                button.TKOR_AH_Translated = true
-            end
-        end
-    end)
 end
 
 --------------------------------------------------
@@ -246,6 +227,8 @@ TKOR_AH_Frame:SetScript("OnEvent", function(self, event, ...)
         -- 경매장 데이터 업데이트 시 (검색어 변경, 페이지 이동 등)
         -- 캐시는 유지하되, 새 데이터도 자동으로 변환됨
         cache_miss_count = cache_miss_count + 1
+        -- 버튼 텍스트도 업데이트 (이중 보호)
+        TKOR_ProcessAuctionButtons()
     end
 end)
 
