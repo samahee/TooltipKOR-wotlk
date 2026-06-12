@@ -1,7 +1,7 @@
 -- hooks/AuctionHouse.lua
 -- 경매장 검색 결과 한글화 모듈
 -- GetAuctionItemInfo() 후킹으로 모든 페이지에서 자동 적용
--- item_data 직접 사용 (items.lua 의 Normalize() 함수와 동일한 로직)
+-- items.lua 의 TKOR_eng_to_kor 직접 사용
 
 local ADDON_NAME = "TooltipKOR-wotlk"
 
@@ -78,24 +78,12 @@ local function TranslateItemName(name)
         return TKOR_AH_NameCache[cacheKey]
     end
     
-    local item_data = _G.item_data
-    if not item_data then
-        return name
-    end
-    
-    local translatedName = nil
-    for id, data in pairs(item_data) do
-        if type(data) == "table" and data[1] and data[2] then
-            local engName = data[1]
-            local normEng = Normalize(engName)
-            if normEng == normName then
-                translatedName = data[2]
-                break
-            end
-        end
-    end
-    
-    if translatedName then
+    -- ✅ items.lua 의 TKOR_eng_to_kor 사용 (O(1) 검색!)
+    local eng_to_kor = _G.TKOR_eng_to_kor
+    if eng_to_kor and eng_to_kor[normName] then
+        local translatedName = eng_to_kor[normName]
+        
+        -- 캐시 저장
         TKOR_AH_NameCache[cacheKey] = translatedName
         local lowerKey = "list_" .. string.lower(normName)
         if lowerKey ~= cacheKey then

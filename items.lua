@@ -371,3 +371,8 @@ HookAddonTooltips()
 
 -- 툴팁 이름이 없을 경우, reload 전까지 후킹 가능하게 하는 방법
 -- /run TKOR_ItemHook(GetMouseFocus())
+
+--------------------------------------------------
+-- # [경매장용] eng_to_kor 전역 노출
+--------------------------------------------------
+_G.TKOR_eng_to_kor = eng_to_kor
