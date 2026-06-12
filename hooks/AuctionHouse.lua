@@ -1,6 +1,5 @@
 -- hooks/AuctionHouse.lua
 -- 경매장 검색 결과 한글화 모듈
--- GetAuctionItemInfo() 후킹 + 경매장 프레임 직접 수정
 
 local ADDON_NAME = "TooltipKOR-wotlk"
 
@@ -69,26 +68,22 @@ local function TranslateItemName(name)
 end
 
 --------------------------------------------------
--- # GetAuctionItemInfo 후킹 (인수 순서: connection, index)
+-- # GetAuctionItemInfo 후킹 (원본 저장 → 재할당)
 --------------------------------------------------
-local origGetAuctionItemInfo = GetAuctionItemInfo
+local origGetAuctionItemInfo = _G.GetAuctionItemInfo
 
-function GetAuctionItemInfo(connection, index, ...)
-    -- 연결 타입 확인
+_G.GetAuctionItemInfo = function(connection, index, ...)
     if connection ~= "list" and connection ~= "bid" and connection ~= "buyout" then
         return origGetAuctionItemInfo(connection, index, ...)
     end
     
-    -- index 범위 확인
     if not index or index < 1 or index > 50 then
         return origGetAuctionItemInfo(connection, index, ...)
     end
     
-    -- 원본 호출
     local name, texture, stackCount, cost, level, quality, numBids, 
            timeLeft, owner, itemLink, canUse = origGetAuctionItemInfo(connection, index, ...)
     
-    -- 이름 변환
     if name and name ~= "" then
         local translatedName = TranslateItemName(name)
         if translatedName and translatedName ~= name then
@@ -100,21 +95,16 @@ function GetAuctionItemInfo(connection, index, ...)
            timeLeft, owner, itemLink, canUse
 end
 
-_G.GetAuctionItemInfo_orig = _G.GetAuctionItemInfo_orig or GetAuctionItemInfo_orig
-_G.GetAuctionItemInfo = GetAuctionItemInfo
-
 --------------------------------------------------
--- # 경매장 버튼 직접 수정 (후킹 + 직접 적용)
+-- # 경매장 버튼 직접 수정
 --------------------------------------------------
 local function TKOR_ProcessAuctionButtons()
     if not TKOR_AH_ENABLED then return end
     
-    -- 1. GetAuctionItemInfo 결과를 사용한 변환 (50 개)
     for i = 1, 50 do
-        -- 연결 타입: "list", "bid", "buyout" 모두 시도
         local testConn = {"list", "bid", "buyout"}
         for _, conn in ipairs(testConn) do
-            local name = GetAuctionItemInfo(conn, i)
+            local name = _G.GetAuctionItemInfo(conn, i)
             if name and name ~= "" then
                 local button = _G["AuctionHouseFrameAuctionButton" .. i]
                 if button then
@@ -148,6 +138,7 @@ TKOR_AH_Frame:SetScript("OnEvent", function(self, event, ...)
         TKOR_AH_ENABLED = true
     elseif event == "AUCTION_HOUSE_SHOW" then
         print("[TKOR] 경매장 열림")
+        TKOR_ProcessAuctionButtons()
     elseif event == "AUCTION_HOUSE_UPDATE" then
         print("[TKOR] 경매장 업데이트")
         TKOR_ProcessAuctionButtons()
@@ -169,8 +160,10 @@ SLASH_TKOR_AH2 = "/경매장"
 SlashCmdList["TKOR_AH"] = function(msg)
     if msg == "on" then
         TKOR_AH_ENABLED = true
+        print("[TKOR] 활성화")
     elseif msg == "off" then
         TKOR_AH_ENABLED = false
+        print("[TKOR] 비활성화")
     elseif msg == "test" then
         print("[TKOR] 테스트:")
         local testNames = {"Linen Cloth", "Silk Cloth", "Wool Cloth"}
@@ -190,7 +183,7 @@ SlashCmdList["TKOR_AH"] = function(msg)
     elseif msg == "debug" then
         print("[TKOR] 디버깅:")
         print(string.format("  GetAuctionItemInfo: %s", GetAuctionItemInfo and "있음" or "없음"))
-        print(string.format("  origGetAuctionItemInfo: %s", _G.GetAuctionItemInfo_orig and "있음" or "없음"))
+        print(string.format("  origGetAuctionItemInfo: %s", origGetAuctionItemInfo and "있음" or "없음"))
         
         -- 경매장 버튼 확인
         for i = 1, 5 do
@@ -203,10 +196,11 @@ SlashCmdList["TKOR_AH"] = function(msg)
             end
         end
         
-        -- GetAuctionItemInfo 테스트 (올바른 순서: index, connection)
-        for i = 1, 3 do
-            local name = GetAuctionItemInfo("list", i)
-            print(string.format("  GetAuctionItemInfo('list', %d): %s", i, name or "없음"))
+        -- Normalize 테스트
+        print("[TKOR] Normalize 테스트:")
+        local testNorm = {"linen cloth", "Silk Cloth", "WOOL CLOTH"}
+        for _, name in ipairs(testNorm) do
+            print(string.format("  %s → %s", name, Normalize(name)))
         end
     else
         print("[경매장] 명령어: /tkor_ah on/off/test/status/debug")
