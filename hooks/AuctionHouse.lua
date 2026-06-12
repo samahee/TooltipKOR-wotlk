@@ -12,7 +12,7 @@ TKOR_AH_ENABLED = TKOR_AH_ENABLED or true  -- 활성화 여부
 --------------------------------------------------
 -- # 캐시 (성능 최적화)
 --------------------------------------------------
--- format: { ["list_1"] = "린넨 옷감", ["list_40"] = "비단 옷감", ... }
+-- format: { ["linen cloth"] = "린넨 옷감", ["silk cloth"] = "실크 옷감", ... }
 local TKOR_AH_NameCache = {}
 
 -- 캐시 크기 제한 (메모리 관리)
@@ -59,7 +59,7 @@ local function CleanupCache()
 end
 
 --------------------------------------------------
--- # 유틸 함수
+-- # 유틸 함수 (items.lua 의 Normalize 함수와 동일)
 --------------------------------------------------
 local function CleanString(str)
     if not str or str == "" then return "" end
@@ -72,6 +72,59 @@ local function CleanString(str)
     return str
 end
 
+-- Normalize: 영어 이름 대소문자/공백/특수문자 무시용
+local function Normalize(str)
+    if not str then return "" end
+    return string.lower(string.gsub(str, "['\"%,.\\s]+", ""))
+end
+
+-- 영어->한글 역방향 매핑 테이블 (최대 10 만 개까지 로드)
+local eng_to_kor = {}
+local item_data_loaded = false
+
+local function LoadItemData()
+    if item_data_loaded then return end
+    
+    print("[TooltipKOR] 경매장: 아이템 데이터 로드 중...")
+    local start_time = GetTime()
+    
+    if item_data then
+        local count = 0
+        for id, data in pairs(item_data) do
+            if type(data) == "table" and data[1] and data[2] then
+                -- 전처리된 영어 이름을 키 (Key) 로 사용
+                local engName = CleanString(data[1])
+                local normName = Normalize(engName)
+                if normName ~= "" then
+                    eng_to_kor[normName] = data[2]
+                    count = count + 1
+                end
+            end
+            -- 10 만 개마다 로그
+            if count % 10000 == 0 then
+                print(string.format("[TooltipKOR] 경매장: 데이터 로드 중 (%d 개)", count))
+            end
+        end
+        item_data_loaded = true
+        print(string.format("[TooltipKOR] 경매장: 아이템 데이터 로드 완료 (%d 개, %.2f 초)", count, GetTime() - start_time))
+    else
+        print("[TooltipKOR] 경매장: item_data 가 없습니다!")
+    end
+end
+
+-- 경매장 데이터 로드 이벤트 (items.lua 가 로드된 후 호출)
+local TKOR_LoadFrame = CreateFrame("Frame")
+TKOR_LoadFrame:RegisterEvent("ADDON_LOADED")
+TKOR_LoadFrame:SetScript("OnEvent", function(self, event, addonName)
+    if addonName == "TooltipKOR-wotlk" then
+        -- 0.5 초 후에 데이터 로드 (items.lua 가 완전히 로드되기를 기다림)
+        C_Timer.After(0.5, LoadItemData)
+    end
+end)
+
+--------------------------------------------------
+-- # TranslateItemName 함수
+--------------------------------------------------
 local function TranslateItemName(name)
     if not name or name == "" then return name end
     
@@ -79,54 +132,43 @@ local function TranslateItemName(name)
     if not cleanName or cleanName == "" then return name end
     
     -- 1. 캐시에서 확인
-    local cacheKey = "list_" .. cleanName
+    local normName = Normalize(cleanName)
+    local cacheKey = "list_" .. normName
     if TKOR_AH_NameCache[cacheKey] then
         cache_hit_count = cache_hit_count + 1
         return TKOR_AH_NameCache[cacheKey]
     end
     
-    -- 2. 데이터베이스에서 검색
-    -- items.lua 의 translate() 함수 사용
-    local _, _, _, _, _, _, _, _, translatedName
-    if _G.items and _G.items.translate then
-        _, _, _, _, _, _, _, _, translatedName = _G.items.translate(cleanName)
-    elseif _G.TKOR_Items and _G.TKOR_Items.translate then
-        _, _, _, _, _, _, _, _, translatedName = _G.TKOR_Items.translate(cleanName)
-    elseif _G.itemsData and _G.itemsData.translate then
-        -- itemsData.lua 방식
-        if _G.itemsData[cleanName] then
-            translatedName = _G.itemsData[cleanName]
-        end
-    end
-    
-    -- 3. 번역 결과가 있으면 캐시 저장
-    if translatedName and translatedName ~= cleanName then
-        -- 캐시 키로 저장
+    -- 2. 데이터베이스에서 검색 (정규화된 이름으로)
+    if eng_to_kor[normName] then
+        local translatedName = eng_to_kor[normName]
+        
+        -- 3. 캐시 저장
         TKOR_AH_NameCache[cacheKey] = translatedName
         
-        -- 추가적인 캐시 키 (별칭 등)
-        -- ex: "linen cloth" → "린넨 옷감", "Linen Cloth" → "린넨 옷감"
-        local lowerKey = "list_" .. string.lower(cleanName)
+        -- 소문자 키도 추가 (일관성)
+        local lowerKey = "list_" .. string.lower(normName)
         if lowerKey ~= cacheKey then
             TKOR_AH_NameCache[lowerKey] = translatedName
         end
         
         cache_miss_count = cache_miss_count + 1
         
+        -- 500 번마다 로그 (디버깅용)
+        if cache_miss_count % 500 == 0 then
+            print(string.format("[TooltipKOR] 경매장: 번역 %d 회, 캐시 히트 %d 회 (캐시 크기: %d)", 
+                cache_miss_count, cache_hit_count, GetCacheSize()))
+        end
+        
         -- 캐시 정리 필요 시
         if GetCacheSize() > MAX_CACHE_SIZE then
             CleanupCache()
         end
         
-        -- 100 번마다 로그 (디버깅용)
-        if cache_miss_count % 100 == 0 then
-            print(string.format("[TooltipKOR] 경매장: 번역 %d회, 캐시 히트 %d회 (캐시 크기: %d)", 
-                cache_miss_count, cache_hit_count, GetCacheSize()))
-        end
-        
         return translatedName
     end
     
+    -- 3. 번역找不到 경우 원본 반환
     return name
 end
 
@@ -141,8 +183,8 @@ function GetAuctionItemInfo(slot, connection, index)
         return origGetAuctionItemInfo(slot, connection, index)
     end
     
-    -- slot 범위 확인 (1~40)
-    if not slot or slot < 1 or slot > NUM_AUCTION_LIST_ITEMS then
+    -- slot 범위 확인 (1~50)
+    if not slot or slot < 1 or slot > 50 then
         return origGetAuctionItemInfo(slot, connection, index)
     end
     
@@ -183,15 +225,14 @@ end)
 local function TKOR_ProcessAuctionButtons()
     if not TKOR_AH_ENABLED then return end
     
-    -- 검색 결과 리스트 처리
-    for i = 1, NUM_AUCTION_LIST_ITEMS do
+    -- 검색 결과 리스트 처리 (50 개)
+    for i = 1, 50 do
         local button = _G["AuctionHouseFrameAuctionButton" .. i]
         if button then
             local buttonName = _G[button:GetName() .. "Name"]
             if buttonName then
                 local originalText = buttonName:GetText()
                 if originalText and originalText ~= "" then
-                    local cleanText = CleanString(originalText)
                     local translatedName = TranslateItemName(originalText)
                     if translatedName and translatedName ~= originalText then
                         buttonName:SetText(translatedName)
@@ -217,7 +258,7 @@ TKOR_AH_Frame:SetScript("OnEvent", function(self, event, ...)
         TKOR_AH_ENABLED = true
     elseif event == "PLAYER_LOGIN" then
         print(string.format("[TooltipKOR] 경매장 한글화 모듈 로드됨 (GetAuctionItemInfo 후킹 완료)"))
-        print(string.format("경매장 페이지: 1~%d 개 아이템 표시", NUM_AUCTION_LIST_ITEMS or 40))
+        print(string.format("경매장 페이지: 1~50 개 아이템 표시"))
     elseif event == "AUCTION_HOUSE_SHOW" then
         -- 경매장 열 때 초기화
         cache_hit_count = 0
@@ -258,16 +299,26 @@ SlashCmdList["TKOR_AH"] = function(msg)
         print("✅ 경매장 캐시 초기화됨")
     elseif msg == "status" then
         print(string.format("경매장 한글화 상태: %s", TKOR_AH_ENABLED and "활성화" or "비활성화"))
-        print(string.format("NUM_AUCTION_LIST_ITEMS: %d", NUM_AUCTION_LIST_ITEMS or 40))
+        print(string.format("item_data 로드: %s", item_data_loaded and "됨" or "안됨"))
+        print(string.format("데이터 수: %d 개", #eng_to_kor))
+    elseif msg == "test" then
+        -- 테스트: "linen cloth" 검색
+        print("[경매장 한글화] 테스트:")
+        local testNames = {"Linen Cloth", "Silk Cloth", "Wool Cloth", "Mageweave Cloth", "Silkweave Cloth"}
+        for _, name in ipairs(testNames) do
+            local result = TranslateItemName(name)
+            print(string.format("  %s → %s", name, result))
+        end
     else
         print("[경매장 한글화] 명령어:")
-        print("  /tkor_ah on   - 활성화")
-        print("  /tkor_ah off  - 비활성화")
-        print("  /tkor_ah cache - 캐시 정보")
-        print("  /tkor_ah clear - 캐시 초기화")
+        print("  /tkor_ah on     - 활성화")
+        print("  /tkor_ah off    - 비활성화")
+        print("  /tkor_ah cache  - 캐시 정보")
+        print("  /tkor_ah clear  - 캐시 초기화")
         print("  /tkor_ah status - 상태 확인")
+        print("  /tkor_ah test   - 테스트 실행")
     end
 end
 
 -- 초기 로드
-print(string.format("[TooltipKOR] 경매장 한글화 모듈 로드됨 (NUM_AUCTION_LIST_ITEMS: %d)", NUM_AUCTION_LIST_ITEMS or 40))
+print(string.format("[TooltipKOR] 경매장 한글화 모듈 로드됨 (경매장 페이지: 50 개)"))
