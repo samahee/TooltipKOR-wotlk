@@ -40,6 +40,9 @@ search.lua
 tooltip_translate.lua
 messages.lua
 mail.lua
+<<<<<<< HEAD
 hooks\AuctionHouse.lua
 hooks\Trainer.lua
 
+=======
+>>>>>>> 4e25272b36416fac057082950a7e9683419ef5e5
