@@ -25,38 +25,94 @@ local function CleanString(str)
     if not str or str == "" then return "" end
     str = string.gsub(str, "|c%x%x%x%x%x%x%x%x", "")
     str = string.gsub(str, "|r", "")
+    str = string.gsub(str, "|T.-|t", "")  -- 텍스처 아이콘 제거
     str = string.gsub(str, "^%s+", "")
     str = string.gsub(str, "%s+$", "")
     return str
 end
 
 --------------------------------------------------
--- # TranslateItemName 함수
+-- # TranslateItemName 함수 (색상 코드 및 공백, 링크 유지)
 --------------------------------------------------
 local function TranslateItemName(name)
     if not name or name == "" then return name end
+
+    if TKOR_AH_NameCache[name] then
+        return TKOR_AH_NameCache[name]
+    end
+
+    -- 만약 아이템 링크 형태라면 내부 이름만 추출해서 번역
+    local linkName = string.match(name, "|h%[(.-)%]|h")
+    if linkName then
+        local translatedLinkName = TranslateItemName(linkName)
+        if translatedLinkName and translatedLinkName ~= linkName then
+            local safePattern = string.gsub(linkName, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
+            local finalName = string.gsub(name, "%[" .. safePattern .. "%]", "[" .. translatedLinkName .. "]")
+            TKOR_AH_NameCache[name] = finalName
+            return finalName
+        end
+    end
 
     local cleanName = CleanString(name)
     if not cleanName or cleanName == "" then return name end
 
     local normName = Normalize(cleanName)
-    local cacheKey = "list_" .. normName
-
-    -- 캐시 확인
-    if TKOR_AH_NameCache[cacheKey] then
-        return TKOR_AH_NameCache[cacheKey]
-    end
 
     -- ✅ items.lua 의 TKOR_eng_to_kor 사용
     local eng_to_kor = _G.TKOR_eng_to_kor
     if eng_to_kor and eng_to_kor[normName] then
         local translatedName = eng_to_kor[normName]
-        TKOR_AH_NameCache[cacheKey] = translatedName
-        return translatedName
+        
+        -- 원본 문자열에서 영문 이름 부분만 한글로 치환하여 색상 코드와 공백을 그대로 유지
+        local safePattern = string.gsub(cleanName, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
+        local finalName = string.gsub(name, safePattern, translatedName)
+        
+        TKOR_AH_NameCache[name] = finalName
+        return finalName
     end
 
+    TKOR_AH_NameCache[name] = name
     return name
 end
+
+--------------------------------------------------
+-- # 외부 애드온 (aux 등) 완벽 호환: 전역 SetText 후킹
+--------------------------------------------------
+local isAHWindowOpen = false
+local TKOR_AH_StateCheck = CreateFrame("Frame")
+TKOR_AH_StateCheck:SetScript("OnUpdate", function()
+    if not TKOR_AH_ENABLED then return end
+    isAHWindowOpen = false
+    
+    if _G.AuctionFrame and _G.AuctionFrame:IsVisible() then
+        isAHWindowOpen = true
+        return
+    end
+    if _G.AuxFrame and _G.AuxFrame:IsVisible() then
+        isAHWindowOpen = true
+        return
+    end
+    for i = 1, 20 do
+        local f = _G["AuxFrame" .. i]
+        if f and f:IsVisible() then
+            isAHWindowOpen = true
+            return
+        end
+    end
+end)
+
+local fstring_meta = getmetatable(CreateFrame("Frame"):CreateFontString()).__index
+hooksecurefunc(fstring_meta, "SetText", function(self, text)
+    if not isAHWindowOpen or not text or type(text) ~= "string" then return end
+    if self._tkor_translating then return end
+
+    local translated = TranslateItemName(text)
+    if translated and translated ~= text then
+        self._tkor_translating = true
+        self:SetText(translated)
+        self._tkor_translating = false
+    end
+end)
 
 --------------------------------------------------
 -- # GetAuctionItemInfo 후킹

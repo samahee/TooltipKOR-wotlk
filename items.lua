@@ -65,6 +65,7 @@ if item_data then
         end
     end
 end
+_G.TKOR_eng_to_kor = eng_to_kor -- AuctionHouse.lua, Merchant.lua 등에서 사용 가능하도록 전역 노출
 
 -- 전문 기술 접두어 한글 매핑 테이블
 local profession_map = {

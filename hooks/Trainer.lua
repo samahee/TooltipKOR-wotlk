@@ -73,6 +73,10 @@ end
 local function TranslateSpellName(name)
     if not name or name == "" then return name end
 
+    if TKOR_Trainer_NameCache[name] then
+        return TKOR_Trainer_NameCache[name]
+    end
+
     local cleanName = StripColorCodes(name)
     if not cleanName or cleanName == "" then return name end
 
@@ -80,12 +84,6 @@ local function TranslateSpellName(name)
     local leadingSpaces = string.match(cleanName, "^%s+") or ""
 
     local normName = Normalize(cleanName)
-    local cacheKey = normName
-
-    -- 캐시 확인
-    if TKOR_Trainer_NameCache[cacheKey] then
-        return TKOR_Trainer_NameCache[cacheKey]
-    end
 
     -- DB 에서 매칭
     local matchKey = GetMatchKey(cleanName)
@@ -94,10 +92,11 @@ local function TranslateSpellName(name)
     if translatedName and translatedName ~= cleanName then
         -- 번역된 텍스트 앞에 원래의 들여쓰기 공백을 유지시켜 줌
         local finalName = leadingSpaces .. translatedName
-        TKOR_Trainer_NameCache[cacheKey] = finalName
+        TKOR_Trainer_NameCache[name] = finalName
         return finalName
     end
 
+    TKOR_Trainer_NameCache[name] = name
     return name
 end
 
