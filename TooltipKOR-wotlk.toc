@@ -42,4 +42,6 @@ messages.lua
 mail.lua
 hooks\AuctionHouse.lua
 hooks\Trainer.lua
+hooks\TradeSkill.lua
+hooks\SpellBook.lua
 hooks\Merchant.lua
