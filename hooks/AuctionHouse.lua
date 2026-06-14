@@ -25,7 +25,7 @@ local function CleanString(str)
     if not str or str == "" then return "" end
     str = string.gsub(str, "|c%x%x%x%x%x%x%x%x", "")
     str = string.gsub(str, "|r", "")
-    str = string.gsub(str, "|T.-|t", "")  -- 텍스처 아이콘 제거
+    str = string.gsub(str, "|T.-|t", "") -- 텍스처 아이콘 제거
     str = string.gsub(str, "^%s+", "")
     str = string.gsub(str, "%s+$", "")
     return str
@@ -42,12 +42,37 @@ local function TranslateItemName(name)
     end
 
     -- 만약 아이템 링크 형태라면 내부 이름만 추출해서 번역
+    -- 1) |h[이름]|h 형식 (블리자드 기본, 대괄호 포함 링크)
     local linkName = string.match(name, "|h%[(.-)%]|h")
     if linkName then
         local translatedLinkName = TranslateItemName(linkName)
         if translatedLinkName and translatedLinkName ~= linkName then
             local safePattern = string.gsub(linkName, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
             local finalName = string.gsub(name, "%[" .. safePattern .. "%]", "[" .. translatedLinkName .. "]")
+            TKOR_AH_NameCache[name] = finalName
+            return finalName
+        end
+    end
+
+    -- 2) |h이름|h 형식 (aux auction_listing: 대괄호 제거된 아이템 링크)
+    --    |cff...|Hitem:id:...|hName|h|r  형태에서 Name 추출
+    local plainLinkName = string.match(name, "|Hitem:%d+.*|h([^|]+)|h")
+    if plainLinkName then
+        local translatedPlainName = TranslateItemName(plainLinkName)
+        if translatedPlainName and translatedPlainName ~= plainLinkName then
+            local escaped = string.gsub(plainLinkName, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
+            local finalName = string.gsub(name, "|h" .. escaped .. "|h", "|h" .. translatedPlainName .. "|h")
+            TKOR_AH_NameCache[name] = finalName
+            return finalName
+        end
+    end
+
+    -- 3) [이름] 형식 (aux item_listing: 순수 대괄호만)
+    local bracketName = string.match(name, "^%[(.-)%]$")
+    if bracketName then
+        local translatedBracketName = TranslateItemName(bracketName)
+        if translatedBracketName and translatedBracketName ~= bracketName then
+            local finalName = "[" .. translatedBracketName .. "]"
             TKOR_AH_NameCache[name] = finalName
             return finalName
         end
@@ -62,11 +87,11 @@ local function TranslateItemName(name)
     local eng_to_kor = _G.TKOR_eng_to_kor
     if eng_to_kor and eng_to_kor[normName] then
         local translatedName = eng_to_kor[normName]
-        
+
         -- 원본 문자열에서 영문 이름 부분만 한글로 치환하여 색상 코드와 공백을 그대로 유지
         local safePattern = string.gsub(cleanName, "([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
         local finalName = string.gsub(name, safePattern, translatedName)
-        
+
         TKOR_AH_NameCache[name] = finalName
         return finalName
     end
@@ -83,7 +108,7 @@ local TKOR_AH_StateCheck = CreateFrame("Frame")
 TKOR_AH_StateCheck:SetScript("OnUpdate", function()
     if not TKOR_AH_ENABLED then return end
     isAHWindowOpen = false
-    
+
     if _G.AuctionFrame and _G.AuctionFrame:IsVisible() then
         isAHWindowOpen = true
         return
