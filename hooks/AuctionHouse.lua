@@ -102,27 +102,36 @@ end
 
 --------------------------------------------------
 -- # 외부 애드온 (aux 등) 완벽 호환: 전역 SetText 후킹
+-- AUCTION_HOUSE_SHOW/CLOSED 이벤트로 엄격하게 게이트 제어
 --------------------------------------------------
 local isAHWindowOpen = false
-local TKOR_AH_StateCheck = CreateFrame("Frame")
-TKOR_AH_StateCheck:SetScript("OnUpdate", function()
-    if not TKOR_AH_ENABLED then return end
-    isAHWindowOpen = false
 
-    if _G.AuctionFrame and _G.AuctionFrame:IsVisible() then
+-- AUCTION_HOUSE_CLOSED 이벤트를 감지할 별도 프레임
+-- (기존 TKOR_AH_Frame 은 ADDON_LOADED 도 받고 있어서 목적 분리)
+local TKOR_AH_GateCheck = CreateFrame("Frame")
+TKOR_AH_GateCheck:RegisterEvent("AUCTION_HOUSE_SHOW")
+TKOR_AH_GateCheck:RegisterEvent("AUCTION_HOUSE_CLOSED")
+TKOR_AH_GateCheck:SetScript("OnEvent", function(self, event, ...)
+    if not TKOR_AH_ENABLED then return end
+    if event == "AUCTION_HOUSE_SHOW" then
         isAHWindowOpen = true
-        return
+    elseif event == "AUCTION_HOUSE_CLOSED" then
+        isAHWindowOpen = false
     end
-    if _G.AuxFrame and _G.AuxFrame:IsVisible() then
-        isAHWindowOpen = true
-        return
-    end
-    for i = 1, 20 do
-        local f = _G["AuxFrame" .. i]
-        if f and f:IsVisible() then
-            isAHWindowOpen = true
-            return
-        end
+end)
+
+-- 보안: AuxFrame 이 직접 show/hide 되는 경우를 대비한 OnUpdate fallback
+-- (아주 드문 케이스지만, AuxFrame 이 이벤트 없이 show 되는 경우 대응)
+local TKOR_AH_SafetyCheck = CreateFrame("Frame")
+TKOR_AH_SafetyCheck:SetScript("OnUpdate", function()
+    if not TKOR_AH_ENABLED then return end
+    if not isAHWindowOpen then return end -- 이미 false 면 체크 불필요
+
+    local auctionVisible = (_G.AuctionFrame and _G.AuctionFrame:IsVisible())
+    local auxVisible = (_G.AuxFrame and _G.AuxFrame:IsVisible())
+
+    if not auctionVisible and not auxVisible then
+        isAHWindowOpen = false
     end
 end)
 
